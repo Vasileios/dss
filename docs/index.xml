@@ -12,29 +12,6 @@
     
     
     <item>
-      <title>Ιστορία</title>
-      <link>https://vasileios.github.io/dss/introduction/history/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/history/</guid>
-      <description>chapter 1 Ιστορια Μουσική και μαθηματικά.
-Πυθαγόρας
-Ο ήχος των σφυριών των σιδηρουργών έκανε τον Πυθαγόρα να βγάλει σημαντικά συμπεράσματα σχετικά με τη φύση του τονισμού και τα μαθηματικά με βάση την αρμονία μετά τη σύγκριση των τονισμών που έγιναν απο τα σφυριά.
-Guido D&#39;Arrezo
-Επίσης, στο πλαίσιο της αλγοριθμικής σύνθεσης, γύρω στο AD 1000 είχε αναπτυχθεί η πρώτη προσέγγιση στην αυτόματη γένεση της μουσικής δομής. Ο Guido του Arezzo (γύρω στο 991-1031) συνέβαλε στην ανάπτυξη της σημειογραφίας, ανέπτυξε το &#39;solfeggio&#39; (1025) και ήταν ένας σημαντικός μουσικός θεωρητικός της μεσαιωνικής εποχής.</description>
-    </item>
-    
-    <item>
-      <title>Παραδείγματα</title>
-      <link>https://vasileios.github.io/dss/introduction/paradigms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/paradigms/</guid>
-      <description>Chapter 1 Παραδειγματα Μαρκοβιανά Μοντέλα - Markov models time dependent random variables (TDRV)
-Στο πλαίσιο των πειραμάτων και παρατηρήσεων σχετικά με την TDRV έχουν ήδη γίνει από τους Pierre Simon de Laplace και Daniel Bernoulli. Η πρώτη εφαρμογή αυτής της μεθόδου ήταν μια εκτενή ανάλυση κειμένου από τον Markov: &#34;Το 1913 ο Markov είχε δημοσιεύσει την τρίτη έκδοση του εγχειριδίου του. Σε αυτή την έκδοση γράφει: «Ας τελειώσουμε το άρθρο και ολόκληρο το βιβλίο με ένα καλό παράδειγμα TDRV, που μπορούν να θεωρηθούν ως μια απλή αλυσίδα» (chain).</description>
-    </item>
-    
-    <item>
       <title>Logical Expressions</title>
       <link>https://vasileios.github.io/dss/introduction/logicalex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -45,67 +22,16 @@ Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 
     </item>
     
     <item>
-      <title>Sound theory basics</title>
-      <link>https://vasileios.github.io/dss/introduction/soundtheory/</link>
+      <title>Ιστορία</title>
+      <link>https://vasileios.github.io/dss/introduction/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/introduction/soundtheory/</guid>
-      <description>chapter 1 Sound maths and physics Simple interface of a synth
-source: A waveform (simple or complex)
-arguments of a source i.e periodic oscillators
- frequency: (the cycles per second (Hz)),   phase: starts at 0 means sine, starts at 1 means cosine   amplitude: the distance between the top and the bottom of a wave.   Envelope: the shape of the sound intensity i.e attack time (the starting point of an envelope measured in milliseconds),  sustain level(intesity, measured in deciBels)  To generate a sound you can experiment in the SuperCollider environment.</description>
-    </item>
-    
-    <item>
-      <title>Κλίμακες και Χορδίσματα</title>
-      <link>https://vasileios.github.io/dss/introduction/tuning_scales/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/tuning_scales/</guid>
-      <description>chapter 1 Scales Circle of fiths is the relationship among the 12 tones of the chromatic scale, their corresponding key signatures, and the associated major and minor keys.
-Circles of Fifths
-Other Tunings and Scales
- Intervals (διαστήματα)  Pythagorian set
-Τα σφυριά του Πυθαγόρα περιέχουν μια σειρά απο τόνικότητες που σχετίζονται μεταξύ τους. Σε αυτή τη σειρά κυριαρχούν οι οκτάβες (2/1), οι πέμπτες (3/2) και οι τέταρτες (4/3). Η πέμπτη και η τέταρτη αν πολλαπλασιαστούν μεταξύ τους θα φτιάξουν την οκτάβα (3/2*4/3=2/1), και αν διαιρεθούν ((3/2)/(4/3)=9/8) τον τόνο (9/8).</description>
-    </item>
-    
-    <item>
-      <title>Notation</title>
-      <link>https://vasileios.github.io/dss/introduction/notation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/notation/</guid>
-      <description>chapter 1 Notation MIDI
-The lowest note musicians use is C-1, which has the MIDI number 0. The number 12 = C0, 24 = C1, 36 = C2, 48 = C3, 60 = C4 (which is middle C on the piano, remember this one), and so on. A 440 is above middle C so it is 69.
-60, 62, 63, 60, 66
-Frequencies
-It is the number of cycles (per second) of a periodic wave.</description>
-    </item>
-    
-    <item>
-      <title>Glossary</title>
-      <link>https://vasileios.github.io/dss/introduction/glossary/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/glossary/</guid>
-      <description>chapter 1 Glossary Mathematics
-premise a statement that is assumed to be true.
-polynomial function is an expression consisting of variables (also called indeterminates) and coefficients, that involves only the operations of addition, subtraction, multiplication, and non-negative integer exponents of variables (Wiki, see more here)
-Physics
-frequency the number of times that a wave, especially a light, sound, or radio wave, is produced within a particular period, especially one second.</description>
-    </item>
-    
-    <item>
-      <title>References</title>
-      <link>https://vasileios.github.io/dss/introduction/references/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/references/</guid>
-      <description>Chapter 1 References Cope, David. 2000. The Algorithmic Composer. Madison, Wis: A-R Editions.
-Dean, Roger. and McLean, Alex (eds.) 2018. The Oxford Handbook of Algorithmic Music. Oxford University Press.
-Farnell, Andy. 2010. Designing Sound. Cambridge, Mass: The MIT Press.
-Holtzman, Steven. 1981. Generative Grammars for Music Composition. Computer Music Journal, Vol.5, No.1, pp. 51-64. The MIT Press.
-Husbands, Phil, Peter Copley, Alice Eldridge, and James Mandelis. 2007. ‘An Introduction to Evolutionary Computing for Musicians’.</description>
+      <guid>https://vasileios.github.io/dss/introduction/history/</guid>
+      <description>chapter 1 Ιστορια Μουσική και μαθηματικά.
+Πυθαγόρας
+Ο ήχος των σφυριών των σιδηρουργών έκανε τον Πυθαγόρα να βγάλει σημαντικά συμπεράσματα σχετικά με τη φύση του τονισμού και τα μαθηματικά με βάση την αρμονία μετά τη σύγκριση των τονισμών που έγιναν απο τα σφυριά.
+Guido D&#39;Arrezo
+Επίσης, στο πλαίσιο της αλγοριθμικής σύνθεσης, γύρω στο AD 1000 είχε αναπτυχθεί η πρώτη προσέγγιση στην αυτόματη γένεση της μουσικής δομής. Ο Guido του Arezzo (γύρω στο 991-1031) συνέβαλε στην ανάπτυξη της σημειογραφίας, ανέπτυξε το &#39;solfeggio&#39; (1025) και ήταν ένας σημαντικός μουσικός θεωρητικός της μεσαιωνικής εποχής.</description>
     </item>
     
     <item>
@@ -123,6 +49,16 @@ SuperCollider features three major components
     </item>
     
     <item>
+      <title>Παραδείγματα</title>
+      <link>https://vasileios.github.io/dss/introduction/paradigms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/paradigms/</guid>
+      <description>Chapter 1 Παραδειγματα Μαρκοβιανά Μοντέλα - Markov models time dependent random variables (TDRV)
+Στο πλαίσιο των πειραμάτων και παρατηρήσεων σχετικά με την TDRV έχουν ήδη γίνει από τους Pierre Simon de Laplace και Daniel Bernoulli. Η πρώτη εφαρμογή αυτής της μεθόδου ήταν μια εκτενή ανάλυση κειμένου από τον Markov: &#34;Το 1913 ο Markov είχε δημοσιεύσει την τρίτη έκδοση του εγχειριδίου του. Σε αυτή την έκδοση γράφει: «Ας τελειώσουμε το άρθρο και ολόκληρο το βιβλίο με ένα καλό παράδειγμα TDRV, που μπορούν να θεωρηθούν ως μια απλή αλυσίδα» (chain).</description>
+    </item>
+    
+    <item>
       <title>Oscillators</title>
       <link>https://vasileios.github.io/dss/sc-examples/oscillators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -130,6 +66,18 @@ SuperCollider features three major components
       <guid>https://vasileios.github.io/dss/sc-examples/oscillators/</guid>
       <description>chapter 2 SuperCollider Oscillators SuperCollider Ugens From SC Help
 //Periodic Sources: Oscillators. //LF - &amp;#34;Low Frequency&amp;#34; Unit Generators. //arguments: frequency, phase, mul, add  // *Stethoscope*  s.boot a = Stethoscope(s,2); // 2 tracks //a = Stethoscope(s,2, 2); // change in i.e (Mic)  // parabolic approximation of sine { LFPar.ar(LFPar.kr(LFPar.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); // cubic approximation of sine { LFCub.ar(LFCub.kr(LFCub.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFTri.ar(LFTri.kr(LFTri.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFSaw.</description>
+    </item>
+    
+    <item>
+      <title>Sound theory basics</title>
+      <link>https://vasileios.github.io/dss/introduction/soundtheory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/soundtheory/</guid>
+      <description>chapter 1 Sound maths and physics Simple interface of a synth
+source: A waveform (simple or complex)
+arguments of a source i.e periodic oscillators
+ frequency: (the cycles per second (Hz)),   phase: starts at 0 means sine, starts at 1 means cosine   amplitude: the distance between the top and the bottom of a wave.   Envelope: the shape of the sound intensity i.e attack time (the starting point of an envelope measured in milliseconds),  sustain level(intesity, measured in deciBels)  To generate a sound you can experiment in the SuperCollider environment.</description>
     </item>
     
     <item>
@@ -143,6 +91,32 @@ SuperCollider features three major components
     </item>
     
     <item>
+      <title>Notation</title>
+      <link>https://vasileios.github.io/dss/introduction/notation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/notation/</guid>
+      <description>chapter 1 Notation MIDI
+The lowest note musicians use is C-1, which has the MIDI number 0. The number 12 = C0, 24 = C1, 36 = C2, 48 = C3, 60 = C4 (which is middle C on the piano, remember this one), and so on. A 440 is above middle C so it is 69.
+60, 62, 63, 60, 66
+Frequencies
+It is the number of cycles (per second) of a periodic wave.</description>
+    </item>
+    
+    <item>
+      <title>Κλίμακες και Χορδίσματα</title>
+      <link>https://vasileios.github.io/dss/introduction/tuning_scales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/tuning_scales/</guid>
+      <description>chapter 1 Scales Circle of fiths is the relationship among the 12 tones of the chromatic scale, their corresponding key signatures, and the associated major and minor keys.
+Circles of Fifths
+Other Tunings and Scales
+ Intervals (διαστήματα)  Pythagorian set
+Τα σφυριά του Πυθαγόρα περιέχουν μια σειρά απο τόνικότητες που σχετίζονται μεταξύ τους. Σε αυτή τη σειρά κυριαρχούν οι οκτάβες (2/1), οι πέμπτες (3/2) και οι τέταρτες (4/3). Η πέμπτη και η τέταρτη αν πολλαπλασιαστούν μεταξύ τους θα φτιάξουν την οκτάβα (3/2*4/3=2/1), και αν διαιρεθούν ((3/2)/(4/3)=9/8) τον τόνο (9/8).</description>
+    </item>
+    
+    <item>
       <title>Filters</title>
       <link>https://vasileios.github.io/dss/sc-examples/filters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -153,12 +127,38 @@ SuperCollider features three major components
     </item>
     
     <item>
+      <title>Glossary</title>
+      <link>https://vasileios.github.io/dss/introduction/glossary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/glossary/</guid>
+      <description>chapter 1 Glossary Mathematics
+premise a statement that is assumed to be true.
+polynomial function is an expression consisting of variables (also called indeterminates) and coefficients, that involves only the operations of addition, subtraction, multiplication, and non-negative integer exponents of variables (Wiki, see more here)
+Physics
+frequency the number of times that a wave, especially a light, sound, or radio wave, is produced within a particular period, especially one second.</description>
+    </item>
+    
+    <item>
       <title>Distortion</title>
       <link>https://vasileios.github.io/dss/sc-examples/distortion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vasileios.github.io/dss/sc-examples/distortion/</guid>
       <description>chapter 2 SuperCollider Distorion // Distortion  { SinOsc.ar(300, 0, 0.2) }.scope(1); { SinOsc.ar(300, 0, 0.2).abs }.scope(1); { SinOsc.ar(300, 0, 0.2).max(0) }.scope(1); { SinOsc.ar(300, 0).squared * 0.2 }.scope(1); { SinOsc.ar(300, 0).cubed * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).distort * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).softclip * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).clip2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).fold2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).wrap2(1) * 0.2 }.scope(1); { SinOsc.</description>
+    </item>
+    
+    <item>
+      <title>References</title>
+      <link>https://vasileios.github.io/dss/introduction/references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/references/</guid>
+      <description>Chapter 1 References Cope, David. 2000. The Algorithmic Composer. Madison, Wis: A-R Editions.
+Dean, Roger. and McLean, Alex (eds.) 2018. The Oxford Handbook of Algorithmic Music. Oxford University Press.
+Farnell, Andy. 2010. Designing Sound. Cambridge, Mass: The MIT Press.
+Holtzman, Steven. 1981. Generative Grammars for Music Composition. Computer Music Journal, Vol.5, No.1, pp. 51-64. The MIT Press.
+Husbands, Phil, Peter Copley, Alice Eldridge, and James Mandelis. 2007. ‘An Introduction to Evolutionary Computing for Musicians’.</description>
     </item>
     
     <item>

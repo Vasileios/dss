@@ -13,23 +13,8 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/history/</loc>
-    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/paradigms/</loc>
-    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://vasileios.github.io/dss/introduction/logicalex/</loc>
     <lastmod>2019-03-29T01:42:51+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/soundtheory/</loc>
-    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
   </url>
   
   <url>
@@ -38,22 +23,7 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/tuning_scales/</loc>
-    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/notation/</loc>
-    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/glossary/</loc>
-    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/references/</loc>
+    <loc>https://vasileios.github.io/dss/introduction/history/</loc>
     <lastmod>2019-03-29T01:50:24+02:00</lastmod>
   </url>
   
@@ -63,8 +33,18 @@
   </url>
   
   <url>
+    <loc>https://vasileios.github.io/dss/introduction/paradigms/</loc>
+    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vasileios.github.io/dss/sc-examples/oscillators/</loc>
     <lastmod>2019-03-28T22:25:44+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/soundtheory/</loc>
+    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
   </url>
   
   <url>
@@ -73,13 +53,33 @@
   </url>
   
   <url>
+    <loc>https://vasileios.github.io/dss/introduction/notation/</loc>
+    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/tuning_scales/</loc>
+    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vasileios.github.io/dss/sc-examples/filters/</loc>
     <lastmod>2019-03-28T22:25:44+02:00</lastmod>
   </url>
   
   <url>
+    <loc>https://vasileios.github.io/dss/introduction/glossary/</loc>
+    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://vasileios.github.io/dss/sc-examples/distortion/</loc>
     <lastmod>2019-03-28T22:25:44+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/references/</loc>
+    <lastmod>2019-03-29T01:50:24+02:00</lastmod>
   </url>
   
   <url>
