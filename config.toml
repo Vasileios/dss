@@ -1,23 +1,17 @@
 baseURL = "https://vasileios.github.io/dss"
-languageCode = "en-US"
-defaultContentLanguage = "el"
 
-title = "Algorithmic Composition"
-theme = "hugo-theme-learn"
-#themesdir = "themes/"
-metaDataFormat = "yaml"
+title = "Digital Sound Synthesis"
+
+
+#metaDataFormat = "yaml"
 #defaultContentLanguageInSubdir= true
-ordersectionsby = "weight"
+#ordersectionsby = "weight"
   
-publishDir= "docs"
-
-[params]
- themeVariant="black"
 
 
 languageCode = "en-us"
 DefaultContentLanguage = "el"
-title = "DocDock Documentation"
+
 theme = "hugo-theme-docdock"
 #themesdir = "../.."
 pygmentsCodeFences = true
@@ -27,6 +21,10 @@ defaultContentLanguage = "el"
 defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
 
+publishDir= "docs"
+
+#[params]
+ #themeVariant="black"
 
 # [Languages]
 # [Languages.en]
@@ -57,7 +55,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
 [Languages.el]
-title = "Αλγοριθμική Σύνθεση"
+title = "Ψηφιακή Σύνθεση Ήχου"
 weight = 1
 languageName = "Ελληνικά"
 
