@@ -3,17 +3,17 @@ baseURL = "https://vasileios.github.io/dss"
 title = "Digital Sound Synthesis"
 
 
-metaDataFormat = "yaml"
+#metaDataFormat = "yaml"
 #defaultContentLanguageInSubdir= true
-ordersectionsby = "weight"
+#ordersectionsby = "weight"
   
 
 
-languageCode = "en-us"
-DefaultContentLanguage = "el"
+languageCode = "en-US"
+
 
 theme = "hugo-theme-docdock"
-themesdir = "./themes"
+#themesdir = "./themes"
 pygmentsCodeFences = true
 pygmentsStyle = "monokai"
 
@@ -24,7 +24,7 @@ enableMissingTranslationPlaceholders = false
 publishDir= "docs"
 
 #[params]
- #themeVariant="black"
+# themeVariant="black"
 
 # [Languages]
 # [Languages.en]
@@ -37,8 +37,8 @@ publishDir= "docs"
 # weight = 2
 # languageName = "Français"
 
-[params]
-editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+# [params]
+# editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 showVisitedLinks = true # default is false
 themeStyle = "flex" # "original" or "flex" # default "flex"
 themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
