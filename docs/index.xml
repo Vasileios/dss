@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Αλγοριθμική Σύνθεση on Ψηφιακή Σύνθεση Ήχου</title>
-    <link>https://vasileios.github.io/DSS/</link>
+    <link>https://vasileios.github.io/dss/</link>
     <description>Recent content in Αλγοριθμική Σύνθεση on Ψηφιακή Σύνθεση Ήχου</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://vasileios.github.io/DSS/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://vasileios.github.io/dss/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introduction</title>
-      <link>https://vasileios.github.io/DSS/introduction/_index.en/</link>
+      <link>https://vasileios.github.io/dss/introduction/_index.en/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/introduction/_index.en/</guid>
+      <guid>https://vasileios.github.io/dss/introduction/_index.en/</guid>
       <description>Chapter 1 Algorithmic Composition Algorithm is:
  A set of mathematical instructions that must be followed in a fixed order, and that, especially if given to a computer, will help to calculate an answer to a mathematical problem. A systematic procedure that produces – in a finite number of steps the answer to a question or the solution of a problem. [...] (especially computing) a set of rules that must be followed when solving a particular problem.</description>
     </item>
     
     <item>
       <title>Ιστορία</title>
-      <link>https://vasileios.github.io/DSS/introduction/history/</link>
+      <link>https://vasileios.github.io/dss/introduction/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/introduction/history/</guid>
+      <guid>https://vasileios.github.io/dss/introduction/history/</guid>
       <description>chapter 1 Ιστορια Μουσική και μαθηματικά.
 Πυθαγόρας
 Ο ήχος των σφυριών των σιδηρουργών έκανε τον Πυθαγόρα να βγάλει σημαντικά συμπεράσματα σχετικά με τη φύση του τονισμού και τα μαθηματικά με βάση την αρμονία μετά τη σύγκριση των τονισμών που έγιναν απο τα σφυριά.
@@ -35,20 +35,20 @@ Guido D&#39;Arrezo
     
     <item>
       <title>Παραδείγματα</title>
-      <link>https://vasileios.github.io/DSS/introduction/paradigms/</link>
+      <link>https://vasileios.github.io/dss/introduction/paradigms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/introduction/paradigms/</guid>
+      <guid>https://vasileios.github.io/dss/introduction/paradigms/</guid>
       <description>Chapter 1 Παραδειγματα Μαρκοβιανά Μοντέλα - Markov models time dependent random variables (TDRV)
 Στο πλαίσιο των πειραμάτων και παρατηρήσεων σχετικά με την TDRV έχουν ήδη γίνει από τους Pierre Simon de Laplace και Daniel Bernoulli. Η πρώτη εφαρμογή αυτής της μεθόδου ήταν μια εκτενή ανάλυση κειμένου από τον Markov: &#34;Το 1913 ο Markov είχε δημοσιεύσει την τρίτη έκδοση του εγχειριδίου του. Σε αυτή την έκδοση γράφει: «Ας τελειώσουμε το άρθρο και ολόκληρο το βιβλίο με ένα καλό παράδειγμα TDRV, που μπορούν να θεωρηθούν ως μια απλή αλυσίδα» (chain).</description>
     </item>
     
     <item>
       <title>Sound theory basics</title>
-      <link>https://vasileios.github.io/DSS/introduction/soundtheory/</link>
+      <link>https://vasileios.github.io/dss/introduction/soundtheory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/introduction/soundtheory/</guid>
+      <guid>https://vasileios.github.io/dss/introduction/soundtheory/</guid>
       <description>chapter 1 Sound maths and physics Simple interface of a synth
 source: A waveform (simple or complex)
 arguments of a source i.e periodic oscillators
@@ -57,10 +57,10 @@ arguments of a source i.e periodic oscillators
     
     <item>
       <title>Ψηφιακή σύνθεση Ήχου - Εισαγωγή</title>
-      <link>https://vasileios.github.io/DSS/introduction/digitalsoundsynthesis/</link>
+      <link>https://vasileios.github.io/dss/introduction/digitalsoundsynthesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/introduction/digitalsoundsynthesis/</guid>
+      <guid>https://vasileios.github.io/dss/introduction/digitalsoundsynthesis/</guid>
       <description>chapter 1 Ψηφιακή σύνθεση Ήχου Synthesis techniques and programming.
 Κατά τη διάρκεια του περασμένου αιώνα, η ηλεκτρική ενέργεια διαπέρασε σταδιακά τον κόσμο του ήχου. Η μουσική πλέον ακούγεται τώρα μέσω των ηχείων. Αλλά, πέρα από την αναπαραγωγή, η ηλεκτρική τεχνολογία επίσης έφερε ριζικά νέους πόρους για την παραγωγή νέων ήχων και μουσικής.
 Χρειάστηκε αρκετός χρόνος για τον μουσικό κόσμο να συνειδητοποιήσει τις δυνατότητες αυτών των πόρων. Ακόμη, για πολλά χρόνια, ο Edgard Varese προσπάθησε να πείσει τους ερευνητές και τα ιδρύματα να δούν τα πλεονέκτημα που προσφέρειη επιστήμη και η τεχνολογία για την ανάπτυξη μηχανών παραγωγής ήχου - μόνο στο τέλος της ζωής του ήταν σε θέση να συνθέσει τη μουσική με τη χρήση μαγνητοταινίας (tape music and music concrete) καιέτσι να κάνει τα πρώτα βήματα της μουσικής με υπολογιστή (Computer Music).</description>
@@ -68,10 +68,10 @@ arguments of a source i.e periodic oscillators
     
     <item>
       <title>Κλίμακες και Χορδίσματα</title>
-      <link>https://vasileios.github.io/DSS/introduction/tuning_scales/</link>
+      <link>https://vasileios.github.io/dss/introduction/tuning_scales/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/introduction/tuning_scales/</guid>
+      <guid>https://vasileios.github.io/dss/introduction/tuning_scales/</guid>
       <description>chapter 1 Scales Circle of fiths is the relationship among the 12 tones of the chromatic scale, their corresponding key signatures, and the associated major and minor keys.
 Circles of Fifths
 Other Tunings and Scales
@@ -81,20 +81,20 @@ Other Tunings and Scales
     
     <item>
       <title>Logical Expressions</title>
-      <link>https://vasileios.github.io/DSS/introduction/logicalex/</link>
+      <link>https://vasileios.github.io/dss/introduction/logicalex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/introduction/logicalex/</guid>
+      <guid>https://vasileios.github.io/dss/introduction/logicalex/</guid>
       <description>chapter 1 LE Logical Expressions in SuperCollider
 Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 // not equal to 10&amp;gt;5 // greater than 10&amp;lt;14 // less than 10 &amp;gt;= 10 // greater than or equal to 10 &amp;lt;= 10 // lees than or equal to 11.odd // it is odd 10.even // it is even 10.isInteger // it is integer 10.129.isFloat // it is float 1.odd.and(2.even) // both conditions 1.</description>
     </item>
     
     <item>
       <title>Notation</title>
-      <link>https://vasileios.github.io/DSS/introduction/notation/</link>
+      <link>https://vasileios.github.io/dss/introduction/notation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/introduction/notation/</guid>
+      <guid>https://vasileios.github.io/dss/introduction/notation/</guid>
       <description>chapter 1 Notation MIDI
 The lowest note musicians use is C-1, which has the MIDI number 0. The number 12 = C0, 24 = C1, 36 = C2, 48 = C3, 60 = C4 (which is middle C on the piano, remember this one), and so on. A 440 is above middle C so it is 69.
 60, 62, 63, 60, 66
@@ -104,10 +104,10 @@ It is the number of cycles (per second) of a periodic wave.</description>
     
     <item>
       <title>Glossary</title>
-      <link>https://vasileios.github.io/DSS/introduction/glossary/</link>
+      <link>https://vasileios.github.io/dss/introduction/glossary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/introduction/glossary/</guid>
+      <guid>https://vasileios.github.io/dss/introduction/glossary/</guid>
       <description>chapter 1 Glossary Mathematics
 premise a statement that is assumed to be true.
 polynomial function is an expression consisting of variables (also called indeterminates) and coefficients, that involves only the operations of addition, subtraction, multiplication, and non-negative integer exponents of variables (Wiki, see more here)
@@ -117,10 +117,10 @@ frequency the number of times that a wave, especially a light, sound, or radio w
     
     <item>
       <title>References</title>
-      <link>https://vasileios.github.io/DSS/introduction/references/</link>
+      <link>https://vasileios.github.io/dss/introduction/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/introduction/references/</guid>
+      <guid>https://vasileios.github.io/dss/introduction/references/</guid>
       <description>Chapter 1 References Cope, David. 2000. The Algorithmic Composer. Madison, Wis: A-R Editions.
 Dean, Roger. and McLean, Alex (eds.) 2018. The Oxford Handbook of Algorithmic Music. Oxford University Press.
 Farnell, Andy. 2010. Designing Sound. Cambridge, Mass: The MIT Press.
@@ -130,10 +130,10 @@ Husbands, Phil, Peter Copley, Alice Eldridge, and James Mandelis. 2007. ‘An In
     
     <item>
       <title>SuperCollider</title>
-      <link>https://vasileios.github.io/DSS/sc-examples/supercollider/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/supercollider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/sc-examples/supercollider/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/supercollider/</guid>
       <description>chapter 2 SuperCollider SuperCollider
 From: SuperCollider
 Basics
@@ -144,58 +144,58 @@ SuperCollider features three major components
     
     <item>
       <title>Oscillators</title>
-      <link>https://vasileios.github.io/DSS/sc-examples/oscillators/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/oscillators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/sc-examples/oscillators/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/oscillators/</guid>
       <description>chapter 2 SuperCollider Oscillators SuperCollider Ugens From SC Help
 //Periodic Sources: Oscillators. //LF - &amp;#34;Low Frequency&amp;#34; Unit Generators. //arguments: frequency, phase, mul, add  // *Stethoscope*  s.boot a = Stethoscope(s,2); // 2 tracks //a = Stethoscope(s,2, 2); // change in i.e (Mic)  // parabolic approximation of sine { LFPar.ar(LFPar.kr(LFPar.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); // cubic approximation of sine { LFCub.ar(LFCub.kr(LFCub.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFTri.ar(LFTri.kr(LFTri.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFSaw.</description>
     </item>
     
     <item>
       <title>Noise</title>
-      <link>https://vasileios.github.io/DSS/sc-examples/aperiodicsources/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/sc-examples/aperiodicsources/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</guid>
       <description>chapter 2 SuperCollider Noise Generators Aperiodic Sources: Noise
 /Aperiodic Sources: Noise. //LF &amp;#34;Low Frequency&amp;#34; Noise Generators. //arguments: frequency, mul, add { LFClipNoise.ar(MouseX.kr(200, 10000, 1), 0.125) }.scope(1); { LFPar.ar(LFClipNoise.kr(MouseX.kr(0.5, 64, 1), 200, 400), 0, 0.2) }.scope(1, zoom:8); //Broad Spectrum Noise Generators //arguments: mul, add { ClipNoise.ar(0.2) }.scope(1); { WhiteNoise.ar(0.2) }.scope(1); { PinkNoise.ar(0.4) }.scope(1); { BrownNoise.ar(0.2) }.scope(1); { GrayNoise.ar(0.2) }.scope(1); // Impulse Noise Generators //Dust, Dust2 //arguments: density, mul, add  { Dust.</description>
     </item>
     
     <item>
       <title>Filters</title>
-      <link>https://vasileios.github.io/DSS/sc-examples/filters/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/filters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/sc-examples/filters/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/filters/</guid>
       <description>chapter 2 SuperCollider Filters Filters in SuperCollider
 // Filters  //Low Pass, High Pass, Band Pass see more on Help //arguments: in, freq, mul, add  { LPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); { HPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); // Resonant Low Pass, High Pass, Band Pass //arguments: in, freq, rq, mul, add  { RLPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); { RHPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); // Resonz - resonant band pass filter with uniform amplitude //arguments: in, freq, rq, mul, add  // modulate frequency { Resonz.</description>
     </item>
     
     <item>
       <title>Distortion</title>
-      <link>https://vasileios.github.io/DSS/sc-examples/distortion/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/distortion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/sc-examples/distortion/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/distortion/</guid>
       <description>chapter 2 SuperCollider Distorion // Distortion  { SinOsc.ar(300, 0, 0.2) }.scope(1); { SinOsc.ar(300, 0, 0.2).abs }.scope(1); { SinOsc.ar(300, 0, 0.2).max(0) }.scope(1); { SinOsc.ar(300, 0).squared * 0.2 }.scope(1); { SinOsc.ar(300, 0).cubed * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).distort * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).softclip * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).clip2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).fold2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).wrap2(1) * 0.2 }.scope(1); { SinOsc.</description>
     </item>
     
     <item>
       <title>Delays</title>
-      <link>https://vasileios.github.io/DSS/sc-examples/delays/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/delays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/sc-examples/delays/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/delays/</guid>
       <description>chapter 2 SuperCollider Delays //Delays and Buffer UGens DelayN, DelayL, DelayC - simple delays N - no interpolation L - linear interpolation C - cubic interpolation arguments: in, maximum delay time, current delay time, mul, add ( // Dust randomly triggers Decay to create an exponential // decay envelope for the WhiteNoise input source { z = Decay.ar(Dust.ar(1,0.5), 0.3, WhiteNoise.ar); DelayN.ar(z, 0.1, 0.1, 1, z); // input is mixed with delay via the add input }.</description>
     </item>
     
     <item>
       <title>Spectral</title>
-      <link>https://vasileios.github.io/DSS/sc-examples/spectral/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/spectral/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/sc-examples/spectral/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/spectral/</guid>
       <description>chapter 2 SuperCollider Spectral FFT-PV_Ugens
 FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a trigger each time the buffer is ready to process. The PV UGens process the spectrum when they receive the trigger. IFFT converts the spectrum back into sound.
 // alloc a buffer for the FFT b = Buffer.alloc(s,2048,1); // read a sound c = Buffer.</description>
@@ -203,19 +203,19 @@ FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, p
     
     <item>
       <title>Granular Synthesis</title>
-      <link>https://vasileios.github.io/DSS/sc-examples/granularsynthesis/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/granularsynthesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/sc-examples/granularsynthesis/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/granularsynthesis/</guid>
       <description>chapter 2 SuperCollider Granular Synthesis //TGrains - granulation of a buffer //arguments: numChannels, trigger, buffer number, rate, center pos, dur, pan, amp, interpolation //see more about Granular synthesis on Help  // read sound b = Buffer.read(s, Platform.resourceDir +/+ &amp;#34;sounds/a11wlk01.wav&amp;#34;); ( { var trate, dur; trate = MouseY.kr(2,200,1); dur = 4 / trate; TGrains.ar(2, Impulse.ar(trate), b, 1, MouseX.kr(0,BufDur.kr(b)), dur, 0, 0.1, 2); }.scope(2, zoom: 4); ) ( { var trate, dur, clk, pos, pan; trate = MouseY.</description>
     </item>
     
     <item>
       <title>Algorithmic Composition Examples</title>
-      <link>https://vasileios.github.io/DSS/sc-examples/simplealgorithms/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/simplealgorithms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/sc-examples/simplealgorithms/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/simplealgorithms/</guid>
       <description>chapter 2 Examples with Routines and Loops
 ( /* Algorithmic composition paradigms BA 181502 Objective: create a Routine and repeat it n times */ fork{//this alternative syntax goes for Routine  10.do({//here goes the repetition (10 times)  a = {SinOsc.ar(XLine.kr(100, 500, 4), 0, 0.4)}.play; 4.wait; a.release; b = SinOsc.ar(XLine.kr(500, 100, 4), 0, 0.4)}.play; 4.wait; b.release; });//loop ends here }//fork (Routine) ends here )  probability-stochastic
 /* BA 181502 Stochastic example 1 Objective: Create two sounds one after the other then free one them (probability), wait a couple of seconds to free also the remain sounds (probability).</description>
@@ -223,10 +223,10 @@ FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, p
     
     <item>
       <title>Sound synthesis techniques</title>
-      <link>https://vasileios.github.io/DSS/sc-examples/synthesistec/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/synthesistec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/DSS/sc-examples/synthesistec/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/synthesistec/</guid>
       <description>chapter 2 Additive synthesis /* Sound Synthesis techniques BA 181902 Objective: create complex sounds using additive synthesis technique // Additive Synthesis a+b+c+d where a to d can be frequencies or any other object such as a waveform */ // firts boot the internal server and open Freqscope and Stethoscope  s = Server.internal; s.boot Stethoscope.new FreqScope.new //create harmonics of a 440Hz A note  {SinOsc.ar([440, 880, 880*3/2, 1600*4/3, 2000], 0, [0.</description>
     </item>
     
