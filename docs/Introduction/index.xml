@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>Introduction</title>
+      <link>https://vasileios.github.io/dss/introduction/_index.en/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/_index.en/</guid>
+      <description>Chapter 1 Algorithmic Composition Algorithm is:
+ A set of mathematical instructions that must be followed in a fixed order, and that, especially if given to a computer, will help to calculate an answer to a mathematical problem. A systematic procedure that produces – in a finite number of steps the answer to a question or the solution of a problem. [...] (especially computing) a set of rules that must be followed when solving a particular problem.</description>
+    </item>
+    
+    <item>
       <title>Ιστορία</title>
       <link>https://vasileios.github.io/dss/introduction/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -44,17 +54,6 @@ Guido D&#39;Arrezo
 source: A waveform (simple or complex)
 arguments of a source i.e periodic oscillators
  frequency: (the cycles per second (Hz)),   phase: starts at 0 means sine, starts at 1 means cosine   amplitude: the distance between the top and the bottom of a wave.   Envelope: the shape of the sound intensity i.e attack time (the starting point of an envelope measured in milliseconds),  sustain level(intesity, measured in deciBels)  To generate a sound you can experiment in the SuperCollider environment.</description>
-    </item>
-    
-    <item>
-      <title>Ψηφιακή σύνθεση Ήχου - Εισαγωγή</title>
-      <link>https://vasileios.github.io/dss/introduction/digitalsoundsynthesis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/digitalsoundsynthesis/</guid>
-      <description>chapter 1 Ψηφιακή σύνθεση Ήχου Synthesis techniques and programming.
-Κατά τη διάρκεια του περασμένου αιώνα, η ηλεκτρική ενέργεια διαπέρασε σταδιακά τον κόσμο του ήχου. Η μουσική πλέον ακούγεται τώρα μέσω των ηχείων. Αλλά, πέρα από την αναπαραγωγή, η ηλεκτρική τεχνολογία επίσης έφερε ριζικά νέους πόρους για την παραγωγή νέων ήχων και μουσικής.
-Χρειάστηκε αρκετός χρόνος για τον μουσικό κόσμο να συνειδητοποιήσει τις δυνατότητες αυτών των πόρων. Ακόμη, για πολλά χρόνια, ο Edgard Varese προσπάθησε να πείσει τους ερευνητές και τα ιδρύματα να δούν τα πλεονέκτημα που προσφέρειη επιστήμη και η τεχνολογία για την ανάπτυξη μηχανών παραγωγής ήχου - μόνο στο τέλος της ζωής του ήταν σε θέση να συνθέσει τη μουσική με τη χρήση μαγνητοταινίας (tape music and music concrete) καιέτσι να κάνει τα πρώτα βήματα της μουσικής με υπολογιστή (Computer Music).</description>
     </item>
     
     <item>

@@ -1,7 +1,7 @@
 +++
 title = "References"
 chapter = true
-weight = 16
+weight = 12
 +++
 *** Chapter 1
 * References

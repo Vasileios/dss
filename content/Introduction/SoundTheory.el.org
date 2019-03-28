@@ -61,5 +61,3 @@ Compander.ar(in: 0, control: 0, thresh: 0.5, slopeBelow: 1, slopeAbove: 1, clamp
 BPeakEQ.ar(in, freq: 1200, rq: 1, db: 0, mul: 1, add: 0)//Parametric equalizer
 
 #+END_SRC
-
-

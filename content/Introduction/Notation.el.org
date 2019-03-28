@@ -1,7 +1,7 @@
 +++
 title = "Notation"
 chapter = true
-weight = 14
+weight = 10
 +++
 
 *** chapter 1
