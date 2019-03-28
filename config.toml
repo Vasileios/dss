@@ -1,4 +1,19 @@
-baseURL = "/"
+baseURL = "https://vasileios.github.io/dss"
+languageCode = "en-US"
+defaultContentLanguage = "el"
+
+title = "Algorithmic Composition"
+theme = "hugo-theme-learn"
+#themesdir = "themes/"
+metaDataFormat = "yaml"
+#defaultContentLanguageInSubdir= true
+ordersectionsby = "weight"
+  
+publishDir= "docs"
+
+[params]
+ themeVariant="black"
+
 
 languageCode = "en-us"
 DefaultContentLanguage = "el"
@@ -50,7 +65,7 @@ languageName = "Ελληνικά"
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i> <label>Github repo</label>"
 identifier = "ds"
-url = "https://github.com/Vasileios/ac-sc"
+url = "https://github.com/Vasileios/dss"
 weight = 10
 
 
