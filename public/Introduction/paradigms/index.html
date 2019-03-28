@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Αλγοριθμική Σύνθεση</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.45.1" />
+<title>Παραδείγματα :: Αλγοριθμική Σύνθεση</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "\/";
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79101-13', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    
+  </head>
+  <body data-url="/introduction/paradigms/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="/">Αλγοριθμική Σύνθεση</a>
+  
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/Vasileios/ac-sc"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Github repo</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/introduction/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/introduction/"><b>1. </b>Εισαγωγή</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/introduction/_index.en/" class="dd-item">
+        <div>
+          <a href="/introduction/_index.en/">
+            <b>1. </b>Introduction
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/introduction/history/" class="dd-item">
+        <div>
+          <a href="/introduction/history/">
+            Ιστορία
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/introduction/paradigms/" class="dd-item active">
+        <div>
+          <a href="/introduction/paradigms/">
+            Παραδείγματα
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/introduction/soundtheory/" class="dd-item">
+        <div>
+          <a href="/introduction/soundtheory/">
+            Sound theory basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/introduction/digitalsoundsynthesis/" class="dd-item">
+        <div>
+          <a href="/introduction/digitalsoundsynthesis/">
+            Ψηφιακή σύνθεση Ήχου - Εισαγωγή
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/introduction/tuning_scales/" class="dd-item">
+        <div>
+          <a href="/introduction/tuning_scales/">
+            Κλίμακες και Χορδίσματα
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/introduction/logicalex/" class="dd-item">
+        <div>
+          <a href="/introduction/logicalex/">
+            Logical Expressions
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/introduction/notation/" class="dd-item">
+        <div>
+          <a href="/introduction/notation/">
+            Notation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/introduction/glossary/" class="dd-item">
+        <div>
+          <a href="/introduction/glossary/">
+            Glossary
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/introduction/references/" class="dd-item">
+        <div>
+          <a href="/introduction/references/">
+            References
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/sc-examples/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/sc-examples/"><b>2. </b>Code Examples</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/sc-examples/supercollider/" class="dd-item">
+        <div>
+          <a href="/sc-examples/supercollider/">
+            SuperCollider
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/sc-examples/oscillators/" class="dd-item">
+        <div>
+          <a href="/sc-examples/oscillators/">
+            Oscillators
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/sc-examples/aperiodicsources/" class="dd-item">
+        <div>
+          <a href="/sc-examples/aperiodicsources/">
+            Noise
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/sc-examples/filters/" class="dd-item">
+        <div>
+          <a href="/sc-examples/filters/">
+            Filters
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/sc-examples/distortion/" class="dd-item">
+        <div>
+          <a href="/sc-examples/distortion/">
+            Distortion
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/sc-examples/delays/" class="dd-item">
+        <div>
+          <a href="/sc-examples/delays/">
+            Delays
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/sc-examples/spectral/" class="dd-item">
+        <div>
+          <a href="/sc-examples/spectral/">
+            Spectral
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/sc-examples/granularsynthesis/" class="dd-item">
+        <div>
+          <a href="/sc-examples/granularsynthesis/">
+            Granular Synthesis
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/sc-examples/simplealgorithms/" class="dd-item">
+        <div>
+          <a href="/sc-examples/simplealgorithms/">
+            Algorithmic Composition Examples
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/sc-examples/synthesistec/" class="dd-item">
+        <div>
+          <a href="/sc-examples/synthesistec/">
+            Sound synthesis techniques
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section><center>
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download vjeantet/hugo-theme-docdock on GitHub">Download</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock" data-icon="octicon-star" data-show-count="false" aria-label="Star vjeantet/hugo-theme-docdock on GitHub">Star</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork vjeantet/hugo-theme-docdock on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/introduction/" >
+   Εισαγωγή</option> 
+      <option value="/introduction/_index.en/" >- Introduction</option>
+      <option value="/introduction/history/" >- Ιστορία</option>
+      <option value="/introduction/paradigms/"  selected>- Παραδείγματα</option>
+      <option value="/introduction/soundtheory/" >- Sound theory basics</option>
+      <option value="/introduction/digitalsoundsynthesis/" >- Ψηφιακή σύνθεση Ήχου - Εισαγωγή</option>
+      <option value="/introduction/tuning_scales/" >- Κλίμακες και Χορδίσματα</option>
+      <option value="/introduction/logicalex/" >- Logical Expressions</option>
+      <option value="/introduction/notation/" >- Notation</option>
+      <option value="/introduction/glossary/" >- Glossary</option>
+      <option value="/introduction/references/" >- References</option>
+  
+    <option value="/sc-examples/" >
+   Code Examples</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "\/";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Παραδείγματα</h1>
+    
+    
+    
+    <h3 id="chapter-1">Chapter 1</h3>
+
+<h1 id="παραδειγματα">Παραδειγματα</h1>
+
+<h4 id="μαρκοβιανά-μοντέλα-markov-models">Μαρκοβιανά Μοντέλα - Markov models</h4>
+
+<p><strong>time dependent random variables (TDRV)</strong></p>
+
+<p>Στο πλαίσιο των πειραμάτων και παρατηρήσεων σχετικά με την TDRV  έχουν ήδη γίνει από τους <strong>Pierre Simon de Laplace</strong> και <strong>Daniel Bernoulli</strong>. Η πρώτη εφαρμογή αυτής της μεθόδου ήταν μια εκτενή ανάλυση κειμένου από τον Markov: "Το 1913 ο Markov είχε δημοσιεύσει την τρίτη έκδοση του εγχειριδίου του. Σε αυτή την έκδοση γράφει: «Ας τελειώσουμε το άρθρο και ολόκληρο το βιβλίο με ένα καλό παράδειγμα TDRV, που μπορούν να θεωρηθούν ως μια απλή αλυσίδα» (chain).</p>
+
+<ul>
+<li><strong>Markov chains or models</strong></li>
+</ul>
+
+<blockquote>
+<p>
+Markov chain - Markov process: Ένα στοχαστικό μοντέλο ή διαδικασία ... η πιθανότητα κάθε συμβάν εξαρτάται μόνο από την κατάσταση που επιτεύχθηκε στο προηγούμενο συμβάν.
+</p>
+</blockquote>
+
+<p>Ο όρος "αλυσίδα Markov" (ή
+Markov Models
+για αυτή την κατηγορία των στοχαστικών διαδικασιών χρησιμοποιήθηκε για πρώτη φορά το 1926 σε μια δημοσίευση του Ρώσου μαθηματικού Σεργκέι Νατανοβιτς Μπερνστάιν.</p>
+
+<p>Ο Markov μελέτησε τη σειρά των 20.000 γραμμάτων στο ποίημα του AS
+ Pushkin «Eugeny Onegin», ανακαλύπτοντας ότι η σταθερή  πιθανότητα των
+ φωνηέντων σε αυτό το ποίημα είναι p = 0,432, η πιθανότητα ενός φωνήεντος να ακολουθείται
+ απο ένα άλλο είναι p1 = 0,128 και ότι η πιθανότητα ενός φωνήεντος να
+ ακολουθείται απο σύμφωνο είναι p2 = 0.663. (στοχατική διαδικασία)</p>
+
+<blockquote>
+<p>
+<strong>Stochastic</strong> (<em>πιθανοκρατική</em>)
+</p>
+
+<p>
+Stochastic processes are used to describe a sequence of random events dependent on the time parameter (t).
+</p>
+
+<p>
+<em>vs</em>
+</p>
+
+<p>
+<strong>Deterministic</strong> (<em>αιτιοκρατική</em>)
+</p>
+
+<p>
+Το ντετερμινιστικό σύστημα είναι ένα σύστημα στο οποίο δεν υπάρχει τυχαία συμπεριφορά στην ανάπτυξη μελλοντικών καταστάσεων του συστήματος. Επομένως, ένα ντετερμινιστικό μοντέλο θα παράγει πάντα την ίδια έξοδο από μια δεδομένη αρχική κατάσταση.
+</p>
+</blockquote>
+
+<p>To πεδίο της στοχαστικής διαδικασίας περιλαμβάνei  υπολογίσμο πιθανοτήτων,
+(probability calculus)
+και σταστιστική.</p>
+
+<p>Σε μια στοχαστική αλυσίδα, κάθε διακριτός χρόνος t έχει μια τυχαία
+μεταβλητή Χ. Σε μια αλυσίδα Markov, η οποία είναι ένα ιδιαίτερο είδος στοχαστικής αλυσίδας,
+η πιθανότητα της μελλοντικής κατάστασης <var>X<sub>tm+1</var> (η
+τυχαία μεταβλητ Χ
+τη στιγμή t + 1) εξαρτάται από την τρέχουσα κατάσταση <var>X<sub>t</var>. Για τους
+δεδομένους χρόνους <var>t<sub>m</var> και <var>t<sub>m+1</var>, αυτή η πιθανότητα είναι:</p>
+
+<blockquote>
+<p>
+<p>Stochastic Process - Markov Chain
+</p>
+<p>
+<var>P<var>(<var>X<sub>tm+1</var><var>=<var>j</var><var>|<var>X<sub>tm</var>=<var>i</var>)<var>=<var>P<sub>ij</var><var>(<var>t<sub>m</var><var>,<var>t<sub>m+1</var><var>)<p>
+</p>
+</blockquote>
+
+<p><strong>Markov models in algorithmic composition</strong></p>
+
+<p>H εφαρμογή των διεργασιών Markov στη δημιουργία μουσικών δομών Εξετάστηκε πρώτα
+από τον Harry F. Olson (1901-1982) περίπου το 1950. Ο Olson ήταν Αμερικανός ηλεκτρολόγος
+μηχανικός και φυσικός που επικεντρώθηκε στην ακουστική έρευνα. Μαζί με τον Henry
+Belar, ανέπτυξε το "Electronic Synthesizer" το 1955, το πρώτο μηχάνημα
+που ονομάστηκε "συνθεσάιζερ".</p>
+
+<p><strong>transition probabilities</strong></p>
+
+<p>Ο Hiller και ο Isaacson το 1955 με 1956 χρησιμοποιούν Markov μοντέλα για την παραγωγή
+της μουσικής δομής με το "Illiac Suite".</p>
+
+<p><a href="https://www.youtube.com/watch?v=n0njBFLQSk8" title="Hiller &amp; Iaacson: The Illiac Suite">Hiller & Iaacson: The Illiac Suite</a></p>
+
+<p>Μεταξύ άλλων, αυτά τα μοντέλα Markov χρησιμεύουν για την μουσική σύνθεση διαφόρων ειδών μουσικής.
+Τα μοντέλα Markov χρησιμοποιούνται ως επί το πλείστον στον τομέα της
+μίμησης του στυλ μουσικής. Έχουν χρησιμοποιηθεί και απο τον Ξενάκη,
+σαν τεχνικές σύνθεσης μουσικού υλικού στα έργα του το 1958. Στα "Analogique A" χρησιμοποιούνται μοντέλα Markov για την οργάνωση τμημάτων
+διαφορετικής πυκνότητας (segments of differing density arrangement).</p>
+
+<p><a href="https://www.youtube.com/watch?v=mXIJO-af_u8" title="Xenakis Analogique A">Xenakis Analogique A</a></p>
+
+<h4 id="generative-grammars">Generative grammars</h4>
+
+<p>Οι γενετικές γραμματικές είναι  μέθοδοι για την αλγοριθμική
+σύνθεση και τη μουσική ανάλυση. Το βασικό γλωσσικό μοντέλο που
+ανέπτυξε ο Noam Chomsky το 1957, είναι το αρχικό σημείο για την
+εφαρμογή αυτών των γενικών αρχών στη μουσική.</p>
+
+<p>THe representation of language rules have been classified into four
+types (zero to three) by Noam Chomsky (1957) (Holtzman 2015)</p>
+
+<p>Τα έργα των
+Roads, Steedman, Sundberg, Lerdahl, Jackendoff και άλλων από τη
+δεκαετία του '70 αναδεικνύουν την εφαρμογή γενετικών
+γραμματικών στην παραγωγή και την ανάλυση της μουσικής δομής. Τα πεδία
+που χρησιμοποιούν συχνά γενετικές γραμματικές είναι η παραδοσιακή
+ευρωπαϊκή μουσική, η τζαζ, καθώς και η μουσική εθνολογία. Σχετικοί
+φορμαλισμοί με τις γενετικές γραμματικές είναι τα "Lindenmayer
+systems" μια κατηγορία αλγορίθμων (βιολογία) για την παρατήρηση και κατανόηση της εξελικτικής
+διαδικασίας, καθώς και τα  "αυξημένα
+μεταβατικά δίκτυα" (augmented  transition networks), τα οποία
+χρησιμοποιούνται στην περίπτωση του David Cope, κ.ο.κ.</p>
+
+<h4 id="μεταβατικά-δίκτυα-transition-networks">Μεταβατικά δίκτυα-Transition networks</h4>
+
+<p>Το πρόγραμμα του David Cope “EMI”
+Το “EMI” δημιουργεί απομιμήσεις αφού πρώτα αναλύσει έναν επαρκή
+αριθμό συνθέσεων ενός συγκεκριμένου είδους όπως για παράδειγμά νόμους
+και κανόνες σύνθεσης της σονάτας.</p>
+
+<p><a href="http://www.computerhistory.org/atchm/algorithmic-music-david-cope-and-emi/" title="EMI history">EMI history</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=CgG1HipAayU" title="David Cope music">David Cope music</a></p>
+
+<p><a href="http://artsites.ucsc.edu/faculty/cope/" title="David Cope Website">David Cope Website</a></p>
+
+<h4 id="chaos-and-self-similarity">Chaos and self-similarity</h4>
+
+<p>Ο όρος "χάος" προέρχεται από την ελληνική γλώσσα και αρχικά σήμαινε "διάστημα" ή
+"άβυσσο".</p>
+
+<p>Σήμερα, η λέξη χρησιμοποιείται συνειδητά με την έννοια της
+"διαταραχής", όρος που αποκτήθηκε τον 17ου αιώνα. Σε ένα
+μαθηματικό και φυσικό περιβάλλον, η Χαοτική θεωρία σε στενότερη έννοια
+αναφέρεται επίσης ως η θεωρία της μη γραμμικής δυναμικής (non-linear dynamics). Το 1975, ο
+όρος "χάος" εισήχθη στον τομέα των μαθηματικών από τους Tien-Yien Li
+και James Yorke.</p>
+
+<p>Το πιο γνωστό παράδειγμα περίπλοκης συμπεριφοράς συστήματος πηγαίνει
+πίσω στο Lorenz ο οποίος το 1963 ανέπτυξε ένα σύστημα τριών
+συζευγμένων μη γραμμικών διαφορικών εξισώσεων ως ένα απλοποιημένο
+μοντέλο για την ατμοσφαιρική ροή.</p>
+
+<blockquote>
+<p>
+<strong>Το "φαινόμενο της πεταλούδας"</strong> 
+</p>
+
+<p>
+Ένα πτερύγιο των πτερυγίων μιας πεταλούδας
+</p>
+<p>
+προκαλεί ελάχιστη αναταραχή, η οποία ωστόσο, κατά τη διάρκεια της
+</p>
+<p>
+ντετερμινιστικής χαοτικής ανάπτυξης του συστήματος, μπορεί να οδηγήσει
+</p>
+<p>
+σε εντελώς απρόβλεπτες μετεωρολογικές συνέπειες και σε πολύ
+</p>
+<p>
+απομακρυσμένες περιοχές.
+</p>
+</blockquote>
+
+<p><strong>Gary Lee Nelson*
+*Charles Wuorinen</strong></p>
+
+<p><strong>Fractals, Lindenmayer systems</strong></p>
+
+<ul>
+<li>Fractal geometry (Fragmented): Mandelbrot, Random walk, brown noise, etc</li>
+<li>L-systems: biology - Growth of living organisms such as</li>
+algea and plants.
+</ul>
+
+<h4 id="γενετικοί-αλγόριθμοι-genetic-algorithms">Γενετικοί αλγόριθμοι-Genetic algorithms</h4>
+
+<p>Οι γενετικοί αλγόριθμοι ώς μιά κλάση των εξελικτικών αλγορίθμων
+(evolutionary algorithms), για παράδειγμα,
+στρατηγικών μοντέλων για φυσικά συστήματα, είναι στοχαστικές
+τεχνικές αναζήτησης.</p>
+
+<p>Τα βασικά μοντέλα εμπνεύστηκαν από τη θεωρία της εξέλιξης του
+Δαρβίνου.</p>
+
+<p>Οι Γενετικοί αλγόριθμοι, χρησιμοποιούνται για την μοντελοποίηση της
+εξελικτικής διαδικασίας στον υπολογιστή.</p>
+
+<p>Η ορολογία των γενετικών αλγορίθμων
+συμπεριλαμβανομένης της "επιλογής", της "μετάλλαξης", της "επιβίωσης
+του ικανότερου", κλπ. σχετίζεται με τις διαδικασίες βιολογικής επιλογής.</p>
+
+<p>Από τη δεκαετία του 1960, οι Ingo Rechenberg και Hans-Paul Schwefel
+εισήγαγαν τις στρατηγικές εξέλιξης στο Τεχνικό Πανεπιστήμιο του
+Βερολίνου και στη δεκαετία του 1970 οι Αμερικανοί John H. Holland και
+David E. Goldberg ανέπτυξαν γενετικούς αλγόριθμους. Τα μοντέλα
+Rechenberg και Schwefel βασίζονται σε μια γραφική παράσταση και έχουν
+διαμορφωθεί με βάση βιολογικές διαδικασίες για την ανάπτυξη τεχνικών βελτιστοποίησης.</p>
+
+<p><strong>John Henry Holland</strong></p>
+
+<p>GENETIC ALGORITHMS AND ADAPTATION</p>
+
+<p>Αυτή η κατηγορία αλγορίθμων είναι ιδιαίτερα κατάλληλη για εργασίες
+ που είναι δύσκολο να μοντελοποιηθούν μαθηματικά και που δεν έχουν ένα σαφές  σύστημα κανόνων.</p>
+
+<h4 id="κυτταρικά-αυτόματα-cellular-automata">Κυτταρικά αυτόματα-Cellular automata</h4>
+
+<p>Τα "Κυτταρικά Αυτόματα" δημιουργήθηκαν για πρώτη φορά στη δεκαετία του
+1940 και κέρδισαν μεγάλη δημοτικότητα αφού δημοσιεύτηκαν στο
+"Scientific American" το 1970. Αυτή η κατηγορία αλγορίθμων μπορεί να
+παρουσιάσει εξαιρετικά περίπλοκη συμπεριφορά με βάση σχετικά απλούς
+αρχικούς κανόνες. Τα κυτταρικά αυτοματοποιημένα συστήματα είναι
+λιγότερο κατάλληλα για εφαρμογές απομίμησης ύφους (style imitation).</p>
+
+<p>Ο Miranda περιγράφει διάφορες εφαρμογές μοντέλων κυτταρικών αυτομάτων (CA) για μουσικές εφαρμογές. Σε ένα από αυτά, το Chaosynth, ένας χημικός ταλαντωτής χρησιμοποιείται για την παραμετροποίηση μιας μηχανής κοκκώδους σύνθεσης (Miranda 2000).</p>
+
+<h4 id="neural-networks">Neural networks</h4>
+
+<p>Τα "Νευρωνικά Δίκτυα"  δημιουργήθηκαν αρχικά για εργασίες αναγνώρισης
+εικόνων. Η εννοιολογική τους σχέση με την επεξεργασία βιολογικών
+πληροφοριών είναι ένας λόγος για τη μεγάλη τους δημοτικότητα. Στην
+αλγοριθμική σύνθεση, τα νευρωνικά δίκτυα μπορούν να δημιουργήσουν
+εξόδους, των οποίων οι ακολουθίες των νοτών δεν είναι απαραίτητο να
+υπάρχουν στη "συλλογή" (corpus) του συστήματος. Μειονεκτήματα υπάρχουν
+στον χειρισμό του μουσικού υλικού που βασίζετε σε κάποια περιεχόμενα (context-depended) έτσι ώστε
+να αποδώσει στο πλαίσιο μακρινών περσμάτων, τα οποία μπορούν να
+αντιμετωπιστούν καλύτερα σε γενετικές γραμματικές. 
+Για εφαρμογές αλγοριθμικής σύνθεσης, τα Νευρωνικά Δίκτυα χρησιμοποιούνται συχνά στο πλαίσιο των υβριδικών συστημάτων.</p>
+
+<h4 id="artificial-intelligence">Artificial intelligence</h4>
+
+<p>Η "Τεχνιτή Νοημοσύνη" περιλαμβάνει μια ποικιλία διαδικασιών για
+διαφορετικά tasks. Προγράμματα όπως το "ELIZA" ή το γνωστό "Turing
+test" εγείρουν το ζήτημα του ορισμού του όρου "intelligence"
+"νοημοσύνη".</p>
+
+<p>Ο Alan Turing ανέπτυξε μια εικονική εγκατάσταση για να αξιολογήσει την
+έξυπνη συμπεριφορά ενός υπολογιστή. Στην αρχή των σκέψεών του,
+σχεδίασε ένα παιχνίδι στο οποίο ένα άτομο πρόκειται να μαντέψει το φύλο
+δύο άλλων συνομιλητών.</p>
+
+<h4 id="swarm-algorithms">Swarm Algorithms</h4>
+
+<ul>
+<li>Συλλογική Συμπεριφορά</li>
+</ul>
+
+<ul>
+<li>Η συμπεριφορά των σμήνων</li>
+</ul>
+
+<p>Μαθηματικά μοντέλα για την προσομοίωση και την εκτέλεση της συμπεριφοράς.</p>
+
+<p>Τρεις βασικοί κανόνες</p>
+
+<ol>
+<li>Ακολουθήστε  την ίδια κατεύθυνση με τους γείτονές σας</li>
+<li>Μείνετε κοντά στους γείτονές σας</li>
+<li>Αποφύγετε τις συγκρούσεις με τους γείτονές σας</li>
+</ol>
+
+<p><a href="http://www.cleveralgorithms.com/nature-inspired/swarm.html" title="Αλγόριθμοι ελέγχου">Αλγόριθμοι ελέγχου</a></p>
+
+<p><a href="http://igor.gold.ac.uk/~mas01tb/SwarmMusic/swarmmusic.html" title="Swarm Music">Swarm Music</a></p>
+
+<p><a href="http://swarms.cc/downloads/" title="Εκπαιδευτικά σεμινάρια">Εκπαιδευτικά σεμινάρια</a></p>
+
+<p><strong>Το έργο του Tim Blackwell για τη μουσική Swarm</strong></p>
+
+<p>Το μοντέλο βασίζεται στον διαχωρισμό, την ευθυγράμμιση και τη
+συνοχή. Ο διαχωρισμός σημαίνει ότι κάθε πτηνό πρέπει να κατευθυνθεί
+έτσι ώστε να αποφευχθεί η πρόσκρουση μεταξύ τους ή με το περιβάλλον. Η ευθυγράμμιση κάθε πτηνού κινείται σε παρόμοιο μονοπάτι λαμβάνοντας τη μέση τιμή των κεντρικών πτηνών. Η συνοχή διατηρεί το σμήνος μαζί, καθώς κάθε πτηνό κατευθύνεται προς τη μέση θέση των κεντρικών πτηνών.</p>
+
+<p>Ο Blackwell δημιούργησε έναν παρόμοιο αλγόριθμο ο οποίος
+παραμετροποιούσε μια μηχανή κοκκώδους σύνθεσης, δημιουργώντας σε ήχο
+την κίνηση του σμήνους σε σχέση με τον χρόνο.(Husbands 2007 22)</p>
+
+<h4 id="live-electronics-improvisation">Live electronics improvisation</h4>
+
+<ul>
+<li>Mουσικά ή / και αισθητικά κίνητρα. </li>
+<li>Σύντομη ανάλυση των βασικών συνιστωσών του συστήματος, της διεπαφής χρήστη</li>
+  και των τεχνικών παραγωγής ήχου.
+<li>Αξιολόγηση της αισθητικής ποιότητας των αποτελεσμάτων και περιγραφή</li>
+  της βελτίωσης και επέκτασης του συστήματος.
+</ul>
+
+<p>Περιλαμβάνει: computer synthesis techniques, hardware and software
+interface design.</p>
+
+<p>Listening: <a href="https://www.youtube.com/watch?v=dzxLoCwiEy0" title="Musica Elettronica Viva (MEV)">Musica Elettronica Viva (MEV)</a></p>
+
+<p>Listening: <a href="https://www.youtube.com/watch?v=xJSMf8hRWtA&amp;t=604s" title="Boris &amp; Merzbow Boiler Room Tokyo Live Set">Boris & Merzbow Boiler Room Tokyo Live Set</a></p>
+
+<p>Listening: <a href="https://www.youtube.com/watch?v=oYEa80Ol8Ps&amp;t=284s" title="AMM The Great Hall Laminal, 1982">AMM The Great Hall Laminal, 1982</a></p>
+
+<p><strong>Musical Interfaces</strong></p>
+
+<ul>
+<li>Midi Keyboards/instruments</li>
+<li>GUIs</li>
+<li>Microcontrolers</li>
+<li>Sensors</li>
+<li>Microcomputers</li>
+</ul>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/introduction/history/" title="Ιστορία"> <i class="fa fa-chevron-left"></i><label>Ιστορία</label></a>
+    <a class="nav nav-next" href="/introduction/soundtheory/" title="Sound theory basics" style="margin-right: 0px;"><label>Sound theory basics</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+  
+
+    <div class="github-link">
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/Introduction/Paradigms.el.org" target="blank"><i class="fa fa-code-fork"></i>
+        </a>
+    </div>
+  </div>
+
+
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

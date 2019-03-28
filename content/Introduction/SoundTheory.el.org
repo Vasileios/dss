@@ -1,0 +1,65 @@
++++
+title = "Sound theory basics"
+chapter = true
+weight = 7
++++
+
+
+*** chapter 1
+
+**** Sound maths and physics
+
+*Simple interface of a synth*
+
+*source:* A waveform (simple or complex)
+
+arguments of a source i.e periodic oscillators
+
+- frequency: (the cycles per second (Hz)),
+
+- phase: starts at 0 means sine, starts at 1 means cosine
+
+- amplitude: the distance between the top and the bottom of a wave.
+  
+*Envelope:* the shape of the sound intensity i.e
+ - attack time (the starting point of an envelope measured in milliseconds), 
+- sustain level(intesity, measured in deciBels)
+
+To generate a sound you can experiment in
+the SuperCollider environment.
+
+On SuperCollider you can play a SinOsc UGEN as an audio rate sine
+wavetable oscillator.
+SinOsc uses the same implementation as Osc except that its table is
+fixed to be a sine wave made of 8192 samples.
+
+Example source and envelope:
+
+#+BEGIN_SRC js
+//SuperCollider WorkSpace
+(
+{
+    var env = Env([0, 1, 0.5, 1, 0], [0.01, 0.5, 0.02, 0.5]);
+    SinOsc.ar(470) * EnvGen.kr(env, doneAction: 2)
+}.play
+)
+#+END_SRC
+
+*Simple engineering tools*
+
+- delay (temporal shift on the order of ms),
+- eq (frequency spicific amplifier),
+- compressor (automatic gain control)
+
+Example SC:
+
+#+BEGIN_SRC js
+DelayL.ar(in: 0, maxdelaytime: 0.2, delaytime: 0.2, mul: 1, add: 0)//Simple delay line with linear interpolation
+
+Compander.ar(in: 0, control: 0, thresh: 0.5, slopeBelow: 1, slopeAbove: 1, clampTime: 0.01, relaxTime: 0.1, mul: 1, add: 0)//Compressor, expander, limiter, gate, ducker
+
+BPeakEQ.ar(in, freq: 1200, rq: 1, db: 0, mul: 1, add: 0)//Parametric equalizer
+
+#+END_SRC
+
+

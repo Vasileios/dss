@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/introduction/_index.en/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/history/</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/paradigms/</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/soundtheory/</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/digitalsoundsynthesis/</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/tuning_scales/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/logicalex/</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/notation/</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/glossary/</loc>
+  </url>
+  
+  <url>
+    <loc>/introduction/references/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/supercollider/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/oscillators/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/aperiodicsources/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/filters/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/distortion/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/delays/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/spectral/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/granularsynthesis/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/simplealgorithms/</loc>
+  </url>
+  
+  <url>
+    <loc>/sc-examples/synthesistec/</loc>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
