@@ -1,7 +1,7 @@
 +++
 title = "Ιστορία"
 chapter = true
-weight = 5
+weight = 7
 +++
 *** chapter 1
 
