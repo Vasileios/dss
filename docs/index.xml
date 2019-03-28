@@ -212,17 +212,6 @@ FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, p
     </item>
     
     <item>
-      <title>Algorithmic Composition Examples</title>
-      <link>https://vasileios.github.io/dss/sc-examples/simplealgorithms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/sc-examples/simplealgorithms/</guid>
-      <description>chapter 2 Examples with Routines and Loops
-( /* Algorithmic composition paradigms BA 181502 Objective: create a Routine and repeat it n times */ fork{//this alternative syntax goes for Routine  10.do({//here goes the repetition (10 times)  a = {SinOsc.ar(XLine.kr(100, 500, 4), 0, 0.4)}.play; 4.wait; a.release; b = SinOsc.ar(XLine.kr(500, 100, 4), 0, 0.4)}.play; 4.wait; b.release; });//loop ends here }//fork (Routine) ends here )  probability-stochastic
-/* BA 181502 Stochastic example 1 Objective: Create two sounds one after the other then free one them (probability), wait a couple of seconds to free also the remain sounds (probability).</description>
-    </item>
-    
-    <item>
       <title>Sound synthesis techniques</title>
       <link>https://vasileios.github.io/dss/sc-examples/synthesistec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
