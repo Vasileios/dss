@@ -3,9 +3,9 @@ baseURL = "https://vasileios.github.io/dss"
 title = "Digital Sound Synthesis"
 
 
-#metaDataFormat = "yaml"
+metaDataFormat = "yaml"
 #defaultContentLanguageInSubdir= true
-#ordersectionsby = "weight"
+ordersectionsby = "weight"
   
 
 
