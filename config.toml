@@ -1,4 +1,4 @@
-baseURL = "https://vasileios.github.io/dss"
+baseURL = "https://vasileios.github.io/DSS"
 
 title = "Digital Sound Synthesis"
 
@@ -62,7 +62,7 @@ languageName = "Ελληνικά"
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i> <label>Github repo</label>"
-identifier = "ds"
+identifier = "dss"
 url = "https://github.com/Vasileios/dss"
 weight = 10
 
