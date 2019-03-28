@@ -47,6 +47,17 @@ arguments of a source i.e periodic oscillators
     </item>
     
     <item>
+      <title>Ψηφιακή σύνθεση Ήχου - Εισαγωγή</title>
+      <link>https://vasileios.github.io/dss/introduction/digitalsoundsynthesis/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/digitalsoundsynthesis/</guid>
+      <description>chapter 1 Ψηφιακή σύνθεση Ήχου Synthesis techniques and programming.
+Κατά τη διάρκεια του περασμένου αιώνα, η ηλεκτρική ενέργεια διαπέρασε σταδιακά τον κόσμο του ήχου. Η μουσική πλέον ακούγεται τώρα μέσω των ηχείων. Αλλά, πέρα από την αναπαραγωγή, η ηλεκτρική τεχνολογία επίσης έφερε ριζικά νέους πόρους για την παραγωγή νέων ήχων και μουσικής.
+Χρειάστηκε αρκετός χρόνος για τον μουσικό κόσμο να συνειδητοποιήσει τις δυνατότητες αυτών των πόρων. Ακόμη, για πολλά χρόνια, ο Edgard Varese προσπάθησε να πείσει τους ερευνητές και τα ιδρύματα να δούν τα πλεονέκτημα που προσφέρειη επιστήμη και η τεχνολογία για την ανάπτυξη μηχανών παραγωγής ήχου - μόνο στο τέλος της ζωής του ήταν σε θέση να συνθέσει τη μουσική με τη χρήση μαγνητοταινίας (tape music and music concrete) καιέτσι να κάνει τα πρώτα βήματα της μουσικής με υπολογιστή (Computer Music).</description>
+    </item>
+    
+    <item>
       <title>Κλίμακες και Χορδίσματα</title>
       <link>https://vasileios.github.io/dss/introduction/tuning_scales/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
