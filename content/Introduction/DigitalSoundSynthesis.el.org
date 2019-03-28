@@ -66,7 +66,8 @@ Max Mathews and /Music-N/. The First digital synthesiser.
 Though computer music is at the edge of the avant-garde today, its roots go back to 1957, when Mathews wrote the first version of "Music," a program that allowed an IBM 704 mainframe computer to play a 17-second composition.
 
 
-[[file:/MaxMathews_Stanford.png][Max Mathews]]
+
+[[file:/MaxMathews_Stanford.jpg][Max Mathews]]
 
 
 Επίσης, ο *John Chowning* δεν ανέπτυξε μόνο μια ισχυρή νέα μέθοδο για τον ήχο
