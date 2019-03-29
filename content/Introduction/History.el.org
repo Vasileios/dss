@@ -6,17 +6,10 @@ weight = 10
 *** chapter 1
 
 
-* Ιστορια
 
-+++
-title = "Ψηφιακή σύνθεση Ήχου - Εισαγωγή"
-chapter = true
-weight = 8
-+++
-*** chapter 1
 
 * Ψηφιακή σύνθεση Ήχου
-
+** Ιστορια
 Synthesis techniques and programming.
 
 Κατά τη διάρκεια του περασμένου αιώνα, η ηλεκτρική ενέργεια διαπέρασε
