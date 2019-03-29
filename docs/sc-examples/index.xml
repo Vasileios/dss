@@ -98,7 +98,11 @@ FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vasileios.github.io/dss/sc-examples/009synthesistec/</guid>
-      <description>chapter 2 Additive synthesis /* Sound Synthesis techniques BA 181902 Objective: create complex sounds using additive synthesis technique // Additive Synthesis a+b+c+d where a to d can be frequencies or any other object such as a waveform */ // firts boot the internal server and open Freqscope and Stethoscope  s = Server.internal; s.boot Stethoscope.new FreqScope.new //create harmonics of a 440Hz A note  {SinOsc.ar([440, 880, 880*3/2, 1600*4/3, 2000], 0, [0.</description>
+      <description>chapter 2 Sound synthesis techniques-methods Spectral
+ Additive Phase Vocoder FFT  Abstract
+ FM Waveshaping  Sampling
+ Sampling Granular  Physical
+ Modal Waveguide  Additive synthesis Additive synthesis is a method in which a composite waveform is formed by summing sinusoidal components, for example, harmonics of a tone, to produce a sound (Moorer 1985). In additive synthesis, three control functions are needed for every sinusoidal oscillator: the amplitude, frequency and phase of each component.</description>
     </item>
     
   </channel>
