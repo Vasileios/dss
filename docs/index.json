@@ -1,7 +1,7 @@
 [
 {
 	"uri": "https://vasileios.github.io/dss/introduction/",
-	"title": "Εισαγωγή",
+	"title": "Θεωρία",
 	"tags": [],
 	"description": "",
 	"content": "Chapter 1 Ψηφιακή - Αλγοριθμικη Συνθεση Ήχου Αποσπάσματα απο τα βιβλία \"Algorithmic Composition: Paradigms of Automated Music Generation\" (Nierhaus 2009), Computer Sound Design (Miranda, 2002), Evaluation of Modern Sound Synthesis Methods (Tolonen et al. 1998) και Microsound (Roads 2004) μεταξύ άλλων.\n"
@@ -15,7 +15,7 @@
 },
 {
 	"uri": "https://vasileios.github.io/dss/sc-examples/",
-	"title": "Code Examples",
+	"title": "Εργαστήριο",
 	"tags": [],
 	"description": "",
 	"content": "Chapter 2 SuperCollider examples - Sound Synthesis techniques and Algorithmic Composition.\n"
