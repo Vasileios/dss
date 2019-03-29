@@ -3,6 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://vasileios.github.io/dss/_index.en/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/history.en/</loc>
+  </url>
+  
+  <url>
     <loc>https://vasileios.github.io/dss/introduction/_index.en/</loc>
   </url>
   
@@ -16,6 +24,10 @@
   
   <url>
     <loc>https://vasileios.github.io/dss/introduction/history/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/paradigms.en/</loc>
   </url>
   
   <url>
@@ -72,6 +84,10 @@
   
   <url>
     <loc>https://vasileios.github.io/dss/sc-examples/delays/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/buffers/</loc>
   </url>
   
   <url>

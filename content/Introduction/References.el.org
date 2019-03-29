@@ -12,15 +12,20 @@ Dean, Roger. and McLean, Alex (eds.) 2018. The Oxford Handbook of Algorithmic Mu
 
 Farnell, Andy. 2010. Designing Sound. Cambridge, Mass: The MIT Press.
 
+Gutowitz, Howard, ed. 1991. Cellular Automata: Theory and Experiment. 1 edition. Cambridge, Mass: The MIT Press.
+
 Holtzman, Steven. 1981. Generative Grammars for Music Composition. Computer
 Music Journal, Vol.5, No.1, pp. 51-64. The MIT Press.
 
 Husbands, Phil, Peter Copley, Alice Eldridge, and James Mandelis. 2007. ‘An Introduction to Evolutionary Computing for Musicians’. In Evolutionary Computer Music, 1–27. Springer, London. https://doi.org/10.1007/978-1-84628-600-1_1.
 
 Λώτης, Θ., Διαμαντόπουλος, Τ. 2015. Μουσική πληροφορική και μουσική με
-υπολογιστές. Εκδόσεις Κάλλιπος. [ηλεκτρ. βιβλ.] Αθήνα:Σύνδεσμος Ελληνικών Ακαδημαϊκών. 
+υπολογιστές. Εκδόσεις Κάλλιπος. [ηλεκτρ. βιβλ.] Αθήνα:Σύνδεσμος Ελληνικών Ακαδημαϊκών.
 
 Miranda, Eduardo R., and John Al Biles. 2007. Evolutionary Computer Music. Springer Science & Business Media.
+
+Miranda, E. 2002. Computer Sound Design, Second Edition: Synthesis techniques and programming (2 edition). Amsterdam: Focal Press.
+
 
 Nierhaus, Gerhard. 2008. Algorithmic Composition: Paradigms of Automated Music Generation. 2009 edition. Wien ; New York: Springer.
 
@@ -64,3 +69,12 @@ Trautmann, Lutz, and Rudolf Rabenstein. 2012. Digital Sound Synthesis by Physica
  - https://composerprogrammer.com/researchml.html
 - https://luuma.net/code
  - https://www.cc.gatech.edu/~turk/bio_sim/articles/genetic_algorithm.pdf
+- http://www.kylegann.com/histune.html
+- https://stephenhammer.com/2010/05/tuning-recipe/
+- http://tonalsoft.com/monzo/55edo/55edo.htm
+- http://casfaculty.case.edu/ross-duffin/why-i-hate-vallotti-or-is-it-young/5-why-i-hate-vallotti-or-is-it-young/sarabande-in-g-minor-vallotti/
+
+SuperCollider Tutorials:
+https://composerprogrammer.com/teaching/supercollider/sctutorial/tutorial.html
+https://ccrma.stanford.edu/~ruviaro/texts/A_Gentle_Introduction_To_SuperCollider.pdf
+http://supercolliderbook.net

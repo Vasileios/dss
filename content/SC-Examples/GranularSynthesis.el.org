@@ -1,7 +1,7 @@
 +++
 title = "Granular Synthesis"
 chapter = true
-weight = 50
+weight = 55
 +++
 
 *** chapter 2

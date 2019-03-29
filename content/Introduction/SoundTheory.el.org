@@ -54,6 +54,7 @@ Example source and envelope:
 Example SC:
 
 #+BEGIN_SRC js
+
 DelayL.ar(in: 0, maxdelaytime: 0.2, delaytime: 0.2, mul: 1, add: 0)//Simple delay line with linear interpolation
 
 Compander.ar(in: 0, control: 0, thresh: 0.5, slopeBelow: 1, slopeAbove: 1, clampTime: 0.01, relaxTime: 0.1, mul: 1, add: 0)//Compressor, expander, limiter, gate, ducker

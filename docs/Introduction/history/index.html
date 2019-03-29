@@ -17,16 +17,9 @@
 <script type="text/javascript">
       var baseurl = "https:\/\/vasileios.github.io\/dss";
 </script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<meta name="description" content="">
 
-  ga('create', 'UA-79101-13', 'auto');
-  ga('send', 'pageview');
 
-</script>
     
   </head>
   <body data-url="/dss/introduction/history/">
@@ -64,6 +57,13 @@
             <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
+      <li data-nav-id="/dss/introduction/history.en/" class="dd-item">
+        <div>
+          <a href="/dss/introduction/history.en/">
+            History
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/dss/introduction/_index.en/" class="dd-item">
         <div>
           <a href="/dss/introduction/_index.en/">
@@ -75,6 +75,13 @@
         <div>
           <a href="/dss/introduction/history/">
             Ιστορία
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/introduction/paradigms.en/" class="dd-item">
+        <div>
+          <a href="/dss/introduction/paradigms.en/">
+            Paradigms
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -177,6 +184,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/dss/sc-examples/buffers/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/buffers/">
+            Buffers
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
       <li data-nav-id="/dss/sc-examples/spectral/" class="dd-item">
         <div>
           <a href="/dss/sc-examples/spectral/">
@@ -212,19 +226,7 @@
 
 
     </ul>
-    <section><center>
-
-<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download vjeantet/hugo-theme-docdock on GitHub">Download</a>
-
-
-<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock" data-icon="octicon-star" data-show-count="false" aria-label="Star vjeantet/hugo-theme-docdock on GitHub">Star</a>
-
-
-<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork vjeantet/hugo-theme-docdock on GitHub">Fork</a>
-
-</center>
-
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+    <section>
     </section>
   </aside>
   <section class="page">
@@ -235,8 +237,10 @@
           
     <option value="/dss/introduction/" >
    Εισαγωγή</option> 
+      <option value="/dss/introduction/history.en/" >- History</option>
       <option value="/dss/introduction/_index.en/" >- Introduction</option>
       <option value="/dss/introduction/history/"  selected>- Ιστορία</option>
+      <option value="/dss/introduction/paradigms.en/" >- Paradigms</option>
       <option value="/dss/introduction/paradigms/" >- Παραδείγματα</option>
       <option value="/dss/introduction/soundtheory/" >- Sound theory basics</option>
       <option value="/dss/introduction/tuning_scales/" >- Κλίμακες και Χορδίσματα</option>
@@ -361,7 +365,7 @@ Musarithmica</a> θεωρείται αλγοριθμική σύνθεση σε �
 
 <p><strong>Leibnitz (1646-1716)</strong></p>
 
-<p><img src="/test.jpg" alt="Leibnitz" title="Leibnitz" /></p>
+<p><a href="https://upload.wikimedia.org/wikipedia/commons/3/3b/Gottfried_Wilhelm_Leibniz.jpg" title="Leibnitz">Leibnitz</a></p>
 
 <p>"Καθολική γλώσσα"</p>
 
@@ -393,20 +397,20 @@ Musarithmica</a> θεωρείται αλγοριθμική σύνθεση σε �
 
 <p>Για παράδειγμα,</p>
 
-<pre><code>&lt;p&gt;
+<blockquote>
+<p>
 Πράγμα = 2
-&lt;/p&gt;
-&lt;p&gt;
+</p>
+<p>
 Όν = 6 = 2 * 3
-&lt;/p&gt;
-&lt;p&gt;
+</p>
+<p>
 Ανθρώπινο Όν = 30 = 6 * 5
-&lt;/p&gt;
-&lt;p&gt;
+</p>
+<p>
 κ.λπ.
-&lt;/p&gt;
-
-</code></pre>
+</p>
+</blockquote>
 
 <p>"Η μουσική είναι μια ασκούμενη μαθηματική εξάσκηση, το nescientis είναι αριθμητική animi" ("Η μουσική είναι μια κρυμμένη αριθμητική άσκηση της ψυχής, η οποία δεν γνωρίζει ότι μετράει").</p>
 
@@ -414,7 +418,7 @@ Musarithmica</a> θεωρείται αλγοριθμική σύνθεση σε �
 
 <p>Η μηχανοποίηση των υπολογιστικών διαδικασιών, 1617 ξεκίνησε από τη Σκωτία
 απο τον μαθηματικό John Napier και Jost Bürgi (1552-1632) πρωτοστάτησαν στο
-πεδίου των λογαρίθμων με το "Mirifici logarithmorum canonis"
+πεδίο των λογαρίθμων με το "Mirifici logarithmorum canonis"
 descriptio "που εμφανίζεται το 1614, σχεδιασμένο για πολλαπλασιασμό
 και διαίρεση, με βάση την αρχή του Πυθαγόρειου άβακα. (1550-1617).</p>
 
@@ -436,8 +440,8 @@ descriptio "που εμφανίζεται το 1614, σχεδιασμένο γι
 
 <p>Βασικός στόχος του Babbage είναι η μηχανοποίηση των διαδικασιών υπολογισμού, όπως αυτές απαιτούνται για τη δημιουργία πινάκων λογαρίθμου.</p>
 
-<p>Παράλληλα με το Babbage, η Ada Countess of Lovelace (1815-1852)
-διαδραμάτισε σημαντικό ρόλο. Ήταν ένας αυτοδίδακτος μαθηματικός και
+<p>Παράλληλα με τον Babbage, η Ada Countess of Lovelace (1815-1852)
+διαδραμάτισε σημαντικό ρόλο. Ήταν μια αυτοδίδακτος μαθηματικός και
 συνεργάστηκε με τον Babbage στην έννοια του «αναλυτικού κινητήρα»
 (<a href="https://en.wikipedia.org/wiki/Analytical_Engine#/media/File:AnalyticalMachine_Babbage_London.jpg" title="analytical engine">analytical engine</a>).</p>
 
@@ -450,9 +454,11 @@ analytique de Charles Babbage” το 1842. Η Ada Lovelace μετέφρασε �
 κείμενο στα αγγλικά το 1843 και πρόσθεσε τις δικές της αναλυτικές
 εκτιμήσεις για το υλικό, συμπεριλαμβανομένων των εννοιών loop, subroutine and the conditional jump (βρόχου,
 της υπορουτίνας και του άλματος υπό όρους).
-Η κοντέσσα της Lovelace
+Η κοντέσσα Ada Lovelace
 θεωρείται η πρώτη γυναίκα προγραμματιστής στην ιστορία του
 προγραμματισμού ηλεκτρονικών υπολογιστών - το πρόγραμμα <strong>Ada</strong>, που αναπτύχθηκε στη δεκαετία του 1970, πήρε το όνομά της.</p>
+
+<p><strong>Dice Game</strong></p>
 
 <p>Επιπλέον, μπορούν να βρεθούν οι πρώτες εφαρμογές αλγορίθμων για εργασίες σύνθεσης
 στο δημοφιλές "μουσικό παιχνίδι με ζάρια" τον 18ο αιώνα.</p>
@@ -480,7 +486,7 @@ X1&or;(X4&and;(X2&and;X3))
 <p>ο Γιάννης Ξενάκης (1922-2001) σε διάφορες συνθέσεις του εφάρμοσε λογικούς συνδυασμούς για τη δημιουργία μουσικής δομής από τη θεωρία των κοσκίνων.</p>
 
 <p>Το φάσμα εφαρμογών της λογικής επεκτέινεται με ένα σύστημα που ειναι ο προπομπός της σημερινής "first-order logic".
-ο βασικός υπολογισμός γίνεται ένας μηχανισμός θεμελιώδους μαθηματικής
+Ο βασικός υπολογισμός γίνεται ένας μηχανισμός θεμελιώδους μαθηματικής
 έρευνας, των οποίων οι στόχοι οδηγούν σε πολώσεις μεταξύ των
 επιστημόνων. Οι «φορμαλιστές» του <strong>David Hilbert</strong> (1862-1943) είχαν ως
 στόχο να θέσουν βασικούς μαθηματικούς όρους σε μια αξιωματική βάση και
@@ -717,7 +723,7 @@ Atanasoff-Berry (σύντομος: ABC) εγκατέλειψε εντελώς τ
         <div class="chevrons">
     <div id="navigation">
 <a class="nav nav-prev" href="/dss/introduction/_index.en/" title="Introduction"> <i class="fa fa-chevron-left"></i><label>Introduction</label></a>
-    <a class="nav nav-next" href="/dss/introduction/paradigms/" title="Παραδείγματα" style="margin-right: 0px;"><label>Παραδείγματα</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/dss/introduction/paradigms.en/" title="Paradigms" style="margin-right: 0px;"><label>Paradigms</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>

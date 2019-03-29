@@ -1,0 +1,121 @@
++++
+title = "Buffers"
+weight = 45
+chapter = true
++++
+
+*** chapter 2
+
+**** Buffers/playback
+
+Buffers and Sound Files
+
+To do sample playback and manipulation, for streaming files off disk, for recording and wavetables and many other processes, it is necessary to handle memory buffers on the Server. 
+
+
+Buffer
+read (server, path, startFrame: 0, numFrames: -1, action, bufnum)
+Allocate a buffer and immediately read a soundfile into it.
+
+#+BEGIN_SRC js
+//PlayBuf - buffer playback
+//arguments: numChannels, buffer number, rate, trigger, start pos, loop
+
+// read sound
+b = Buffer.read(s, Platform.resourceDir +/+ "sounds/a11wlk01.wav");
+// loop is true
+{ PlayBuf.ar(1,b, BufRateScale.kr(b), loop:1) }.scope(1);
+
+
+//add a Sine oscillator
+
+{ SinOsc.ar(800 + (700 * PlayBuf.ar(1,b, BufRateScale.kr(b),  loop:1)),0,0.3) }.scope(1);
+
+#+END_SRC
+
+//Use of local variables inside scope
+
+#+BEGIN_SRC js
+//another way to read and play a sound
+(
+
+	var path, buffer;
+
+	path = Platform.resourceDir +/+ "sounds/a11wlk01.wav";
+	
+	buffer = Buffer.read(s, path);
+
+
+
+ SynthDef(\bufferC, { | out = 0, bufnum|
+    Out.ar( out,
+        PlayBuf.ar(1, bufnum, BufRateScale.kr(bufnum), loop:1.0)
+  )
+}).add;
+
+	x = Synth(\bufferC, [\out, 0, \bufnum, buffer]);
+
+ //play at half rate
+x = Synth(\bufferC, [\out, 0, \bufnum, buffer.bufnum, \rate, 0.5]);
+
+)
+
+#+END_SRC
+
+//another example
+
+#+BEGIN_SRC js
+
+
+(
+
+p =  Platform.resourceDir +/+ "sounds/a11wlk01.wav";
+b = Buffer.read(s, p);
+
+SynthDef(\bufferC,{ | out=0,bufnum=0, rate=1, trigger=1, startPos=0, loop=1|
+	Out.ar(out,
+		Pan2.ar(PlayBuf.ar(1,bufnum, BufRateScale.kr(bufnum)*rate, trigger, BufFrames.ir(bufnum)*startPos, loop),0.0)
+	)
+}).send(s); 
+)
+
+
+Synth(\bufferC, [\out, 0, \bufnum, b.bufnum]);
+ 
+ //play at half rate
+Synth(\bufferC, [\out, 0, \bufnum, b.bufnum, \rate, 0.5]);
+
+
+#+END_SRC
+Example with GUI
+
+#+BEGIN_SRC js
+//Example with GUI controlling Synth 
+(
+var w, rateslid, trigslid, startposslid, loopslid, a; 
+
+a=Synth(\bufferC, [\out, 0, \bufnum, b.bufnum]);
+
+w=Window("PlayBuf Example",Rect(10,200,300,150));
+
+w.front;
+
+//control positioning of new GUI elements so I don't have to think too hard about it
+w.view.decorator= FlowLayout(w.view.bounds);
+
+//James' shortcut slider class
+//100@24 means a Point of size 100 by 24
+//|ez| is the same as arg ez;  - the slider object is being passed into the callback action function
+rateslid= EZSlider(w, 250@24, "Rate", ControlSpec(0.5, 10, 'exponential', 0.1), {|ez| a.set(\rate,ez.value)}, 1);
+
+trigslid= EZSlider(w, 250@24, "Trigger", ControlSpec(0, 1, 'lin', 1), {|ez| a.set(\trigger,ez.value)}, 1);
+
+startposslid= EZSlider(w, 250@24, "StartPos", ControlSpec(0.0, 1.0, 'lin', 0.01), {|ez| a.set(\startPos,ez.value)}, 0);
+
+loopslid= EZSlider(w, 250@24, "Loop", ControlSpec(0, 1, 'lin', 0.1), {|ez| a.set(\loop,ez.value)}, 1);
+
+w.onClose_({a.free;});
+)
+
+
+#+END_SRC

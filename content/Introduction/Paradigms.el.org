@@ -26,8 +26,8 @@ Markov Models
 
 Ο Markov μελέτησε τη σειρά των 20.000 γραμμάτων στο ποίημα του AS
  Pushkin «Eugeny Onegin», ανακαλύπτοντας ότι η σταθερή  πιθανότητα των
- φωνηέντων σε αυτό το ποίημα είναι p = 0,432, η πιθανότητα ενός φωνήεντος να ακολουθείται
- απο ένα άλλο είναι p1 = 0,128 και ότι η πιθανότητα ενός φωνήεντος να
+ φωνηέντων σε αυτό το ποίημα είναι p = 0.432, η πιθανότητα ενός φωνήεντος να ακολουθείται
+ απο ένα άλλο είναι p1 = 0.128 και ότι η πιθανότητα ενός φωνήεντος να
  ακολουθείται απο σύμφωνο είναι p2 = 0.663. (στοχατική διαδικασία)
 
 #+BEGIN_QUOTE
@@ -42,9 +42,9 @@ Stochastic processes are used to describe a sequence of random events dependent 
 Το ντετερμινιστικό σύστημα είναι ένα σύστημα στο οποίο δεν υπάρχει τυχαία συμπεριφορά στην ανάπτυξη μελλοντικών καταστάσεων του συστήματος. Επομένως, ένα ντετερμινιστικό μοντέλο θα παράγει πάντα την ίδια έξοδο από μια δεδομένη αρχική κατάσταση.
 #+END_QUOTE
 
-To πεδίο της στοχαστικής διαδικασίας περιλαμβάνei  υπολογίσμο πιθανοτήτων,
+To πεδίο της στοχαστικής διαδικασίας περιλαμβάνει  υπολογίσμο πιθανοτήτων,
 (probability calculus)
-και σταστιστική.
+και στατιστική.
 
 Σε μια στοχαστική αλυσίδα, κάθε διακριτός χρόνος t έχει μια τυχαία
 μεταβλητή Χ. Σε μια αλυσίδα Markov, η οποία είναι ένα ιδιαίτερο είδος στοχαστικής αλυσίδας,
@@ -70,7 +70,7 @@ Belar, ανέπτυξε το "Electronic Synthesizer" το 1955, το πρώτο
 *transition probabilities*
 
 Ο Hiller και ο Isaacson το 1955 με 1956 χρησιμοποιούν Markov μοντέλα για την παραγωγή
-της μουσικής δομής με το "Illiac Suite". 
+της μουσικής δομής με το "Illiac Suite".
 
 [[https://www.youtube.com/watch?v=n0njBFLQSk8][Hiller & Iaacson: The Illiac Suite]]
 
@@ -135,7 +135,7 @@ systems" μια κατηγορία αλγορίθμων (βιολογία) γι�
 μοντέλο για την ατμοσφαιρική ροή.
 
 #+BEGIN_QUOTE
-*Το "φαινόμενο της πεταλούδας"* 
+*Το "φαινόμενο της πεταλούδας"*
 
 Ένα πτερύγιο των πτερυγίων μιας πεταλούδας
 προκαλεί ελάχιστη αναταραχή, η οποία ωστόσο, κατά τη διάρκεια της
@@ -199,6 +199,8 @@ GENETIC ALGORITHMS AND ADAPTATION
 
 Ο Miranda περιγράφει διάφορες εφαρμογές μοντέλων κυτταρικών αυτομάτων (CA) για μουσικές εφαρμογές. Σε ένα από αυτά, το Chaosynth, ένας χημικός ταλαντωτής χρησιμοποιείται για την παραμετροποίηση μιας μηχανής κοκκώδους σύνθεσης (Miranda 2000).
 
+Τα κυτταρικά αυτόματα είναι δυναμικά συστήματα στα οποία ο χώρος και ο
+χρόνος είναι διακριτός. (Gutowitz 1991)
 
 **** Neural networks
 
@@ -210,15 +212,47 @@ GENETIC ALGORITHMS AND ADAPTATION
 υπάρχουν στη "συλλογή" (corpus) του συστήματος. Μειονεκτήματα υπάρχουν
 στον χειρισμό του μουσικού υλικού που βασίζετε σε κάποια περιεχόμενα (context-depended) έτσι ώστε
 να αποδώσει στο πλαίσιο μακρινών περσμάτων, τα οποία μπορούν να
-αντιμετωπιστούν καλύτερα σε γενετικές γραμματικές. 
-Για εφαρμογές αλγοριθμικής σύνθεσης, τα Νευρωνικά Δίκτυα χρησιμοποιούνται συχνά στο πλαίσιο των υβριδικών συστημάτων. 
+αντιμετωπιστούν καλύτερα σε γενετικές γραμματικές.
+Για εφαρμογές αλγοριθμικής σύνθεσης, τα Νευρωνικά Δίκτυα χρησιμοποιούνται συχνά στο πλαίσιο των υβριδικών συστημάτων.
+
+Γενετικοί Αλγόριθμοι και Νευρωνικά Δίκτυα στην δόμηση μουσικών και ηχητικών σημάτων. (Artificial life)
+Machine learning and Data mining
+- biological neural networks
+SuperCollider: NeuralNet SuperCollider->NatureToolkit (L-system Libray)
+Genetic Algorithms in designing audiovisual materials.
+Neural Algorithms and AI. Machine Learning, Deep Learning, Big data,
+Tensor Flow, Keras, Chainer. 
+Some Machine Learning Resources: SuperCollider Classes and UGens
+In the Quarks:
+- MathLib Multiupleauthors: Συμπεριλαμβάνει τα MarkovSet και FuzzySet
+  classes περισσότερη υποστήριξη μαθηματικών για μήτρες (math support for matrices) και πολλά άλλα.
+- ContextSnake //Gerhard Nierhaus, Alberto de Campo: A Markov pattern with variable context depth
+- KDTree DanStowell: a data structure for faster search through a
+  large set of multidimensional feature vectors (e.g., useful for concatenative synthesis (concatenating short samples of recorded sound).
+- KMeans Dan Stowell: basic unsupervised clustering algorithm (Unsupervised learning)
+- NatureToolkit Batuhan Bozkurt’s GA, L-systems, και Cellular Automata του Batuhan Bozkurt.
+Υπάρχουν επίσης έργα με Γενετικό Αλγόριθμο (GA) από τους Fredrik Olofsson, Dan Stowell, Matthew Yee-King.
+- Dan Stowell’s MCLDUGens (inthesc3-plugins,http://sourceforge.net/projects/sc3-plugins/) contain some server side learning algorithms:
+- SOMTrain self-organizing map (data dimensionality reduction tool)
+- GaussClass Gaussian classifier.
+- Chris Kiefer and Nick Collins NeuralNet class, ένα πρόγραμμα που επιταχύνει την εκμάθηση:
+7
+http://ck13.net/?page_id=35
+Ο Chris Kiefer δημιούργσε μία κλάσση για τα CTRNNs: Continuous-Time Recurrent Neural Networks Απο τον Collins -> website: http://www.sussex.ac.uk/Users/nc81/code.html#SC Reinforcement learning classes, such as for the SARSA (state-action-reward-state-action) algorithm Επίσης, στην SCMIR Library:
+- GMM Gaussian Mixture Model (relies on provided external program)
+- NaiveBayes
+- MarkovModel another implementation, fixed order
+- PPMC Prediction by Partial Match algorithm C; a variable order Markov Model
+Υπάρχουν μερικές εκδόσεις αλγορίθμων μηχανικής μάθησης (Machine Learning) που είναι ενσωματωμένες στο UGens σύνθεσης, όπως το KmeansToBPSet1 στα SLUGens, ή το MarkovSynth από τον Batuhan Bozkurt.
+Η μηχανική μάθηση είναι ένα ευρύ πεδίο και υπάρχουν αλληλεπικαλύψεις με άλλους αλγόριθμους, όπως πληροφορίες θεωρητικών σχέσεων μεταξύ αλγορίθμων που έχουν εκπαιδευτεί με σύμβολα όπως MarkovModels και αλγόριθμοι πρόβλεψης / συμπίεσης όπως η Γραμμική Προγνωστική Κωδικοποίηση ή η Lempel-Ziv (στο Quark redSys από τον Fredik Olofsson, είναι εφαρμογές πολλών αλγορίθμων συμπίεσης). (Collins)
+
 
 **** Artificial intelligence
 
 Η "Τεχνιτή Νοημοσύνη" περιλαμβάνει μια ποικιλία διαδικασιών για
 διαφορετικά tasks. Προγράμματα όπως το "ELIZA" ή το γνωστό "Turing
 test" εγείρουν το ζήτημα του ορισμού του όρου "intelligence"
-"νοημοσύνη". 
+"νοημοσύνη".
 
 Ο Alan Turing ανέπτυξε μια εικονική εγκατάσταση για να αξιολογήσει την
 έξυπνη συμπεριφορά ενός υπολογιστή. Στην αρχή των σκέψεών του,
@@ -261,7 +295,7 @@ test" εγείρουν το ζήτημα του ορισμού του όρου "
 
 **** Live electronics improvisation
 
-- Mουσικά ή / και αισθητικά κίνητρα. 
+- Mουσικά ή / και αισθητικά κίνητρα.
 - Σύντομη ανάλυση των βασικών συνιστωσών του συστήματος, της διεπαφής χρήστη
   και των τεχνικών παραγωγής ήχου.
 - Αξιολόγηση της αισθητικής ποιότητας των αποτελεσμάτων και περιγραφή
@@ -285,5 +319,3 @@ Listening: [[https://www.youtube.com/watch?v=oYEa80Ol8Ps&t=284s][AMM The Great H
 - Microcontrolers
 - Sensors
 - Microcomputers
-
-

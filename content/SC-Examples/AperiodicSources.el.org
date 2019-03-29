@@ -11,7 +11,7 @@ weight = 25
 
 *Aperiodic Sources: Noise*
 #+BEGIN_SRC js
-/Aperiodic Sources: Noise.
+//Aperiodic Sources: Noise.
 //LF "Low Frequency" Noise Generators.
 //arguments: frequency, mul, add
 { LFClipNoise.ar(MouseX.kr(200, 10000, 1), 0.125) }.scope(1);

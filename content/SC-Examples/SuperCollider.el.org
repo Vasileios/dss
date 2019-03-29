@@ -13,7 +13,7 @@ From: [[http://supercollider.github.io][SuperCollider]]
 
 *Basics*
 
-SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for +Windows+, macOS, and Linux.
+SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for Windows, macOS, and Linux.
 
 *SuperCollider features three major components*
 
@@ -21,7 +21,125 @@ SuperCollider is a platform for audio synthesis and algorithmic composition, use
 - *sclang*, an interpreted programming language. It is focused on sound, but not limited to any specific domain. sclang controls scsynth via Open Sound Control. You can use it for algorithmic composition and sequencing, finding new sound synthesis methods, connecting your app to external hardware including MIDI controllers, network music, writing GUIs and visual displays, or for your daily programming experiments. It has a stock of user-contributed extensions called Quarks.
 - *scide* is an editor for sclang with an integrated help system.
 
-**** Code examples 
+**** Functions, arguments,  variables
+
+*Functions*
+
+A Function is an expression which defines operations to be performed when it is sent the value message. In functional languages, a function would be known as a lambda expression. Function definitions are enclosed in curly brackets {}. Argument declarations, if any, follow the open bracket. Variable declarations follow argument declarations. An expression follows the declarations.
+
+#+BEGIN_SRC js
+
+// Functions in SuperCollider are within curly brackets  (also called "braces") {}
+
+{ arg a, b, c;  var d;   d = a * b; c + d }
+
+//When evaluated, the function returns the value of its expression.
+
+f = { arg a, b; a + b };
+f.value(4, 5).postln;
+f.value(10, 200).postln;
+
+f = {44.postln};
+
+f.value // to call the function we need to get its .value
+
+
+#+END_SRC
+
+*Arguments*
+
+An argument list immediately follows the open curly bracket of a
+function definition. An argument list either begins with the reserved
+word arg, or is contained between two vertical bars.
+
+"arg" style: { arg x = 1; .... } 
+
+Pipe style: { |x = 1| ... } 
+
+*Variables*
+
+Assign values to variables.
+
+ Data type of variables: integer, float, string, symbol, etc...
+
+#+BEGIN_SRC js
+/*
+180503 Algorithmic Composition
+Variables, functions
+
+*/
+Server.default=s=Server.local;
+s.boot;
+//Global variables
+//a-z
+a = 10;
+b = 20;
+c = 0.234521;
+a+b+c;
+
+d = "hello";
+
+a = [1, 34, 55, 0.1, "string in a list", \symbol, pi]; // or an array with mixed types
+
+a //hit this line to see the container of a
+
+//local variables
+(
+var v, a;
+v = 22;
+a = 33;
+)
+
+v // hit this line and watch the post window 
+a // hit this line and watch the post window - still our old "a" from above
+
+(
+//You cannot evaluate local variables out of their scope of the brackets or a function.
+var number9;
+
+number9=9;//sets local vars, NOT global
+
+)
+number9;//error: this doesnt work outside of the scope of the brackets 
+
+/*
+~ (tilde) global (Environmental variables) 
+An Environment is an IdentityDictionary with additional features that allow it to serve as a 'name space' within which functions can be defined and/or evaluated.
+
+The compiler provides a shortcut syntax where ~ is a placeholder for .currentEnvironment. This makes the expression ~myvariable; equivalent to currentEnvironment.at(\myvariable); and the expression ~myvariable = 888; equivalent to currentEnvironment.put(\myvariable, 888);
+*/
+
+currentEnvironment; //run this line to the current state of the currentEnvironment
+
+//You use the currentEnvironment via the ~ sign
+
+~myvariable= 888;
+
+//The ~ and = is a shortcut here for 
+
+currentEnvironment.put(\myvariable, 888);
+
+//You can access the variable wherever you need it by 
+
+~myvariable
+
+//environmental variable: sound example
+(
+~variable1 = {SinOsc.ar(MouseX.kr(400, 800, 1))};
+~variable2 = {Saw.ar(MouseY.kr(400, 800, 1))};
+~variable3 = (~variable1*~variable2);
+)
+(
+{
+	Out.ar(0, ~variable3)
+}.play;
+)
+
+currentEnvironment; //run this line to the current state of the currentEnvironment
+#+END_SRC
+
+**** General tips 
+
 *Find recordings folder*
 
 #+BEGIN_SRC js

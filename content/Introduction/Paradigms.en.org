@@ -1,0 +1,11 @@
++++
+title = "Paradigms"
+chapter = true
+weight = 6
++++
+
+*** Chapter 1
+
+* Paradigms
+
+

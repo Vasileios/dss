@@ -41,7 +41,7 @@ SuperCollider features three major components
       
       <guid>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</guid>
       <description>chapter 2 SuperCollider Noise Generators Aperiodic Sources: Noise
-/Aperiodic Sources: Noise. //LF &amp;#34;Low Frequency&amp;#34; Noise Generators. //arguments: frequency, mul, add { LFClipNoise.ar(MouseX.kr(200, 10000, 1), 0.125) }.scope(1); { LFPar.ar(LFClipNoise.kr(MouseX.kr(0.5, 64, 1), 200, 400), 0, 0.2) }.scope(1, zoom:8); //Broad Spectrum Noise Generators //arguments: mul, add { ClipNoise.ar(0.2) }.scope(1); { WhiteNoise.ar(0.2) }.scope(1); { PinkNoise.ar(0.4) }.scope(1); { BrownNoise.ar(0.2) }.scope(1); { GrayNoise.ar(0.2) }.scope(1); // Impulse Noise Generators //Dust, Dust2 //arguments: density, mul, add  { Dust.</description>
+//Aperiodic Sources: Noise. //LF &amp;#34;Low Frequency&amp;#34; Noise Generators. //arguments: frequency, mul, add { LFClipNoise.ar(MouseX.kr(200, 10000, 1), 0.125) }.scope(1); { LFPar.ar(LFClipNoise.kr(MouseX.kr(0.5, 64, 1), 200, 400), 0, 0.2) }.scope(1, zoom:8); //Broad Spectrum Noise Generators //arguments: mul, add { ClipNoise.ar(0.2) }.scope(1); { WhiteNoise.ar(0.2) }.scope(1); { PinkNoise.ar(0.4) }.scope(1); { BrownNoise.ar(0.2) }.scope(1); { GrayNoise.ar(0.2) }.scope(1); // Impulse Noise Generators //Dust, Dust2 //arguments: density, mul, add  { Dust.</description>
     </item>
     
     <item>
@@ -73,13 +73,25 @@ SuperCollider features three major components
     </item>
     
     <item>
+      <title>Buffers</title>
+      <link>https://vasileios.github.io/dss/sc-examples/buffers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/sc-examples/buffers/</guid>
+      <description>chapter 2 Buffers/playback Buffers and Sound Files
+To do sample playback and manipulation, for streaming files off disk, for recording and wavetables and many other processes, it is necessary to handle memory buffers on the Server.
+Buffer read (server, path, startFrame: 0, numFrames: -1, action, bufnum) Allocate a buffer and immediately read a soundfile into it.
+//PlayBuf - buffer playback //arguments: numChannels, buffer number, rate, trigger, start pos, loop  // read sound b = Buffer.</description>
+    </item>
+    
+    <item>
       <title>Spectral</title>
       <link>https://vasileios.github.io/dss/sc-examples/spectral/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vasileios.github.io/dss/sc-examples/spectral/</guid>
       <description>chapter 2 SuperCollider Spectral FFT-PV_Ugens
-FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a trigger each time the buffer is ready to process. The PV UGens process the spectrum when they receive the trigger. IFFT converts the spectrum back into sound.
+FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a trigger each time the buffer is ready to process. The PV (Phase Vocoder) UGens process the spectrum when they receive the trigger. IFFT converts the spectrum back into sound.
 // alloc a buffer for the FFT b = Buffer.alloc(s,2048,1); // read a sound c = Buffer.</description>
     </item>
     
@@ -99,8 +111,7 @@ FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, p
       
       <guid>https://vasileios.github.io/dss/sc-examples/simplealgorithms/</guid>
       <description>chapter 2 Examples with Routines and Loops
-( /* Algorithmic composition paradigms BA 181502 Objective: create a Routine and repeat it n times */ fork{//this alternative syntax goes for Routine  10.do({//here goes the repetition (10 times)  a = {SinOsc.ar(XLine.kr(100, 500, 4), 0, 0.4)}.play; 4.wait; a.release; b = SinOsc.ar(XLine.kr(500, 100, 4), 0, 0.4)}.play; 4.wait; b.release; });//loop ends here }//fork (Routine) ends here )  probability-stochastic
-/* BA 181502 Stochastic example 1 Objective: Create two sounds one after the other then free one them (probability), wait a couple of seconds to free also the remain sounds (probability).</description>
+( /* Algorithmic composition paradigms BA 181502 Objective: create a sine wave and accelerate and decelarate its frequency nth times. */ fork{//this alternative syntax goes for Routine  10.do({//here goes the repetition (10 times)  a = {SinOsc.ar(XLine.kr(100, 500, 4), 0, 0.4)}.play; 4.wait; a.release; b = {SinOsc.ar(XLine.kr(500, 100, 4), 0, 0.4)}.play; 4.wait; b.release; });//loop ends here }//fork (Routine) ends here )  probability-stochastic</description>
     </item>
     
     <item>
@@ -109,7 +120,11 @@ FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vasileios.github.io/dss/sc-examples/synthesistec/</guid>
-      <description>chapter 2 Additive synthesis /* Sound Synthesis techniques BA 181902 Objective: create complex sounds using additive synthesis technique // Additive Synthesis a+b+c+d where a to d can be frequencies or any other object such as a waveform */ // firts boot the internal server and open Freqscope and Stethoscope  s = Server.internal; s.boot Stethoscope.new FreqScope.new //create harmonics of a 440Hz A note  {SinOsc.ar([440, 880, 880*3/2, 1600*4/3, 2000], 0, [0.</description>
+      <description>chapter 2 Sound synthesis techniques-methods Spectral
+ Additive Phase Vocoder FFT  Abstract
+ FM Waveshaping  Sampling
+ Sampling Granular  Physical
+ Modal Waveguide  Additive synthesis Additive synthesis is a method in which a composite waveform is formed by summing sinusoidal components, for example, harmonics of a tone, to produce a sound (Moorer 1985). In additive synthesis, three control functions are needed for every sinusoidal oscillator: the amplitude, frequency and phase of each component.</description>
     </item>
     
   </channel>
