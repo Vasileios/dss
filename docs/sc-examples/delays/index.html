@@ -17,9 +17,16 @@
 <script type="text/javascript">
       var baseurl = "https:\/\/vasileios.github.io\/dss";
 </script>
-<meta name="description" content="">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-79101-13', 'auto');
+  ga('send', 'pageview');
 
+</script>
     
   </head>
   <body data-url="/dss/sc-examples/delays/">
@@ -56,38 +63,10 @@
       <a href="/dss/introduction/"><b>1. </b>Εισαγωγή</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/dss/introduction/history.en/" class="dd-item">
-        <div>
-          <a href="/dss/introduction/history.en/">
-            History
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/dss/introduction/_index.en/" class="dd-item">
-        <div>
-          <a href="/dss/introduction/_index.en/">
-            <b>1. </b>Introduction
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/dss/introduction/history/" class="dd-item">
         <div>
           <a href="/dss/introduction/history/">
             Ιστορία
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/dss/introduction/paradigms.en/" class="dd-item">
-        <div>
-          <a href="/dss/introduction/paradigms.en/">
-            Paradigms
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/dss/introduction/paradigms/" class="dd-item">
-        <div>
-          <a href="/dss/introduction/paradigms/">
-            Παραδείγματα
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -105,17 +84,17 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/dss/introduction/logicalex/" class="dd-item">
-        <div>
-          <a href="/dss/introduction/logicalex/">
-            Logical Expressions
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/dss/introduction/notation/" class="dd-item">
         <div>
           <a href="/dss/introduction/notation/">
             Notation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/introduction/logicalex/" class="dd-item">
+        <div>
+          <a href="/dss/introduction/logicalex/">
+            Logical Expressions
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -184,13 +163,6 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/dss/sc-examples/buffers/" class="dd-item">
-        <div>
-          <a href="/dss/sc-examples/buffers/">
-            Buffers
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/dss/sc-examples/spectral/" class="dd-item">
         <div>
           <a href="/dss/sc-examples/spectral/">
@@ -202,13 +174,6 @@
         <div>
           <a href="/dss/sc-examples/granularsynthesis/">
             Granular Synthesis
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/dss/sc-examples/simplealgorithms/" class="dd-item">
-        <div>
-          <a href="/dss/sc-examples/simplealgorithms/">
-            Algorithmic Composition Examples
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -226,7 +191,19 @@
 
 
     </ul>
-    <section>
+    <section><center>
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download vjeantet/hugo-theme-docdock on GitHub">Download</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock" data-icon="octicon-star" data-show-count="false" aria-label="Star vjeantet/hugo-theme-docdock on GitHub">Star</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork vjeantet/hugo-theme-docdock on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
     </section>
   </aside>
   <section class="page">
@@ -245,10 +222,8 @@
       <option value="/dss/sc-examples/filters/" >- Filters</option>
       <option value="/dss/sc-examples/distortion/" >- Distortion</option>
       <option value="/dss/sc-examples/delays/"  selected>- Delays</option>
-      <option value="/dss/sc-examples/buffers/" >- Buffers</option>
       <option value="/dss/sc-examples/spectral/" >- Spectral</option>
       <option value="/dss/sc-examples/granularsynthesis/" >- Granular Synthesis</option>
-      <option value="/dss/sc-examples/simplealgorithms/" >- Algorithmic Composition Examples</option>
       <option value="/dss/sc-examples/synthesistec/" >- Sound synthesis techniques</option>
   
 
@@ -280,76 +255,68 @@
     <h3 id="chapter-2">chapter 2</h3>
 
 <h4 id="supercollider-delays">SuperCollider Delays</h4>
-
-<pre><code class="language-js">
-
-//Delays and Buffer UGens
-DelayN, DelayL, DelayC - simple delays
-N - no interpolation
-L - linear interpolation
-C - cubic interpolation
-arguments: in, maximum delay time, current delay time, mul, add
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//Delays and Buffer UGens
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">DelayN</span>, <span style="color:#a6e22e">DelayL</span>, <span style="color:#a6e22e">DelayC</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">simple</span> <span style="color:#a6e22e">delays</span>
+<span style="color:#a6e22e">N</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">no</span> <span style="color:#a6e22e">interpolation</span>
+<span style="color:#a6e22e">L</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">linear</span> <span style="color:#a6e22e">interpolation</span>
+<span style="color:#a6e22e">C</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">cubic</span> <span style="color:#a6e22e">interpolation</span>
+<span style="color:#a6e22e">arguments</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">in</span>, <span style="color:#a6e22e">maximum</span> <span style="color:#a6e22e">delay</span> <span style="color:#a6e22e">time</span>, <span style="color:#a6e22e">current</span> <span style="color:#a6e22e">delay</span> <span style="color:#a6e22e">time</span>, <span style="color:#a6e22e">mul</span>, <span style="color:#a6e22e">add</span>
 
 (
-// Dust randomly triggers Decay to create an exponential
-// decay envelope for the WhiteNoise input source
-{
-z = Decay.ar(Dust.ar(1,0.5), 0.3, WhiteNoise.ar);
-DelayN.ar(z, 0.1, 0.1, 1, z); // input is mixed with delay via the add input
-}.scope(1, zoom: 4)
+<span style="color:#75715e">// Dust randomly triggers Decay to create an exponential
+</span><span style="color:#75715e">// decay envelope for the WhiteNoise input source
+</span><span style="color:#75715e"></span>{
+<span style="color:#a6e22e">z</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.5</span>), <span style="color:#ae81ff">0.3</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>);
+<span style="color:#a6e22e">DelayN</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">z</span>, <span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">z</span>); <span style="color:#75715e">// input is mixed with delay via the add input
+</span><span style="color:#75715e"></span>}.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span>)
 )
 
-// CombN, CombL, CombC - feedback delays
-//arguments: in, maximum delay time, current delay time, echo decay time, mul, add
+<span style="color:#75715e">// CombN, CombL, CombC - feedback delays
+</span><span style="color:#75715e">//arguments: in, maximum delay time, current delay time, echo decay time, mul, add
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// used as an echo.
+</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">CombN</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.5</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">3</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span><span style="color:#ae81ff">4</span>);
 
-// used as an echo.
-{ CombN.ar(Decay.ar(Dust.ar(1,0.5), 0.2, WhiteNoise.ar), 0.2, 0.2, 3) }.scope(1, zoom:4);
+<span style="color:#75715e">// Comb used as a resonator. The resonant fundamental is equal to
+</span><span style="color:#75715e">// reciprocal of the delay time.
+</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">CombN</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 
-// Comb used as a resonator. The resonant fundamental is equal to
-// reciprocal of the delay time.
-{ CombN.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), 0.2) }.scope(1);
+{ <span style="color:#a6e22e">CombL</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 
-{ CombL.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), 0.2) }.scope(1);
+{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 
-{ CombC.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), 0.2) }.scope(1);
+<span style="color:#75715e">// with negative feedback:
+</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">CombN</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 
-// with negative feedback:
-{ CombN.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), -0.2) }.scope(1);
+{ <span style="color:#a6e22e">CombL</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 
-{ CombL.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), -0.2) }.scope(1);
+{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 
-{ CombC.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), -0.2) }.scope(1);
+{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/100, 1/100, 3) }.play;</span>
+{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/200, 1/200, 3) }.play;</span>
+{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/300, 1/300, 3) }.play;</span>
+{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/400, 1/400, 3) }.scope(1, zoom:4);</span>
 
-{ CombC.ar(Decay.ar(Dust.ar(1,0.1), 0.2, WhiteNoise.ar), 1/100, 1/100, 3) }.play;
-{ CombC.ar(Decay.ar(Dust.ar(1,0.1), 0.2, WhiteNoise.ar), 1/200, 1/200, 3) }.play;
-{ CombC.ar(Decay.ar(Dust.ar(1,0.1), 0.2, WhiteNoise.ar), 1/300, 1/300, 3) }.play;
-{ CombC.ar(Decay.ar(Dust.ar(1,0.1), 0.2, WhiteNoise.ar), 1/400, 1/400, 3) }.scope(1, zoom:4);
-</code></pre>
+<span style="color:#75715e">//etc
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">//PlayBuf - buffer playback
+</span><span style="color:#75715e">//arguments: numChannels, buffer number, rate, trigger, start pos, loop
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// read sound
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">read</span>(<span style="color:#a6e22e">s</span>, <span style="color:#a6e22e">Platform</span>.<span style="color:#a6e22e">resourceDir</span> <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">/+ &#34;sounds/a11wlk01.wav&#34;);</span>
 
-<p>Another example</p>
+{ <span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">800</span> <span style="color:#f92672">+</span> (<span style="color:#ae81ff">700</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">PlayBuf</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">BufRateScale</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">b</span>),  <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>)),<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0.3</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 
-<pre><code class="language-js">// Sound Sample Delay
-
-b = Buffer.read(s, Platform.resourceDir +/+ &quot;sounds/a11wlk01.wav&quot;);
-// loop is true
-{
-var signal;
-var delaytime = MouseX.kr(0.000022675, 1); // from a sample to 1 s
-signal = PlayBuf.ar(1, b.bufnum, BufRateScale.kr(b.bufnum), loop:1);
-x =  DelayN.ar(signal, 0.6, delaytime); // try replacing with CombN (with 0 decayTime)
-(signal + x).dup
-}.play
-</code></pre>
-
-<p>//etc</p>
-
+<span style="color:#75715e">// loop is true
+</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">PlayBuf</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">BufRateScale</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">b</span>), <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+</code></pre></div>
 
     
     
         <div class="chevrons">
     <div id="navigation">
 <a class="nav nav-prev" href="/dss/sc-examples/distortion/" title="Distortion"> <i class="fa fa-chevron-left"></i><label>Distortion</label></a>
-    <a class="nav nav-next" href="/dss/sc-examples/buffers/" title="Buffers" style="margin-right: 0px;"><label>Buffers</label><i class="fa fa-chevron-right"></i></a></div>
+    <a class="nav nav-next" href="/dss/sc-examples/spectral/" title="Spectral" style="margin-right: 0px;"><label>Spectral</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>

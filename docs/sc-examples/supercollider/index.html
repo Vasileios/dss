@@ -17,9 +17,16 @@
 <script type="text/javascript">
       var baseurl = "https:\/\/vasileios.github.io\/dss";
 </script>
-<meta name="description" content="">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-79101-13', 'auto');
+  ga('send', 'pageview');
 
+</script>
     
   </head>
   <body data-url="/dss/sc-examples/supercollider/">
@@ -56,38 +63,10 @@
       <a href="/dss/introduction/"><b>1. </b>Εισαγωγή</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
-      <li data-nav-id="/dss/introduction/history.en/" class="dd-item">
-        <div>
-          <a href="/dss/introduction/history.en/">
-            History
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/dss/introduction/_index.en/" class="dd-item">
-        <div>
-          <a href="/dss/introduction/_index.en/">
-            <b>1. </b>Introduction
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/dss/introduction/history/" class="dd-item">
         <div>
           <a href="/dss/introduction/history/">
             Ιστορία
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/dss/introduction/paradigms.en/" class="dd-item">
-        <div>
-          <a href="/dss/introduction/paradigms.en/">
-            Paradigms
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/dss/introduction/paradigms/" class="dd-item">
-        <div>
-          <a href="/dss/introduction/paradigms/">
-            Παραδείγματα
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -105,17 +84,17 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/dss/introduction/logicalex/" class="dd-item">
-        <div>
-          <a href="/dss/introduction/logicalex/">
-            Logical Expressions
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/dss/introduction/notation/" class="dd-item">
         <div>
           <a href="/dss/introduction/notation/">
             Notation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/introduction/logicalex/" class="dd-item">
+        <div>
+          <a href="/dss/introduction/logicalex/">
+            Logical Expressions
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -184,13 +163,6 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/dss/sc-examples/buffers/" class="dd-item">
-        <div>
-          <a href="/dss/sc-examples/buffers/">
-            Buffers
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
       <li data-nav-id="/dss/sc-examples/spectral/" class="dd-item">
         <div>
           <a href="/dss/sc-examples/spectral/">
@@ -202,13 +174,6 @@
         <div>
           <a href="/dss/sc-examples/granularsynthesis/">
             Granular Synthesis
-          </a><i class="fa fa-circle-thin read-icon"></i>
-        </div>
-    </li>
-      <li data-nav-id="/dss/sc-examples/simplealgorithms/" class="dd-item">
-        <div>
-          <a href="/dss/sc-examples/simplealgorithms/">
-            Algorithmic Composition Examples
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -226,7 +191,19 @@
 
 
     </ul>
-    <section>
+    <section><center>
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download vjeantet/hugo-theme-docdock on GitHub">Download</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock" data-icon="octicon-star" data-show-count="false" aria-label="Star vjeantet/hugo-theme-docdock on GitHub">Star</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork vjeantet/hugo-theme-docdock on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
     </section>
   </aside>
   <section class="page">
@@ -245,10 +222,8 @@
       <option value="/dss/sc-examples/filters/" >- Filters</option>
       <option value="/dss/sc-examples/distortion/" >- Distortion</option>
       <option value="/dss/sc-examples/delays/" >- Delays</option>
-      <option value="/dss/sc-examples/buffers/" >- Buffers</option>
       <option value="/dss/sc-examples/spectral/" >- Spectral</option>
       <option value="/dss/sc-examples/granularsynthesis/" >- Granular Synthesis</option>
-      <option value="/dss/sc-examples/simplealgorithms/" >- Algorithmic Composition Examples</option>
       <option value="/dss/sc-examples/synthesistec/" >- Sound synthesis techniques</option>
   
 
@@ -287,7 +262,7 @@
 
 <p><strong>Basics</strong></p>
 
-<p>SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for Windows, macOS, and Linux.</p>
+<p>SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for <del>Windows</del>, macOS, and Linux.</p>
 
 <p><strong>SuperCollider features three major components</strong></p>
 
@@ -297,129 +272,11 @@
 <li><strong>scide</strong> is an editor for sclang with an integrated help system.</li>
 </ul>
 
-<h4 id="functions-arguments-variables">Functions, arguments,  variables</h4>
-
-<p><strong>Functions</strong></p>
-
-<p>A Function is an expression which defines operations to be performed when it is sent the value message. In functional languages, a function would be known as a lambda expression. Function definitions are enclosed in curly brackets {}. Argument declarations, if any, follow the open bracket. Variable declarations follow argument declarations. An expression follows the declarations.</p>
-
-<pre><code class="language-js">
-
-// Functions in SuperCollider are within curly brackets  (also called &quot;braces&quot;) {}
-
-{ arg a, b, c;  var d;   d = a * b; c + d }
-
-//When evaluated, the function returns the value of its expression.
-
-f = { arg a, b; a + b };
-f.value(4, 5).postln;
-f.value(10, 200).postln;
-
-f = {44.postln};
-
-f.value // to call the function we need to get its .value
-
-
-</code></pre>
-
-<p><strong>Arguments</strong></p>
-
-<p>An argument list immediately follows the open curly bracket of a
-function definition. An argument list either begins with the reserved
-word arg, or is contained between two vertical bars.</p>
-
-<p>"arg" style: { arg x = 1; .... }</p>
-
-<p>Pipe style: { |x = 1| ... }</p>
-
-<p><strong>Variables</strong></p>
-
-<p>Assign values to variables.</p>
-
-<p>Data type of variables: integer, float, string, symbol, etc...</p>
-
-<pre><code class="language-js">/*
-180503 Algorithmic Composition
-Variables, functions
-
-*/
-Server.default=s=Server.local;
-s.boot;
-//Global variables
-//a-z
-a = 10;
-b = 20;
-c = 0.234521;
-a+b+c;
-
-d = &quot;hello&quot;;
-
-a = [1, 34, 55, 0.1, &quot;string in a list&quot;, \symbol, pi]; // or an array with mixed types
-
-a //hit this line to see the container of a
-
-//local variables
-(
-var v, a;
-v = 22;
-a = 33;
-)
-
-v // hit this line and watch the post window 
-a // hit this line and watch the post window - still our old &quot;a&quot; from above
-
-(
-//You cannot evaluate local variables out of their scope of the brackets or a function.
-var number9;
-
-number9=9;//sets local vars, NOT global
-
-)
-number9;//error: this doesnt work outside of the scope of the brackets 
-
-/*
-~ (tilde) global (Environmental variables) 
-An Environment is an IdentityDictionary with additional features that allow it to serve as a 'name space' within which functions can be defined and/or evaluated.
-
-The compiler provides a shortcut syntax where ~ is a placeholder for .currentEnvironment. This makes the expression ~myvariable; equivalent to currentEnvironment.at(\myvariable); and the expression ~myvariable = 888; equivalent to currentEnvironment.put(\myvariable, 888);
-*/
-
-currentEnvironment; //run this line to the current state of the currentEnvironment
-
-//You use the currentEnvironment via the ~ sign
-
-~myvariable= 888;
-
-//The ~ and = is a shortcut here for 
-
-currentEnvironment.put(\myvariable, 888);
-
-//You can access the variable wherever you need it by 
-
-~myvariable
-
-//environmental variable: sound example
-(
-~variable1 = {SinOsc.ar(MouseX.kr(400, 800, 1))};
-~variable2 = {Saw.ar(MouseY.kr(400, 800, 1))};
-~variable3 = (~variable1*~variable2);
-)
-(
-{
-	Out.ar(0, ~variable3)
-}.play;
-)
-
-currentEnvironment; //run this line to the current state of the currentEnvironment
-</code></pre>
-
-<h4 id="general-tips">General tips</h4>
+<h4 id="code-examples">Code examples</h4>
 
 <p><strong>Find recordings folder</strong></p>
-
-<pre><code class="language-js">thisProcess.platform.recordingsDir;
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">thisProcess</span>.<span style="color:#a6e22e">platform</span>.<span style="color:#a6e22e">recordingsDir</span>;
+</code></pre></div>
 <p><strong>Sound synthesis techniques</strong></p>
 
 <p>Introduction to sound synthesis and  sound design (origin, definition, procedures, application fields).</p>
@@ -432,49 +289,38 @@ SuperCollider example:
 Creating a sine wave
 </p>
 </blockquote>
-
-<pre><code class="language-js">{SinOsc.ar(440, 0, 0.3)}.play
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.3</span>)}.<span style="color:#a6e22e">play</span>
+</code></pre></div>
 <blockquote>
 <p>
 Additive synthesis
 </p>
 </blockquote>
-
-<pre><code class="language-js">{SinOsc.ar(440, 0, 0.4)+SinOsc.ar(660, 0, 0.3)}.play;
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.4</span>)<span style="color:#f92672">+</span><span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">660</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.3</span>)}.<span style="color:#a6e22e">play</span>;
+</code></pre></div>
 <blockquote>
 <p>
 Subtractive synthesis
 </p>
 </blockquote>
-
-<pre><code class="language-js">(
-{LPF.ar(Mix.fill(8, { SinOsc.ar(500 + 500.0.rand, 0, 0.05)}), 2900, 0.5);
-}.play
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">(
+{<span style="color:#a6e22e">LPF</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Mix</span>.<span style="color:#a6e22e">fill</span>(<span style="color:#ae81ff">8</span>, { <span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">500</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">500.0</span>.<span style="color:#a6e22e">rand</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.05</span>)}), <span style="color:#ae81ff">2900</span>, <span style="color:#ae81ff">0.5</span>);
+}.<span style="color:#a6e22e">play</span>
 )
-</code></pre>
-
+</code></pre></div>
 <blockquote>
 <p>
 Granular synthesis
 </p>
 </blockquote>
-
-<pre><code class="language-js">
-
-SynthDef(\granular, {|out = 0, trig = 1, dur = 0.1, sndbuf, pos = 0.2,
-rate = 1, pan = 0, amp = 0.4|
-var env, source;
-env = EnvGen.kr(Env.adsr, 1, doneAcion: 2);
-source = Out.ar(out, GrainBuf.ar(2, Impulse.kr(trig), dur, sndbuf, rate, pos, 2,
-pan, envbuf) * env)
-}).add;
-
-</code></pre>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">SynthDef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">granular</span>, {<span style="color:#f92672">|</span><span style="color:#a6e22e">out</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">trig</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">dur</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>, <span style="color:#a6e22e">sndbuf</span>, <span style="color:#a6e22e">pos</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>,
+<span style="color:#a6e22e">rate</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">pan</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">amp</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.4</span><span style="color:#f92672">|</span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">source</span>;
+<span style="color:#a6e22e">env</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">EnvGen</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">Env</span>.<span style="color:#a6e22e">adsr</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">doneAcion</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>);
+<span style="color:#a6e22e">source</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">out</span>, <span style="color:#a6e22e">GrainBuf</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">Impulse</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">trig</span>), <span style="color:#a6e22e">dur</span>, <span style="color:#a6e22e">sndbuf</span>, <span style="color:#a6e22e">rate</span>, <span style="color:#a6e22e">pos</span>, <span style="color:#ae81ff">2</span>,
+<span style="color:#a6e22e">pan</span>, <span style="color:#a6e22e">envbuf</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">env</span>)
+}).<span style="color:#a6e22e">add</span>;
+</code></pre></div>
 <h4 id="input-devices">Input Devices</h4>
 
 <p>Musical gestures can be expressed through a wide range of body

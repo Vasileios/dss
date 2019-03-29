@@ -12,10 +12,10 @@
     
     <item>
       <title>SuperCollider</title>
-      <link>https://vasileios.github.io/dss/sc-examples/supercollider/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/001supercollider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/supercollider/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/001supercollider/</guid>
       <description>chapter 2 SuperCollider SuperCollider
 From: SuperCollider
 Basics
@@ -26,106 +26,79 @@ SuperCollider features three major components
     
     <item>
       <title>Oscillators</title>
-      <link>https://vasileios.github.io/dss/sc-examples/oscillators/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/002oscillators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/oscillators/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/002oscillators/</guid>
       <description>chapter 2 SuperCollider Oscillators SuperCollider Ugens From SC Help
-//Periodic Sources: Oscillators. //LF - &amp;quot;Low Frequency&amp;quot; Unit Generators. //arguments: frequency, phase, mul, add // *Stethoscope* s.boot a = Stethoscope(s,2); // 2 tracks //a = Stethoscope(s,2, 2); // change in i.e (Mic) // parabolic approximation of sine { LFPar.ar(LFPar.kr(LFPar.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); // cubic approximation of sine { LFCub.ar(LFCub.kr(LFCub.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFTri.ar(LFTri.kr(LFTri.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFSaw.</description>
+//Periodic Sources: Oscillators. //LF - &amp;#34;Low Frequency&amp;#34; Unit Generators. //arguments: frequency, phase, mul, add  // *Stethoscope*  s.boot a = Stethoscope(s,2); // 2 tracks //a = Stethoscope(s,2, 2); // change in i.e (Mic)  // parabolic approximation of sine { LFPar.ar(LFPar.kr(LFPar.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); // cubic approximation of sine { LFCub.ar(LFCub.kr(LFCub.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFTri.ar(LFTri.kr(LFTri.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFSaw.</description>
     </item>
     
     <item>
       <title>Noise</title>
-      <link>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/003aperiodicsources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/003aperiodicsources/</guid>
       <description>chapter 2 SuperCollider Noise Generators Aperiodic Sources: Noise
-//Aperiodic Sources: Noise. //LF &amp;quot;Low Frequency&amp;quot; Noise Generators. //arguments: frequency, mul, add { LFClipNoise.ar(MouseX.kr(200, 10000, 1), 0.125) }.scope(1); { LFPar.ar(LFClipNoise.kr(MouseX.kr(0.5, 64, 1), 200, 400), 0, 0.2) }.scope(1, zoom:8); //Broad Spectrum Noise Generators //arguments: mul, add { ClipNoise.ar(0.2) }.scope(1); { WhiteNoise.ar(0.2) }.scope(1); { PinkNoise.ar(0.4) }.scope(1); { BrownNoise.ar(0.2) }.scope(1); { GrayNoise.ar(0.2) }.scope(1); // Impulse Noise Generators //Dust, Dust2 //arguments: density, mul, add { Dust.ar(MouseX.kr(1,10000,1), 0.</description>
+/Aperiodic Sources: Noise. //LF &amp;#34;Low Frequency&amp;#34; Noise Generators. //arguments: frequency, mul, add { LFClipNoise.ar(MouseX.kr(200, 10000, 1), 0.125) }.scope(1); { LFPar.ar(LFClipNoise.kr(MouseX.kr(0.5, 64, 1), 200, 400), 0, 0.2) }.scope(1, zoom:8); //Broad Spectrum Noise Generators //arguments: mul, add { ClipNoise.ar(0.2) }.scope(1); { WhiteNoise.ar(0.2) }.scope(1); { PinkNoise.ar(0.4) }.scope(1); { BrownNoise.ar(0.2) }.scope(1); { GrayNoise.ar(0.2) }.scope(1); // Impulse Noise Generators //Dust, Dust2 //arguments: density, mul, add  { Dust.</description>
     </item>
     
     <item>
       <title>Filters</title>
-      <link>https://vasileios.github.io/dss/sc-examples/filters/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/004filters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/filters/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/004filters/</guid>
       <description>chapter 2 SuperCollider Filters Filters in SuperCollider
-// Filters //Low Pass, High Pass, Band Pass see more on Help //arguments: in, freq, mul, add { LPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); { HPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); // Resonant Low Pass, High Pass, Band Pass //arguments: in, freq, rq, mul, add { RLPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); { RHPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); // Resonz - resonant band pass filter with uniform amplitude //arguments: in, freq, rq, mul, add // modulate frequency { Resonz.</description>
+// Filters  //Low Pass, High Pass, Band Pass see more on Help //arguments: in, freq, mul, add  { LPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); { HPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); // Resonant Low Pass, High Pass, Band Pass //arguments: in, freq, rq, mul, add  { RLPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); { RHPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); // Resonz - resonant band pass filter with uniform amplitude //arguments: in, freq, rq, mul, add  // modulate frequency { Resonz.</description>
     </item>
     
     <item>
       <title>Distortion</title>
-      <link>https://vasileios.github.io/dss/sc-examples/distortion/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/005distortion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/distortion/</guid>
-      <description>chapter 2 SuperCollider Distorion // Distortion { SinOsc.ar(300, 0, 0.2) }.scope(1); { SinOsc.ar(300, 0, 0.2).abs }.scope(1); { SinOsc.ar(300, 0, 0.2).max(0) }.scope(1); { SinOsc.ar(300, 0).squared * 0.2 }.scope(1); { SinOsc.ar(300, 0).cubed * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).distort * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).softclip * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).clip2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).fold2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).wrap2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.</description>
+      <guid>https://vasileios.github.io/dss/sc-examples/005distortion/</guid>
+      <description>chapter 2 SuperCollider Distorion // Distortion  { SinOsc.ar(300, 0, 0.2) }.scope(1); { SinOsc.ar(300, 0, 0.2).abs }.scope(1); { SinOsc.ar(300, 0, 0.2).max(0) }.scope(1); { SinOsc.ar(300, 0).squared * 0.2 }.scope(1); { SinOsc.ar(300, 0).cubed * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).distort * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).softclip * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).clip2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).fold2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).wrap2(1) * 0.2 }.scope(1); { SinOsc.</description>
     </item>
     
     <item>
       <title>Delays</title>
-      <link>https://vasileios.github.io/dss/sc-examples/delays/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/006delays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/delays/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/006delays/</guid>
       <description>chapter 2 SuperCollider Delays //Delays and Buffer UGens DelayN, DelayL, DelayC - simple delays N - no interpolation L - linear interpolation C - cubic interpolation arguments: in, maximum delay time, current delay time, mul, add ( // Dust randomly triggers Decay to create an exponential // decay envelope for the WhiteNoise input source { z = Decay.ar(Dust.ar(1,0.5), 0.3, WhiteNoise.ar); DelayN.ar(z, 0.1, 0.1, 1, z); // input is mixed with delay via the add input }.</description>
     </item>
     
     <item>
-      <title>Buffers</title>
-      <link>https://vasileios.github.io/dss/sc-examples/buffers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/sc-examples/buffers/</guid>
-      <description>chapter 2 Buffers/playback Buffers and Sound Files
-To do sample playback and manipulation, for streaming files off disk, for recording and wavetables and many other processes, it is necessary to handle memory buffers on the Server.
-Buffer read (server, path, startFrame: 0, numFrames: -1, action, bufnum) Allocate a buffer and immediately read a soundfile into it.
-//PlayBuf - buffer playback //arguments: numChannels, buffer number, rate, trigger, start pos, loop // read sound b = Buffer.</description>
-    </item>
-    
-    <item>
       <title>Spectral</title>
-      <link>https://vasileios.github.io/dss/sc-examples/spectral/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/007spectral/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/spectral/</guid>
+      <guid>https://vasileios.github.io/dss/sc-examples/007spectral/</guid>
       <description>chapter 2 SuperCollider Spectral FFT-PV_Ugens
-FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a trigger each time the buffer is ready to process. The PV (Phase Vocoder) UGens process the spectrum when they receive the trigger. IFFT converts the spectrum back into sound.
+FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a trigger each time the buffer is ready to process. The PV UGens process the spectrum when they receive the trigger. IFFT converts the spectrum back into sound.
 // alloc a buffer for the FFT b = Buffer.alloc(s,2048,1); // read a sound c = Buffer.</description>
     </item>
     
     <item>
       <title>Granular Synthesis</title>
-      <link>https://vasileios.github.io/dss/sc-examples/granularsynthesis/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/008granularsynthesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/granularsynthesis/</guid>
-      <description>chapter 2 SuperCollider Granular Synthesis //TGrains - granulation of a buffer //arguments: numChannels, trigger, buffer number, rate, center pos, dur, pan, amp, interpolation //see more about Granular synthesis on Help // read sound b = Buffer.read(s, Platform.resourceDir +/+ &amp;quot;sounds/a11wlk01.wav&amp;quot;); ( { var trate, dur; trate = MouseY.kr(2,200,1); dur = 4 / trate; TGrains.ar(2, Impulse.ar(trate), b, 1, MouseX.kr(0,BufDur.kr(b)), dur, 0, 0.1, 2); }.scope(2, zoom: 4); ) ( { var trate, dur, clk, pos, pan; trate = MouseY.</description>
-    </item>
-    
-    <item>
-      <title>Algorithmic Composition Examples</title>
-      <link>https://vasileios.github.io/dss/sc-examples/simplealgorithms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/sc-examples/simplealgorithms/</guid>
-      <description>chapter 2 Examples with Routines and Loops
-( /* Algorithmic composition paradigms BA 181502 Objective: create a sine wave and accelerate and decelarate its frequency nth times. */ fork{//this alternative syntax goes for Routine 10.do({//here goes the repetition (10 times) a = {SinOsc.ar(XLine.kr(100, 500, 4), 0, 0.4)}.play; 4.wait; a.release; b = {SinOsc.ar(XLine.kr(500, 100, 4), 0, 0.4)}.play; 4.wait; b.release; });//loop ends here }//fork (Routine) ends here )  probability-stochastic
-/* BA 181502 Stochastic example 1 Objective: Create two sounds one after the other then free one of them (probability), wait a couple of seconds to free also the remain sounds (probability).</description>
+      <guid>https://vasileios.github.io/dss/sc-examples/008granularsynthesis/</guid>
+      <description>chapter 2 SuperCollider Granular Synthesis //TGrains - granulation of a buffer //arguments: numChannels, trigger, buffer number, rate, center pos, dur, pan, amp, interpolation //see more about Granular synthesis on Help  // read sound b = Buffer.read(s, Platform.resourceDir +/+ &amp;#34;sounds/a11wlk01.wav&amp;#34;); ( { var trate, dur; trate = MouseY.kr(2,200,1); dur = 4 / trate; TGrains.ar(2, Impulse.ar(trate), b, 1, MouseX.kr(0,BufDur.kr(b)), dur, 0, 0.1, 2); }.scope(2, zoom: 4); ) ( { var trate, dur, clk, pos, pan; trate = MouseY.</description>
     </item>
     
     <item>
       <title>Sound synthesis techniques</title>
-      <link>https://vasileios.github.io/dss/sc-examples/synthesistec/</link>
+      <link>https://vasileios.github.io/dss/sc-examples/009synthesistec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/synthesistec/</guid>
-      <description>chapter 2 Sound synthesis techniques-methods Spectral
- Additive Phase Vocoder FFT  Abstract
- FM Waveshaping  Sampling
- Sampling Granular  Physical
- Modal Waveguide  Additive synthesis Additive synthesis is a method in which a composite waveform is formed by summing sinusoidal components, for example, harmonics of a tone, to produce a sound (Moorer 1985). In additive synthesis, three control functions are needed for every sinusoidal oscillator: the amplitude, frequency and phase of each component.</description>
+      <guid>https://vasileios.github.io/dss/sc-examples/009synthesistec/</guid>
+      <description>chapter 2 Additive synthesis /* Sound Synthesis techniques BA 181902 Objective: create complex sounds using additive synthesis technique // Additive Synthesis a+b+c+d where a to d can be frequencies or any other object such as a waveform */ // firts boot the internal server and open Freqscope and Stethoscope  s = Server.internal; s.boot Stethoscope.new FreqScope.new //create harmonics of a 440Hz A note  {SinOsc.ar([440, 880, 880*3/2, 1600*4/3, 2000], 0, [0.</description>
     </item>
     
   </channel>

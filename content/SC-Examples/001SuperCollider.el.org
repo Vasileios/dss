@@ -1,0 +1,112 @@
++++
+title = "SuperCollider"
+chapter = true
+weight = 15
++++
+
+*** chapter 2
+**** SuperCollider
+
+*SuperCollider*
+
+From: [[http://supercollider.github.io][SuperCollider]]
+
+*Basics*
+
+SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for +Windows+, macOS, and Linux.
+
+*SuperCollider features three major components*
+
+- *scsynth*, a real-time audio server, forms the core of the platform. It features 400+ unit generators ("UGens") for analysis, synthesis, and processing. Its granularity allows the fluid combination of many known and unknown audio techniques, moving between additive and subtractive synthesis, FM, granular synthesis, FFT, and physical modelling. You can write your own UGens in C++, and users have already contributed several hundred more to the sc3-plugins repository.
+- *sclang*, an interpreted programming language. It is focused on sound, but not limited to any specific domain. sclang controls scsynth via Open Sound Control. You can use it for algorithmic composition and sequencing, finding new sound synthesis methods, connecting your app to external hardware including MIDI controllers, network music, writing GUIs and visual displays, or for your daily programming experiments. It has a stock of user-contributed extensions called Quarks.
+- *scide* is an editor for sclang with an integrated help system.
+
+**** Code examples 
+*Find recordings folder*
+
+#+BEGIN_SRC js
+thisProcess.platform.recordingsDir;
+#+END_SRC
+
+
+*Sound synthesis techniques*
+
+Introduction to sound synthesis and  sound design (origin, definition, procedures, application fields).
+
+#+BEGIN_QUOTE
+SuperCollider example:
+Creating a sine wave
+#+END_QUOTE
+
+
+#+BEGIN_SRC js
+{SinOsc.ar(440, 0, 0.3)}.play
+#+END_SRC
+
+#+BEGIN_QUOTE
+Additive synthesis
+#+END_QUOTE
+#+BEGIN_SRC js
+{SinOsc.ar(440, 0, 0.4)+SinOsc.ar(660, 0, 0.3)}.play;
+#+END_SRC
+
+#+BEGIN_QUOTE
+Subtractive synthesis
+#+END_QUOTE
+
+#+BEGIN_SRC js
+(
+{LPF.ar(Mix.fill(8, { SinOsc.ar(500 + 500.0.rand, 0, 0.05)}), 2900, 0.5);
+}.play
+)
+#+END_SRC
+
+#+BEGIN_QUOTE
+Granular synthesis
+#+END_QUOTE
+
+#+BEGIN_SRC js
+
+SynthDef(\granular, {|out = 0, trig = 1, dur = 0.1, sndbuf, pos = 0.2,
+rate = 1, pan = 0, amp = 0.4|
+var env, source;
+env = EnvGen.kr(Env.adsr, 1, doneAcion: 2);
+source = Out.ar(out, GrainBuf.ar(2, Impulse.kr(trig), dur, sndbuf, rate, pos, 2,
+pan, envbuf) * env)
+}).add;
+
+#+END_SRC
+
+
+
+**** Input Devices
+
+
+Musical gestures can be expressed through a wide range of body
+movements. Dozens of input devices have been developed to capture
+these gestures. (Roads 1996: 625)
+
+#+BEGIN_QUOTE
+Switch
+Push buttons
+Linear potentiometer or fader
+Trackball
+Joystick
+Game Paddles
+etc
+#+END_QUOTE
+
+**** Instrument design
+
+
+[[http://bela.io][Bela]]
+
+
+Capacitive touch sensor-raspberry pi
+
+[[https://learn.adafruit.com/mpr121-capacitive-touch-sensor-on-raspberry-pi-and-beaglebone-black/overview][MPR121]]
+
+#+BEGIN_QUOTE
+To be continued...
+#+END_QUOTE
+

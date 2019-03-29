@@ -1,18 +1,18 @@
 +++
 title = "Logical Expressions"
 chapter = true
-weight = 9
+weight = 35
 +++
 
 *** chapter 1
 
-**** SN
+**** LE
 
- *Symbolic notations in SuperCollider Supercollider Book*
+*Logical Expressions in SuperCollider*
 
 #+BEGIN_SRC js
 
-// Logical/boolean notations/Expressions
+Logical expressions
 
 =true or false=
 
@@ -30,14 +30,3 @@ weight = 9
 1.odd.or(1.even) // either condition
 
 #+END_SRC
-
-
-examples
-
-#+BEGIN_SRC js
-if(10==10, {"10 is equal to 10"}, {"false"});
-if((1<20).and(1.isInteger), {"1 is less than 20"}, {"false"});
-#+END_SRC
-
-
-see more [[http://danielnouri.org/docs/SuperColliderHelp/Language/SymbolicNotations.html][here]]
