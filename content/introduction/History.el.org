@@ -26,10 +26,18 @@ Varese προσπάθησε να πείσει τους ερευνητές και
 concrete) καιέτσι να κάνει τα πρώτα βήματα της
 μουσικής με υπολογιστή (Computer Music).
 
-/[[https://ccrma.stanford.edu/blogs/ruviaro/lork-digression-1-what-musical-instrument][Pierre Schaeffer]]/
 
-Ο Γιάννης Ξενάκης χρησιμοποίησε τις δυνατότητες του υπολογιστή για
-αρκετές από τις συνθέσεις του και ο Pierre Boulez ξεκίνησε το IRCAM,
+
+/Electronic Music - Music Concrete/
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/c4ea0sBrw6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+/Edgard Varese/
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/WQKyYmU2tPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+Ο *Γιάννης Ξενάκης* χρησιμοποίησε τις δυνατότητες του υπολογιστή για
+αρκετές από τις συνθέσεις του και ο *Pierre Boulez* ξεκίνησε το /IRCAM/,
 ένα ινστιτούτο αφιερωμένο στη μουσική έρευνα και τη δημιουργία και η
 οποία χρησιμοποιεί ως επί το πλείστον ψηφιακά εργαλεία. Η ποπ μουσική
 δεν θα μπορούσε ποτέ να εξελιχθεί χωρίς τον ηλεκτρονικό εξοπλισμό και
@@ -61,8 +69,14 @@ src="https://www.youtube.com/embed/ie5Ore2rjhk" frameborder="0"
 allow="accelerometer; autoplay; encrypted-media; gyroscope;
 picture-in-picture" allowfullscreen></iframe></p>
 
+
+/[[https://ccrma.stanford.edu/blogs/ruviaro/lork-digression-1-what-musical-instrument][Pierre Schaeffer]]/
+
+<p><iframe width="560" height="315" src="https://www.youtube.com/embed/CTf0yE15zzI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
 Έτσι οι νέες δυνατότητες έχουν ήδη μεγάλη επιρροή στη μουσική
 σύνθεση. Η εξερεύνηση αυτών των δυνατότητων συνεχίζονται καιαυτή είναι η πιο συναρπαστική πρόκληση για τους μουσικούς σήμερα.
+
 
 Η προηγμένη ηλεκτρονική τεχνολογία για τον ήχο είναι από καιρό «αναλογική». Άνοιξε νέες
 δυνατότητες - για παράδειγμα, με τη συγκεκριμένη μουσική 'musique
