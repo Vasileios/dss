@@ -137,11 +137,10 @@ Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vasileios.github.io/dss/introduction/glossary/</guid>
-      <description>chapter 1 Glossary Mathematics
-premise a statement that is assumed to be true.
-polynomial function is an expression consisting of variables (also called indeterminates) and coefficients, that involves only the operations of addition, subtraction, multiplication, and non-negative integer exponents of variables (Wiki, see more here)
-Physics
-frequency the number of times that a wave, especially a light, sound, or radio wave, is produced within a particular period, especially one second.</description>
+      <description>chapter 1 Glossary General
+Ο αλγόριθμος είναι:
+ &#34;- Ένα σύνολο μαθηματικών οδηγιών που πρέπει να ακολουθηθούν για τον υπολογισμό μιας απάντησης σε ένα μαθηματικό πρόβλημα. Μια συστηματική διαδικασία που παράγει - σε ένα πεπερασμένο αριθμό βημάτων την απάντηση σε μια ερώτηση ή τη λύση ενός προβλήματος. (κυρίως για υπολογιστές) ένα σύνολο κανόνων που πρέπει να ακολουθηθούν για να επιλυθεί ένα συγκεκριμένο πρόβλημα&#34;. (Nierhaus 2009 2)  Mathematics
+premise a statement that is assumed to be true.</description>
     </item>
     
     <item>
