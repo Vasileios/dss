@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/</loc>
+    <loc>https://vasileios.github.io/dss/introduction/_index.en/</loc>
   </url>
   
   <url>
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/</loc>
+    <loc>https://vasileios.github.io/dss/introduction/</loc>
   </url>
   
   <url>
@@ -19,15 +19,11 @@
   </url>
   
   <url>
+    <loc>https://vasileios.github.io/dss/introduction/paradigms/</loc>
+  </url>
+  
+  <url>
     <loc>https://vasileios.github.io/dss/introduction/soundtheory/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/001supercollider/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/002oscillators/</loc>
   </url>
   
   <url>
@@ -35,27 +31,15 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/003aperiodicsources/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/004filters/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/notation/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/005distortion/</loc>
-  </url>
-  
-  <url>
     <loc>https://vasileios.github.io/dss/introduction/logicalex/</loc>
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/006delays/</loc>
+    <loc>https://vasileios.github.io/dss/sc-examples/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/notation/</loc>
   </url>
   
   <url>
@@ -67,15 +51,43 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/007spectral/</loc>
+    <loc>https://vasileios.github.io/dss/sc-examples/supercollider/</loc>
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/008granularsynthesis/</loc>
+    <loc>https://vasileios.github.io/dss/sc-examples/oscillators/</loc>
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/009synthesistec/</loc>
+    <loc>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/filters/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/distortion/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/delays/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/spectral/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/granularsynthesis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/simplealgorithms/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/synthesistec/</loc>
   </url>
   
   <url>
