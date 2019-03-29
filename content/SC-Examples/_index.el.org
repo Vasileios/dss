@@ -7,7 +7,7 @@ pre = "<b>2. </b>"
 
 *** Chapter 2
 
-SuperCollider examples of Sound Synthesis
+SuperCollider examples - Sound Synthesis
 techniques and Algorithmic
 Composition.
 
