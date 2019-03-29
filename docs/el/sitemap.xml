@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/introduction/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/history/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/introduction/history/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/introduction/history/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/paradigms/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/introduction/paradigms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/introduction/paradigms/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/soundtheory/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/tuning_scales/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/logicalex/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/notation/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/glossary/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/references/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/supercollider/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/oscillators/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/filters/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/distortion/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/delays/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/buffers/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/spectral/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/granularsynthesis/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/simplealgorithms/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/synthesistec/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/tags/"
+                />
+  </url>
+  
+</urlset>

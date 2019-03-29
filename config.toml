@@ -1,70 +1,63 @@
-baseURL = "https://vasileios.github.io/dss/"
-
-title = "Digital Sound Synthesis"
-
-
-#metaDataFormat = "yaml"
-#defaultContentLanguageInSubdir= true
-#ordersectionsby = "weight"
-  
-
-
-languageCode = "en-us"
-
-
-theme = "hugo-theme-docdock"
-#themesdir = "./themes"
-pygmentsCodeFences = true
-pygmentsStyle = "monokai"
-
+baseURL = "https://vasileios.github.io/dss"
+languageCode = "en-US"
 defaultContentLanguage = "el"
-defaultContentLanguageInSubdir= false
-enableMissingTranslationPlaceholders = false
 
+title = "Algorithmic Composition"
+theme = "hugo-theme-learn"
+#themesdir = "themes/"
+metaDataFormat = "yaml"
+#defaultContentLanguageInSubdir= true
+ordersectionsby = "weight"
+  
 publishDir= "docs"
 
-#[params]
-# themeVariant="black"
-
-# [Languages]
-# [Languages.en]
-# title = "Documentation for Hugo docDock"
-# weight = 1
-# languageName = "English"
-# 
-# [Languages.fr]
-# title = "Documentation du thème docDock"
-# weight = 2
-# languageName = "Français"
-
 [params]
- editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
-showVisitedLinks = true # default is false
-themeStyle = "flex" # "original" or "flex" # default "flex"
-themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
-ordersectionsby = "weight" # ordersectionsby = "title"
-disableHomeIcon = false # default is false
-disableSearch = false # default is false
-disableNavChevron = false # set true to hide next/prev chevron, default is false
-highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
-menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
-enableGitInfo = true
+ themeVariant="black"
+
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
 [Languages.el]
-title = "Ψηφιακή Σύνθεση Ήχου"
+title = ""
 weight = 1
 languageName = "Ελληνικά"
 
-[[menu.shortcuts]]
-pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> <label>Github repo</label>"
-identifier = "dss"
-url = "https://github.com/Vasileios/dss/"
+[[Languages.el.menu.shortcuts]] 
+name = "<i class='fa fa-fw fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/Vasileios/dss.git"
 weight = 10
 
+[[Languages.el.menu.shortcuts]]
+name = "<i class='fa fa-fw fa-bookmark'></i> creative-coding"
+identifier = "CC"
+url = "https://vasileios.github.io/ac-sc"
+weight = 20
+
+# Left sidebar footer items. Use HTMl or Markdown.
+[[Languages.el.menu.shortcuts]]
+name = "<i class='fa fa-fw fa-bullhorn'></i> Credits"
+url = "/"
+weight = 30
+
+
+[Languages.en]
+title = "Documentation for Algorithmic Composition"
+weight = 2
+languageName = "English"
+
+[[Languages.en.menu.shortcuts]] 
+name = "<i class='fa fa-fw fa-github'></i> Github repo"
+identifier = "ds"
+url = "https://github.com/Vasileios/dss.git"
+weight = 10
+
+[[Languages.en.menu.shortcuts]]
+name = "<i class='fa fa-fw fa-bookmark'></i> creative-coding"
+identifier = "CC"
+url = "https://vasileios.github.io/ac-sc"
+weight = 20
 
 

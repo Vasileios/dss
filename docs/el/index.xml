@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Αλγοριθμική Σύνθεση</title>
+    <link>https://vasileios.github.io/ac-sc/el/</link>
+    <description>Recent content on Αλγοριθμική Σύνθεση</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    
+	<atom:link href="https://vasileios.github.io/ac-sc/el/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ιστορία</title>
+      <link>https://vasileios.github.io/ac-sc/el/introduction/hisrory/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/ac-sc/el/introduction/hisrory/</guid>
+      <description>chapter 1 Ιστορια Μουσική και μαθηματικά.
+Πυθαγόρας
+Ο ήχος των σφυριών των σιδηρουργών έκανε τον Πυθαγόρα να βγάλει σημαντικά συμπεράσματα σχετικά με τη φύση του τονισμού και τα μαθηματικά με βάση την αρμονία μετά τη σύγκριση των τονισμών που έγιναν απο τα σφυριά.
+Guido D&#39;Arrezo
+Επίσης, στο πλαίσιο της αλγοριθμικής σύνθεσης, γύρω στο AD 1000 είχε αναπτυχθεί η πρώτη προσέγγιση στην αυτόματη γένεση της μουσικής δομής. Ο Guido του Arezzo (γύρω στο 991-1031) συνέβαλε στην ανάπτυξη της σημειογραφίας, ανέπτυξε το &#39;solfeggio&#39; (1025) και ήταν ένας σημαντικός μουσικός θεωρητικός της μεσαιωνικής εποχής.</description>
+    </item>
+    
+    <item>
+      <title>SuperCollider</title>
+      <link>https://vasileios.github.io/ac-sc/el/sc-examples/supercollider/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/ac-sc/el/sc-examples/supercollider/</guid>
+      <description>SuperCollider SuperCollider From: SuperCollider
+Basics SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for Windows, macOS, and Linux.
+SuperCollider features three major components:  scsynth, a real-time audio server, forms the core of the platform. It features 400+ unit generators (&#34;UGens&#34;) for analysis, synthesis, and processing. Its granularity allows the fluid combination of many known and unknown audio techniques, moving between additive and subtractive synthesis, FM, granular synthesis, FFT, and physical modelling.</description>
+    </item>
+    
+    <item>
+      <title>Παραδείγματα</title>
+      <link>https://vasileios.github.io/ac-sc/el/introduction/paradigms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/ac-sc/el/introduction/paradigms/</guid>
+      <description>Chapter 1 Παραδειγματα Μαρκοβιανά Μοντέλα - Markov models time dependent random variables (TDRV)
+Στο πλαίσιο των πειραμάτων και παρατηρήσεων σχετικά με την TDRV έχουν ήδη γίνει από τους Pierre Simon de Laplace και Daniel Bernoulli. Η πρώτη εφαρμογή αυτής της μεθόδου ήταν μια εκτενή ανάλυση κειμένου από τον Markov: &#34;Το 1913 ο Markov είχε δημοσιεύσει την τρίτη έκδοση του εγχειριδίου του. Σε αυτή την έκδοση γράφει: «Ας τελειώσουμε το άρθρο και ολόκληρο το βιβλίο με ένα καλό παράδειγμα TDRV, που μπορούν να θεωρηθούν ως μια απλή αλυσίδα» (chain).</description>
+    </item>
+    
+    <item>
+      <title>Κλίμακες και Χορδίσματα</title>
+      <link>https://vasileios.github.io/ac-sc/el/introduction/tuning_scales/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/ac-sc/el/introduction/tuning_scales/</guid>
+      <description>chapter 1 Scales Circle of fiths is the relationship among the 12 tones of the chromatic scale, their corresponding key signatures, and the associated major and minor keys.
+Circles of Fifths</description>
+    </item>
+    
+    <item>
+      <title>Glossary</title>
+      <link>https://vasileios.github.io/ac-sc/el/introduction/glossary/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/ac-sc/el/introduction/glossary/</guid>
+      <description>chapter 1 Glossary Mathematics
+premise a statement that is assumed to be true.
+Physics
+frequency the number of times that a wave, especially a light, sound, or radio wave, is produced within a particular period, especially one second.
+amplitude the distance between the top and the bottom of a wave.
+Computing-SC
+function lamda calculus
+SC Function a = { [100, 200, 300].choose };
+SC Event An Event is a SC Environment with a &#39;play&#39; method.</description>
+    </item>
+    
+    <item>
+      <title>References</title>
+      <link>https://vasileios.github.io/ac-sc/el/introduction/references/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/ac-sc/el/introduction/references/</guid>
+      <description>Chapter 1 References Dean, Roger. and McLean, Alex (eds.) 2018. The Oxford Handbook of Algorithmic Music. Oxford University Press.
+Farnell, Andy. 2010. Designing Sound. Cambridge, Mass: The MIT Press.
+Holtzman, Steven. 1981. Generative Grammars for Music Composition. Computer Music Journal, Vol.5, No.1, pp. 51-64. The MIT Press.
+Husbands, Phil, Peter Copley, Alice Eldridge, and James Mandelis. 2007. ‘An Introduction to Evolutionary Computing for Musicians’. In Evolutionary Computer Music, 1–27. Springer, London.</description>
+    </item>
+    
+  </channel>
+</rss>

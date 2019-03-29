@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/en/introduction/history/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/introduction/history/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/introduction/history/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/en/introduction/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/introduction/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/introduction/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/en/introduction/paradigms/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/introduction/paradigms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/introduction/paradigms/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/en/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/en/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="el"
+                href="https://vasileios.github.io/dss/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://vasileios.github.io/dss/en/tags/"
+                />
+  </url>
+  
+</urlset>
