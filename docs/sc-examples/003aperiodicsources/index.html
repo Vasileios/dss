@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.45.1" />
-<title>Tags :: Ψηφιακή Σύνθεση Ήχου</title>
+<title>Noise :: Ψηφιακή Σύνθεση Ήχου</title>
 <link rel="shortcut icon" href="/dss/images/favicon.png" type="image/x-icon" />
 <link href="/dss/css/font-awesome.min.css" rel="stylesheet">
 <link href="/dss/css/nucleus.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 </script>
     
   </head>
-  <body data-url="/dss/tags/">
+  <body data-url="/dss/sc-examples/003aperiodicsources/">
     
       <header>
   <div class="logo">
@@ -114,10 +114,11 @@
     </li>
         </ul>
     </li>
-    <li data-nav-id="/dss/sc-examples/" class="dd-item haschildren
+    <li data-nav-id="/dss/sc-examples/" class="dd-item parent haschildren
         ">
       <div>
-      <a href="/dss/sc-examples/"><b>2. </b>Code Examples</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      <a href="/dss/sc-examples/"><b>2. </b>Code Examples</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
       </div>
         <ul>
       <li data-nav-id="/dss/sc-examples/001supercollider/" class="dd-item">
@@ -134,7 +135,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/dss/sc-examples/003aperiodicsources/" class="dd-item">
+      <li data-nav-id="/dss/sc-examples/003aperiodicsources/" class="dd-item active">
         <div>
           <a href="/dss/sc-examples/003aperiodicsources/">
             Noise
@@ -214,7 +215,17 @@
     <option value="/dss/introduction/" >
    Εισαγωγή</option>
     <option value="/dss/sc-examples/" >
-   Code Examples</option>
+   Code Examples</option> 
+      <option value="/dss/sc-examples/001supercollider/" >- SuperCollider</option>
+      <option value="/dss/sc-examples/002oscillators/" >- Oscillators</option>
+      <option value="/dss/sc-examples/003aperiodicsources/"  selected>- Noise</option>
+      <option value="/dss/sc-examples/004filters/" >- Filters</option>
+      <option value="/dss/sc-examples/005distortion/" >- Distortion</option>
+      <option value="/dss/sc-examples/006delays/" >- Delays</option>
+      <option value="/dss/sc-examples/007spectral/" >- Spectral</option>
+      <option value="/dss/sc-examples/008granularsynthesis/" >- Granular Synthesis</option>
+      <option value="/dss/sc-examples/009synthesistec/" >- Sound synthesis techniques</option>
+  
 
 
 
@@ -237,40 +248,50 @@
       </div>
     
 
-    <h1>Tags</h1>
+    <h1>Noise</h1>
     
     
     
+    <h3 id="chapter-2">chapter 2</h3>
 
+<h4 id="supercollider-noise-generators">SuperCollider Noise Generators</h4>
 
+<p><strong>Aperiodic Sources: Noise</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#960050;background-color:#1e0010">/Aperiodic Sources: Noise.</span>
+<span style="color:#75715e">//LF &#34;Low Frequency&#34; Noise Generators.
+</span><span style="color:#75715e">//arguments: frequency, mul, add
+</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">LFClipNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">MouseX</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">10000</span>, <span style="color:#ae81ff">1</span>), <span style="color:#ae81ff">0.125</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+{ <span style="color:#a6e22e">LFPar</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">LFClipNoise</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">MouseX</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">64</span>, <span style="color:#ae81ff">1</span>), <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">400</span>), <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8</span>);
 
-<div class="extra-pagination inner">
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number"> 1  0</span>
-	
-</nav>
+<span style="color:#75715e">//Broad Spectrum Noise Generators
+</span><span style="color:#75715e">//arguments: mul, add
+</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">ClipNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+{ <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+{ <span style="color:#a6e22e">PinkNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.4</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+{ <span style="color:#a6e22e">BrownNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+{ <span style="color:#a6e22e">GrayNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 
-</div>
+<span style="color:#75715e">// Impulse Noise Generators
+</span><span style="color:#75715e">//Dust, Dust2
+</span><span style="color:#75715e">//arguments: density, mul, add
+</span><span style="color:#75715e"></span>
+{ <span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">MouseX</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">10000</span>,<span style="color:#ae81ff">1</span>), <span style="color:#ae81ff">0.4</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span><span style="color:#ae81ff">4</span>);
 
-
-
-<div style="margin-bottom:2rem"></div>
-
-<nav class="pagination" role="navigation">
-	
-	<span class="page-number"> 1  0</span>
-	
-</nav>
-
-
-
+<span style="color:#75715e">//etc
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">//Chaotic Noise Generators
+</span><span style="color:#75715e">//Crackle
+</span><span style="color:#75715e">//arguments: chaosParam, mul, add
+</span><span style="color:#75715e"></span>
+{ <span style="color:#a6e22e">Crackle</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">MouseX</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>), <span style="color:#ae81ff">0.5</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+</code></pre></div>
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-next" href="/dss/introduction/" title="Εισαγωγή" style="margin-right: 0px;"><label>Εισαγωγή</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/dss/sc-examples/002oscillators/" title="Oscillators"> <i class="fa fa-chevron-left"></i><label>Oscillators</label></a>
+    <a class="nav nav-next" href="/dss/sc-examples/004filters/" title="Filters" style="margin-right: 0px;"><label>Filters</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -286,7 +307,7 @@
   
 
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/SC-Examples/003AperiodicSources.el.org" target="blank"><i class="fa fa-code-fork"></i>
         </a>
     </div>
   </div>
