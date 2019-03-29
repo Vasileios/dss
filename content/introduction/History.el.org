@@ -26,8 +26,6 @@ Varese προσπάθησε να πείσει τους ερευνητές και
 concrete) καιέτσι να κάνει τα πρώτα βήματα της
 μουσικής με υπολογιστή (Computer Music).
 
-
-
 /Electronic Music - Music Concrete/
 
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/c4ea0sBrw6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
