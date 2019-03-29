@@ -26,6 +26,8 @@ Varese προσπάθησε να πείσει τους ερευνητές και
 concrete) καιέτσι να κάνει τα πρώτα βήματα της
 μουσικής με υπολογιστή (Computer Music).
 
+/[[https://ccrma.stanford.edu/blogs/ruviaro/lork-digression-1-what-musical-instrument][Pierre Schaeffer]]/
+
 Ο Γιάννης Ξενάκης χρησιμοποίησε τις δυνατότητες του υπολογιστή για
 αρκετές από τις συνθέσεις του και ο Pierre Boulez ξεκίνησε το IRCAM,
 ένα ινστιτούτο αφιερωμένο στη μουσική έρευνα και τη δημιουργία και η
@@ -35,17 +37,49 @@ concrete) καιέτσι να κάνει τα πρώτα βήματα της
 'ήχο'. Όλα αυτά περιλαμβάνονται στην έρευνα για τον ηχητικό
 σχεδιασμό.
 
+/[[http://brahms.ircam.fr/iannis-xenakis][Iannis Xenakis]]/
+
+(French)
+
+<p>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/0FI89alUpto" frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen></iframe>
+</p>
+
+(English)
+
+<p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j4nj2nklbts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+/[[https://books.google.gr/books?id=4a4wDwAAQBAJ&pg=PA88&lpg=PA88&dq=xenakis+ircam&source=bl&ots=eIj9V1WwHc&sig=ACfU3U0nYCoT_xbip3J73c4KWrFPQ9Aw-Q&hl=en&sa=X&ved=2ahUKEwjbv4vfj6jhAhXJb5oKHWrnCSUQ6AEwEHoECAYQAQ#v=onepage&q=xenakis%2520ircam&f=false][Pierre Boulez]]/
+
+<p><iframe width="560" height="315"
+src="https://www.youtube.com/embed/ie5Ore2rjhk" frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen></iframe></p>
+
 Έτσι οι νέες δυνατότητες έχουν ήδη μεγάλη επιρροή στη μουσική
 σύνθεση. Η εξερεύνηση αυτών των δυνατότητων συνεχίζονται καιαυτή είναι η πιο συναρπαστική πρόκληση για τους μουσικούς σήμερα.
 
 Η προηγμένη ηλεκτρονική τεχνολογία για τον ήχο είναι από καιρό «αναλογική». Άνοιξε νέες
 δυνατότητες - για παράδειγμα, με τη συγκεκριμένη μουσική 'musique
-concr'ete', που αποτελείται από ηχογραφημένους ακουστικούς ήχους και
+concrete', που αποτελείται από ηχογραφημένους ακουστικούς ήχους και
 'ηλεκτρονική μουσική », καταφεύγοντας σε ήχους που παράγονται ηλεκτρονικά. Ωστόσο, mastering αναλογική τεχνολογία
 απαιτούσαν αριστοτεχνική μαγεία, οπότε οι μουσικοί χρησιμοποίησαν
 γενικά έτοιμες δυνατότητες και δεν ανάπτυξαν τις δικές τους. Επιπλέον, ο εξοπλισμός είχε την τάση να είναι ασταθής και να αλλάζει και
 γρήγορα κατέστη άνευ αντικειμένου.
 
+/The Art of Sounds/
+
+<p>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/Zsb1w-3iFa8" frameborder="0"
+allow="accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture" allowfullscreen></iframe>
+</p>
 
 Από τα τέλη της δεκαετίας του 1950, η ψηφιακή τεχνολογία του ήχου, που
 εισήγαγε ο *Max Mathews*, σταδιακά αντικατέστησε την αναλογική
