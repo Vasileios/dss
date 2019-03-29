@@ -1,0 +1,44 @@
++++
+title = "Notation"
+chapter = true
+weight = 30
++++
+
+*** chapter 1
+
+**** Notation
+
+*MIDI*
+
+The lowest note musicians use is C-1, which has the MIDI number 0. The
+number 12 = C0, 24 = C1, 36 = C2, 48 = C3, 60 = C4 (which is middle C
+on the piano, remember this one), and so on. A 440 is above middle C
+so it is 69.
+
+60, 62, 63, 60, 66
+
+*Frequencies*
+
+It is the number of cycles (per second) of a periodic wave.
+
+0-20000Hz
+
+261.62, 293.66, 311.13, 261.62, 370;
+
+*Hexadecimal*
+
+16 symbols
+
+(0-9, A-F)
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+
+0000003C, 0000003E, 0000003F, 0000003C, 00000042
+
+*Binary*
+
+00111100, 00111110, 00111111, 00111100 01000010
+
+*Pitch class method*
+
+ C4, D4, Eb4, C4, F#4
