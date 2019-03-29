@@ -1,821 +1,256 @@
 <!DOCTYPE html>
-<html lang="el" class="js csstransforms3d">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.45.1" />
-    <meta name="description" content="">
+    <title>Ψηφιακή Σύνθεση Ήχου</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="generator" content="Hugo 0.45.1" />
+<title>Κλίμακες και Χορδίσματα :: Ψηφιακή Σύνθεση Ήχου</title>
+<link rel="shortcut icon" href="/dss/images/favicon.png" type="image/x-icon" />
+<link href="/dss/css/font-awesome.min.css" rel="stylesheet">
+<link href="/dss/css/nucleus.css" rel="stylesheet">
+<link href="/dss/theme-flex/style.css" rel="stylesheet">
 
+<link rel="stylesheet" href="/dss/css/bootstrap.min.css">
+<script src="/dss/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "https:\/\/vasileios.github.io\/dss\/";
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
-<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+  ga('create', 'UA-79101-13', 'auto');
+  ga('send', 'pageview');
 
-    <title>Κλίμακες και Χορδίσματα :: </title>
-    
-    
-    <link href="/dss/css/nucleus.css?1553878383" rel="stylesheet">
-    <link href="/dss/css/font-awesome.min.css?1553878383" rel="stylesheet">
-    <link href="/dss/css/hybrid.css?1553878383" rel="stylesheet">
-    <link href="/dss/css/featherlight.min.css?1553878383" rel="stylesheet">
-    <link href="/dss/css/perfect-scrollbar.min.css?1553878383" rel="stylesheet">
-    <link href="/dss/css/auto-complete.css?1553878383" rel="stylesheet">
-    <link href="/dss/css/theme.css?1553878383" rel="stylesheet">
-    <link href="/dss/css/hugo-theme.css?1553878383" rel="stylesheet">
-    
-      <link href="/dss/css/theme-black.css?1553878383" rel="stylesheet">
-    
-
-    <script src="/dss/js/jquery-2.x.min.js?1553878383"></script>
-    
-    <style type="text/css">
-      :root #header + #content > #left > #rlblock_left{ 
-          display:none !important;
-      }
-      
-    </style>
+</script>
     
   </head>
-  <body class="" data-url="/dss/introduction/tuning_scales/">
-    <nav id="sidebar" class="">
-
-
-
-  <div id="header-wrapper">
-    <div id="header">
-      
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="255.665px" height="171.5px" viewBox="0 0 255.665 171.5" enable-background="new 0 0 255.665 171.5" xml:space="preserve">
-<ellipse fill="#231F20" stroke="#231F20" stroke-miterlimit="10" cx="119.749" cy="88" rx="86" ry="83.5"/>
-<g>
-	<radialGradient id="SVGID_1_" cx="48.8779" cy="85.9785" r="48.8777" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.1" style="stop-color:#000000"/>
-		<stop  offset="0.1478" style="stop-color:#191407"/>
-		<stop  offset="0.2051" style="stop-color:#2F260D"/>
-		<stop  offset="0.2728" style="stop-color:#403312"/>
-		<stop  offset="0.3565" style="stop-color:#4B3D16"/>
-		<stop  offset="0.474" style="stop-color:#524217"/>
-		<stop  offset="0.8" style="stop-color:#544418"/>
-		<stop  offset="1" style="stop-color:#000000"/>
-	</radialGradient>
-	<circle opacity="0.25" fill="url(#SVGID_1_)" cx="48.878" cy="85.979" r="48.878"/>
-	<radialGradient id="SVGID_2_" cx="140.707" cy="85.6787" r="1.6289" gradientUnits="userSpaceOnUse">
-		<stop  offset="0" style="stop-color:#CAE095"/>
-		<stop  offset="0.0582" style="stop-color:#A8BA7C"/>
-		<stop  offset="0.1353" style="stop-color:#818F5F"/>
-		<stop  offset="0.2184" style="stop-color:#5E6845"/>
-		<stop  offset="0.3066" style="stop-color:#414830"/>
-		<stop  offset="0.4013" style="stop-color:#292E1E"/>
-		<stop  offset="0.5049" style="stop-color:#171911"/>
-		<stop  offset="0.622" style="stop-color:#0A0B07"/>
-		<stop  offset="0.764" style="stop-color:#020302"/>
-		<stop  offset="1" style="stop-color:#000000"/>
-	</radialGradient>
-	<circle fill="url(#SVGID_2_)" cx="140.707" cy="85.679" r="1.629"/>
-	<radialGradient id="SVGID_3_" cx="231.2256" cy="85.3828" r="1.6292" gradientUnits="userSpaceOnUse">
-		<stop  offset="0" style="stop-color:#CAE095"/>
-		<stop  offset="0.0582" style="stop-color:#A8BA7C"/>
-		<stop  offset="0.1353" style="stop-color:#818F5F"/>
-		<stop  offset="0.2184" style="stop-color:#5E6845"/>
-		<stop  offset="0.3066" style="stop-color:#414830"/>
-		<stop  offset="0.4013" style="stop-color:#292E1E"/>
-		<stop  offset="0.5049" style="stop-color:#171911"/>
-		<stop  offset="0.622" style="stop-color:#0A0B07"/>
-		<stop  offset="0.764" style="stop-color:#020302"/>
-		<stop  offset="1" style="stop-color:#000000"/>
-	</radialGradient>
-	<circle fill="url(#SVGID_3_)" cx="231.226" cy="85.383" r="1.629"/>
-	<radialGradient id="SVGID_4_" cx="223.9321" cy="85.4062" r="12.2197" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.05" style="stop-color:#000000"/>
-		<stop  offset="0.0884" style="stop-color:#030904"/>
-		<stop  offset="0.2952" style="stop-color:#133315"/>
-		<stop  offset="0.4817" style="stop-color:#1F5222"/>
-		<stop  offset="0.6396" style="stop-color:#256529"/>
-		<stop  offset="0.75" style="stop-color:#286C2C"/>
-		<stop  offset="0.7903" style="stop-color:#4C6C19"/>
-		<stop  offset="0.8355" style="stop-color:#6E6B07"/>
-		<stop  offset="0.86" style="stop-color:#7B6B00"/>
-		<stop  offset="0.8879" style="stop-color:#776800"/>
-		<stop  offset="0.9129" style="stop-color:#6D5E00"/>
-		<stop  offset="0.9366" style="stop-color:#5A4F00"/>
-		<stop  offset="0.9597" style="stop-color:#413800"/>
-		<stop  offset="0.9821" style="stop-color:#201C00"/>
-		<stop  offset="1" style="stop-color:#000000"/>
-	</radialGradient>
-	<circle opacity="0.2" fill="url(#SVGID_4_)" cx="223.932" cy="85.407" r="12.22"/>
-	<line fill="none" x1="85.347" y1="85.859" x2="231.226" y2="85.383"/>
-	<radialGradient id="SVGID_5_" cx="85.3477" cy="85.8594" r="32.585" gradientUnits="userSpaceOnUse">
-		<stop  offset="0" style="stop-color:#230000"/>
-		<stop  offset="0.73" style="stop-color:#93432A"/>
-		<stop  offset="1" style="stop-color:#230000"/>
-	</radialGradient>
-	<circle opacity="0.15" fill="url(#SVGID_5_)" cx="85.347" cy="85.859" r="32.585"/>
-	<radialGradient id="SVGID_6_" cx="85.3472" cy="85.8594" r="16.2927" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.15" style="stop-color:#FFFFFF"/>
-		<stop  offset="0.2114" style="stop-color:#E2D1D2"/>
-		<stop  offset="0.2918" style="stop-color:#BF9A9C"/>
-		<stop  offset="0.3613" style="stop-color:#A67276"/>
-		<stop  offset="0.4163" style="stop-color:#975A5E"/>
-		<stop  offset="0.45" style="stop-color:#915155"/>
-		<stop  offset="0.5553" style="stop-color:#6C3638"/>
-		<stop  offset="0.6842" style="stop-color:#44191A"/>
-		<stop  offset="0.787" style="stop-color:#2C0707"/>
-		<stop  offset="0.85" style="stop-color:#230000"/>
-		<stop  offset="0.8572" style="stop-color:#270201"/>
-		<stop  offset="0.8647" style="stop-color:#340805"/>
-		<stop  offset="0.8723" style="stop-color:#48120B"/>
-		<stop  offset="0.88" style="stop-color:#652114"/>
-		<stop  offset="0.8878" style="stop-color:#8B331F"/>
-		<stop  offset="0.8955" style="stop-color:#B8492D"/>
-		<stop  offset="0.9" style="stop-color:#D65836"/>
-		<stop  offset="0.903" style="stop-color:#C95232"/>
-		<stop  offset="0.9146" style="stop-color:#9D3C25"/>
-		<stop  offset="0.9267" style="stop-color:#782A1A"/>
-		<stop  offset="0.9392" style="stop-color:#591B10"/>
-		<stop  offset="0.9523" style="stop-color:#410F09"/>
-		<stop  offset="0.9661" style="stop-color:#300604"/>
-		<stop  offset="0.9812" style="stop-color:#260201"/>
-		<stop  offset="1" style="stop-color:#230000"/>
-	</radialGradient>
-	<circle opacity="0.5" fill="url(#SVGID_6_)" cx="85.347" cy="85.859" r="16.292"/>
-	<radialGradient id="SVGID_7_" cx="85.3472" cy="85.8594" r="13.5771" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.15" style="stop-color:#FFFFFF"/>
-		<stop  offset="0.2824" style="stop-color:#C2C2C2"/>
-		<stop  offset="0.4253" style="stop-color:#888888"/>
-		<stop  offset="0.5636" style="stop-color:#575757"/>
-		<stop  offset="0.6936" style="stop-color:#313131"/>
-		<stop  offset="0.8134" style="stop-color:#161616"/>
-		<stop  offset="0.9192" style="stop-color:#060606"/>
-		<stop  offset="1" style="stop-color:#000000"/>
-	</radialGradient>
-	<circle fill="url(#SVGID_7_)" cx="85.347" cy="85.859" r="13.577"/>
-	<polyline opacity="0.03" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" points="85.347,85.859 
-		50.201,118.4 85.347,85.859 120.494,53.318 85.347,85.859 52.806,50.713 85.347,85.859 117.888,121.006 85.347,85.859 
-		68.566,148.73 85.347,85.859 102.129,22.988 85.347,85.859 22.477,69.078 85.347,85.859 148.218,102.641 85.347,85.859 
-		38.546,138.357 85.347,85.859 132.148,33.362 85.347,85.859 32.85,39.058 85.347,85.859 137.845,132.661 85.347,85.859 
-		86.907,138.495 85.347,85.859 83.788,33.224 85.347,85.859 32.711,87.419 85.347,85.859 137.983,84.3 85.347,85.859 83.874,98.311 
-		85.347,85.859 86.821,73.409 85.347,85.859 72.896,84.386 85.347,85.859 97.798,87.333 85.347,85.859 56.457,115.653 
-		85.347,85.859 114.237,56.065 85.347,85.859 55.553,56.969 85.347,85.859 115.142,114.749 85.347,85.859 77.138,107.317 
-		85.347,85.859 93.557,64.402 85.347,85.859 63.89,77.65 85.347,85.859 106.805,94.068 85.347,85.859 61.197,128.631 85.347,85.859 
-		109.497,43.088 85.347,85.859 42.576,61.709 85.347,85.859 128.119,110.01 85.347,85.859 75.742,136.621 85.347,85.859 
-		94.953,35.098 85.347,85.859 34.586,76.254 85.347,85.859 136.108,95.465 85.347,85.859 83.539,106.941 85.347,85.859 
-		87.156,64.777 85.347,85.859 64.265,84.051 85.347,85.859 106.43,87.668 85.347,85.859 93.319,163.299 85.347,85.859 77.375,8.42 
-		85.347,85.859 7.908,93.831 85.347,85.859 162.787,77.888 85.347,85.859 79.276,89.903 85.347,85.859 91.418,81.816 85.347,85.859 
-		81.304,79.789 85.347,85.859 89.391,91.931 85.347,85.859 65.542,108.294 85.347,85.859 105.153,63.426 85.347,85.859 
-		62.914,66.054 85.347,85.859 107.781,105.665 85.347,85.859 68.788,119.229 85.347,85.859 101.907,52.49 85.347,85.859 
-		51.978,69.3 85.347,85.859 118.717,102.419 85.347,85.859 78.398,98.94 85.347,85.859 92.297,72.779 85.347,85.859 72.267,78.91 
-		85.347,85.859 98.428,92.809 	"/>
-	<radialGradient id="SVGID_8_" cx="231.2256" cy="85.3828" r="24.4387" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.64" style="stop-color:#000000"/>
-		<stop  offset="0.7175" style="stop-color:#000200"/>
-		<stop  offset="0.7455" style="stop-color:#000902"/>
-		<stop  offset="0.7654" style="stop-color:#001405"/>
-		<stop  offset="0.7814" style="stop-color:#002509"/>
-		<stop  offset="0.7951" style="stop-color:#003B0E"/>
-		<stop  offset="0.8" style="stop-color:#004510"/>
-		<stop  offset="0.8154" style="stop-color:#182809"/>
-		<stop  offset="0.8312" style="stop-color:#2B1204"/>
-		<stop  offset="0.8464" style="stop-color:#360501"/>
-		<stop  offset="0.86" style="stop-color:#3A0000"/>
-		<stop  offset="0.8719" style="stop-color:#250000"/>
-		<stop  offset="0.8864" style="stop-color:#140000"/>
-		<stop  offset="0.9045" style="stop-color:#090000"/>
-		<stop  offset="0.9298" style="stop-color:#020000"/>
-		<stop  offset="1" style="stop-color:#000000"/>
-	</radialGradient>
-	<circle opacity="0.5" fill="url(#SVGID_8_)" cx="231.226" cy="85.383" r="24.439"/>
-	<radialGradient id="SVGID_9_" cx="156.7163" cy="85.626" r="3.1892" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.1" style="stop-color:#000000"/>
-		<stop  offset="0.1906" style="stop-color:#1F221D"/>
-		<stop  offset="0.3182" style="stop-color:#444C41"/>
-		<stop  offset="0.4488" style="stop-color:#636E5E"/>
-		<stop  offset="0.581" style="stop-color:#7B8975"/>
-		<stop  offset="0.7153" style="stop-color:#8C9C85"/>
-		<stop  offset="0.8532" style="stop-color:#97A78F"/>
-		<stop  offset="1" style="stop-color:#9AAB92"/>
-	</radialGradient>
-	<circle fill="url(#SVGID_9_)" cx="156.716" cy="85.626" r="3.189"/>
-	<radialGradient id="SVGID_10_" cx="122.5415" cy="85.7383" r="3.012" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.1" style="stop-color:#735733"/>
-		<stop  offset="0.179" style="stop-color:#5F482A"/>
-		<stop  offset="0.335" style="stop-color:#3D2E1B"/>
-		<stop  offset="0.4944" style="stop-color:#221A0F"/>
-		<stop  offset="0.6565" style="stop-color:#0F0B07"/>
-		<stop  offset="0.8228" style="stop-color:#040302"/>
-		<stop  offset="1" style="stop-color:#000000"/>
-	</radialGradient>
-	<circle fill="url(#SVGID_10_)" cx="122.542" cy="85.738" r="3.012"/>
-	<radialGradient id="SVGID_11_" cx="65.9399" cy="85.9229" r="3.7114" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.1" style="stop-color:#000015"/>
-		<stop  offset="0.2317" style="stop-color:#00000F"/>
-		<stop  offset="0.6034" style="stop-color:#000004"/>
-		<stop  offset="1" style="stop-color:#000000"/>
-	</radialGradient>
-	<circle fill="url(#SVGID_11_)" cx="65.94" cy="85.923" r="3.711"/>
-	<radialGradient id="SVGID_12_" cx="125.1406" cy="85.7295" r="7.5103" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.1" style="stop-color:#9AAB92"/>
-		<stop  offset="0.1906" style="stop-color:#7B8975"/>
-		<stop  offset="0.3182" style="stop-color:#565F51"/>
-		<stop  offset="0.4488" style="stop-color:#373D34"/>
-		<stop  offset="0.581" style="stop-color:#1F221D"/>
-		<stop  offset="0.7153" style="stop-color:#0E0F0D"/>
-		<stop  offset="0.8532" style="stop-color:#030403"/>
-		<stop  offset="1" style="stop-color:#000000"/>
-	</radialGradient>
-	<circle fill="url(#SVGID_12_)" cx="125.14" cy="85.729" r="7.51"/>
-	<radialGradient id="SVGID_13_" cx="171.2524" cy="85.5786" r="1.1445" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.1" style="stop-color:#3D4172"/>
-		<stop  offset="0.1756" style="stop-color:#33365F"/>
-		<stop  offset="0.3322" style="stop-color:#20233D"/>
-		<stop  offset="0.4923" style="stop-color:#121322"/>
-		<stop  offset="0.655" style="stop-color:#08090F"/>
-		<stop  offset="0.8221" style="stop-color:#020204"/>
-		<stop  offset="1" style="stop-color:#000000"/>
-	</radialGradient>
-	<circle fill="url(#SVGID_13_)" cx="171.252" cy="85.579" r="1.145"/>
-</g>
-</svg>
-
-    </div>
+  <body data-url="/dss/introduction/tuning_scales/">
     
-        <div class="searchbox">
-    <label for="search-by"><i class="fa fa-search"></i></label>
-    <input data-search-input id="search-by" type="text" placeholder="">
-    <span data-search-clear=""><i class="fa fa-close"></i></span>
-</div>
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="https://vasileios.github.io/dss/">Ψηφιακή Σύνθεση Ήχου</a>
+  
 
-<script type="text/javascript" src="/dss/js/lunr.min.js?1553878383"></script>
-<script type="text/javascript" src="/dss/js/auto-complete.js?1553878383"></script>
-<script type="text/javascript">
-    
-        var baseurl = "\/dss";
-    
-</script>
-<script type="text/javascript" src="/dss/js/search.js?1553878383"></script>
-
-    
   </div>
-
-    <div class="highlightable">
-    <ul class="topics">
-
-        
-          
-          
-
-
- 
-  
-    
-    <li data-nav-id="/dss/introduction/" title="Εισαγωγή" class="dd-item 
-        parent
-        
-        
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/Vasileios/dss/"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Github repo</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/dss/" class="dd-item">
+          <a href="/dss/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/dss/introduction/" class="dd-item parent haschildren
         ">
-      <a href="/dss/introduction/">
-          <b>1. </b>Εισαγωγή
-          
-      </a>
-      
-      
+      <div>
+      <a href="/dss/introduction/"><b>1. </b>Εισαγωγή</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
         <ul>
-          
-          
-          
-          
-        
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/introduction/history/" title="Ιστορία" class="dd-item ">
-        <a href="/dss/introduction/history/">
-        Ιστορία
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/introduction/paradigms/" title="Παραδείγματα" class="dd-item ">
-        <a href="/dss/introduction/paradigms/">
-        Παραδείγματα
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/introduction/soundtheory/" title="Sound theory basics" class="dd-item ">
-        <a href="/dss/introduction/soundtheory/">
-        Sound theory basics
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/introduction/tuning_scales/" title="Κλίμακες και Χορδίσματα" class="dd-item active">
-        <a href="/dss/introduction/tuning_scales/">
-        Κλίμακες και Χορδίσματα
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/introduction/logicalex/" title="Logical Expressions" class="dd-item ">
-        <a href="/dss/introduction/logicalex/">
-        Logical Expressions
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/introduction/notation/" title="Notation" class="dd-item ">
-        <a href="/dss/introduction/notation/">
-        Notation
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/introduction/glossary/" title="Glossary" class="dd-item ">
-        <a href="/dss/introduction/glossary/">
-        Glossary
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/introduction/references/" title="References" class="dd-item ">
-        <a href="/dss/introduction/references/">
-        References
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-          
-          
-
-
- 
-  
-    
-    <li data-nav-id="/dss/sc-examples/" title="Code Examples" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/dss/sc-examples/">
-          <b>2. </b>Code Examples
-          
-      </a>
-      
-      
-        <ul>
-          
-          
-          
-          
-        
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/supercollider/" title="SuperCollider" class="dd-item ">
-        <a href="/dss/sc-examples/supercollider/">
-        SuperCollider
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/oscillators/" title="Oscillators" class="dd-item ">
-        <a href="/dss/sc-examples/oscillators/">
-        Oscillators
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/aperiodicsources/" title="Noise" class="dd-item ">
-        <a href="/dss/sc-examples/aperiodicsources/">
-        Noise
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/filters/" title="Filters" class="dd-item ">
-        <a href="/dss/sc-examples/filters/">
-        Filters
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/distortion/" title="Distortion" class="dd-item ">
-        <a href="/dss/sc-examples/distortion/">
-        Distortion
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/delays/" title="Delays" class="dd-item ">
-        <a href="/dss/sc-examples/delays/">
-        Delays
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/buffers/" title="Buffers" class="dd-item ">
-        <a href="/dss/sc-examples/buffers/">
-        Buffers
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/spectral/" title="Spectral" class="dd-item ">
-        <a href="/dss/sc-examples/spectral/">
-        Spectral
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/granularsynthesis/" title="Granular Synthesis" class="dd-item ">
-        <a href="/dss/sc-examples/granularsynthesis/">
-        Granular Synthesis
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/simplealgorithms/" title="Algorithmic Composition Examples" class="dd-item ">
-        <a href="/dss/sc-examples/simplealgorithms/">
-        Algorithmic Composition Examples
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/dss/sc-examples/synthesistec/" title="Sound synthesis techniques" class="dd-item ">
-        <a href="/dss/sc-examples/synthesistec/">
-        Sound synthesis techniques
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-        
-        </ul>
-              
-    </li>
-  
- 
-
-          
-         
-    </ul>
-
-    
-    
-      <section id="shortcuts">
-        <h3></h3>
-        <ul>
-          
-              <li class="" role=""> 
-                  <a class="padding" href="https://github.com/Vasileios/dss.git"><i class='fa fa-fw fa-github'></i> Github repo</a>
-              </li>
-          
-              <li class="" role=""> 
-                  <a class="padding" href="https://vasileios.github.io/ac-sc"><i class='fa fa-fw fa-bookmark'></i> creative-coding</a>
-              </li>
-          
-              <li class="" role=""> 
-                  <a class="padding" href="https://vasileios.github.io/dss/"><i class='fa fa-fw fa-bullhorn'></i> Credits</a>
-              </li>
-          
-        </ul>
-      </section>
-    
-
-    
-    <section id="prefooter">
-      <hr/>
-      <ul>
-      
-        <li>
-          <a class="padding">
-            <i class="fa fa-fw fa-language"></i>
-          <div class="select-style">
-            <select id="select-language" onchange="location = this.value;">
-          
-          
-          
-              
-              
-                  
-                    
-                    
-                      <option id="el" value="/dss/introduction/tuning_scales/" selected>Ελληνικά</option>
-                    
-                  
-              
-                  
-              
-          
-        </select>
-        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
-          <g>
-            <g id="arrow-drop-down">
-              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
-            </g>
-          </g>
-        </svg>
+      <li data-nav-id="/dss/introduction/history/" class="dd-item">
+        <div>
+          <a href="/dss/introduction/history/">
+            Ιστορία
+          </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
-        </a>
-        </li>
-       
-      
-      
-      </ul>
+    </li>
+      <li data-nav-id="/dss/introduction/soundtheory/" class="dd-item">
+        <div>
+          <a href="/dss/introduction/soundtheory/">
+            Sound theory basics
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/introduction/tuning_scales/" class="dd-item active">
+        <div>
+          <a href="/dss/introduction/tuning_scales/">
+            Κλίμακες και Χορδίσματα
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/introduction/notation/" class="dd-item">
+        <div>
+          <a href="/dss/introduction/notation/">
+            Notation
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/introduction/logicalex/" class="dd-item">
+        <div>
+          <a href="/dss/introduction/logicalex/">
+            Logical Expressions
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/introduction/glossary/" class="dd-item">
+        <div>
+          <a href="/dss/introduction/glossary/">
+            Glossary
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/introduction/references/" class="dd-item">
+        <div>
+          <a href="/dss/introduction/references/">
+            References
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/dss/sc-examples/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/dss/sc-examples/"><b>2. </b>Code Examples</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/dss/sc-examples/001supercollider/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/001supercollider/">
+            SuperCollider
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/002oscillators/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/002oscillators/">
+            Oscillators
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/003aperiodicsources/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/003aperiodicsources/">
+            Noise
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/004filters/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/004filters/">
+            Filters
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/005distortion/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/005distortion/">
+            Distortion
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/006delays/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/006delays/">
+            Delays
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/007spectral/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/007spectral/">
+            Spectral
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/008granularsynthesis/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/008granularsynthesis/">
+            Granular Synthesis
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/009synthesistec/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/009synthesistec/">
+            Sound synthesis techniques
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section><center>
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip" data-icon="octicon-cloud-download" aria-label="Download vjeantet/hugo-theme-docdock on GitHub">Download</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock" data-icon="octicon-star" data-show-count="false" aria-label="Star vjeantet/hugo-theme-docdock on GitHub">Star</a>
+
+
+<a class="github-button" href="https://github.com/vjeantet/hugo-theme-docdock/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork vjeantet/hugo-theme-docdock on GitHub">Fork</a>
+
+</center>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
     </section>
+  </aside>
+  <section class="page">
     
-    <section id="footer">
-      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
-
-    </section>
-  </div>
-</nav>
-
-
-
-
-
-        <section id="body">
-        <div id="overlay"></div>
-        <div class="padding highlightable">
-              
-              <div>
-                <div id="top-bar">
-                
-                
-                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
-                    <span id="sidebar-toggle-span">
-                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
-                          <i class="fa fa-bars"></i>
-                        </a>
-                    </span>
-                  
-                  <span class="links">
-                    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
           
-          
-            
-            
-          
-          
-            
-            
-          
-          
-            <a href='/dss/'>Αλγοριθμική Σύνθεση</a> > <a href='/dss/introduction/'>Εισαγωγή</a> > Κλίμακες και Χορδίσματα
-          
-         
-          
-         
-          
-           
-                  </span>
-                </div>
-                
-              </div>
-            </div>
-            
-
-        
-          <div id="chapter">
-        
-        <div id="body-inner">
-          
-
-        
+    <option value="/dss/introduction/" >
+   Εισαγωγή</option> 
+      <option value="/dss/introduction/history/" >- Ιστορία</option>
+      <option value="/dss/introduction/soundtheory/" >- Sound theory basics</option>
+      <option value="/dss/introduction/tuning_scales/"  selected>- Κλίμακες και Χορδίσματα</option>
+      <option value="/dss/introduction/notation/" >- Notation</option>
+      <option value="/dss/introduction/logicalex/" >- Logical Expressions</option>
+      <option value="/dss/introduction/glossary/" >- Glossary</option>
+      <option value="/dss/introduction/references/" >- References</option>
+  
+    <option value="/dss/sc-examples/" >
+   Code Examples</option>
 
 
-<h3 id="chapter-1">chapter 1</h3>
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="">
+        </div>
+        <script type="text/javascript" src="/dss/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/dss/js/auto-complete.js"></script>
+        <link href="/dss/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "https:\/\/vasileios.github.io\/dss\/";
+          
+        </script>
+        <script type="text/javascript" src="/dss/js/search.js"></script>
+      </div>
+    
+
+    <h1>Κλίμακες και Χορδίσματα</h1>
+    
+    
+    
+    <h3 id="chapter-1">chapter 1</h3>
 
 <h1 id="scales">Scales</h1>
 
@@ -848,907 +283,535 @@ keys.</p>
 <p>and here:</p>
 
 <p><a href="https://en.wikipedia.org/wiki/Lissajous_curve" title="Lissajous curve">Lissajous curve</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// =====================================================================
+</span><span style="color:#75715e">// SuperCollider Workspace
+</span><span style="color:#75715e">// =====================================================================
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">boot</span>
+<span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Server</span>.<span style="color:#a6e22e">internal</span>;
+<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">boot</span>;
 
-<pre><code class="language-js">// =====================================================================
-// SuperCollider Workspace
-// =====================================================================
-s.boot
-s = Server.internal;
-s.boot;
+<span style="color:#75715e">/*
+</span><span style="color:#75715e">In the Stethoscope&#39;s GUI up right menu choose X/Y (&#34;Lissajous curve&#34; frequencies of the vertical and horizontal sinusoidal inputs, respectively) (left and right channels). See more on
+</span><span style="color:#75715e">SC-Help: Classes |GUI-&gt;Views-&gt;ScopeView
+</span><span style="color:#75715e">*/</span>
 
-/*
-In the Stethoscope's GUI up right menu choose X/Y (&quot;Lissajous curve&quot; frequencies of the vertical and horizontal sinusoidal inputs, respectively) (left and right channels). See more on
-SC-Help: Classes |GUI-&gt;Views-&gt;ScopeView
-*/
-
-//440 = A (La)
-{SinOsc.ar([440, 440*81/64, 440*3/2])}.scope // pythagorean tuning: see leimma halftone of 256/243 between its major third (81/64) and the perfect fourth (4/3) as well as between major seventh and the dominant.
- // C major scale halftones (E to F and B to C)
-// C to Ab = 261.6 * 8/5 (8:5 minor sixth) = 418.56
-// C to G# = 261.6 * 5/4 * 5/4 (2 major thirds) = 408.75
-//The point is, A-flat and G-sharp are different pitches.
-//261.6*9/8*9/8*9/8*9/8*9/8*9/8 (6 major second) (octave) = 530.338156...
-//Bach's master work &quot;The Well-Tempered Clavier&quot;
-//261.6*2/1 (octave) = 523.2
-
-// A chord with 3 notes (1, 3, 5)
-
-{SinOsc.ar([440, 440*5/4, 440*3/2])}.scope // (1,3M,5) with Major third
+<span style="color:#75715e">//440 = A (La)
+</span><span style="color:#75715e"></span>{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">81</span><span style="color:#960050;background-color:#1e0010">/64, 440*3/2])}.scope // pythagorean tuning: see leimma halftone of 256/243 between its major third (81/64) and the perfect fourth (4/3) as well as between major seventh and the dominant.</span>
+ <span style="color:#75715e">// C major scale halftones (E to F and B to C)
+</span><span style="color:#75715e">// C to Ab = 261.6 * 8/5 (8:5 minor sixth) = 418.56
+</span><span style="color:#75715e">// C to G# = 261.6 * 5/4 * 5/4 (2 major thirds) = 408.75
+</span><span style="color:#75715e">//The point is, A-flat and G-sharp are different pitches.
+</span><span style="color:#75715e">//261.6*9/8*9/8*9/8*9/8*9/8*9/8 (6 major second) (octave) = 530.338156...
+</span><span style="color:#75715e">//Bach&#39;s master work &#34;The Well-Tempered Clavier&#34;
+</span><span style="color:#75715e">//261.6*2/1 (octave) = 523.2
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">// A chord with 3 notes in diatonic tuning (1, 3, 5)
+</span><span style="color:#75715e"></span>
+{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">5</span><span style="color:#960050;background-color:#1e0010">/4, 440*3/2])}.scope // (1,3M,5) Diatonic tuning</span>
 
 
-{SinOsc.ar([440, 440*6/5, 440*3/2])}.play // (1,3m,5) with Minor third 
+{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">6</span><span style="color:#960050;background-color:#1e0010">/5, 440*3/2])}.play // (1,3m,5) Minor third diatoniic</span>
 
-//
-{SinOsc,ar([440, 440*5/3])}.scope // major sixth interval
+{<span style="color:#a6e22e">SinOsc</span>,<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">5</span><span style="color:#e6db74">/3])}.scope /</span><span style="color:#960050;background-color:#1e0010">/ magor sixth</span>
 
-//other ratios
-1/1-&gt;unison
-2/1-&gt;octave
-3/2-&gt;perfect fifth
-4/3-&gt;perfect fourth
-5/4-&gt;major third 
-5/3-&gt;major sixth 
-6/5-&gt;minor third 
-9/8-&gt;tone
-15/8-&gt;diatonic seventh
-16/15-&gt;semitone
-81/64-&gt;major third pythagorean
-</code></pre>
-
+<span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/1-&gt;unison</span>
+<span style="color:#ae81ff">2</span><span style="color:#960050;background-color:#1e0010">/1-&gt;octave</span>
+<span style="color:#ae81ff">3</span><span style="color:#960050;background-color:#1e0010">/2-&gt;perfect fifth</span>
+<span style="color:#ae81ff">4</span><span style="color:#960050;background-color:#1e0010">/3-&gt;perfect fourth</span>
+<span style="color:#ae81ff">5</span><span style="color:#960050;background-color:#1e0010">/4-&gt;major third diatonic</span>
+<span style="color:#ae81ff">5</span><span style="color:#960050;background-color:#1e0010">/3-&gt;magor sixth diatonic</span>
+<span style="color:#ae81ff">6</span><span style="color:#960050;background-color:#1e0010">/5-&gt;minor third diatonic</span>
+<span style="color:#ae81ff">9</span><span style="color:#960050;background-color:#1e0010">/8-&gt;tone</span>
+<span style="color:#ae81ff">15</span><span style="color:#960050;background-color:#1e0010">/8-&gt;diatonic seventh</span>
+<span style="color:#ae81ff">16</span><span style="color:#960050;background-color:#1e0010">/15-&gt;semitone</span>
+<span style="color:#ae81ff">81</span><span style="color:#960050;background-color:#1e0010">/64-&gt;major third pythagorean</span>
+</code></pre></div>
 <p><strong>Scales in SuperCollider</strong></p>
-
-<pre><code class="language-js">(
-a = Scale.aeolian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">(
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">aeolian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.augmented;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">augmented</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.augmented2;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">augmented2</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.bartok;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">bartok</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.chinese;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">chinese</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.chromatic;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">chromatic</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.chromatic24;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">chromatic24</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.diminished;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">diminished</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.diminished2;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">diminished2</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.dorian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">dorian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.egyptian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">egyptian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.enigmatic;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">enigmatic</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.harmonicMajor;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">harmonicMajor</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.harmonicMinor;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">harmonicMinor</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.hexAeolian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">hexAeolian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.hexDorian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">hexDorian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.hexMajor6;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">hexMajor6</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.hexMajor7;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">hexMajor7</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.hexPhrygian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">hexPhrygian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.hexSus;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">hexSus</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.hindu;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">hindu</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.hungarianMinor;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">hungarianMinor</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.indian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">indian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.ionian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">ionian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.locrian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">locrian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.lydian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">lydian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.major;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">major</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.majorPentatonic;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">majorPentatonic</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.melodicMajor;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">melodicMajor</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.melodicMinor;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">melodicMinor</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.melodicMinorDesc;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">melodicMinorDesc</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.minor;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">minor</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.minorPentatonic;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">minorPentatonic</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.mixolydian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">mixolydian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.phrygian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">phrygian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.phrygian(\pythagorean);
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">phrygian</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">pythagorean</span>);
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.prometheus;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">prometheus</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.scriabin;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">scriabin</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.superLocrian;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">superLocrian</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 
 (
-a = Scale.whole;
-a.degrees;              // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.semitones;            // [ 0, 2, 4, 5, 7, 9, 11 ]
-a.cents;                // [ 0, 200, 300, 500, 700, 900, 1100 ]
-a.ratios;               // [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
-
-Pbind(\scale, a, \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">whole</span>;
+<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">semitones</span>;            <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">cents</span>;                <span style="color:#75715e">// [ 0, 200, 300, 500, 700, 900, 1100 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">ratios</span>;               <span style="color:#75715e">// [ 1, 1.1224620483089, 1.2599210498937, 1.3348398541685, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
-
-</code></pre>
-
+</code></pre></div>
 <p><strong>Tunings</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// =====================================================================
+</span><span style="color:#75715e">// SuperCollider Workspace
+</span><span style="color:#75715e">// =====================================================================
+</span><span style="color:#75715e"></span><span style="color:#75715e">/*
+</span><span style="color:#75715e">BA 181802
+</span><span style="color:#75715e">Tunings
+</span><span style="color:#75715e">*/</span>
+<span style="color:#a6e22e">Tuning</span>.<span style="color:#a6e22e">directory</span>
+<span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">directory</span>
+<span style="color:#a6e22e">t</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tuning</span>.<span style="color:#a6e22e">pythagorean</span>;
+<span style="color:#a6e22e">t</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tuning</span>.<span style="color:#a6e22e">et12</span>;
+<span style="color:#a6e22e">t</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tuning</span>.<span style="color:#a6e22e">lu</span>;
+<span style="color:#a6e22e">t</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tuning</span>.<span style="color:#a6e22e">vallotti</span>
+<span style="color:#a6e22e">t</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tuning</span>.<span style="color:#a6e22e">young</span>
+<span style="color:#a6e22e">t</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tuning</span>.<span style="color:#a6e22e">perret</span>
+<span style="color:#a6e22e">t</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tuning</span>.<span style="color:#a6e22e">choose</span>;
+<span style="color:#75715e">//choose from tunings stored in the library
+</span><span style="color:#75715e">//~scale = Scale.major(t).tuning.name;
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">semitones</span>;        <span style="color:#75715e">// [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">ratios</span>;        <span style="color:#75715e">// [ 1, 1.0594630943591, 1.1224620483089, 1.1892071150019, etc. ]
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>,  <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">harmonicMinor</span>(<span style="color:#a6e22e">t</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 
-<pre><code class="language-js">// =====================================================================
-// SuperCollider Workspace
-// =====================================================================
-/*
-BA 181802
-Tunings
-*/
-Tuning.directory
-Scale.directory
-t = Tuning.pythagorean;
-t = Tuning.et12;
-t = Tuning.lu;
-t = Tuning.vallotti
-t = Tuning.young
-t = Tuning.perret
-t = Tuning.choose;
-//choose from tunings stored in the library
-//~scale = Scale.major(t).tuning.name;
+<span style="color:#75715e">//Create new Tuning
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">Tuning</span>.<span style="color:#66d9ef">new</span>((<span style="color:#ae81ff">0..11</span>).<span style="color:#a6e22e">collect</span>(<span style="color:#a6e22e">_</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">2.61803398875</span> <span style="color:#f92672">**</span> (<span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/12))), 2.061803398875, &#34;GlodenRatio ET12&#34;);</span>
 
-t.semitones;        // [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 ]
-t.ratios;        // [ 1, 1.0594630943591, 1.1224620483089, 1.1892071150019, etc. ]
+<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>,  <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">major</span>(<span style="color:#a6e22e">t</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
+</code></pre></div>
 
-Pbind(\scale,  Scale.harmonicMinor(t), \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/dss/introduction/soundtheory/" title="Sound theory basics"> <i class="fa fa-chevron-left"></i><label>Sound theory basics</label></a>
+    <a class="nav nav-next" href="/dss/introduction/notation/" title="Notation" style="margin-right: 0px;"><label>Notation</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
 
-//Create new Tuning
+  </section>
+</article>
 
-t = Tuning.new((0..11).collect(_ * (2.61803398875 ** (1/12))), 2.061803398875, &quot;GlodenRatio ET12&quot;);
+<footer>
 
-Pbind(\scale,  Scale.major(t), \degree, Pseq((0..7) ++ (6..0) ++ [\rest], 1), \dur, 0.25).play;
+<div class="footline">
+    
 
-</code></pre>
+    
+
+  
+
+    <div class="github-link">
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/introduction/Tuning_Scales.el.org" target="blank"><i class="fa fa-code-fork"></i>
+        </a>
+    </div>
+  </div>
 
 
-<footer class=" footline" >
-	
+	<div>
+
+
+  
+    
+  
+
+
+
+	</div>
 </footer>
 
+<script src="/dss/js/clipboard.min.js"></script>
 
-        
-            </div> 
-        
-        </div> 
-        
-
-      </div>
-
-    <div id="navigation">
-        
-        
-        
-        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-            
-        
-        
-        
+<link href="/dss/css/featherlight.min.css" rel="stylesheet">
+<script src="/dss/js/featherlight.min.js"></script>
 
 
-        
-            <a class="nav nav-prev" href="/dss/introduction/soundtheory/" title="Sound theory basics"> <i class="fa fa-chevron-left"></i></a>
-        
-        
-            <a class="nav nav-next" href="/dss/introduction/logicalex/" title="Logical Expressions" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
-        
-    </div>
 
-    </section>
-    
-    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
-      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
-    </div>
-    <script src="/dss/js/clipboard.min.js?1553878383"></script>
-    <script src="/dss/js/perfect-scrollbar.min.js?1553878383"></script>
-    <script src="/dss/js/perfect-scrollbar.jquery.min.js?1553878383"></script>
-    <script src="/dss/js/jquery.sticky.js?1553878383"></script>
-    <script src="/dss/js/featherlight.min.js?1553878383"></script>
-    <script src="/dss/js/html5shiv-printshiv.min.js?1553878383"></script>
-    <script src="/dss/js/highlight.pack.js?1553878383"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/dss/js/modernizr.custom.71422.js?1553878383"></script>
-    <script src="/dss/js/learn.js?1553878383"></script>
-    <script src="/dss/js/hugo-learn.js?1553878383"></script>
+<script src="/dss/theme-flex/script.js"></script>
 
-    <link href="/dss/mermaid/mermaid.css?1553878383" type="text/css" rel="stylesheet" />
-    <script src="/dss/mermaid/mermaid.js?1553878383"></script>
-    <script>
-        mermaid.initialize({ startOnLoad: true });
-    </script>
     
 
+    
+    
+
+    
   </body>
 </html>
-

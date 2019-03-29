@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Εισαγωγή on </title>
+    <title>Εισαγωγή on Ψηφιακή Σύνθεση Ήχου</title>
     <link>https://vasileios.github.io/dss/introduction/</link>
-    <description>Recent content in Εισαγωγή on </description>
+    <description>Recent content in Εισαγωγή on Ψηφιακή Σύνθεση Ήχου</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
+    <language>en-us</language>
     
 	<atom:link href="https://vasileios.github.io/dss/introduction/index.xml" rel="self" type="application/rss+xml" />
     
@@ -16,21 +16,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://vasileios.github.io/dss/introduction/history/</guid>
-      <description>chapter 1 Ιστορια Μουσική και μαθηματικά.
-Πυθαγόρας
-Ο ήχος των σφυριών των σιδηρουργών έκανε τον Πυθαγόρα να βγάλει σημαντικά συμπεράσματα σχετικά με τη φύση του τονισμού και τα μαθηματικά με βάση την αρμονία μετά τη σύγκριση των τονισμών που έγιναν απο τα σφυριά.
-Guido D&#39;Arrezo
-Επίσης, στο πλαίσιο της αλγοριθμικής σύνθεσης, γύρω στο AD 1000 είχε αναπτυχθεί η πρώτη προσέγγιση στην αυτόματη γένεση της μουσικής δομής. Ο Guido του Arezzo (γύρω στο 991-1031) συνέβαλε στην ανάπτυξη της σημειογραφίας, ανέπτυξε το &#39;solfeggio&#39; (1025) και ήταν ένας σημαντικός μουσικός θεωρητικός της μεσαιωνικής εποχής.</description>
-    </item>
-    
-    <item>
-      <title>Παραδείγματα</title>
-      <link>https://vasileios.github.io/dss/introduction/paradigms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/paradigms/</guid>
-      <description>Chapter 1 Παραδειγματα Μαρκοβιανά Μοντέλα - Markov models time dependent random variables (TDRV)
-Στο πλαίσιο των πειραμάτων και παρατηρήσεων σχετικά με την TDRV έχουν ήδη γίνει από τους Pierre Simon de Laplace και Daniel Bernoulli. Η πρώτη εφαρμογή αυτής της μεθόδου ήταν μια εκτενή ανάλυση κειμένου από τον Markov: &#34;Το 1913 ο Markov είχε δημοσιεύσει την τρίτη έκδοση του εγχειριδίου του. Σε αυτή την έκδοση γράφει: «Ας τελειώσουμε το άρθρο και ολόκληρο το βιβλίο με ένα καλό παράδειγμα TDRV, που μπορούν να θεωρηθούν ως μια απλή αλυσίδα» (chain).</description>
+      <description>chapter 1 Ψηφιακή σύνθεση Ήχου Ιστορια Synthesis techniques and programming.
+Κατά τη διάρκεια του περασμένου αιώνα, η ηλεκτρική ενέργεια διαπέρασε σταδιακά τον κόσμο του ήχου. Η μουσική πλέον ακούγεται τώρα μέσω των ηχείων. Αλλά, πέρα από την αναπαραγωγή, η ηλεκτρική τεχνολογία επίσης έφερε ριζικά νέους πόρους για την παραγωγή νέων ήχων και μουσικής.
+Χρειάστηκε αρκετός χρόνος για τον μουσικό κόσμο να συνειδητοποιήσει τις δυνατότητες αυτών των πόρων. Ακόμη, για πολλά χρόνια, ο Edgard Varese προσπάθησε να πείσει τους ερευνητές και τα ιδρύματα να δούν τα πλεονέκτημα που προσφέρειη επιστήμη και η τεχνολογία για την ανάπτυξη μηχανών παραγωγής ήχου - μόνο στο τέλος της ζωής του ήταν σε θέση να συνθέσει τη μουσική με τη χρήση μαγνητοταινίας (tape music and music concrete) καιέτσι να κάνει τα πρώτα βήματα της μουσικής με υπολογιστή (Computer Music).</description>
     </item>
     
     <item>
@@ -59,16 +47,6 @@ Other Tunings and Scales
     </item>
     
     <item>
-      <title>Logical Expressions</title>
-      <link>https://vasileios.github.io/dss/introduction/logicalex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/logicalex/</guid>
-      <description>chapter 1 SN Symbolic notations in SuperCollider Supercollider Book
-// Logical/boolean notations/Expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 // not equal to 10&amp;gt;5 // greater than 10&amp;lt;14 // less than 10 &amp;gt;= 10 // greater than or equal to 10 &amp;lt;= 10 // lees than or equal to 11.odd // it is odd 10.even // it is even 10.isInteger // it is integer 10.129.isFloat // it is float 1.</description>
-    </item>
-    
-    <item>
       <title>Notation</title>
       <link>https://vasileios.github.io/dss/introduction/notation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -82,6 +60,16 @@ It is the number of cycles (per second) of a periodic wave.</description>
     </item>
     
     <item>
+      <title>Logical Expressions</title>
+      <link>https://vasileios.github.io/dss/introduction/logicalex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/logicalex/</guid>
+      <description>chapter 1 LE Logical Expressions in SuperCollider
+Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 // not equal to 10&amp;gt;5 // greater than 10&amp;lt;14 // less than 10 &amp;gt;= 10 // greater than or equal to 10 &amp;lt;= 10 // lees than or equal to 11.odd // it is odd 10.even // it is even 10.isInteger // it is integer 10.129.isFloat // it is float 1.odd.and(2.even) // both conditions 1.</description>
+    </item>
+    
+    <item>
       <title>Glossary</title>
       <link>https://vasileios.github.io/dss/introduction/glossary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -89,7 +77,7 @@ It is the number of cycles (per second) of a periodic wave.</description>
       <guid>https://vasileios.github.io/dss/introduction/glossary/</guid>
       <description>chapter 1 Glossary Mathematics
 premise a statement that is assumed to be true.
-polynomial function is an expression consisting of variables (also called indeterminates) and coefficients, that i nvolves only the operations of addition, subtraction, multiplication, and non-negative integer exponents of variables (Wiki, see more here)
+polynomial function is an expression consisting of variables (also called indeterminates) and coefficients, that involves only the operations of addition, subtraction, multiplication, and non-negative integer exponents of variables (Wiki, see more here)
 Physics
 frequency the number of times that a wave, especially a light, sound, or radio wave, is produced within a particular period, especially one second.</description>
     </item>
@@ -103,8 +91,8 @@ frequency the number of times that a wave, especially a light, sound, or radio w
       <description>Chapter 1 References Cope, David. 2000. The Algorithmic Composer. Madison, Wis: A-R Editions.
 Dean, Roger. and McLean, Alex (eds.) 2018. The Oxford Handbook of Algorithmic Music. Oxford University Press.
 Farnell, Andy. 2010. Designing Sound. Cambridge, Mass: The MIT Press.
-Gutowitz, Howard, ed. 1991. Cellular Automata: Theory and Experiment. 1 edition. Cambridge, Mass: The MIT Press.
-Holtzman, Steven. 1981. Generative Grammars for Music Composition. Computer Music Journal, Vol.5, No.1, pp. 51-64. The MIT Press.</description>
+Holtzman, Steven. 1981. Generative Grammars for Music Composition. Computer Music Journal, Vol.5, No.1, pp. 51-64. The MIT Press.
+Husbands, Phil, Peter Copley, Alice Eldridge, and James Mandelis. 2007. ‘An Introduction to Evolutionary Computing for Musicians’.</description>
     </item>
     
   </channel>
