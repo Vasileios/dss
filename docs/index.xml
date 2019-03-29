@@ -6,7 +6,7 @@
     <description>Recent content in Ψηφιακη Συνθεση Ηχου on Ψηφιακή Σύνθεση Ήχου</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 29 Mar 2019 01:32:57 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 29 Mar 2019 02:13:08 +0200</lastBuildDate>
     
 	<atom:link href="https://vasileios.github.io/dss/index.xml" rel="self" type="application/rss+xml" />
     
@@ -72,16 +72,6 @@ Other Tunings and Scales
     </item>
     
     <item>
-      <title>Logical Expressions</title>
-      <link>https://vasileios.github.io/dss/introduction/logicalex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/logicalex/</guid>
-      <description>chapter 1 LE Logical Expressions in SuperCollider
-Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 // not equal to 10&amp;gt;5 // greater than 10&amp;lt;14 // less than 10 &amp;gt;= 10 // greater than or equal to 10 &amp;lt;= 10 // lees than or equal to 11.odd // it is odd 10.even // it is even 10.isInteger // it is integer 10.129.isFloat // it is float 1.odd.and(2.even) // both conditions 1.</description>
-    </item>
-    
-    <item>
       <title>Noise</title>
       <link>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -89,6 +79,16 @@ Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 
       <guid>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</guid>
       <description>chapter 2 SuperCollider Noise Generators Aperiodic Sources: Noise
 /Aperiodic Sources: Noise. //LF &amp;#34;Low Frequency&amp;#34; Noise Generators. //arguments: frequency, mul, add { LFClipNoise.ar(MouseX.kr(200, 10000, 1), 0.125) }.scope(1); { LFPar.ar(LFClipNoise.kr(MouseX.kr(0.5, 64, 1), 200, 400), 0, 0.2) }.scope(1, zoom:8); //Broad Spectrum Noise Generators //arguments: mul, add { ClipNoise.ar(0.2) }.scope(1); { WhiteNoise.ar(0.2) }.scope(1); { PinkNoise.ar(0.4) }.scope(1); { BrownNoise.ar(0.2) }.scope(1); { GrayNoise.ar(0.2) }.scope(1); // Impulse Noise Generators //Dust, Dust2 //arguments: density, mul, add  { Dust.</description>
+    </item>
+    
+    <item>
+      <title>Filters</title>
+      <link>https://vasileios.github.io/dss/sc-examples/filters/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/sc-examples/filters/</guid>
+      <description>chapter 2 SuperCollider Filters Filters in SuperCollider
+// Filters  //Low Pass, High Pass, Band Pass see more on Help //arguments: in, freq, mul, add  { LPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); { HPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); // Resonant Low Pass, High Pass, Band Pass //arguments: in, freq, rq, mul, add  { RLPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); { RHPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); // Resonz - resonant band pass filter with uniform amplitude //arguments: in, freq, rq, mul, add  // modulate frequency { Resonz.</description>
     </item>
     
     <item>
@@ -105,13 +105,31 @@ It is the number of cycles (per second) of a periodic wave.</description>
     </item>
     
     <item>
-      <title>Filters</title>
-      <link>https://vasileios.github.io/dss/sc-examples/filters/</link>
+      <title>Distortion</title>
+      <link>https://vasileios.github.io/dss/sc-examples/distortion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/filters/</guid>
-      <description>chapter 2 SuperCollider Filters Filters in SuperCollider
-// Filters  //Low Pass, High Pass, Band Pass see more on Help //arguments: in, freq, mul, add  { LPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); { HPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); // Resonant Low Pass, High Pass, Band Pass //arguments: in, freq, rq, mul, add  { RLPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); { RHPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); // Resonz - resonant band pass filter with uniform amplitude //arguments: in, freq, rq, mul, add  // modulate frequency { Resonz.</description>
+      <guid>https://vasileios.github.io/dss/sc-examples/distortion/</guid>
+      <description>chapter 2 SuperCollider Distorion // Distortion  { SinOsc.ar(300, 0, 0.2) }.scope(1); { SinOsc.ar(300, 0, 0.2).abs }.scope(1); { SinOsc.ar(300, 0, 0.2).max(0) }.scope(1); { SinOsc.ar(300, 0).squared * 0.2 }.scope(1); { SinOsc.ar(300, 0).cubed * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).distort * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).softclip * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).clip2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).fold2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).wrap2(1) * 0.2 }.scope(1); { SinOsc.</description>
+    </item>
+    
+    <item>
+      <title>Logical Expressions</title>
+      <link>https://vasileios.github.io/dss/introduction/logicalex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/logicalex/</guid>
+      <description>chapter 1 LE Logical Expressions in SuperCollider
+Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 // not equal to 10&amp;gt;5 // greater than 10&amp;lt;14 // less than 10 &amp;gt;= 10 // greater than or equal to 10 &amp;lt;= 10 // lees than or equal to 11.odd // it is odd 10.even // it is even 10.isInteger // it is integer 10.129.isFloat // it is float 1.odd.and(2.even) // both conditions 1.</description>
+    </item>
+    
+    <item>
+      <title>Delays</title>
+      <link>https://vasileios.github.io/dss/sc-examples/delays/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/sc-examples/delays/</guid>
+      <description>chapter 2 SuperCollider Delays //Delays and Buffer UGens DelayN, DelayL, DelayC - simple delays N - no interpolation L - linear interpolation C - cubic interpolation arguments: in, maximum delay time, current delay time, mul, add ( // Dust randomly triggers Decay to create an exponential // decay envelope for the WhiteNoise input source { z = Decay.ar(Dust.ar(1,0.5), 0.3, WhiteNoise.ar); DelayN.ar(z, 0.1, 0.1, 1, z); // input is mixed with delay via the add input }.</description>
     </item>
     
     <item>
@@ -128,15 +146,6 @@ frequency the number of times that a wave, especially a light, sound, or radio w
     </item>
     
     <item>
-      <title>Distortion</title>
-      <link>https://vasileios.github.io/dss/sc-examples/distortion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/sc-examples/distortion/</guid>
-      <description>chapter 2 SuperCollider Distorion // Distortion  { SinOsc.ar(300, 0, 0.2) }.scope(1); { SinOsc.ar(300, 0, 0.2).abs }.scope(1); { SinOsc.ar(300, 0, 0.2).max(0) }.scope(1); { SinOsc.ar(300, 0).squared * 0.2 }.scope(1); { SinOsc.ar(300, 0).cubed * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).distort * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).softclip * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).clip2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).fold2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).wrap2(1) * 0.2 }.scope(1); { SinOsc.</description>
-    </item>
-    
-    <item>
       <title>References</title>
       <link>https://vasileios.github.io/dss/introduction/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -147,15 +156,6 @@ Dean, Roger. and McLean, Alex (eds.) 2018. The Oxford Handbook of Algorithmic Mu
 Farnell, Andy. 2010. Designing Sound. Cambridge, Mass: The MIT Press.
 Holtzman, Steven. 1981. Generative Grammars for Music Composition. Computer Music Journal, Vol.5, No.1, pp. 51-64. The MIT Press.
 Husbands, Phil, Peter Copley, Alice Eldridge, and James Mandelis. 2007. ‘An Introduction to Evolutionary Computing for Musicians’.</description>
-    </item>
-    
-    <item>
-      <title>Delays</title>
-      <link>https://vasileios.github.io/dss/sc-examples/delays/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/sc-examples/delays/</guid>
-      <description>chapter 2 SuperCollider Delays //Delays and Buffer UGens DelayN, DelayL, DelayC - simple delays N - no interpolation L - linear interpolation C - cubic interpolation arguments: in, maximum delay time, current delay time, mul, add ( // Dust randomly triggers Decay to create an exponential // decay envelope for the WhiteNoise input source { z = Decay.ar(Dust.ar(1,0.5), 0.3, WhiteNoise.ar); DelayN.ar(z, 0.1, 0.1, 1, z); // input is mixed with delay via the add input }.</description>
     </item>
     
     <item>

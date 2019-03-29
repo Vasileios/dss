@@ -9,7 +9,7 @@
   
   <url>
     <loc>https://vasileios.github.io/dss/</loc>
-    <lastmod>2019-03-29T01:32:57+02:00</lastmod>
+    <lastmod>2019-03-29T02:13:08+02:00</lastmod>
   </url>
   
   <url>
@@ -19,7 +19,7 @@
   
   <url>
     <loc>https://vasileios.github.io/dss/introduction/history/</loc>
-    <lastmod>2019-03-29T02:04:02+02:00</lastmod>
+    <lastmod>2019-03-29T02:13:08+02:00</lastmod>
   </url>
   
   <url>
@@ -43,12 +43,12 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/logicalex/</loc>
-    <lastmod>2019-03-29T02:04:02+02:00</lastmod>
+    <loc>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</loc>
+    <lastmod>2019-03-28T22:25:44+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</loc>
+    <loc>https://vasileios.github.io/dss/sc-examples/filters/</loc>
     <lastmod>2019-03-28T22:25:44+02:00</lastmod>
   </url>
   
@@ -58,7 +58,17 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/filters/</loc>
+    <loc>https://vasileios.github.io/dss/sc-examples/distortion/</loc>
+    <lastmod>2019-03-28T22:25:44+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/logicalex/</loc>
+    <lastmod>2019-03-29T02:04:02+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/sc-examples/delays/</loc>
     <lastmod>2019-03-28T22:25:44+02:00</lastmod>
   </url>
   
@@ -68,18 +78,8 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/distortion/</loc>
-    <lastmod>2019-03-28T22:25:44+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://vasileios.github.io/dss/introduction/references/</loc>
     <lastmod>2019-03-29T01:55:47+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/sc-examples/delays/</loc>
-    <lastmod>2019-03-28T22:25:44+02:00</lastmod>
   </url>
   
   <url>

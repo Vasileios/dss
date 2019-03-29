@@ -48,16 +48,6 @@ Other Tunings and Scales
     </item>
     
     <item>
-      <title>Logical Expressions</title>
-      <link>https://vasileios.github.io/dss/introduction/logicalex/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://vasileios.github.io/dss/introduction/logicalex/</guid>
-      <description>chapter 1 LE Logical Expressions in SuperCollider
-Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 // not equal to 10&amp;gt;5 // greater than 10&amp;lt;14 // less than 10 &amp;gt;= 10 // greater than or equal to 10 &amp;lt;= 10 // lees than or equal to 11.odd // it is odd 10.even // it is even 10.isInteger // it is integer 10.129.isFloat // it is float 1.odd.and(2.even) // both conditions 1.</description>
-    </item>
-    
-    <item>
       <title>Notation</title>
       <link>https://vasileios.github.io/dss/introduction/notation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -68,6 +58,16 @@ The lowest note musicians use is C-1, which has the MIDI number 0. The number 12
 60, 62, 63, 60, 66
 Frequencies
 It is the number of cycles (per second) of a periodic wave.</description>
+    </item>
+    
+    <item>
+      <title>Logical Expressions</title>
+      <link>https://vasileios.github.io/dss/introduction/logicalex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://vasileios.github.io/dss/introduction/logicalex/</guid>
+      <description>chapter 1 LE Logical Expressions in SuperCollider
+Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 // not equal to 10&amp;gt;5 // greater than 10&amp;lt;14 // less than 10 &amp;gt;= 10 // greater than or equal to 10 &amp;lt;= 10 // lees than or equal to 11.odd // it is odd 10.even // it is even 10.isInteger // it is integer 10.129.isFloat // it is float 1.odd.and(2.even) // both conditions 1.</description>
     </item>
     
     <item>
