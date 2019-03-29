@@ -3,23 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://vasileios.github.io/dss/_index.en/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/history.en/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/_index.en/</loc>
-  </url>
-  
-  <url>
     <loc>https://vasileios.github.io/dss/introduction/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/history/</loc>
   </url>
   
   <url>
@@ -27,39 +11,15 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/paradigms.en/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/paradigms/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/soundtheory/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/tuning_scales/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/logicalex/</loc>
-  </url>
-  
-  <url>
     <loc>https://vasileios.github.io/dss/sc-examples/</loc>
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/notation/</loc>
+    <loc>https://vasileios.github.io/dss/introduction/history/</loc>
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/glossary/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/references/</loc>
+    <loc>https://vasileios.github.io/dss/introduction/soundtheory/</loc>
   </url>
   
   <url>
@@ -71,6 +31,10 @@
   </url>
   
   <url>
+    <loc>https://vasileios.github.io/dss/introduction/tuning_scales/</loc>
+  </url>
+  
+  <url>
     <loc>https://vasileios.github.io/dss/sc-examples/aperiodicsources/</loc>
   </url>
   
@@ -79,11 +43,27 @@
   </url>
   
   <url>
+    <loc>https://vasileios.github.io/dss/introduction/notation/</loc>
+  </url>
+  
+  <url>
     <loc>https://vasileios.github.io/dss/sc-examples/distortion/</loc>
   </url>
   
   <url>
+    <loc>https://vasileios.github.io/dss/introduction/logicalex/</loc>
+  </url>
+  
+  <url>
     <loc>https://vasileios.github.io/dss/sc-examples/delays/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/glossary/</loc>
+  </url>
+  
+  <url>
+    <loc>https://vasileios.github.io/dss/introduction/references/</loc>
   </url>
   
   <url>
