@@ -302,20 +302,26 @@
 <p><strong>Functions</strong></p>
 
 <p>A Function is an expression which defines operations to be performed when it is sent the value message. In functional languages, a function would be known as a lambda expression. Function definitions are enclosed in curly brackets {}. Argument declarations, if any, follow the open bracket. Variable declarations follow argument declarations. An expression follows the declarations.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Functions in SuperCollider are within curly brackets  (also called &#34;braces&#34;) {}
-</span><span style="color:#75715e"></span>
-{ <span style="color:#a6e22e">arg</span> <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">c</span>;  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">d</span>;   <span style="color:#a6e22e">d</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">b</span>; <span style="color:#a6e22e">c</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">d</span> }
 
-<span style="color:#75715e">//When evaluated, the function returns the value of its expression.
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">f</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">arg</span> <span style="color:#a6e22e">a</span>, <span style="color:#a6e22e">b</span>; <span style="color:#a6e22e">a</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">b</span> };
-<span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">value</span>(<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>).<span style="color:#a6e22e">postln</span>;
-<span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">value</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">200</span>).<span style="color:#a6e22e">postln</span>;
+<pre><code class="language-js">
 
-<span style="color:#a6e22e">f</span> <span style="color:#f92672">=</span> {<span style="color:#ae81ff">44.</span><span style="color:#a6e22e">postln</span>};
+// Functions in SuperCollider are within curly brackets  (also called &quot;braces&quot;) {}
 
-<span style="color:#a6e22e">f</span>.<span style="color:#a6e22e">value</span> <span style="color:#75715e">// to call the function we need to get its .value
-</span><span style="color:#75715e"></span></code></pre></div>
+{ arg a, b, c;  var d;   d = a * b; c + d }
+
+//When evaluated, the function returns the value of its expression.
+
+f = { arg a, b; a + b };
+f.value(4, 5).postln;
+f.value(10, 200).postln;
+
+f = {44.postln};
+
+f.value // to call the function we need to get its .value
+
+
+</code></pre>
+
 <p><strong>Arguments</strong></p>
 
 <p>An argument list immediately follows the open curly bracket of a
@@ -331,85 +337,89 @@ word arg, or is contained between two vertical bars.</p>
 <p>Assign values to variables.</p>
 
 <p>Data type of variables: integer, float, string, symbol, etc...</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*
-</span><span style="color:#75715e">180503 Algorithmic Composition
-</span><span style="color:#75715e">Variables, functions
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">*/</span>
-<span style="color:#a6e22e">Server</span>.<span style="color:#66d9ef">default</span><span style="color:#f92672">=</span><span style="color:#a6e22e">s</span><span style="color:#f92672">=</span><span style="color:#a6e22e">Server</span>.<span style="color:#a6e22e">local</span>;
-<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">boot</span>;
-<span style="color:#75715e">//Global variables
-</span><span style="color:#75715e">//a-z
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
-<span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>;
-<span style="color:#a6e22e">c</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.234521</span>;
-<span style="color:#a6e22e">a</span><span style="color:#f92672">+</span><span style="color:#a6e22e">b</span><span style="color:#f92672">+</span><span style="color:#a6e22e">c</span>;
 
-<span style="color:#a6e22e">d</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello&#34;</span>;
+<pre><code class="language-js">/*
+180503 Algorithmic Composition
+Variables, functions
 
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">34</span>, <span style="color:#ae81ff">55</span>, <span style="color:#ae81ff">0.1</span>, <span style="color:#e6db74">&#34;string in a list&#34;</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">symbol</span>, <span style="color:#a6e22e">pi</span>]; <span style="color:#75715e">// or an array with mixed types
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">a</span> <span style="color:#75715e">//hit this line to see the container of a
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//local variables
-</span><span style="color:#75715e"></span>(
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">v</span>, <span style="color:#a6e22e">a</span>;
-<span style="color:#a6e22e">v</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">22</span>;
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">33</span>;
-)
+*/
+Server.default=s=Server.local;
+s.boot;
+//Global variables
+//a-z
+a = 10;
+b = 20;
+c = 0.234521;
+a+b+c;
 
-<span style="color:#a6e22e">v</span> <span style="color:#75715e">// hit this line and watch the post window 
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">a</span> <span style="color:#75715e">// hit this line and watch the post window - still our old &#34;a&#34; from above
-</span><span style="color:#75715e"></span>
+d = &quot;hello&quot;;
+
+a = [1, 34, 55, 0.1, &quot;string in a list&quot;, \symbol, pi]; // or an array with mixed types
+
+a //hit this line to see the container of a
+
+//local variables
 (
-<span style="color:#75715e">//You cannot evaluate local variables out of their scope of the brackets or a function.
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">number9</span>;
-
-<span style="color:#a6e22e">number9</span><span style="color:#f92672">=</span><span style="color:#ae81ff">9</span>;<span style="color:#75715e">//sets local vars, NOT global
-</span><span style="color:#75715e"></span>
+var v, a;
+v = 22;
+a = 33;
 )
-<span style="color:#a6e22e">number9</span>;<span style="color:#75715e">//error: this doesnt work outside of the scope of the brackets 
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">/*
-</span><span style="color:#75715e">~ (tilde) global (Environmental variables) 
-</span><span style="color:#75715e">An Environment is an IdentityDictionary with additional features that allow it to serve as a &#39;name space&#39; within which functions can be defined and/or evaluated.
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">The compiler provides a shortcut syntax where ~ is a placeholder for .currentEnvironment. This makes the expression ~myvariable; equivalent to currentEnvironment.at(\myvariable); and the expression ~myvariable = 888; equivalent to currentEnvironment.put(\myvariable, 888);
-</span><span style="color:#75715e">*/</span>
 
-<span style="color:#a6e22e">currentEnvironment</span>; <span style="color:#75715e">//run this line to the current state of the currentEnvironment
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//You use the currentEnvironment via the ~ sign
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">~</span><span style="color:#a6e22e">myvariable</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">888</span>;
+v // hit this line and watch the post window 
+a // hit this line and watch the post window - still our old &quot;a&quot; from above
 
-<span style="color:#75715e">//The ~ and = is a shortcut here for 
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">currentEnvironment</span>.<span style="color:#a6e22e">put</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">myvariable</span>, <span style="color:#ae81ff">888</span>);
+(
+//You cannot evaluate local variables out of their scope of the brackets or a function.
+var number9;
 
-<span style="color:#75715e">//You can access the variable wherever you need it by 
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">~</span><span style="color:#a6e22e">myvariable</span>
+number9=9;//sets local vars, NOT global
 
-<span style="color:#75715e">//environmental variable: sound example
-</span><span style="color:#75715e"></span>(
-<span style="color:#f92672">~</span><span style="color:#a6e22e">variable1</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">MouseX</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">800</span>, <span style="color:#ae81ff">1</span>))};
-<span style="color:#f92672">~</span><span style="color:#a6e22e">variable2</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">Saw</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">MouseY</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">800</span>, <span style="color:#ae81ff">1</span>))};
-<span style="color:#f92672">~</span><span style="color:#a6e22e">variable3</span> <span style="color:#f92672">=</span> (<span style="color:#f92672">~</span><span style="color:#a6e22e">variable1</span><span style="color:#f92672">*~</span><span style="color:#a6e22e">variable2</span>);
+)
+number9;//error: this doesnt work outside of the scope of the brackets 
+
+/*
+~ (tilde) global (Environmental variables) 
+An Environment is an IdentityDictionary with additional features that allow it to serve as a 'name space' within which functions can be defined and/or evaluated.
+
+The compiler provides a shortcut syntax where ~ is a placeholder for .currentEnvironment. This makes the expression ~myvariable; equivalent to currentEnvironment.at(\myvariable); and the expression ~myvariable = 888; equivalent to currentEnvironment.put(\myvariable, 888);
+*/
+
+currentEnvironment; //run this line to the current state of the currentEnvironment
+
+//You use the currentEnvironment via the ~ sign
+
+~myvariable= 888;
+
+//The ~ and = is a shortcut here for 
+
+currentEnvironment.put(\myvariable, 888);
+
+//You can access the variable wherever you need it by 
+
+~myvariable
+
+//environmental variable: sound example
+(
+~variable1 = {SinOsc.ar(MouseX.kr(400, 800, 1))};
+~variable2 = {Saw.ar(MouseY.kr(400, 800, 1))};
+~variable3 = (~variable1*~variable2);
 )
 (
 {
-	<span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">variable3</span>)
-}.<span style="color:#a6e22e">play</span>;
+	Out.ar(0, ~variable3)
+}.play;
 )
 
-<span style="color:#a6e22e">currentEnvironment</span>; <span style="color:#75715e">//run this line to the current state of the currentEnvironment
-</span><span style="color:#75715e"></span></code></pre></div>
+currentEnvironment; //run this line to the current state of the currentEnvironment
+</code></pre>
+
 <h4 id="general-tips">General tips</h4>
 
 <p><strong>Find recordings folder</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">thisProcess</span>.<span style="color:#a6e22e">platform</span>.<span style="color:#a6e22e">recordingsDir</span>;
-</code></pre></div>
+
+<pre><code class="language-js">thisProcess.platform.recordingsDir;
+</code></pre>
+
 <p><strong>Sound synthesis techniques</strong></p>
 
 <p>Introduction to sound synthesis and  sound design (origin, definition, procedures, application fields).</p>
@@ -422,38 +432,49 @@ SuperCollider example:
 Creating a sine wave
 </p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.3</span>)}.<span style="color:#a6e22e">play</span>
-</code></pre></div>
+
+<pre><code class="language-js">{SinOsc.ar(440, 0, 0.3)}.play
+</code></pre>
+
 <blockquote>
 <p>
 Additive synthesis
 </p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.4</span>)<span style="color:#f92672">+</span><span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">660</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.3</span>)}.<span style="color:#a6e22e">play</span>;
-</code></pre></div>
+
+<pre><code class="language-js">{SinOsc.ar(440, 0, 0.4)+SinOsc.ar(660, 0, 0.3)}.play;
+</code></pre>
+
 <blockquote>
 <p>
 Subtractive synthesis
 </p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">(
-{<span style="color:#a6e22e">LPF</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Mix</span>.<span style="color:#a6e22e">fill</span>(<span style="color:#ae81ff">8</span>, { <span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">500</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">500.0</span>.<span style="color:#a6e22e">rand</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.05</span>)}), <span style="color:#ae81ff">2900</span>, <span style="color:#ae81ff">0.5</span>);
-}.<span style="color:#a6e22e">play</span>
+
+<pre><code class="language-js">(
+{LPF.ar(Mix.fill(8, { SinOsc.ar(500 + 500.0.rand, 0, 0.05)}), 2900, 0.5);
+}.play
 )
-</code></pre></div>
+</code></pre>
+
 <blockquote>
 <p>
 Granular synthesis
 </p>
 </blockquote>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#a6e22e">SynthDef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">granular</span>, {<span style="color:#f92672">|</span><span style="color:#a6e22e">out</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">trig</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">dur</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.1</span>, <span style="color:#a6e22e">sndbuf</span>, <span style="color:#a6e22e">pos</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.2</span>,
-<span style="color:#a6e22e">rate</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">pan</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">amp</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.4</span><span style="color:#f92672">|</span>
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">source</span>;
-<span style="color:#a6e22e">env</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">EnvGen</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">Env</span>.<span style="color:#a6e22e">adsr</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">doneAcion</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>);
-<span style="color:#a6e22e">source</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">out</span>, <span style="color:#a6e22e">GrainBuf</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">Impulse</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">trig</span>), <span style="color:#a6e22e">dur</span>, <span style="color:#a6e22e">sndbuf</span>, <span style="color:#a6e22e">rate</span>, <span style="color:#a6e22e">pos</span>, <span style="color:#ae81ff">2</span>,
-<span style="color:#a6e22e">pan</span>, <span style="color:#a6e22e">envbuf</span>) <span style="color:#f92672">*</span> <span style="color:#a6e22e">env</span>)
-}).<span style="color:#a6e22e">add</span>;
-</code></pre></div>
+
+<pre><code class="language-js">
+
+SynthDef(\granular, {|out = 0, trig = 1, dur = 0.1, sndbuf, pos = 0.2,
+rate = 1, pan = 0, amp = 0.4|
+var env, source;
+env = EnvGen.kr(Env.adsr, 1, doneAcion: 2);
+source = Out.ar(out, GrainBuf.ar(2, Impulse.kr(trig), dur, sndbuf, rate, pos, 2,
+pan, envbuf) * env)
+}).add;
+
+</code></pre>
+
 <h4 id="input-devices">Input Devices</h4>
 
 <p>Musical gestures can be expressed through a wide range of body

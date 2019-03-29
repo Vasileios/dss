@@ -282,27 +282,34 @@
 <h4 id="sn">SN</h4>
 
 <p><strong>Symbolic notations in SuperCollider Supercollider Book</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Logical/boolean notations/Expressions
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">=</span><span style="color:#66d9ef">true</span> <span style="color:#a6e22e">or</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">=</span>
 
-<span style="color:#ae81ff">10</span><span style="color:#f92672">==</span><span style="color:#ae81ff">10</span> <span style="color:#75715e">// equal to =&gt;true...
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">10</span> <span style="color:#f92672">!=</span><span style="color:#ae81ff">15</span> <span style="color:#75715e">// not equal to
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">10</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">5</span> <span style="color:#75715e">// greater than
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">10</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">14</span> <span style="color:#75715e">// less than
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">10</span> <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">10</span> <span style="color:#75715e">// greater than or equal to
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">10</span> <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">10</span> <span style="color:#75715e">// lees than or equal to
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">11.</span><span style="color:#a6e22e">odd</span> <span style="color:#75715e">// it is odd
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">10.</span><span style="color:#a6e22e">even</span> <span style="color:#75715e">// it is even
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">10.</span><span style="color:#a6e22e">isInteger</span> <span style="color:#75715e">// it is integer
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">10.129</span>.<span style="color:#a6e22e">isFloat</span> <span style="color:#75715e">// it is float
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">1.</span><span style="color:#a6e22e">odd</span>.<span style="color:#a6e22e">and</span>(<span style="color:#ae81ff">2.</span><span style="color:#a6e22e">even</span>) <span style="color:#75715e">// both conditions 
-</span><span style="color:#75715e"></span><span style="color:#ae81ff">1.</span><span style="color:#a6e22e">odd</span>.<span style="color:#a6e22e">or</span>(<span style="color:#ae81ff">1.</span><span style="color:#a6e22e">even</span>) <span style="color:#75715e">// either condition
-</span><span style="color:#75715e"></span></code></pre></div>
+<pre><code class="language-js">
+
+// Logical/boolean notations/Expressions
+
+=true or false=
+
+10==10 // equal to =&gt;true...
+10 !=15 // not equal to
+10&gt;5 // greater than
+10&lt;14 // less than
+10 &gt;= 10 // greater than or equal to
+10 &lt;= 10 // lees than or equal to
+11.odd // it is odd
+10.even // it is even
+10.isInteger // it is integer
+10.129.isFloat // it is float
+1.odd.and(2.even) // both conditions 
+1.odd.or(1.even) // either condition
+
+</code></pre>
+
 <p>examples</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">if</span>(<span style="color:#ae81ff">10</span><span style="color:#f92672">==</span><span style="color:#ae81ff">10</span>, {<span style="color:#e6db74">&#34;10 is equal to 10&#34;</span>}, {<span style="color:#e6db74">&#34;false&#34;</span>});
-<span style="color:#66d9ef">if</span>((<span style="color:#ae81ff">1</span><span style="color:#f92672">&lt;</span><span style="color:#ae81ff">20</span>).<span style="color:#a6e22e">and</span>(<span style="color:#ae81ff">1.</span><span style="color:#a6e22e">isInteger</span>), {<span style="color:#e6db74">&#34;1 is less than 20&#34;</span>}, {<span style="color:#e6db74">&#34;false&#34;</span>});
-</code></pre></div>
+
+<pre><code class="language-js">if(10==10, {&quot;10 is equal to 10&quot;}, {&quot;false&quot;});
+if((1&lt;20).and(1.isInteger), {&quot;1 is less than 20&quot;}, {&quot;false&quot;});
+</code></pre>
+
 <p>see more <a href="http://danielnouri.org/docs/SuperColliderHelp/Language/SymbolicNotations.html" title="here">here</a></p>
 
 

@@ -280,400 +280,428 @@
     <h3 id="chapter-2">chapter 2</h3>
 
 <p><strong>Examples with Routines and Loops</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">(
-<span style="color:#75715e">/*
-</span><span style="color:#75715e">Algorithmic composition paradigms
-</span><span style="color:#75715e">BA 181502
-</span><span style="color:#75715e">Objective:  create a sine wave and accelerate and decelarate its frequency nth times.
-</span><span style="color:#75715e">*/</span>
 
-<span style="color:#a6e22e">fork</span>{<span style="color:#75715e">//this alternative syntax goes for Routine
-</span><span style="color:#75715e"></span>
-<span style="color:#ae81ff">10.</span><span style="color:#66d9ef">do</span>({<span style="color:#75715e">//here goes the repetition (10 times)
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">4</span>), <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.4</span>)}.<span style="color:#a6e22e">play</span>;
-<span style="color:#ae81ff">4.</span><span style="color:#a6e22e">wait</span>;
-<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">release</span>;
-<span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">500</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">4</span>), <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.4</span>)}.<span style="color:#a6e22e">play</span>;
-<span style="color:#ae81ff">4.</span><span style="color:#a6e22e">wait</span>;
-<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">release</span>;
+<pre><code class="language-js">(
+/*
+Algorithmic composition paradigms
+BA 181502
+Objective:  create a sine wave and accelerate and decelarate its frequency nth times.
+*/
 
-});<span style="color:#75715e">//loop ends here
-</span><span style="color:#75715e"></span>}<span style="color:#75715e">//fork (Routine) ends here
-</span><span style="color:#75715e"></span>)
-</code></pre></div>
+fork{//this alternative syntax goes for Routine
+
+10.do({//here goes the repetition (10 times)
+
+a = {SinOsc.ar(XLine.kr(100, 500, 4), 0, 0.4)}.play;
+4.wait;
+a.release;
+b = {SinOsc.ar(XLine.kr(500, 100, 4), 0, 0.4)}.play;
+4.wait;
+b.release;
+
+});//loop ends here
+}//fork (Routine) ends here
+)
+</code></pre>
+
 <p><strong>probability-stochastic</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/* BA 181502
-</span><span style="color:#75715e"> Stochastic example 1
-</span><span style="color:#75715e">Objective: Create two sounds one after the other then free one of them (probability), wait a couple of seconds to free also the remain sounds (probability). (Rolling a Dice)
-</span><span style="color:#75715e">*/</span>
+
+<pre><code class="language-js">/* BA 181502
+ Stochastic example 1
+Objective: Create two sounds one after the other then free one of them (probability), wait a couple of seconds to free also the remain sounds (probability). (Rolling a Dice)
+*/
 
 (
-<span style="color:#a6e22e">fork</span>{
-	<span style="color:#e6db74">&#34;sound 1&#34;</span>.<span style="color:#a6e22e">postln</span>;
-        <span style="color:#f92672">~</span><span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.5</span>))}.<span style="color:#a6e22e">play</span>;
-	<span style="color:#ae81ff">2.</span><span style="color:#a6e22e">wait</span>;
-	<span style="color:#e6db74">&#34;sound 2&#34;</span>.<span style="color:#a6e22e">postln</span>;
-	<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">443</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.5</span>))}.<span style="color:#a6e22e">play</span>;
-		<span style="color:#ae81ff">0.11</span>.<span style="color:#a6e22e">wait</span>;
+fork{
+	&quot;sound 1&quot;.postln;
+        ~a = {Out.ar(0, SinOsc.ar(440, 0, 0.5))}.play;
+	2.wait;
+	&quot;sound 2&quot;.postln;
+	~b = {Out.ar(1, SinOsc.ar(443, 0, 0.5))}.play;
+		0.11.wait;
 
-	<span style="color:#e6db74">&#34;dice game&#34;</span>.<span style="color:#a6e22e">postln</span>;
-	<span style="color:#ae81ff">0.1</span>.<span style="color:#a6e22e">wait</span>;
-	<span style="color:#e6db74">&#34;one sound is going to &#39;die&#39;&#34;</span>.<span style="color:#a6e22e">postln</span>;
-	<span style="color:#ae81ff">0.5</span>.<span style="color:#a6e22e">wait</span>;
-	<span style="color:#e6db74">&#34;sound 1 or sound 2 is dead?&#34;</span>.<span style="color:#a6e22e">postln</span>;
-        <span style="color:#ae81ff">0.1</span>.<span style="color:#a6e22e">wait</span>;
-        <span style="color:#e6db74">&#34;rolling the die...&#34;</span>.<span style="color:#a6e22e">postln</span>;
+	&quot;dice game&quot;.postln;
+	0.1.wait;
+	&quot;one sound is going to 'die'&quot;.postln;
+	0.5.wait;
+	&quot;sound 1 or sound 2 is dead?&quot;.postln;
+        0.1.wait;
+        &quot;rolling the die...&quot;.postln;
 
-	<span style="color:#ae81ff">6.</span><span style="color:#a6e22e">wait</span>;
-	<span style="color:#f92672">~</span><span style="color:#a6e22e">die</span> <span style="color:#f92672">=</span>
+	6.wait;
+	~die =
 	{
 
-	<span style="color:#a6e22e">fork</span>{
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>].<span style="color:#a6e22e">choose</span>.<span style="color:#a6e22e">postln</span>; <span style="color:#75715e">// if you use .coin example below comment this line
-</span><span style="color:#75715e"></span>	<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">x</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">3</span>,{<span style="color:#f92672">~</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">free</span>},{<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">free</span>}); <span style="color:#75715e">// if you use .coin example below comment this line
-</span><span style="color:#75715e"></span>
-
-	<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">x</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">3</span>, {<span style="color:#e6db74">&#34;sound 1 is dead&#34;</span>.<span style="color:#a6e22e">postln</span>},{<span style="color:#e6db74">&#34;sound 2 is dead&#34;</span>.<span style="color:#a6e22e">postln</span>}); <span style="color:#75715e">// if you use .coin example below comment this line
-</span><span style="color:#75715e"></span>	<span style="color:#ae81ff">4.</span><span style="color:#a6e22e">wait</span>; <span style="color:#75715e">// if you use .coin example below comment this line
-</span><span style="color:#75715e"></span>
-	<span style="color:#75715e">/*
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">There are other options to experiment with probability such as .wchoose and .coin as well.
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">.wchoose
-</span><span style="color:#75715e">//[440,220,3350,660].wchoose([0.5, 0.25, 0.2, 0.05]) //the second array of .wchoose, weights the options of the first array.
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">.coin
-</span><span style="color:#75715e">//0.5.coin //fair coin, equal chance.  true or false as output
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">//0.2.coin //unfair coin, 20% chance true
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">//0.95.coin //unfair coin, 95% chance true
-</span><span style="color:#75715e">*/</span>
-
-<span style="color:#75715e">//Comment out the bolow code to use .coin instead of .choose and don&#39;t forget to comment the above code
-</span><span style="color:#75715e"></span><span style="color:#75715e">/*
-</span><span style="color:#75715e">		var x = 0.5.coin.postln;
-</span><span style="color:#75715e">		if(x = false, {~a.free},{~b.free});
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">	        &#34;sound 1 or sound 2 is dead?&#34;.postln;
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">		if(x = false, {&#34;sound 1 is dead&#34;.postln},{&#34;sound 2 is dead&#34;.postln});
-</span><span style="color:#75715e">                4.wait;
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">*/</span>
-	<span style="color:#e6db74">&#34;free the remain sound_n&#34;</span>.<span style="color:#a6e22e">postln</span>;
-	<span style="color:#66d9ef">if</span>(<span style="color:#f92672">~</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">isRunning</span>, {<span style="color:#f92672">~</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">free</span>}, {<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">free</span>});
-	<span style="color:#66d9ef">if</span>(<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">isRunning</span>, {<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">free</span>}, {<span style="color:#f92672">~</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">free</span>});
+	fork{
+	var x = [1,2, 3, 4, 5, 6].choose.postln; // if you use .coin example below comment this line
+	if(x&gt;3,{~a.free},{~b.free}); // if you use .coin example below comment this line
 
 
-};<span style="color:#75715e">//Sub-routine ends here
-</span><span style="color:#75715e"></span>}.<span style="color:#a6e22e">value</span>;<span style="color:#75715e">// ~die ends here
-</span><span style="color:#75715e"></span>};<span style="color:#75715e">//Routine ends here
-</span><span style="color:#75715e"></span>)
-</code></pre></div>
+	if(x&gt;3, {&quot;sound 1 is dead&quot;.postln},{&quot;sound 2 is dead&quot;.postln}); // if you use .coin example below comment this line
+	4.wait; // if you use .coin example below comment this line
+
+	/*
+
+There are other options to experiment with probability such as .wchoose and .coin as well.
+
+.wchoose
+//[440,220,3350,660].wchoose([0.5, 0.25, 0.2, 0.05]) //the second array of .wchoose, weights the options of the first array.
+
+.coin
+//0.5.coin //fair coin, equal chance.  true or false as output
+
+//0.2.coin //unfair coin, 20% chance true
+
+//0.95.coin //unfair coin, 95% chance true
+*/
+
+//Comment out the bolow code to use .coin instead of .choose and don't forget to comment the above code
+/*
+		var x = 0.5.coin.postln;
+		if(x = false, {~a.free},{~b.free});
+
+
+	        &quot;sound 1 or sound 2 is dead?&quot;.postln;
+
+		if(x = false, {&quot;sound 1 is dead&quot;.postln},{&quot;sound 2 is dead&quot;.postln});
+                4.wait;
+
+*/
+	&quot;free the remain sound_n&quot;.postln;
+	if(~a.isRunning, {~a.free}, {~b.free});
+	if(~b.isRunning, {~b.free}, {~a.free});
+
+
+};//Sub-routine ends here
+}.value;// ~die ends here
+};//Routine ends here
+)
+</code></pre>
+
 <p><strong>With complex sounds</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*
-</span><span style="color:#75715e">BA 181502
-</span><span style="color:#75715e">Stochastic example 2
-</span><span style="color:#75715e">Objective: Create two sounds one after the other, then free one of them and after a while free also the remain sounds using probability. (Rolling a Dice)
-</span><span style="color:#75715e">*/</span>
+
+<pre><code class="language-js">
+
+
+
+/*
+BA 181502
+Stochastic example 2
+Objective: Create two sounds one after the other, then free one of them and after a while free also the remain sounds using probability. (Rolling a Dice)
+*/
 
 (
-<span style="color:#a6e22e">fork</span>{
-	<span style="color:#e6db74">&#34;sound 1&#34;</span>.<span style="color:#a6e22e">postln</span>;
-	<span style="color:#f92672">~</span><span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>], <span style="color:#a6e22e">Resonz</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(
-<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">1500</span>, <span style="color:#ae81ff">1500</span>, <span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">4</span>), <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">200</span>)), <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">LFNoise1</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">20</span>))
-, <span style="color:#ae81ff">440.</span><span style="color:#a6e22e">rand</span>, <span style="color:#ae81ff">0.7</span>)<span style="color:#f92672">*</span><span style="color:#a6e22e">Saw</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">44</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">44</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">4</span>)).<span style="color:#a6e22e">dup</span>)}.<span style="color:#a6e22e">play</span>;
-	<span style="color:#ae81ff">0.1</span>.<span style="color:#a6e22e">wait</span>;
-	<span style="color:#f92672">~</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">postln</span>;
-	<span style="color:#ae81ff">4.</span><span style="color:#a6e22e">wait</span>;
-	<span style="color:#e6db74">&#34;sound 2&#34;</span>.<span style="color:#a6e22e">postln</span>;
-	<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> {<span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>], <span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">1500</span>, <span style="color:#ae81ff">150</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">4</span>), <span style="color:#ae81ff">10</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">200</span>)), <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">LFNoise1</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">20</span>)<span style="color:#f92672">*</span><span style="color:#ae81ff">0.6</span>)<span style="color:#f92672">*</span><span style="color:#a6e22e">Saw</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">44</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">4</span>)).<span style="color:#a6e22e">dup</span>)}.<span style="color:#a6e22e">play</span>;
-	<span style="color:#ae81ff">0.1</span>.<span style="color:#a6e22e">wait</span>;
-	<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">postln</span>;
-	<span style="color:#ae81ff">4.</span><span style="color:#a6e22e">wait</span>;
+fork{
+	&quot;sound 1&quot;.postln;
+	~a = {Out.ar([0,1], Resonz.ar(SinOsc.ar(
+Dust.kr(XLine.kr(10, 1500, 1500, 100, 40, 4), XLine.kr(100, 400, 400, 200)), 0, LFNoise1.kr(20))
+, 440.rand, 0.7)*Saw.ar(XLine.kr(44, 20, 44, 20, 4)).dup)}.play;
+	0.1.wait;
+	~a.postln;
+	4.wait;
+	&quot;sound 2&quot;.postln;
+	~b = {Out.ar([0,1], SinOsc.ar(SinOsc.ar(XLine.kr(10, 1500, 150, 10, 40, 4), 10, XLine.kr(100, 400, 400, 200)), 0, LFNoise1.kr(20)*0.6)*Saw.ar(XLine.kr(44, 20, 440, 20, 4)).dup)}.play;
+	0.1.wait;
+	~b.postln;
+	4.wait;
 
-	<span style="color:#e6db74">&#34;dice game&#34;</span>.<span style="color:#a6e22e">postln</span>;
-	<span style="color:#e6db74">&#34;one sound is going to &#39;die&#39;&#34;</span>.<span style="color:#a6e22e">postln</span>;
+	&quot;dice game&quot;.postln;
+	&quot;one sound is going to 'die'&quot;.postln;
 
-        <span style="color:#f92672">~</span><span style="color:#a6e22e">die</span> <span style="color:#f92672">=</span>
+        ~die =
 	{
 
-	<span style="color:#a6e22e">fork</span>{
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>].<span style="color:#a6e22e">choose</span>.<span style="color:#a6e22e">postln</span>;
-	<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">x</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">3</span>,{<span style="color:#f92672">~</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">free</span>},{<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">free</span>});
+	fork{
+	var x = [1,2, 3, 4, 5, 6].choose.postln;
+	if(x&gt;3,{~a.free},{~b.free});
 
-	<span style="color:#e6db74">&#34;sound 1 or sound 2 is dead?&#34;</span>.<span style="color:#a6e22e">postln</span>;
+	&quot;sound 1 or sound 2 is dead?&quot;.postln;
 
-	<span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">x</span><span style="color:#f92672">&gt;</span><span style="color:#ae81ff">3</span>, {<span style="color:#e6db74">&#34;sound 1 is dead&#34;</span>.<span style="color:#a6e22e">postln</span>},{<span style="color:#e6db74">&#34;sound 2 is dead&#34;</span>.<span style="color:#a6e22e">postln</span>});
+	if(x&gt;3, {&quot;sound 1 is dead&quot;.postln},{&quot;sound 2 is dead&quot;.postln});
 
-        <span style="color:#ae81ff">4.</span><span style="color:#a6e22e">wait</span>;
+        4.wait;
 
-	<span style="color:#e6db74">&#34;free the remain sound_n&#34;</span>.<span style="color:#a6e22e">postln</span>;
+	&quot;free the remain sound_n&quot;.postln;
 
-	<span style="color:#66d9ef">if</span>(<span style="color:#f92672">~</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">isRunning</span>, {<span style="color:#f92672">~</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">free</span>}, {<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">free</span>});
-	<span style="color:#66d9ef">if</span>(<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">isRunning</span>, {<span style="color:#f92672">~</span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">free</span>}, {<span style="color:#f92672">~</span><span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">free</span>});
+	if(~a.isRunning, {~a.free}, {~b.free});
+	if(~b.isRunning, {~b.free}, {~a.free});
 
 
-};<span style="color:#75715e">//Sub-routine ends here
-</span><span style="color:#75715e"></span>}.<span style="color:#a6e22e">value</span>;<span style="color:#75715e">// ~die ends here
-</span><span style="color:#75715e"></span>};<span style="color:#75715e">//Routine ends here
-</span><span style="color:#75715e"></span>)
-</code></pre></div>
+};//Sub-routine ends here
+}.value;// ~die ends here
+};//Routine ends here
+)
+
+</code></pre>
+
 <p><strong>Analysing methods</strong></p>
 
 <ul>
 <li>.normalizeSum</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// first run the array with the message .normalizeSum and see the results
-</span><span style="color:#75715e"></span>[<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">1.7</span>, <span style="color:#ae81ff">38</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">21</span>].<span style="color:#a6e22e">normalizeSum</span> <span style="color:#75715e">//the method .normalizeSum makes a new array which results from the division of the sum of the entries
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//We are going to use some maths to demonstrate how the method .normalizeSum works
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//firts find the result of the summation of the array
-</span><span style="color:#75715e"></span>[<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">1.7</span>, <span style="color:#ae81ff">38</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">21</span>].<span style="color:#a6e22e">sum</span> <span style="color:#75715e">//80.9
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//then add each value from the array seperately to the summation of the array \
-</span><span style="color:#75715e">// and divide the result with the result of the summation of the array
-</span><span style="color:#75715e">//the last thing to do is to substract the result of each equation by 1 i.e (-1)
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//Below is an equation of the method .normalizeSum with the a collection of five items [16, 1.7, 38, 4.2, 21]
-</span><span style="color:#75715e"></span>
+
+<pre><code class="language-js">
+
+
+// first run the array with the message .normalizeSum and see the results
+[16, 1.7, 38, 4.2, 21].normalizeSum //the method .normalizeSum makes a new array which results from the division of the sum of the entries
+
+//We are going to use some maths to demonstrate how the method .normalizeSum works
+
+//firts find the result of the summation of the array
+[16, 1.7, 38, 4.2, 21].sum //80.9
+
+//then add each value from the array seperately to the summation of the array \
+// and divide the result with the result of the summation of the array
+//the last thing to do is to substract the result of each equation by 1 i.e (-1)
+
+//Below is an equation of the method .normalizeSum with the a collection of five items [16, 1.7, 38, 4.2, 21]
+
 (
-<span style="color:#75715e">//run the code inside parentheses
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">n</span> <span style="color:#f92672">=</span> (<span style="color:#ae81ff">16</span><span style="color:#f92672">+</span>([<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">1.7</span>, <span style="color:#ae81ff">38</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">21</span>].<span style="color:#a6e22e">sum</span>)<span style="color:#e6db74">/ 80.9); /</span><span style="color:#960050;background-color:#1e0010">/ start with the first item of the array (16)</span>
-<span style="color:#a6e22e">n</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">n</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-<span style="color:#a6e22e">o</span> <span style="color:#f92672">=</span> (<span style="color:#ae81ff">1.7</span><span style="color:#f92672">+</span>([<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">1.7</span>, <span style="color:#ae81ff">38</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">21</span>].<span style="color:#a6e22e">sum</span>)<span style="color:#e6db74">/ 80.9); /</span><span style="color:#960050;background-color:#1e0010">/ then the second,</span>
-<span style="color:#a6e22e">o</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">o</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-<span style="color:#a6e22e">r</span> <span style="color:#f92672">=</span> (<span style="color:#ae81ff">38</span><span style="color:#f92672">+</span>([<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">1.7</span>, <span style="color:#ae81ff">38</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">21</span>].<span style="color:#a6e22e">sum</span>)<span style="color:#e6db74">/ 80.9); /</span><span style="color:#960050;background-color:#1e0010">/ the third, and so on</span>
-<span style="color:#a6e22e">r</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">r</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-<span style="color:#a6e22e">m</span> <span style="color:#f92672">=</span> (<span style="color:#ae81ff">4.2</span><span style="color:#f92672">+</span>([<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">1.7</span>, <span style="color:#ae81ff">38</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">21</span>].<span style="color:#a6e22e">sum</span>)<span style="color:#960050;background-color:#1e0010">/ 80.9);</span>
-<span style="color:#a6e22e">m</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">m</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> (<span style="color:#ae81ff">21</span><span style="color:#f92672">+</span>([<span style="color:#ae81ff">16</span>, <span style="color:#ae81ff">1.7</span>, <span style="color:#ae81ff">38</span>, <span style="color:#ae81ff">4.2</span>, <span style="color:#ae81ff">21</span>].<span style="color:#a6e22e">sum</span>)<span style="color:#960050;background-color:#1e0010">/ 80.9);</span>
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span><span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>;
-[<span style="color:#a6e22e">n</span>,<span style="color:#a6e22e">o</span>,<span style="color:#a6e22e">r</span>,<span style="color:#a6e22e">m</span>,<span style="color:#a6e22e">a</span>].<span style="color:#a6e22e">asStream</span>;
+//run the code inside parentheses
+n = (16+([16, 1.7, 38, 4.2, 21].sum)/ 80.9); // start with the first item of the array (16)
+n = n-1;
+o = (1.7+([16, 1.7, 38, 4.2, 21].sum)/ 80.9); // then the second,
+o = o-1;
+r = (38+([16, 1.7, 38, 4.2, 21].sum)/ 80.9); // the third, and so on
+r = r-1;
+m = (4.2+([16, 1.7, 38, 4.2, 21].sum)/ 80.9);
+m = m-1;
+a = (21+([16, 1.7, 38, 4.2, 21].sum)/ 80.9);
+a = a-1;
+[n,o,r,m,a].asStream;
 )
 
-<span style="color:#75715e">// see the results on the post window and compare them with the results of the [16, 1.7, 38, 4.2, 21].normalizeSum
-</span><span style="color:#75715e"></span></code></pre></div>
+// see the results on the post window and compare them with the results of the [16, 1.7, 38, 4.2, 21].normalizeSum
+</code></pre>
+
 <p><strong>Using Patterns</strong></p>
 
 <p>Scales and Patterns examples</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*
-</span><span style="color:#75715e">BA 181602
-</span><span style="color:#75715e">Composing music with patterns paradigms
-</span><span style="color:#75715e">Objective: Create sound textures while you playing a scale.
-</span><span style="color:#75715e">Synthesis technique: (FM synthesis)
-</span><span style="color:#75715e">*/</span>
 
-<span style="color:#75715e">//Midi notation
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">boot</span>
+<pre><code class="language-js">/*
+BA 181602
+Composing music with patterns paradigms
+Objective: Create sound textures while you playing a scale.
+Synthesis technique: (FM synthesis)
+*/
+
+//Midi notation
+
+s.boot
 
 (
-<span style="color:#a6e22e">SynthDef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">synth01</span>, {<span style="color:#f92672">|</span><span style="color:#a6e22e">out</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">gate</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">freq</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">220</span>, <span style="color:#a6e22e">amp</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.4</span>, <span style="color:#a6e22e">pan</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">mod</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">440</span>, <span style="color:#a6e22e">ind</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">|</span>
+SynthDef(\synth01, {|out = 0, gate = 1, freq = 220, amp = 0.4, pan = 0, mod = 440, ind = 1|
 
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">source</span>;
+	var env, source;
 
-	<span style="color:#a6e22e">env</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">EnvGen</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">Env</span>.<span style="color:#a6e22e">adsr</span>(<span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">0.4</span>, <span style="color:#ae81ff">0.001</span>, <span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1</span>), <span style="color:#a6e22e">gate</span>, <span style="color:#a6e22e">doneAction</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>);
-	<span style="color:#a6e22e">source</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">freq</span>.<span style="color:#a6e22e">midicps</span>, <span style="color:#a6e22e">mod</span><span style="color:#f92672">*</span><span style="color:#a6e22e">freq</span>, <span style="color:#a6e22e">ind</span><span style="color:#f92672">*</span><span style="color:#a6e22e">freq</span>), <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">amp</span><span style="color:#f92672">*</span><span style="color:#a6e22e">env</span>);
-	<span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">out</span>, <span style="color:#a6e22e">source</span>)
+	env = EnvGen.kr(Env.adsr(0.01, 0.4, 0.001, 0.0, 1), gate, doneAction: 2);
+	source = SinOsc.ar(SinOsc.ar(freq.midicps, mod*freq, ind*freq), 0, amp*env);
+	Out.ar(out, source)
 
-<span style="color:#75715e">//midicps convert MIDI note to cycles per second
-</span><span style="color:#75715e"></span>
-}).<span style="color:#a6e22e">add</span>;
+//midicps convert MIDI note to cycles per second
 
-<span style="color:#f92672">~</span><span style="color:#a6e22e">pattPm1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">60..80</span>)<span style="color:#f92672">++</span>(<span style="color:#ae81ff">79..60</span>)<span style="color:#f92672">++</span>[<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">2</span>);
+}).add;
 
-<span style="color:#75715e">// Prand((0..14)++(13..0)++[\rest], 2);
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">~</span><span style="color:#a6e22e">pattPm2</span>  <span style="color:#f92672">=</span>  <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..14</span>)<span style="color:#f92672">++</span>(<span style="color:#ae81ff">13..0</span>)<span style="color:#f92672">++</span>[<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">2</span>);
+~pattPm1 = Pseq((60..80)++(79..60)++[\rest], 2);
 
-<span style="color:#f92672">~</span><span style="color:#a6e22e">pattPm3</span>  <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">1..18000</span>), <span style="color:#a6e22e">inf</span>);
+// Prand((0..14)++(13..0)++[\rest], 2);
 
-<span style="color:#a6e22e">Pbind</span>(
-	<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">instrument</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">synth01</span>,
-	<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">freq</span>, <span style="color:#a6e22e">Pseq</span>([<span style="color:#f92672">~</span><span style="color:#a6e22e">pattPm1</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">pattPm2</span>], <span style="color:#ae81ff">2</span>),
-	<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>,
-	<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">mod</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">pattPm3</span>,
-	<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">ind</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">pattPm3</span>,
-	<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">amp</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0.4</span>.<span style="color:#ae81ff">.0.7</span>), <span style="color:#a6e22e">inf</span>)
-).<span style="color:#a6e22e">play</span>;
+~pattPm2  =  Pseq((0..14)++(13..0)++[\rest], 2);
+
+~pattPm3  = Pseq((1..18000), inf);
+
+Pbind(
+	\instrument, \synth01,
+	\freq, Pseq([~pattPm1, ~pattPm2], 2),
+	\dur, 0.25,
+	\mod, ~pattPm3,
+	\ind, ~pattPm3,
+	\amp, Pseq((0.4..0.7), inf)
+).play;
 )
-</code></pre></div>
+</code></pre>
+
 <p><strong>Example 2 Patterns</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*
-</span><span style="color:#75715e">BA 181602
-</span><span style="color:#75715e">Composing music with patterns paradigms.
-</span><span style="color:#75715e">Objective: a) Experiment with patterns and scales b) Change scale and duration after n time, c) play all scales, d) stop the music
-</span><span style="color:#75715e">*/</span>
+
+<pre><code class="language-js">/*
+BA 181602
+Composing music with patterns paradigms.
+Objective: a) Experiment with patterns and scales b) Change scale and duration after n time, c) play all scales, d) stop the music
+*/
 
 (
-<span style="color:#a6e22e">fork</span>{
+fork{
 
-<span style="color:#f92672">~</span><span style="color:#a6e22e">scaleS</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">bartok</span>;<span style="color:#75715e">//experiment with other scales as well. See Scale.directory
-</span><span style="color:#75715e"></span>
+~scaleS = Scale.bartok;//experiment with other scales as well. See Scale.directory
 
-<span style="color:#f92672">~</span><span style="color:#a6e22e">pattP</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Prand</span>((<span style="color:#ae81ff">0..17</span>)<span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>] <span style="color:#f92672">++</span> (<span style="color:#ae81ff">16..0</span>)<span style="color:#f92672">++</span>[<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#a6e22e">inf</span>);
 
-<span style="color:#f92672">~</span><span style="color:#a6e22e">pattD</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pn</span>(<span style="color:#a6e22e">Pgeom</span>(<span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">inf</span>), <span style="color:#a6e22e">Pgeom</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#a6e22e">inf</span>), <span style="color:#a6e22e">inf</span>);
+~pattP = Prand((0..17)++ [\rest] ++ (16..0)++[\rest], inf);
 
-<span style="color:#f92672">~</span><span style="color:#a6e22e">pattD2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pn</span>(<span style="color:#a6e22e">Prand</span>([<span style="color:#ae81ff">0.025</span>, <span style="color:#ae81ff">0.34</span>, <span style="color:#ae81ff">0.16</span>, <span style="color:#ae81ff">1</span>], <span style="color:#a6e22e">inf</span>), <span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0.34</span>, <span style="color:#ae81ff">0.56</span>, <span style="color:#ae81ff">0.25</span>], <span style="color:#a6e22e">inf</span>), <span style="color:#a6e22e">inf</span>);
+~pattD = Pn(Pgeom(0.25, 1, inf), Pgeom(1, 0.25, inf), inf);
 
-<span style="color:#a6e22e">Pdef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">first_mov1</span>,
- <span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">scaleS</span>,
-	<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">pattP</span>,
-	<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">pattD</span>)).<span style="color:#a6e22e">play</span>;
+~pattD2 = Pn(Prand([0.025, 0.34, 0.16, 1], inf), Pseq([1, 0.34, 0.56, 0.25], inf), inf);
 
-	<span style="color:#e6db74">&#34;start with Bartok scale&#34;</span>.<span style="color:#a6e22e">postln</span>;
+Pdef(\first_mov1,
+ Pbind(\scale, ~scaleS,
+	\degree, ~pattP,
+	\dur, ~pattD)).play;
 
-	<span style="color:#ae81ff">15.</span><span style="color:#a6e22e">wait</span>;
+	&quot;start with Bartok scale&quot;.postln;
 
-	<span style="color:#a6e22e">Pdef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">first_mov1</span>).<span style="color:#a6e22e">stop</span>;
+	15.wait;
 
-	<span style="color:#e6db74">&#34;change to Dorian&#34;</span>.<span style="color:#a6e22e">postln</span>;
+	Pdef(\first_mov1).stop;
 
-<span style="color:#f92672">~</span><span style="color:#a6e22e">scaleS</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">dorian</span>;
+	&quot;change to Dorian&quot;.postln;
 
-<span style="color:#a6e22e">Pdef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">first_mov2</span>,
- <span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">scaleS</span>,
-	<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">pattP</span>,
-	<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">pattD2</span>)).<span style="color:#a6e22e">play</span>;
+~scaleS = Scale.dorian;
 
-	<span style="color:#ae81ff">14.</span><span style="color:#a6e22e">wait</span>;
-	<span style="color:#e6db74">&#34;now both&#34;</span>.<span style="color:#a6e22e">postln</span>;
+Pdef(\first_mov2,
+ Pbind(\scale, ~scaleS,
+	\degree, ~pattP,
+	\dur, ~pattD2)).play;
 
-	<span style="color:#a6e22e">Pdef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">first_mov1</span>).<span style="color:#a6e22e">play</span>;
+	14.wait;
+	&quot;now both&quot;.postln;
 
-	<span style="color:#ae81ff">3.</span><span style="color:#a6e22e">wait</span>;
-        <span style="color:#e6db74">&#34;8s to close&#34;</span>.<span style="color:#a6e22e">postln</span>;
+	Pdef(\first_mov1).play;
 
-	<span style="color:#ae81ff">8.</span><span style="color:#a6e22e">wait</span>;<span style="color:#75715e">// change this to a bigger number in case you want more
-</span><span style="color:#75715e"></span>
-	<span style="color:#a6e22e">Pdef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">first_mov1</span>).<span style="color:#a6e22e">stop</span>;
-	<span style="color:#a6e22e">Pdef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">first_mov2</span>).<span style="color:#a6e22e">stop</span>;
+	3.wait;
+        &quot;8s to close&quot;.postln;
 
-	<span style="color:#e6db74">&#34;thats it&#34;</span>.<span style="color:#a6e22e">postln</span>;
+	8.wait;// change this to a bigger number in case you want more
+
+	Pdef(\first_mov1).stop;
+	Pdef(\first_mov2).stop;
+
+	&quot;thats it&quot;.postln;
 };
 )
-</code></pre></div>
+</code></pre>
+
 <p><strong>Playing with Patterns more</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*
-</span><span style="color:#75715e">BA 181802
-</span><span style="color:#75715e">Playing with Patterns Harmony
-</span><span style="color:#75715e">Objective: Create Chord progressions
-</span><span style="color:#75715e">*/</span>
-<span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">boot</span>;
 
-<span style="color:#75715e">//Example with \note notation simple major chords: I-V-IV-V
-</span><span style="color:#75715e"></span>(
-<span style="color:#f92672">~</span><span style="color:#a6e22e">soprano</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">major</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">note</span>,  <span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">11</span>], <span style="color:#a6e22e">inf</span>)).<span style="color:#a6e22e">play</span>;
+<pre><code class="language-js">
 
-<span style="color:#f92672">~</span><span style="color:#a6e22e">alto</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">major</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">note</span>,  <span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>], <span style="color:#a6e22e">inf</span>)).<span style="color:#a6e22e">play</span>;
+/*
+BA 181802
+Playing with Patterns Harmony
+Objective: Create Chord progressions
+*/
+s.boot;
 
-<span style="color:#f92672">~</span><span style="color:#a6e22e">tenor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">major</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">note</span>,  <span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>], <span style="color:#a6e22e">inf</span>)).<span style="color:#a6e22e">play</span>;
+//Example with \note notation simple major chords: I-V-IV-V
+(
+~soprano = Pbind(\scale, Scale.major, \note,  Pseq([7, 11, 9, 11], inf)).play;
 
-<span style="color:#f92672">~</span><span style="color:#a6e22e">bass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">major</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">note</span>,  <span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">7</span>], <span style="color:#a6e22e">inf</span>)).<span style="color:#a6e22e">play</span>;
+~alto = Pbind(\scale, Scale.major, \note,  Pseq([0, 7, 5, 7], inf)).play;
+
+~tenor = Pbind(\scale, Scale.major, \note,  Pseq([4, 2, 5, 2], inf)).play;
+
+~bass = Pbind(\scale, Scale.major, \note,  Pseq([0, 7, 0, 7], inf)).play;
 )
 
-<span style="color:#75715e">//another example free style minor
-</span><span style="color:#75715e">//Objective: Create Chord progressions with random delta time
-</span><span style="color:#75715e"></span>
+//another example free style minor
+//Objective: Create Chord progressions with random delta time
+
 (
-<span style="color:#f92672">~</span><span style="color:#a6e22e">scalem</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">minor</span>;
-<span style="color:#f92672">~</span><span style="color:#a6e22e">soprano</span><span style="color:#f92672">=</span> <span style="color:#a6e22e">Pseq</span>([<span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">7</span>], <span style="color:#ae81ff">1</span>), <span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">4</span>], <span style="color:#ae81ff">1</span>)], <span style="color:#a6e22e">inf</span>).<span style="color:#a6e22e">asStream</span>;
-<span style="color:#f92672">~</span><span style="color:#a6e22e">alto</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pseq</span>([<span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">7</span>], <span style="color:#ae81ff">1</span>), <span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>], <span style="color:#ae81ff">1</span>)], <span style="color:#a6e22e">inf</span>).<span style="color:#a6e22e">asStream</span>;
-<span style="color:#f92672">~</span><span style="color:#a6e22e">tenor</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pseq</span>([<span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">9</span>], <span style="color:#ae81ff">1</span>), <span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>,  <span style="color:#ae81ff">9</span>], <span style="color:#ae81ff">1</span>)], <span style="color:#ae81ff">1</span>).<span style="color:#a6e22e">asStream</span>;
-<span style="color:#f92672">~</span><span style="color:#a6e22e">bass</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pseq</span>([<span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">5</span>,  <span style="color:#ae81ff">7</span>], <span style="color:#ae81ff">1</span>), <span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">6</span>,  <span style="color:#ae81ff">7</span>], <span style="color:#ae81ff">1</span>)], <span style="color:#ae81ff">1</span>).<span style="color:#a6e22e">asStream</span>;
+~scalem = Scale.minor;
+~soprano= Pseq([Pseq([5, 2, 1, 7], 1), Pseq([3, 1, 5, 4], 1)], inf).asStream;
+~alto = Pseq([Pseq([3, 11, 9, 7], 1), Pseq([0, 7, 5, 7], 1)], inf).asStream;
+~tenor = Pseq([Pseq([4, 2, 0, 9], 1), Pseq([2, 3, 5,  9], 1)], 1).asStream;
+~bass = Pseq([Pseq([0, 7, 5,  7], 1), Pseq([0, 3, 6,  7], 1)], 1).asStream;
 
-<span style="color:#e6db74">&#34;n movement&#34;</span>.<span style="color:#a6e22e">postln</span>;
+&quot;n movement&quot;.postln;
 
-<span style="color:#a6e22e">Pdef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">nmove</span>,
-	<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">scalem</span>,
-		<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">note</span>, <span style="color:#a6e22e">Pn</span>([<span style="color:#f92672">~</span><span style="color:#a6e22e">soprano</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">alto</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">tenor</span>, <span style="color:#f92672">~</span><span style="color:#a6e22e">bass</span>], <span style="color:#a6e22e">inf</span>),
-		<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#a6e22e">Pxrand</span>([<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">0.75</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">0.25</span>, <span style="color:#ae81ff">0.15</span>], <span style="color:#a6e22e">inf</span>))).<span style="color:#a6e22e">play</span>;
-<span style="color:#75715e">//play forever
-</span><span style="color:#75715e"></span>)
+Pdef(\nmove,
+	Pbind(\scale, ~scalem,
+		\note, Pn([~soprano, ~alto, ~tenor, ~bass], inf),
+		\dur, Pxrand([0.5, 0.75, 1, 2, 0.25, 0.15], inf))).play;
+//play forever
+)
 
-<span style="color:#75715e">// see also interval ratios i.e I-V-I-V7: 1/1, 3/2 etc.
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">~</span><span style="color:#a6e22e">bassoContinuo</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">freq</span>,  <span style="color:#a6e22e">Pseq</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">3</span><span style="color:#960050;background-color:#1e0010">/2, 440, 440*15/8], inf)).play</span>
-<span style="color:#75715e">//create the rest voices
-</span><span style="color:#75715e"></span><span style="color:#f92672">~</span><span style="color:#a6e22e">tenor</span> <span style="color:#f92672">=</span> ...
-<span style="color:#f92672">~</span><span style="color:#a6e22e">alto</span> <span style="color:#f92672">=</span> ...
-<span style="color:#f92672">~</span><span style="color:#a6e22e">soprano</span> <span style="color:#f92672">=</span> ...
-</code></pre></div>
+// see also interval ratios i.e I-V-I-V7: 1/1, 3/2 etc.
+
+~bassoContinuo = Pbind(\freq,  Pseq([440, 440*3/2, 440, 440*15/8], inf)).play
+//create the rest voices
+~tenor = ...
+~alto = ...
+~soprano = ...
+
+</code></pre>
+
 <p>see more on <em>Streams-Patterns-Events</em></p>
 
 <p><a href="http://doc.sccode.org/Overviews/Streams.html" title="Streams">Streams</a></p>
 
 <p><strong>Data-driven</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*
-</span><span style="color:#75715e">BA 180205
-</span><span style="color:#75715e">Create data and collect
-</span><span style="color:#75715e">Objective: Create data (an array of values i.e integers or floats), and map them to the arguments of the synth
-</span><span style="color:#75715e">*/</span>
 
-<span style="color:#75715e">//Create and collect data as stream (array)
-</span><span style="color:#75715e">//iterate over a collection
-</span><span style="color:#75715e"></span>(
-<span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10.</span><span style="color:#66d9ef">do</span>{<span style="color:#f92672">|</span><span style="color:#a6e22e">n</span><span style="color:#f92672">|</span>
-    <span style="color:#a6e22e">n</span>.<span style="color:#a6e22e">postln</span>;
+<pre><code class="language-js">/*
+BA 180205
+Create data and collect
+Objective: Create data (an array of values i.e integers or floats), and map them to the arguments of the synth
+*/
+
+//Create and collect data as stream (array)
+//iterate over a collection
+(
+a = 10.do{|n|
+    n.postln;
 };
 )
-<span style="color:#75715e">//collect items between 0-9 
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">k</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">collect</span>({ <span style="color:#f92672">|</span><span style="color:#a6e22e">item</span><span style="color:#f92672">|</span> <span style="color:#a6e22e">item</span>.<span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">asStream</span> });
-<span style="color:#75715e">// play the collection in Event pattern
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.09</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>(<span style="color:#a6e22e">k</span>)).<span style="color:#a6e22e">play</span>;
+//collect items between 0-9 
+k = a.collect({ |item| item.rand.asStream });
+// play the collection in Event pattern
+Pbind(\dur, 0.09, \degree, Pseq(k)).play;
 
 
 
-<span style="color:#75715e">//with Array.fill
-</span><span style="color:#75715e"></span>
- <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">waitForBoot</span>{
+//with Array.fill
 
-<span style="color:#a6e22e">fork</span>{
-<span style="color:#75715e">//create a synthdef
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">read</span>(<span style="color:#a6e22e">s</span>, <span style="color:#a6e22e">Platform</span>.<span style="color:#a6e22e">resourceDir</span> <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">/+ &#34;sounds/a11wlk01.wav&#34;);</span>
+ s.waitForBoot{
 
-<span style="color:#ae81ff">1.</span><span style="color:#a6e22e">wait</span>;
+fork{
+//create a synthdef
+b = Buffer.read(s, Platform.resourceDir +/+ &quot;sounds/a11wlk01.wav&quot;);
 
-<span style="color:#a6e22e">SynthDef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tgrain</span>, {<span style="color:#f92672">|</span> <span style="color:#a6e22e">gate</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">trate</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">dur</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">rate</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">bufdur</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">amp</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.5</span> <span style="color:#f92672">|</span>
+1.wait;
 
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">source</span>, <span style="color:#a6e22e">env</span>;
+SynthDef(\tgrain, {| gate = 1, trate = 1, dur = 1, rate = 1, bufdur = 1, amp = 0.5 |
 
-	<span style="color:#a6e22e">env</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">EnvGen</span>.<span style="color:#a6e22e">kr</span>( <span style="color:#a6e22e">Env</span>.<span style="color:#a6e22e">asr</span>, <span style="color:#a6e22e">gate</span>, <span style="color:#a6e22e">doneAction</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>);
+	var source, env;
 
-<span style="color:#a6e22e">source</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">TGrains</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">Impulse</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">trate</span>), <span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">rate</span>, <span style="color:#a6e22e">BufDur</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">b</span>)<span style="color:#f92672">*</span><span style="color:#a6e22e">bufdur</span>, <span style="color:#a6e22e">dur</span>, <span style="color:#a6e22e">Dseq</span>([<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>], <span style="color:#a6e22e">inf</span>), <span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">2</span>);
+	env = EnvGen.kr( Env.asr, gate, doneAction: 2);
 
-
-	<span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">source</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">env</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">amp</span>);
-}).<span style="color:#a6e22e">add</span>;
+source = TGrains.ar(2, Impulse.ar(trate), b, rate, BufDur.kr(b)*bufdur, dur, Dseq([-1, 1], inf), 0.1, 2);
 
 
-<span style="color:#ae81ff">0.5</span>.<span style="color:#a6e22e">wait</span>;
-
-<span style="color:#75715e">// run the synth
-</span><span style="color:#75715e">//x = Synth(\tgrain);
-</span><span style="color:#75715e"></span>
-<span style="color:#ae81ff">0.5</span>.<span style="color:#a6e22e">wait</span>;
-
-<span style="color:#75715e">// create an Array of random values and set them to the synth
-</span><span style="color:#75715e"></span>
-	<span style="color:#a6e22e">e</span> <span style="color:#f92672">=</span> Array.<span style="color:#a6e22e">fill</span>(<span style="color:#ae81ff">100</span>, { <span style="color:#a6e22e">rrand</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">20</span>)});
-	<span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">postln</span>;
+	Out.ar(0, source * env * amp);
+}).add;
 
 
+0.5.wait;
 
-<span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">instrument</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">tgrain</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#a6e22e">Pseq</span>(<span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">sqrt</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">trate</span>, <span style="color:#a6e22e">Pseq</span>(<span style="color:#a6e22e">e</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rate</span>, <span style="color:#ae81ff">1</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">amp</span>, <span style="color:#ae81ff">1</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufdur</span>, <span style="color:#a6e22e">Pseq</span>(<span style="color:#a6e22e">e</span>.<span style="color:#a6e22e">reciprocal</span>)).<span style="color:#a6e22e">play</span>;
+// run the synth
+//x = Synth(\tgrain);
+
+0.5.wait;
+
+// create an Array of random values and set them to the synth
+
+	e = Array.fill(100, { rrand(0, 20)});
+	e.postln;
+
+
+
+Pbind(\instrument, \tgrain, \dur, Pseq(e.sqrt), \trate, Pseq(e), \rate, 1, \amp, 1, \bufdur, Pseq(e.reciprocal)).play;
 
 
 };
 }
-</code></pre></div>
+
+</code></pre>
+
 <p><strong>Kolakoski sequence</strong></p>
 
 <p>In mathematics, the Kolakoski sequence, sometimes also known as the
@@ -687,43 +715,48 @@ appeared in a paper by Rufus Oldenburger in 1939.(Wikipedia) (https://en.wikiped
 <ul>
 <li>Python</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#</span>
-<span style="color:#75715e">#kolakoski seq</span>
-<span style="color:#75715e"># Builds the list l as it&#39;s being</span>
-<span style="color:#75715e">#iterated through.</span>
-<span style="color:#75715e">#For each entry x of l,</span>
-<span style="color:#75715e">#appends x copies of 1 or 2,</span>
-<span style="color:#75715e">#whichever is opposite</span>
-<span style="color:#75715e">#the current last element.</span>
 
-<span style="color:#f92672">import</span> argparse
-<span style="color:#f92672">import</span> random
-<span style="color:#f92672">import</span> time
-<span style="color:#f92672">from</span> pythonosc <span style="color:#f92672">import</span> osc_message_builder
-<span style="color:#f92672">from</span> pythonosc <span style="color:#f92672">import</span> udp_client
+<pre><code class="language-python">#
+#kolakoski seq
+# Builds the list l as it's being
+#iterated through.
+#For each entry x of l,
+#appends x copies of 1 or 2,
+#whichever is opposite
+#the current last element.
 
-client <span style="color:#f92672">=</span> udp_client<span style="color:#f92672">.</span>SimpleUDPClient(<span style="color:#e6db74">&#34;127.0.0.1&#34;</span>, <span style="color:#ae81ff">57120</span>)
+import argparse
+import random
+import time
+from pythonosc import osc_message_builder
+from pythonosc import udp_client
 
-l<span style="color:#f92672">=</span>[<span style="color:#ae81ff">2</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>]
-<span style="color:#75715e">##print(1,2)</span>
-<span style="color:#66d9ef">while</span> True:
+client = udp_client.SimpleUDPClient(&quot;127.0.0.1&quot;, 57120)
 
-    <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> l:
-        <span style="color:#66d9ef">print</span>(x);l<span style="color:#f92672">+=</span>x<span style="color:#f92672">*</span>[l[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">^</span><span style="color:#ae81ff">3</span>]
-        client<span style="color:#f92672">.</span>send_message(<span style="color:#e6db74">&#34;/filter&#34;</span>, x)
-        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">1</span>)</code></pre></div>
+l=[2, -2]
+##print(1,2)
+while True:
+
+    for x in l:
+        print(x);l+=x*[l[-1]^3]
+        client.send_message(&quot;/filter&quot;, x)
+        time.sleep(1)
+
+</code></pre>
+
 <ul>
 <li>SuperCollider</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sclang" data-lang="sclang">s.waitForBoot{
+
+<pre><code class="language-sclang">s.waitForBoot{
 
 
 
 	fork{
-		~bufferk = Buffer.read(s,  &#34;/Users/sounds/kick03.wav&#34;); //
+		~bufferk = Buffer.read(s,  &quot;/Users/sounds/kick03.wav&quot;); //
 		//remember to free the buffer later.
-		~buffersn = Buffer.read(s,  &#34;/Users/sounds/snare01Stereo.wav&#34;);
-		~bufferhi = Buffer.read(s,  &#34;/Users/sounds/hihat01Stereo.wav&#34;);
+		~buffersn = Buffer.read(s,  &quot;/Users/sounds/snare01Stereo.wav&quot;);
+		~bufferhi = Buffer.read(s,  &quot;/Users/sounds/hihat01Stereo.wav&quot;);
 1.wait;
 SynthDef(\kick, {| out = 0, bufnum = 0, amp = 0.3, rate = 1, cutoff = 2000 |
 	var source;
@@ -759,80 +792,86 @@ SynthDef(\hihat, {| out = 0, bufnum = 2, amp = 0.3, rate = 1, cutoff = 2000 |
                     { | args |
 
 						fork{
-							&#34;rate and amp for kick:&#34;.postln;
+							&quot;rate and amp for kick:&quot;.postln;
 					 ~kickx.setn(\rate, args[1].postln, \amp, args[1].reciprocal.postln, \cutoff, args[1].pow(3));
 
 							1.wait;
-							&#34;rate and amp for snare:&#34;.postln;
+							&quot;rate and amp for snare:&quot;.postln;
 							~snarex.setn(\rate, args[1].postln, \amp, args[1].reciprocal.postln, \cutoff, args[1].pow(2));
 							1.wait;
-										&#34;rate and amp for hihat:&#34;.postln;
+										&quot;rate and amp for hihat:&quot;.postln;
 					~hihatx.setn(\rate, args[1].postln, \amp, args[1].reciprocal.postln, \cutoff, args[1].pow(4));
 						};
     },
-                    &#39;/filter&#39;
+                    '/filter'
     );
 
 
   };
-}</code></pre></div>
+}
+
+</code></pre>
+
 <p><strong>Scheduling Tempo</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">(
 
-<span style="color:#75715e">//create SynthDef
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">SynthDef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">blipClock</span>, {<span style="color:#f92672">|</span><span style="color:#a6e22e">out</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">gate</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">freq</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">440</span>, <span style="color:#a6e22e">numharm</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">200</span>,  <span style="color:#a6e22e">freq2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">220</span>, <span style="color:#a6e22e">cutoff</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">444</span>,  <span style="color:#a6e22e">amp</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0.8</span>, <span style="color:#a6e22e">rq</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">pan</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">|</span>
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">env</span>, <span style="color:#a6e22e">source</span>, <span style="color:#a6e22e">filter</span>;
+<pre><code class="language-js">(
 
-		<span style="color:#a6e22e">env</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">EnvGen</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">Env</span>.<span style="color:#a6e22e">perc</span>, <span style="color:#a6e22e">doneAction</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>);
-	<span style="color:#75715e">//	env = EnvGen.kr(Env.adsr(0.6, 0.3, 0.4, 1), gate,   doneAction: 2);
-</span><span style="color:#75715e"></span>
-	<span style="color:#a6e22e">source</span> <span style="color:#f92672">=</span>
-	<span style="color:#a6e22e">Mix</span>.<span style="color:#a6e22e">fill</span>(<span style="color:#ae81ff">2</span>, {<span style="color:#a6e22e">Blip</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">freq</span><span style="color:#f92672">*</span><span style="color:#ae81ff">2</span>, <span style="color:#a6e22e">freq2</span><span style="color:#f92672">*</span><span style="color:#ae81ff">3</span>, <span style="color:#a6e22e">freq</span><span style="color:#f92672">*</span><span style="color:#ae81ff">0.6</span>), <span style="color:#a6e22e">numharm</span>, <span style="color:#a6e22e">amp</span><span style="color:#f92672">*</span><span style="color:#a6e22e">env</span>)<span style="color:#f92672">+</span><span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">freq</span>, <span style="color:#ae81ff">0</span>,  <span style="color:#a6e22e">amp</span><span style="color:#f92672">*</span><span style="color:#a6e22e">env</span>)});
-	<span style="color:#75715e">//	filter = RLPF.ar(source, cutoff, rq, amp).softclip;
-</span><span style="color:#75715e"></span>		<span style="color:#a6e22e">filter</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">LPF</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">source</span>, <span style="color:#a6e22e">cutoff</span>, <span style="color:#a6e22e">amp</span>).<span style="color:#a6e22e">softclip</span>;
+//create SynthDef
+SynthDef(\blipClock, {|out = 0, gate = 1, freq = 440, numharm = 200,  freq2 = 220, cutoff = 444,  amp = 0.8, rq = 1, pan = 0 |
+	var env, source, filter;
 
-	<span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">out</span>, <span style="color:#a6e22e">Pan2</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">filter</span>, <span style="color:#a6e22e">pan</span>))<span style="color:#f92672">*</span><span style="color:#ae81ff">0.4</span>;
+		env = EnvGen.kr(Env.perc, doneAction: 2);
+	//	env = EnvGen.kr(Env.adsr(0.6, 0.3, 0.4, 1), gate,   doneAction: 2);
 
-}).<span style="color:#a6e22e">add</span>;
+	source =
+	Mix.fill(2, {Blip.ar(SinOsc.ar(freq*2, freq2*3, freq*0.6), numharm, amp*env)+SinOsc.ar(freq, 0,  amp*env)});
+	//	filter = RLPF.ar(source, cutoff, rq, amp).softclip;
+		filter = LPF.ar(source, cutoff, amp).softclip;
+
+	Out.ar(out, Pan2.ar(filter, pan))*0.4;
+
+}).add;
 )
 
-<span style="color:#75715e">//create a new Tempoclock
-</span><span style="color:#75715e"></span>(
-<span style="color:#f92672">~</span><span style="color:#a6e22e">t</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">TempoClock</span>(<span style="color:#ae81ff">2</span>); <span style="color:#75715e">// make a new tempoclock of 2 beats per second means 12bpm
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">~</span><span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">schedAbs</span>(<span style="color:#ae81ff">0</span>, { <span style="color:#f92672">|</span> ... <span style="color:#a6e22e">args</span> <span style="color:#f92672">|</span>	<span style="color:#75715e">// start at absolute beat 0 immediately
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">args</span>.<span style="color:#a6e22e">postln</span>;	<span style="color:#75715e">//  post the input arguments to our event function 
-</span><span style="color:#75715e"></span>							<span style="color:#75715e">//  (will post logical time in beats, elapsed time 
-</span><span style="color:#75715e"></span>							<span style="color:#75715e">//  in seconds of enclosing thread and this clock)
-</span><span style="color:#75715e"></span>
+//create a new Tempoclock
+(
+~t = TempoClock(2); // make a new tempoclock of 2 beats per second means 12bpm
 
-<span style="color:#a6e22e">Synth</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">blipClock</span>, [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">freq</span>, <span style="color:#ae81ff">60</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">numharm</span>, <span style="color:#ae81ff">120.</span><span style="color:#a6e22e">rand2</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">amp</span>, <span style="color:#ae81ff">0.6</span>]);<span style="color:#75715e">// make a bleep
-</span><span style="color:#75715e"></span>	<span style="color:#ae81ff">1.0</span>	<span style="color:#75715e">// reschedules every beat
-</span><span style="color:#75715e"></span>})
+~t.schedAbs(0, { | ... args |	// start at absolute beat 0 immediately
+args.postln;	//  post the input arguments to our event function 
+							//  (will post logical time in beats, elapsed time 
+							//  in seconds of enclosing thread and this clock)
+
+
+Synth(\blipClock, [\freq, 60, \numharm, 120.rand2, \amp, 0.6]);// make a bleep
+	1.0	// reschedules every beat
+})
 
 )
 
 
 (
-<span style="color:#75715e">//Scheduling tempo with Routines
-</span><span style="color:#75715e"></span>
-<span style="color:#f92672">~</span><span style="color:#a6e22e">f</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">fork</span>{
-<span style="color:#f92672">~</span><span style="color:#a6e22e">ev</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Event</span>.<span style="color:#66d9ef">new</span>( [
-	<span style="color:#f92672">~</span><span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">tempo_</span>(<span style="color:#ae81ff">4</span>);
-	<span style="color:#ae81ff">6.</span><span style="color:#a6e22e">wait</span>;
-	<span style="color:#f92672">~</span><span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">tempo_</span>(<span style="color:#ae81ff">2</span>);
-	<span style="color:#ae81ff">6.</span><span style="color:#a6e22e">wait</span>;
-	<span style="color:#f92672">~</span><span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">tempo_</span>(<span style="color:#ae81ff">1</span>);
-	<span style="color:#ae81ff">6.</span><span style="color:#a6e22e">wait</span>;
-]).<span style="color:#a6e22e">play</span>;
+//Scheduling tempo with Routines
 
-	<span style="color:#ae81ff">12.</span><span style="color:#a6e22e">wait</span>;
+~f = fork{
+~ev = Event.new( [
+	~t.tempo_(4);
+	6.wait;
+	~t.tempo_(2);
+	6.wait;
+	~t.tempo_(1);
+	6.wait;
+]).play;
+
+	12.wait;
 
 
-	<span style="color:#f92672">~</span><span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">clear</span>;
+	~t.clear;
 };
 )
-</code></pre></div>
+
+</code></pre>
+
 
     
     

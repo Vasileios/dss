@@ -280,61 +280,67 @@
     <h3 id="chapter-2">chapter 2</h3>
 
 <h4 id="supercollider-delays">SuperCollider Delays</h4>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//Delays and Buffer UGens
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">DelayN</span>, <span style="color:#a6e22e">DelayL</span>, <span style="color:#a6e22e">DelayC</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">simple</span> <span style="color:#a6e22e">delays</span>
-<span style="color:#a6e22e">N</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">no</span> <span style="color:#a6e22e">interpolation</span>
-<span style="color:#a6e22e">L</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">linear</span> <span style="color:#a6e22e">interpolation</span>
-<span style="color:#a6e22e">C</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">cubic</span> <span style="color:#a6e22e">interpolation</span>
-<span style="color:#a6e22e">arguments</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">in</span>, <span style="color:#a6e22e">maximum</span> <span style="color:#a6e22e">delay</span> <span style="color:#a6e22e">time</span>, <span style="color:#a6e22e">current</span> <span style="color:#a6e22e">delay</span> <span style="color:#a6e22e">time</span>, <span style="color:#a6e22e">mul</span>, <span style="color:#a6e22e">add</span>
+
+<pre><code class="language-js">
+
+//Delays and Buffer UGens
+DelayN, DelayL, DelayC - simple delays
+N - no interpolation
+L - linear interpolation
+C - cubic interpolation
+arguments: in, maximum delay time, current delay time, mul, add
 
 (
-<span style="color:#75715e">// Dust randomly triggers Decay to create an exponential
-</span><span style="color:#75715e">// decay envelope for the WhiteNoise input source
-</span><span style="color:#75715e"></span>{
-<span style="color:#a6e22e">z</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.5</span>), <span style="color:#ae81ff">0.3</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>);
-<span style="color:#a6e22e">DelayN</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">z</span>, <span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">z</span>); <span style="color:#75715e">// input is mixed with delay via the add input
-</span><span style="color:#75715e"></span>}.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span>)
+// Dust randomly triggers Decay to create an exponential
+// decay envelope for the WhiteNoise input source
+{
+z = Decay.ar(Dust.ar(1,0.5), 0.3, WhiteNoise.ar);
+DelayN.ar(z, 0.1, 0.1, 1, z); // input is mixed with delay via the add input
+}.scope(1, zoom: 4)
 )
 
-<span style="color:#75715e">// CombN, CombL, CombC - feedback delays
-</span><span style="color:#75715e">//arguments: in, maximum delay time, current delay time, echo decay time, mul, add
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">// used as an echo.
-</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">CombN</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.5</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">0.2</span>, <span style="color:#ae81ff">3</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span><span style="color:#ae81ff">4</span>);
+// CombN, CombL, CombC - feedback delays
+//arguments: in, maximum delay time, current delay time, echo decay time, mul, add
 
-<span style="color:#75715e">// Comb used as a resonator. The resonant fundamental is equal to
-</span><span style="color:#75715e">// reciprocal of the delay time.
-</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">CombN</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+// used as an echo.
+{ CombN.ar(Decay.ar(Dust.ar(1,0.5), 0.2, WhiteNoise.ar), 0.2, 0.2, 3) }.scope(1, zoom:4);
 
-{ <span style="color:#a6e22e">CombL</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+// Comb used as a resonator. The resonant fundamental is equal to
+// reciprocal of the delay time.
+{ CombN.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), 0.2) }.scope(1);
 
-{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+{ CombL.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), 0.2) }.scope(1);
 
-<span style="color:#75715e">// with negative feedback:
-</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">CombN</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+{ CombC.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), 0.2) }.scope(1);
 
-{ <span style="color:#a6e22e">CombL</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+// with negative feedback:
+{ CombN.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), -0.2) }.scope(1);
 
-{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+{ CombL.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), -0.2) }.scope(1);
 
-{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/100, 1/100, 3) }.play;</span>
-{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/200, 1/200, 3) }.play;</span>
-{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/300, 1/300, 3) }.play;</span>
-{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/400, 1/400, 3) }.scope(1, zoom:4);</span>
-</code></pre></div>
+{ CombC.ar(WhiteNoise.ar(0.02), 0.01, XLine.kr(0.0001, 0.01, 20), -0.2) }.scope(1);
+
+{ CombC.ar(Decay.ar(Dust.ar(1,0.1), 0.2, WhiteNoise.ar), 1/100, 1/100, 3) }.play;
+{ CombC.ar(Decay.ar(Dust.ar(1,0.1), 0.2, WhiteNoise.ar), 1/200, 1/200, 3) }.play;
+{ CombC.ar(Decay.ar(Dust.ar(1,0.1), 0.2, WhiteNoise.ar), 1/300, 1/300, 3) }.play;
+{ CombC.ar(Decay.ar(Dust.ar(1,0.1), 0.2, WhiteNoise.ar), 1/400, 1/400, 3) }.scope(1, zoom:4);
+</code></pre>
+
 <p>Another example</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// Sound Sample Delay
-</span><span style="color:#75715e"></span>
-<span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">read</span>(<span style="color:#a6e22e">s</span>, <span style="color:#a6e22e">Platform</span>.<span style="color:#a6e22e">resourceDir</span> <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">/+ &#34;sounds/a11wlk01.wav&#34;);</span>
-<span style="color:#75715e">// loop is true
-</span><span style="color:#75715e"></span>{
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">signal</span>;
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">delaytime</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">MouseX</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.000022675</span>, <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// from a sample to 1 s
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">signal</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">PlayBuf</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">bufnum</span>, <span style="color:#a6e22e">BufRateScale</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">bufnum</span>), <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>);
-<span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span>  <span style="color:#a6e22e">DelayN</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">signal</span>, <span style="color:#ae81ff">0.6</span>, <span style="color:#a6e22e">delaytime</span>); <span style="color:#75715e">// try replacing with CombN (with 0 decayTime)
-</span><span style="color:#75715e"></span>(<span style="color:#a6e22e">signal</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">x</span>).<span style="color:#a6e22e">dup</span>
-}.<span style="color:#a6e22e">play</span>
-</code></pre></div>
+
+<pre><code class="language-js">// Sound Sample Delay
+
+b = Buffer.read(s, Platform.resourceDir +/+ &quot;sounds/a11wlk01.wav&quot;);
+// loop is true
+{
+var signal;
+var delaytime = MouseX.kr(0.000022675, 1); // from a sample to 1 s
+signal = PlayBuf.ar(1, b.bufnum, BufRateScale.kr(b.bufnum), loop:1);
+x =  DelayN.ar(signal, 0.6, delaytime); // try replacing with CombN (with 0 decayTime)
+(signal + x).dup
+}.play
+</code></pre>
+
 <p>//etc</p>
 
 

@@ -288,91 +288,108 @@
 <p>Buffer
 read (server, path, startFrame: 0, numFrames: -1, action, bufnum)
 Allocate a buffer and immediately read a soundfile into it.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//PlayBuf - buffer playback
-</span><span style="color:#75715e">//arguments: numChannels, buffer number, rate, trigger, start pos, loop
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">// read sound
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">read</span>(<span style="color:#a6e22e">s</span>, <span style="color:#a6e22e">Platform</span>.<span style="color:#a6e22e">resourceDir</span> <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">/+ &#34;sounds/a11wlk01.wav&#34;);</span>
-<span style="color:#75715e">// loop is true
-</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">PlayBuf</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">BufRateScale</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">b</span>), <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+
+<pre><code class="language-js">//PlayBuf - buffer playback
+//arguments: numChannels, buffer number, rate, trigger, start pos, loop
+
+// read sound
+b = Buffer.read(s, Platform.resourceDir +/+ &quot;sounds/a11wlk01.wav&quot;);
+// loop is true
+{ PlayBuf.ar(1,b, BufRateScale.kr(b), loop:1) }.scope(1);
 
 
-<span style="color:#75715e">//add a Sine oscillator
-</span><span style="color:#75715e"></span>
-{ <span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">800</span> <span style="color:#f92672">+</span> (<span style="color:#ae81ff">700</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">PlayBuf</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">BufRateScale</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">b</span>),  <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>)),<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">0.3</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
-</code></pre></div>
+//add a Sine oscillator
+
+{ SinOsc.ar(800 + (700 * PlayBuf.ar(1,b, BufRateScale.kr(b),  loop:1)),0,0.3) }.scope(1);
+
+</code></pre>
+
 <p>//Use of local variables inside scope</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//another way to read and play a sound
-</span><span style="color:#75715e"></span>(
 
-	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">path</span>, <span style="color:#a6e22e">buffer</span>;
+<pre><code class="language-js">//another way to read and play a sound
+(
 
-	<span style="color:#a6e22e">path</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Platform</span>.<span style="color:#a6e22e">resourceDir</span> <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">/+ &#34;sounds/a11wlk01.wav&#34;;</span>
+	var path, buffer;
 
-	<span style="color:#a6e22e">buffer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">read</span>(<span style="color:#a6e22e">s</span>, <span style="color:#a6e22e">path</span>);
+	path = Platform.resourceDir +/+ &quot;sounds/a11wlk01.wav&quot;;
+
+	buffer = Buffer.read(s, path);
 
 
 
- <span style="color:#a6e22e">SynthDef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufferC</span>, { <span style="color:#f92672">|</span> <span style="color:#a6e22e">out</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">bufnum</span><span style="color:#f92672">|</span>
-    <span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>( <span style="color:#a6e22e">out</span>,
-        <span style="color:#a6e22e">PlayBuf</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">bufnum</span>, <span style="color:#a6e22e">BufRateScale</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">bufnum</span>), <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1.0</span>)
+ SynthDef(\bufferC, { | out = 0, bufnum|
+    Out.ar( out,
+        PlayBuf.ar(1, bufnum, BufRateScale.kr(bufnum), loop:1.0)
   )
-}).<span style="color:#a6e22e">add</span>;
+}).add;
 
-	<span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Synth</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufferC</span>, [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">out</span>, <span style="color:#ae81ff">0</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufnum</span>, <span style="color:#a6e22e">buffer</span>]);
+	x = Synth(\bufferC, [\out, 0, \bufnum, buffer]);
 
- <span style="color:#75715e">//play at half rate
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Synth</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufferC</span>, [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">out</span>, <span style="color:#ae81ff">0</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufnum</span>, <span style="color:#a6e22e">buffer</span>.<span style="color:#a6e22e">bufnum</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rate</span>, <span style="color:#ae81ff">0.5</span>]);
+ //play at half rate
+x = Synth(\bufferC, [\out, 0, \bufnum, buffer.bufnum, \rate, 0.5]);
 
 )
-</code></pre></div>
+
+</code></pre>
+
 <p>//another example</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">(
 
-<span style="color:#a6e22e">p</span> <span style="color:#f92672">=</span>  <span style="color:#a6e22e">Platform</span>.<span style="color:#a6e22e">resourceDir</span> <span style="color:#f92672">+</span><span style="color:#960050;background-color:#1e0010">/+ &#34;sounds/a11wlk01.wav&#34;;</span>
-<span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">read</span>(<span style="color:#a6e22e">s</span>, <span style="color:#a6e22e">p</span>);
+<pre><code class="language-js">
 
-<span style="color:#a6e22e">SynthDef</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufferC</span>,{ <span style="color:#f92672">|</span> <span style="color:#a6e22e">out</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>,<span style="color:#a6e22e">bufnum</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">rate</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">trigger</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">startPos</span><span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>, <span style="color:#a6e22e">loop</span><span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">|</span>
-	<span style="color:#a6e22e">Out</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">out</span>,
-		<span style="color:#a6e22e">Pan2</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">PlayBuf</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#a6e22e">bufnum</span>, <span style="color:#a6e22e">BufRateScale</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">bufnum</span>)<span style="color:#f92672">*</span><span style="color:#a6e22e">rate</span>, <span style="color:#a6e22e">trigger</span>, <span style="color:#a6e22e">BufFrames</span>.<span style="color:#a6e22e">ir</span>(<span style="color:#a6e22e">bufnum</span>)<span style="color:#f92672">*</span><span style="color:#a6e22e">startPos</span>, <span style="color:#a6e22e">loop</span>),<span style="color:#ae81ff">0.0</span>)
+
+(
+
+p =  Platform.resourceDir +/+ &quot;sounds/a11wlk01.wav&quot;;
+b = Buffer.read(s, p);
+
+SynthDef(\bufferC,{ | out=0,bufnum=0, rate=1, trigger=1, startPos=0, loop=1|
+	Out.ar(out,
+		Pan2.ar(PlayBuf.ar(1,bufnum, BufRateScale.kr(bufnum)*rate, trigger, BufFrames.ir(bufnum)*startPos, loop),0.0)
 	)
-}).<span style="color:#a6e22e">send</span>(<span style="color:#a6e22e">s</span>); 
+}).send(s); 
 )
 
 
-<span style="color:#a6e22e">Synth</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufferC</span>, [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">out</span>, <span style="color:#ae81ff">0</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufnum</span>, <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">bufnum</span>]);
+Synth(\bufferC, [\out, 0, \bufnum, b.bufnum]);
 
- <span style="color:#75715e">//play at half rate
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">Synth</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufferC</span>, [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">out</span>, <span style="color:#ae81ff">0</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufnum</span>, <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">bufnum</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rate</span>, <span style="color:#ae81ff">0.5</span>]);
-</code></pre></div>
+ //play at half rate
+Synth(\bufferC, [\out, 0, \bufnum, b.bufnum, \rate, 0.5]);
+
+
+</code></pre>
+
 <p>Example with GUI</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//Example with GUI controlling Synth 
-</span><span style="color:#75715e"></span>(
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">w</span>, <span style="color:#a6e22e">rateslid</span>, <span style="color:#a6e22e">trigslid</span>, <span style="color:#a6e22e">startposslid</span>, <span style="color:#a6e22e">loopslid</span>, <span style="color:#a6e22e">a</span>; 
 
-<span style="color:#a6e22e">a</span><span style="color:#f92672">=</span><span style="color:#a6e22e">Synth</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufferC</span>, [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">out</span>, <span style="color:#ae81ff">0</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">bufnum</span>, <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">bufnum</span>]);
+<pre><code class="language-js">//Example with GUI controlling Synth 
+(
+var w, rateslid, trigslid, startposslid, loopslid, a; 
 
-<span style="color:#a6e22e">w</span><span style="color:#f92672">=</span><span style="color:#a6e22e">Window</span>(<span style="color:#e6db74">&#34;PlayBuf Example&#34;</span>,<span style="color:#a6e22e">Rect</span>(<span style="color:#ae81ff">10</span>,<span style="color:#ae81ff">200</span>,<span style="color:#ae81ff">300</span>,<span style="color:#ae81ff">150</span>));
+a=Synth(\bufferC, [\out, 0, \bufnum, b.bufnum]);
 
-<span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">front</span>;
+w=Window(&quot;PlayBuf Example&quot;,Rect(10,200,300,150));
 
-<span style="color:#75715e">//control positioning of new GUI elements so I don&#39;t have to think too hard about it
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">view</span>.<span style="color:#a6e22e">decorator</span><span style="color:#f92672">=</span> <span style="color:#a6e22e">FlowLayout</span>(<span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">view</span>.<span style="color:#a6e22e">bounds</span>);
+w.front;
 
-<span style="color:#75715e">//James&#39; shortcut slider class
-</span><span style="color:#75715e">//100@24 means a Point of size 100 by 24
-</span><span style="color:#75715e">//|ez| is the same as arg ez;  - the slider object is being passed into the callback action function
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">rateslid</span><span style="color:#f92672">=</span> <span style="color:#a6e22e">EZSlider</span>(<span style="color:#a6e22e">w</span>, <span style="color:#ae81ff">250</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#ae81ff">24</span>, <span style="color:#e6db74">&#34;Rate&#34;</span>, <span style="color:#a6e22e">ControlSpec</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">10</span>, <span style="color:#e6db74">&#39;exponential&#39;</span>, <span style="color:#ae81ff">0.1</span>), {<span style="color:#f92672">|</span><span style="color:#a6e22e">ez</span><span style="color:#f92672">|</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">set</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rate</span>,<span style="color:#a6e22e">ez</span>.<span style="color:#a6e22e">value</span>)}, <span style="color:#ae81ff">1</span>);
+//control positioning of new GUI elements so I don't have to think too hard about it
+w.view.decorator= FlowLayout(w.view.bounds);
 
-<span style="color:#a6e22e">trigslid</span><span style="color:#f92672">=</span> <span style="color:#a6e22e">EZSlider</span>(<span style="color:#a6e22e">w</span>, <span style="color:#ae81ff">250</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#ae81ff">24</span>, <span style="color:#e6db74">&#34;Trigger&#34;</span>, <span style="color:#a6e22e">ControlSpec</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;lin&#39;</span>, <span style="color:#ae81ff">1</span>), {<span style="color:#f92672">|</span><span style="color:#a6e22e">ez</span><span style="color:#f92672">|</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">set</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">trigger</span>,<span style="color:#a6e22e">ez</span>.<span style="color:#a6e22e">value</span>)}, <span style="color:#ae81ff">1</span>);
+//James' shortcut slider class
+//100@24 means a Point of size 100 by 24
+//|ez| is the same as arg ez;  - the slider object is being passed into the callback action function
+rateslid= EZSlider(w, 250@24, &quot;Rate&quot;, ControlSpec(0.5, 10, 'exponential', 0.1), {|ez| a.set(\rate,ez.value)}, 1);
 
-<span style="color:#a6e22e">startposslid</span><span style="color:#f92672">=</span> <span style="color:#a6e22e">EZSlider</span>(<span style="color:#a6e22e">w</span>, <span style="color:#ae81ff">250</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#ae81ff">24</span>, <span style="color:#e6db74">&#34;StartPos&#34;</span>, <span style="color:#a6e22e">ControlSpec</span>(<span style="color:#ae81ff">0.0</span>, <span style="color:#ae81ff">1.0</span>, <span style="color:#e6db74">&#39;lin&#39;</span>, <span style="color:#ae81ff">0.01</span>), {<span style="color:#f92672">|</span><span style="color:#a6e22e">ez</span><span style="color:#f92672">|</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">set</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">startPos</span>,<span style="color:#a6e22e">ez</span>.<span style="color:#a6e22e">value</span>)}, <span style="color:#ae81ff">0</span>);
+trigslid= EZSlider(w, 250@24, &quot;Trigger&quot;, ControlSpec(0, 1, 'lin', 1), {|ez| a.set(\trigger,ez.value)}, 1);
 
-<span style="color:#a6e22e">loopslid</span><span style="color:#f92672">=</span> <span style="color:#a6e22e">EZSlider</span>(<span style="color:#a6e22e">w</span>, <span style="color:#ae81ff">250</span><span style="color:#960050;background-color:#1e0010">@</span><span style="color:#ae81ff">24</span>, <span style="color:#e6db74">&#34;Loop&#34;</span>, <span style="color:#a6e22e">ControlSpec</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#39;lin&#39;</span>, <span style="color:#ae81ff">0.1</span>), {<span style="color:#f92672">|</span><span style="color:#a6e22e">ez</span><span style="color:#f92672">|</span> <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">set</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">loop</span>,<span style="color:#a6e22e">ez</span>.<span style="color:#a6e22e">value</span>)}, <span style="color:#ae81ff">1</span>);
+startposslid= EZSlider(w, 250@24, &quot;StartPos&quot;, ControlSpec(0.0, 1.0, 'lin', 0.01), {|ez| a.set(\startPos,ez.value)}, 0);
 
-<span style="color:#a6e22e">w</span>.<span style="color:#a6e22e">onClose_</span>({<span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">free</span>;});
+loopslid= EZSlider(w, 250@24, &quot;Loop&quot;, ControlSpec(0, 1, 'lin', 0.1), {|ez| a.set(\loop,ez.value)}, 1);
+
+w.onClose_({a.free;});
 )
-</code></pre></div>
+
+
+</code></pre>
+
 
     
     

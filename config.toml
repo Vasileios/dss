@@ -1,25 +1,25 @@
 baseURL = "https://vasileios.github.io/dss"
+languageCode = "en-US"
+defaultContentLanguage = "el"
 
 title = "Digital Sound Synthesis"
+theme = "hugo-theme-docdock"
+#themesdir = "./themes"
 
 
-#metaDataFormat = "yaml"
-#defaultContentLanguageInSubdir= true
-#ordersectionsby = "weight"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+ordersectionsby = "weight"
   
 
 
-languageCode = "en-US"
 
 
-theme = "hugo-theme-docdock"
-#themesdir = "./themes"
-pygmentsCodeFences = true
-pygmentsStyle = "monokai"
+#pygmentsCodeFences = true
+#pygmentsStyle = "monokai"
 
-defaultContentLanguage = "el"
-defaultContentLanguageInSubdir= false
-enableMissingTranslationPlaceholders = false
+#defaultContentLanguageInSubdir= false
+#enableMissingTranslationPlaceholders = false
 
 publishDir= "docs"
 
