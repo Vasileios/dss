@@ -67,4 +67,8 @@ url = "https://github.com/Vasileios/dss/"
 weight = 10
 
 
-
+# Left sidebar footer items. Use HTMl or Markdown.
+[[Languages.el.menu.shortcuts]]
+name = "<i class='fa fa-fw fa-bullhorn'></i> Credits"
+url = "/"
+weight = 30
