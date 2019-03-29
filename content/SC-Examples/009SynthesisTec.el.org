@@ -1,7 +1,7 @@
 +++
 title = "Sound synthesis techniques"
 chapter = true
-weight = 65
+weight = 55
 +++
 
 *** chapter 2
