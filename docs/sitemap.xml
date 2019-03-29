@@ -3,23 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/</loc>
-  </url>
-  
-  <url>
     <loc>https://vasileios.github.io/dss/</loc>
   </url>
   
   <url>
     <loc>https://vasileios.github.io/dss/sc-examples/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/history/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/soundtheory/</loc>
   </url>
   
   <url>
@@ -31,10 +19,6 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/tuning_scales/</loc>
-  </url>
-  
-  <url>
     <loc>https://vasileios.github.io/dss/sc-examples/003aperiodicsources/</loc>
   </url>
   
@@ -43,27 +27,11 @@
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/notation/</loc>
-  </url>
-  
-  <url>
     <loc>https://vasileios.github.io/dss/sc-examples/005distortion/</loc>
   </url>
   
   <url>
-    <loc>https://vasileios.github.io/dss/introduction/logicalex/</loc>
-  </url>
-  
-  <url>
     <loc>https://vasileios.github.io/dss/sc-examples/006delays/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/glossary/</loc>
-  </url>
-  
-  <url>
-    <loc>https://vasileios.github.io/dss/introduction/references/</loc>
   </url>
   
   <url>
