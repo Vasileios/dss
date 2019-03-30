@@ -118,6 +118,12 @@ roots go back to 1957, when Mathews wrote the first version of
 "Music," a program that allowed an IBM 704 mainframe computer to play
 a 17-second composition.
 
+[[file:/MaxMathews_Stanford.png][Max Mathews]]
+
+
+
+
+
  /[[https://news.stanford.edu/news/2011/may/max-mathews-obit-050211.html][Max Mathews]]/
 
 <p><iframe width="560" height="315" src="https://www.youtube.com/embed/mT3U98cFqSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>

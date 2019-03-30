@@ -1,19 +1,10 @@
-baseURL = "https://vasileios.github.io/dss/"
-
-title = "Digital Sound Synthesis"
-
-
-#metaDataFormat = "yaml"
-#defaultContentLanguageInSubdir= true
-#ordersectionsby = "weight"
-  
-
+baseURL ="https://vasileios.github.io/dss/"
 
 languageCode = "en-us"
-
-
+DefaultContentLanguage = "el"
+title = "Digital Sound Synthesis"
 theme = "hugo-theme-docdock"
-#themesdir = "./themes"
+#themesdir = "../.."
 pygmentsCodeFences = true
 pygmentsStyle = "monokai"
 
@@ -22,10 +13,6 @@ defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
 
 publishDir= "docs"
-
-#[params]
-# themeVariant="black"
-
 # [Languages]
 # [Languages.en]
 # title = "Documentation for Hugo docDock"
@@ -38,7 +25,7 @@ publishDir= "docs"
 # languageName = "Français"
 
 [params]
- editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 showVisitedLinks = true # default is false
 themeStyle = "flex" # "original" or "flex" # default "flex"
 themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
@@ -50,15 +37,14 @@ highlightClientSide = false # set true to use highlight.pack.js instead of the d
 menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
 enableGitInfo = true
 
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
-
 [Languages]
 [Languages.el]
 title = "Ψηφιακή Σύνθεση Ήχου"
 weight = 1
 languageName = "Ελληνικά"
 
+
+# menu shortcuts git repo
 [[menu.shortcuts]]
 pre = "<h3>More</h3>"
 name = "<i class='fa fa-github'></i> <label>Github repo</label>"
@@ -67,10 +53,11 @@ url = "https://github.com/Vasileios/dss/"
 weight = 2
 
 
-# Left sidebar footer items. Use HTMl or Markdown.
+# menu shortcuts credits. 
 [[menu.shortcuts]]
 
 name = "<i class='fa fa-fw fa-bullhorn'></i> Credits"
 identifier = "credits"
 url = "/"
 weight = 3
+
