@@ -8,7 +8,7 @@ pre = "<b>1. </b>"
 *** Chapter 1
 
 
-* Ψηφιακή - Αλγοριθμικη Συνθεση Ήχου
+* Ψηφιακή - Αλγοριθμική Σύνθεση Ήχου
 
 Αποσπάσματα απο τα βιβλία "Algorithmic Composition: Paradigms of
 Automated Music Generation" (Nierhaus 2009), Computer Sound Design
