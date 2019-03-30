@@ -3,88 +3,88 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>//vasileios.github.io/dss/introduction/</loc>
+    <loc>/introduction/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/</loc>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/sc-examples/</loc>
+    <loc>/sc-examples/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/introduction/history/</loc>
+    <loc>/introduction/history/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/introduction/soundtheory/</loc>
+    <loc>/introduction/soundtheory/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/sc-examples/001supercollider/</loc>
+    <loc>/sc-examples/001supercollider/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/sc-examples/002oscillators/</loc>
+    <loc>/sc-examples/002oscillators/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/introduction/tuning_scales/</loc>
+    <loc>/introduction/tuning_scales/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/sc-examples/003aperiodicsources/</loc>
+    <loc>/sc-examples/003aperiodicsources/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/sc-examples/004filters/</loc>
+    <loc>/sc-examples/004filters/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/introduction/notation/</loc>
+    <loc>/introduction/notation/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/sc-examples/005distortion/</loc>
+    <loc>/sc-examples/005distortion/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/introduction/logicalex/</loc>
+    <loc>/introduction/logicalex/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/sc-examples/006delays/</loc>
+    <loc>/sc-examples/006delays/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/introduction/glossary/</loc>
+    <loc>/introduction/glossary/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/introduction/references/</loc>
+    <loc>/introduction/references/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/sc-examples/007spectral/</loc>
+    <loc>/sc-examples/007spectral/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/sc-examples/008granularsynthesis/</loc>
+    <loc>/sc-examples/008granularsynthesis/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/sc-examples/009synthesistec/</loc>
+    <loc>/sc-examples/009synthesistec/</loc>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>//vasileios.github.io/dss/tags/</loc>
+    <loc>/tags/</loc>
     <priority>0</priority>
   </url>
   
