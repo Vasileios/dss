@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ψηφιακη Συνθεση Ηχου on Ψηφιακή Σύνθεση Ήχου</title>
-    <link>https://vasileios.github.io/dss/</link>
+    <link>//vasileios.github.io/dss/</link>
     <description>Recent content in Ψηφιακη Συνθεση Ηχου on Ψηφιακή Σύνθεση Ήχου</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://vasileios.github.io/dss/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//vasileios.github.io/dss/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ιστορία</title>
-      <link>https://vasileios.github.io/dss/introduction/history/</link>
+      <link>//vasileios.github.io/dss/introduction/history/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/introduction/history/</guid>
+      <guid>//vasileios.github.io/dss/introduction/history/</guid>
       <description>chapter 1 Ψηφιακή σύνθεση Ήχου Ιστορια Synthesis techniques and programming.
 Κατά τη διάρκεια του περασμένου αιώνα, η ηλεκτρική ενέργεια διαπέρασε σταδιακά τον κόσμο του ήχου. Η μουσική πλέον ακούγεται τώρα μέσω των ηχείων. Αλλά, πέρα από την αναπαραγωγή, η ηλεκτρική τεχνολογία επίσης έφερε ριζικά νέους πόρους για την παραγωγή νέων ήχων και μουσικής.
 Χρειάστηκε αρκετός χρόνος για τον μουσικό κόσμο να συνειδητοποιήσει τις δυνατότητες αυτών των πόρων. Ακόμη, για πολλά χρόνια, ο Edgard Varese προσπάθησε να πείσει τους ερευνητές και τα ιδρύματα να δούν τα πλεονέκτημα που προσφέρει η επιστήμη και η τεχνολογία για την ανάπτυξη μηχανών παραγωγής ήχου - μόνο στο τέλος της ζωής του ήταν σε θέση να συνθέσει μουσική με τη χρήση μαγνητοταινίας (tape music and music concrete) καιέτσι να κάνει τα πρώτα βήματα της μουσικής με υπολογιστή (Computer Music).</description>
@@ -23,10 +23,10 @@
     
     <item>
       <title>Sound theory basics</title>
-      <link>https://vasileios.github.io/dss/introduction/soundtheory/</link>
+      <link>//vasileios.github.io/dss/introduction/soundtheory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/introduction/soundtheory/</guid>
+      <guid>//vasileios.github.io/dss/introduction/soundtheory/</guid>
       <description>chapter 1 Sound maths and physics Simple interface of a synth
 source: A waveform (simple or complex)
 arguments of a source i.e periodic oscillators
@@ -35,10 +35,10 @@ arguments of a source i.e periodic oscillators
     
     <item>
       <title>SuperCollider</title>
-      <link>https://vasileios.github.io/dss/sc-examples/001supercollider/</link>
+      <link>//vasileios.github.io/dss/sc-examples/001supercollider/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/001supercollider/</guid>
+      <guid>//vasileios.github.io/dss/sc-examples/001supercollider/</guid>
       <description>chapter 2 SuperCollider SuperCollider
 From: SuperCollider
 Basics
@@ -49,20 +49,20 @@ SuperCollider features three major components
     
     <item>
       <title>Oscillators</title>
-      <link>https://vasileios.github.io/dss/sc-examples/002oscillators/</link>
+      <link>//vasileios.github.io/dss/sc-examples/002oscillators/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/002oscillators/</guid>
+      <guid>//vasileios.github.io/dss/sc-examples/002oscillators/</guid>
       <description>chapter 2 SuperCollider Oscillators SuperCollider Ugens From SC Help
 //Periodic Sources: Oscillators. //LF - &amp;#34;Low Frequency&amp;#34; Unit Generators. //arguments: frequency, phase, mul, add  // *Stethoscope*  s.boot a = Stethoscope(s,2); // 2 tracks //a = Stethoscope(s,2, 2); // change in i.e (Mic)  // parabolic approximation of sine { LFPar.ar(LFPar.kr(LFPar.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); // cubic approximation of sine { LFCub.ar(LFCub.kr(LFCub.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFTri.ar(LFTri.kr(LFTri.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFSaw.</description>
     </item>
     
     <item>
       <title>Κλίμακες και Χορδίσματα</title>
-      <link>https://vasileios.github.io/dss/introduction/tuning_scales/</link>
+      <link>//vasileios.github.io/dss/introduction/tuning_scales/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/introduction/tuning_scales/</guid>
+      <guid>//vasileios.github.io/dss/introduction/tuning_scales/</guid>
       <description>chapter 1 Scales Circle of fiths is the relationship among the 12 tones of the chromatic scale, their corresponding key signatures, and the associated major and minor keys.
 Circles of Fifths
 Other Tunings and Scales
@@ -72,30 +72,30 @@ Other Tunings and Scales
     
     <item>
       <title>Noise</title>
-      <link>https://vasileios.github.io/dss/sc-examples/003aperiodicsources/</link>
+      <link>//vasileios.github.io/dss/sc-examples/003aperiodicsources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/003aperiodicsources/</guid>
+      <guid>//vasileios.github.io/dss/sc-examples/003aperiodicsources/</guid>
       <description>chapter 2 SuperCollider Noise Generators Aperiodic Sources: Noise
 /Aperiodic Sources: Noise. //LF &amp;#34;Low Frequency&amp;#34; Noise Generators. //arguments: frequency, mul, add { LFClipNoise.ar(MouseX.kr(200, 10000, 1), 0.125) }.scope(1); { LFPar.ar(LFClipNoise.kr(MouseX.kr(0.5, 64, 1), 200, 400), 0, 0.2) }.scope(1, zoom:8); //Broad Spectrum Noise Generators //arguments: mul, add { ClipNoise.ar(0.2) }.scope(1); { WhiteNoise.ar(0.2) }.scope(1); { PinkNoise.ar(0.4) }.scope(1); { BrownNoise.ar(0.2) }.scope(1); { GrayNoise.ar(0.2) }.scope(1); // Impulse Noise Generators //Dust, Dust2 //arguments: density, mul, add  { Dust.</description>
     </item>
     
     <item>
       <title>Filters</title>
-      <link>https://vasileios.github.io/dss/sc-examples/004filters/</link>
+      <link>//vasileios.github.io/dss/sc-examples/004filters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/004filters/</guid>
+      <guid>//vasileios.github.io/dss/sc-examples/004filters/</guid>
       <description>chapter 2 SuperCollider Filters Filters in SuperCollider
 // Filters  //Low Pass, High Pass, Band Pass see more on Help //arguments: in, freq, mul, add  { LPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); { HPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); // Resonant Low Pass, High Pass, Band Pass //arguments: in, freq, rq, mul, add  { RLPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); { RHPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); // Resonz - resonant band pass filter with uniform amplitude //arguments: in, freq, rq, mul, add  // modulate frequency { Resonz.</description>
     </item>
     
     <item>
       <title>Notation</title>
-      <link>https://vasileios.github.io/dss/introduction/notation/</link>
+      <link>//vasileios.github.io/dss/introduction/notation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/introduction/notation/</guid>
+      <guid>//vasileios.github.io/dss/introduction/notation/</guid>
       <description>chapter 1 Notation MIDI
 The lowest note musicians use is C-1, which has the MIDI number 0. The number 12 = C0, 24 = C1, 36 = C2, 48 = C3, 60 = C4 (which is middle C on the piano, remember this one), and so on. A 440 is above middle C so it is 69.
 60, 62, 63, 60, 66
@@ -105,38 +105,38 @@ It is the number of cycles (per second) of a periodic wave.</description>
     
     <item>
       <title>Distortion</title>
-      <link>https://vasileios.github.io/dss/sc-examples/005distortion/</link>
+      <link>//vasileios.github.io/dss/sc-examples/005distortion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/005distortion/</guid>
+      <guid>//vasileios.github.io/dss/sc-examples/005distortion/</guid>
       <description>chapter 2 SuperCollider Distorion // Distortion  { SinOsc.ar(300, 0, 0.2) }.scope(1); { SinOsc.ar(300, 0, 0.2).abs }.scope(1); { SinOsc.ar(300, 0, 0.2).max(0) }.scope(1); { SinOsc.ar(300, 0).squared * 0.2 }.scope(1); { SinOsc.ar(300, 0).cubed * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).distort * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).softclip * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).clip2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).fold2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).wrap2(1) * 0.2 }.scope(1); { SinOsc.</description>
     </item>
     
     <item>
       <title>Logical Expressions</title>
-      <link>https://vasileios.github.io/dss/introduction/logicalex/</link>
+      <link>//vasileios.github.io/dss/introduction/logicalex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/introduction/logicalex/</guid>
+      <guid>//vasileios.github.io/dss/introduction/logicalex/</guid>
       <description>chapter 1 LE Logical Expressions in SuperCollider
 Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 // not equal to 10&amp;gt;5 // greater than 10&amp;lt;14 // less than 10 &amp;gt;= 10 // greater than or equal to 10 &amp;lt;= 10 // lees than or equal to 11.odd // it is odd 10.even // it is even 10.isInteger // it is integer 10.129.isFloat // it is float 1.odd.and(2.even) // both conditions 1.</description>
     </item>
     
     <item>
       <title>Delays</title>
-      <link>https://vasileios.github.io/dss/sc-examples/006delays/</link>
+      <link>//vasileios.github.io/dss/sc-examples/006delays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/006delays/</guid>
+      <guid>//vasileios.github.io/dss/sc-examples/006delays/</guid>
       <description>chapter 2 SuperCollider Delays //Delays and Buffer UGens DelayN, DelayL, DelayC - simple delays N - no interpolation L - linear interpolation C - cubic interpolation arguments: in, maximum delay time, current delay time, mul, add ( // Dust randomly triggers Decay to create an exponential // decay envelope for the WhiteNoise input source { z = Decay.ar(Dust.ar(1,0.5), 0.3, WhiteNoise.ar); DelayN.ar(z, 0.1, 0.1, 1, z); // input is mixed with delay via the add input }.</description>
     </item>
     
     <item>
       <title>Glossary</title>
-      <link>https://vasileios.github.io/dss/introduction/glossary/</link>
+      <link>//vasileios.github.io/dss/introduction/glossary/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/introduction/glossary/</guid>
+      <guid>//vasileios.github.io/dss/introduction/glossary/</guid>
       <description>chapter 1 Glossary General
 Ο αλγόριθμος είναι:
  &#34;- Ένα σύνολο μαθηματικών οδηγιών που πρέπει να ακολουθηθούν για τον υπολογισμό μιας απάντησης σε ένα μαθηματικό πρόβλημα. Μια συστηματική διαδικασία που παράγει - σε ένα πεπερασμένο αριθμό βημάτων την απάντηση σε μια ερώτηση ή τη λύση ενός προβλήματος. (κυρίως για υπολογιστές) ένα σύνολο κανόνων που πρέπει να ακολουθηθούν για να επιλυθεί ένα συγκεκριμένο πρόβλημα&#34;. (Nierhaus 2009 2)  Mathematics
@@ -145,10 +145,10 @@ premise a statement that is assumed to be true.</description>
     
     <item>
       <title>References</title>
-      <link>https://vasileios.github.io/dss/introduction/references/</link>
+      <link>//vasileios.github.io/dss/introduction/references/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/introduction/references/</guid>
+      <guid>//vasileios.github.io/dss/introduction/references/</guid>
       <description>Chapter 1 References Collins, N. 2009. Handmade Electronic Music: The Art of Hardware Hacking (2 edition). New York: Routledge.
 Cope, David. 2000. The Algorithmic Composer. Madison, Wis: A-R Editions.
 Dean, Roger. and McLean, Alex (eds.) 2018. The Oxford Handbook of Algorithmic Music. Oxford University Press.
@@ -158,10 +158,10 @@ Holtzman, Steven. 1981. Generative Grammars for Music Composition. Computer Musi
     
     <item>
       <title>Spectral</title>
-      <link>https://vasileios.github.io/dss/sc-examples/007spectral/</link>
+      <link>//vasileios.github.io/dss/sc-examples/007spectral/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/007spectral/</guid>
+      <guid>//vasileios.github.io/dss/sc-examples/007spectral/</guid>
       <description>chapter 2 SuperCollider Spectral FFT-PV_Ugens
 FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a trigger each time the buffer is ready to process. The PV UGens process the spectrum when they receive the trigger. IFFT converts the spectrum back into sound.
 // alloc a buffer for the FFT b = Buffer.alloc(s,2048,1); // read a sound c = Buffer.</description>
@@ -169,19 +169,19 @@ FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, p
     
     <item>
       <title>Granular Synthesis</title>
-      <link>https://vasileios.github.io/dss/sc-examples/008granularsynthesis/</link>
+      <link>//vasileios.github.io/dss/sc-examples/008granularsynthesis/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/008granularsynthesis/</guid>
+      <guid>//vasileios.github.io/dss/sc-examples/008granularsynthesis/</guid>
       <description>chapter 2 SuperCollider Granular Synthesis //TGrains - granulation of a buffer //arguments: numChannels, trigger, buffer number, rate, center pos, dur, pan, amp, interpolation //see more about Granular synthesis on Help  // read sound b = Buffer.read(s, Platform.resourceDir +/+ &amp;#34;sounds/a11wlk01.wav&amp;#34;); ( { var trate, dur; trate = MouseY.kr(2,200,1); dur = 4 / trate; TGrains.ar(2, Impulse.ar(trate), b, 1, MouseX.kr(0,BufDur.kr(b)), dur, 0, 0.1, 2); }.scope(2, zoom: 4); ) ( { var trate, dur, clk, pos, pan; trate = MouseY.</description>
     </item>
     
     <item>
       <title>Sound synthesis techniques</title>
-      <link>https://vasileios.github.io/dss/sc-examples/009synthesistec/</link>
+      <link>//vasileios.github.io/dss/sc-examples/009synthesistec/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://vasileios.github.io/dss/sc-examples/009synthesistec/</guid>
+      <guid>//vasileios.github.io/dss/sc-examples/009synthesistec/</guid>
       <description>chapter 2 Sound synthesis techniques-methods Spectral
  Additive Phase Vocoder FFT  Abstract
  FM Waveshaping  Sampling
