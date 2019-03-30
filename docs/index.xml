@@ -30,7 +30,7 @@
       <description>chapter 1 Sound maths and physics Simple interface of a synth
 source: A waveform (simple or complex)
 arguments of a source i.e periodic oscillators
- frequency: (the cycles per second (Hz)),   phase: starts at 0 means sine, starts at 1 means cosine   amplitude: the distance between the top and the bottom of a wave.   Envelope: the shape of the sound intensity i.e attack time (the starting point of an envelope measured in milliseconds),  sustain level(intesity, measured in deciBels)  To generate a sound you can experiment in the SuperCollider environment.</description>
+ frequency: (the cycles per second (Hz)),   phase: starts at 0 means sine, starts at 1 means cosine   amplitude: the distance between the top and the bottom of a wave.   Envelope: the shape of the sound intensity i.e attack time (the starting point of an envelope measured in milliseconds),  sustain level(intesity, measured in deciBels)  More on Envelopes here:Envelopes in SuperCollider</description>
     </item>
     
     <item>
