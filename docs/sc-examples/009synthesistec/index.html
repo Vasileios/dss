@@ -765,6 +765,65 @@ In granular synthesis the sound grain can have duration ranging from one millise
 { <span style="color:#a6e22e">LPF</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">COsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">bufnum</span>, [<span style="color:#ae81ff">200.</span><span style="color:#a6e22e">rand</span>.<span style="color:#a6e22e">postln</span>, <span style="color:#ae81ff">1000.</span><span style="color:#a6e22e">rand</span>], <span style="color:#ae81ff">0.7</span>, <span style="color:#ae81ff">0.25</span>)<span style="color:#f92672">*</span><span style="color:#a6e22e">Saw</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">440</span><span style="color:#f92672">+</span><span style="color:#ae81ff">444.</span><span style="color:#a6e22e">rand</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.7</span>)), <span style="color:#ae81ff">4000</span>) }.<span style="color:#a6e22e">play</span>;
 )
 </code></pre></div>
+<p><em>Physical Modeling</em> example by James McCartney</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// synthetic piano patch (James McCartney)
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">n</span>;
+
+<span style="color:#a6e22e">n</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">6</span>;	<span style="color:#75715e">// number of keys playing
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">play</span>({
+
+	<span style="color:#a6e22e">Mix</span>.<span style="color:#a6e22e">ar</span>(Array.<span style="color:#a6e22e">fill</span>(<span style="color:#a6e22e">n</span>, {	<span style="color:#75715e">// mix an array of notes
+</span><span style="color:#75715e"></span>
+		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">delayTime</span>, <span style="color:#a6e22e">pitch</span>, <span style="color:#a6e22e">detune</span>, <span style="color:#a6e22e">strike</span>, <span style="color:#a6e22e">hammerEnv</span>, <span style="color:#a6e22e">hammer</span>;
+
+
+
+		<span style="color:#75715e">// calculate delay based on a random note
+</span><span style="color:#75715e"></span>
+		<span style="color:#a6e22e">pitch</span> <span style="color:#f92672">=</span> (<span style="color:#ae81ff">36</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">54.</span><span style="color:#a6e22e">rand</span>); 
+
+		<span style="color:#a6e22e">strike</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Impulse</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.1</span><span style="color:#f92672">+</span><span style="color:#ae81ff">0.4</span>.<span style="color:#a6e22e">rand</span>, <span style="color:#ae81ff">2</span><span style="color:#a6e22e">pi</span>.<span style="color:#a6e22e">rand</span>, <span style="color:#ae81ff">0.1</span>); <span style="color:#75715e">// random period for each key
+</span><span style="color:#75715e"></span>
+		<span style="color:#a6e22e">hammerEnv</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Decay2</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">strike</span>, <span style="color:#ae81ff">0.008</span>, <span style="color:#ae81ff">0.04</span>); <span style="color:#75715e">// excitation envelope
+</span><span style="color:#75715e"></span>
+		<span style="color:#a6e22e">Pan2</span>.<span style="color:#a6e22e">ar</span>(
+
+			<span style="color:#75715e">// array of 3 strings per note
+</span><span style="color:#75715e"></span>
+			<span style="color:#a6e22e">Mix</span>.<span style="color:#a6e22e">ar</span>(Array.<span style="color:#a6e22e">fill</span>(<span style="color:#ae81ff">3</span>, { <span style="color:#a6e22e">arg</span> <span style="color:#a6e22e">i</span>;
+
+				<span style="color:#75715e">// detune strings, calculate delay time :
+</span><span style="color:#75715e"></span>
+				<span style="color:#a6e22e">detune</span> <span style="color:#f92672">=</span> <span style="color:#960050;background-color:#1e0010">#</span>[<span style="color:#f92672">-</span><span style="color:#ae81ff">0.05</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.04</span>].<span style="color:#a6e22e">at</span>(<span style="color:#a6e22e">i</span>);
+
+				<span style="color:#a6e22e">delayTime</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#960050;background-color:#1e0010">/ (pitch + detune).midicps;</span>
+
+				<span style="color:#75715e">// each string gets own exciter :
+</span><span style="color:#75715e"></span>
+				<span style="color:#a6e22e">hammer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">LFNoise2</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">3000</span>, <span style="color:#a6e22e">hammerEnv</span>); <span style="color:#75715e">// 3000 Hz was chosen by ear..
+</span><span style="color:#75715e"></span>
+				<span style="color:#a6e22e">CombL</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">hammer</span>,		<span style="color:#75715e">// used as a string resonator
+</span><span style="color:#75715e"></span>
+					<span style="color:#a6e22e">delayTime</span>, 		<span style="color:#75715e">// max delay time
+</span><span style="color:#75715e"></span>
+					<span style="color:#a6e22e">delayTime</span>,			<span style="color:#75715e">// actual delay time
+</span><span style="color:#75715e"></span>
+					<span style="color:#ae81ff">6</span>) 				<span style="color:#75715e">// decay time of string
+</span><span style="color:#75715e"></span>
+			})),
+
+			(<span style="color:#a6e22e">pitch</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">36</span>)<span style="color:#e6db74">/27 - 1 /</span><span style="color:#960050;background-color:#1e0010">/ pan position: lo notes left, hi notes right</span>
+
+		)
+
+	}))
+
+})
+
+)
+</code></pre></div>
 
     
     
