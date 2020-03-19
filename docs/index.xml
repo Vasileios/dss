@@ -32,7 +32,8 @@ source: A waveform (simple or complex)
 arguments of a source i.e periodic oscillators
 Sine wave
 via GIPHY
- frequency: (the cycles per second (Hz)),   phase: starts at 0 means sine, starts at 1 means cosine   amplitude: the distance between the top and the bottom of a wave.   Envelope: the shape of the sound intensity i.</description>
+ frequency: (the cycles per second (Hz)),   phase: (in radians)  ***(phase generally has meaning only when two or more waves having identical frequencies are compared.)
+ amplitude: the distance between the top and the bottom of a wave.   Envelope: the shape of the sound intensity i.</description>
     </item>
     
     <item>
