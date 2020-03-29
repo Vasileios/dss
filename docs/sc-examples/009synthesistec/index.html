@@ -422,7 +422,25 @@ synthesis technique employing a nonlinear oscillating function. The
 theory of FM was well established by the mid-twentieth century for
 radio frequencies. The use of FM in audio frequencies for the purpose
 of sound synthesis was not studied until late 60's. *John Chowing*
-(the inventor of FM synthesis) (Miranda 2002) at Stanford University was the first to study systematically FM synthesis. Chowing observed that complex audio spectra can be achieved with just two sinusoidal oscillators (Tolonen et al. 1998).</p>
+(the inventor of FM synthesis) (Miranda 2002) at Stanford University
+was the first to study systematically FM synthesis. Chowing observed
+that complex audio spectra can be achieved with just two sinusoidal
+oscillators (Tolonen et al. 1998).</p>
+
+<p>"FM radio uses
+an audio signal to modulate a very much higher frequency that is then used to
+carry the audio waveform as radio waves. This use of the word ‘carrier ’ persists
+even in audio FM, where radio transmission has nothing to do with the sound
+that is produced"<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+
+<p>Αν υποθέσουμε ότι ένας ταλαντωτής έχει οριστεί για να παράγει ένα
+ημιτονοειδές κύμα n kHz για παράδειγμα (2 kHz) μπορούμε να
+χρησιμοποιήσουμε έναν άλλο ταλαντωτή για να αλλάξουμε τη συχνότητα με ένα
+ημιτονοειδές κύμα n Hz (20 Hz) και να
+δημιουργήσουμε για το εφέ vibrato.</p>
+
+<p>Ο ταλαντωτής που παράγει τον τόνο 1 kHz είναι o <em>φορέας</em> (<code>carrier</code>) ενώ ο
+ταλαντωτής που παράγει την κυματομορφή διαμόρφωσης ονομάζεται <em>διαμορφωτής</em> (<code>modulator</code>).</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*
 </span><span style="color:#75715e">Modulation synthesis
 </span><span style="color:#75715e">Obective: modulate the frequency,the phase and the amplitude of a simple waveform using other waveforms as the modulators
@@ -878,7 +896,23 @@ In granular synthesis the sound grain can have duration ranging from one millise
 
 )
 </code></pre></div>
-<p>"Waveguide synthesis is a set of extensions in the direction of accurate physical modeling while maintaining the computational simplicity reminiscent of the Karplus-Strong algorithm. It most efficiently models one-dimensional waveguides, such as strings and bores, yet it can be coupled in a rigorous way to the more general physical models in Cordis-Anima and" <a href="https://ccrma.stanford.edu/~jos/kna/Taxonomy_Digital_Synthesis_Techniques.html" title="1">1</a>]</p>
+<p>"Waveguide synthesis is a set of extensions in the direction of
+accurate physical modeling while maintaining the computational
+simplicity reminiscent of the Karplus-Strong algorithm. It most
+efficiently models one-dimensional waveguides, such as strings and
+bores, yet it can be coupled in a rigorous way to the more general
+physical models in Cordis-Anima and"
+<a href="https://ccrma.stanford.edu/~jos/kna/Taxonomy_Digital_Synthesis_Techniques.html" title="see here more">see here more</a></p>
+
+<h1 id="footnotes">Footnotes</h1>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Russ, M. (2008). Sound Synthesis and Sampling, Third Edition (3 edition). Focal Press. <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
 
 
     

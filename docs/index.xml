@@ -27,13 +27,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/introduction/soundtheory/</guid>
-      <description>chapter 1 Sound maths and physics Simple interface of a synth
-source: A waveform (simple or complex)
-arguments of a source i.e periodic oscillators
-Sine wave
-via GIPHY
- frequency: (the cycles per second (Hz)),   phase: (in radians)  ***(phase generally has meaning only when two or more waves having identical frequencies are compared.)
- amplitude: the distance between the top and the bottom of a wave.   Envelope: the shape of the sound intensity i.</description>
+      <description>chapter 1 Η ψηφιακή σύνθεση του ήχου είναι το όνομα που δίνεται σε οποιαδήποτε μέθοδο που χρησιμοποιεί κυρίως ψηφιακές τεχνικές για τη δημιουργία, τον χειρισμό και την αναπαραγωγή του ήχου. Συχνά, το μόνο «αναλογικό» τμήμα ενός «ψηφιακού» οργάνου είναι το αναλογικό - ηχητικό σήμα που παράγεται από τον μετατροπέα ψηφιακού προς αναλογικό (DAC) και απο εκεί στα ηχεία.
+ Οι περισσότερες τεχνικές ψηφιακής σύνθεσης βασίζονται πολύ έντονα στα μαθηματικά: ακόμη και μέθοδοι όπως τα ψηφιακά δείγματα και η σύνθεση, είναι μια προσπάθεια μίμησης με το λογισμικό, των αναλογικών φίλτρών που βρίσκονται σε αφαιρετικούς συνθετητές μεταξύ άλλων.</description>
     </item>
     
     <item>
