@@ -650,8 +650,33 @@ al. 1998)</p>
 <span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">free</span>;
 
 <span style="color:#75715e">//other examples
+</span><span style="color:#75715e">//Use Signal and convert to wavetables
 </span><span style="color:#75715e"></span>
-<span style="color:#75715e">///WaveTables
+<span style="color:#75715e">//: allocate a buffer (The buffer size must be a power of 2). Then create a Signal object and sending it the asWavetable message, saving it to disk
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">alloc</span>(<span style="color:#a6e22e">s</span>, <span style="color:#ae81ff">1024</span>, <span style="color:#ae81ff">1</span>);
+
+<span style="color:#75715e">//size must be power of two plus 1
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">t</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Signal</span>.<span style="color:#a6e22e">chebyFill</span>(<span style="color:#ae81ff">513</span>,[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0.125</span>]);
+
+<span style="color:#75715e">// linear function
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">plot</span>
+
+<span style="color:#75715e">// t.asWavetableNoWrap will convert it to the official Wavetable format at next power of two size
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">sendCollection</span>(<span style="color:#a6e22e">t</span>.<span style="color:#a6e22e">asWavetableNoWrap</span>);  <span style="color:#75715e">// may also use loadCollection here
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">plot</span>
+
+(
+{     <span style="color:#66d9ef">var</span>    <span style="color:#a6e22e">sig</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Shaper</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.4</span>));
+    <span style="color:#a6e22e">sig</span> <span style="color:#f92672">!</span> <span style="color:#ae81ff">2</span>
+}.<span style="color:#a6e22e">scope</span>;
+)
+
+<span style="color:#a6e22e">b</span>.<span style="color:#a6e22e">free</span>;
+
+
+<span style="color:#75715e">///other examples with WaveTables
 </span><span style="color:#75715e">//Create a table with size 512 and the amplitudes which shape the waveform. Use Sine or Chebyshev polynomial function.
 </span><span style="color:#75715e"></span>
 <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Wavetable</span>.<span style="color:#a6e22e">sineFill</span>(<span style="color:#ae81ff">512</span>, <span style="color:#ae81ff">1.0</span><span style="color:#960050;background-color:#1e0010">/[1, 2, 3, 4, 5, 6]);</span>
