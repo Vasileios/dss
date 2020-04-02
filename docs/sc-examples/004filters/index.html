@@ -313,6 +313,17 @@
 </span><span style="color:#75715e"></span>
 { <span style="color:#a6e22e">Klank</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#e6db74">`[[200, 671, 1153, 1723], nil, [1, 1, 1, 1]], Impulse.ar(2, 0, 0.1)) }.play;
 </span><span style="color:#e6db74"></span></code></pre></div>
+<h2 id="more-on-filters">More on Filters</h2>
+
+<h3 id="removing-dc-offset">Removing DC offset</h3>
+
+<p>(DC offset) H Mετατόπιση DC είναι μια αντιστάθμιση ενός σήματος από το μηδέν. Δηλαδή, όταν η κυματομορφή δεν είναι κεντραρισμένη στην οριζόντια γραμμή 0,0 αλλά πάνω ή κάτω απο το 0.
+Αυτό μπορεί να συμβεί εξαιτίας διάφορων παραμέτρων σε σχέση με τη λήψη αλλά και διαχείριση του ήχου. Μια απο αυτές είναι και η διαχείριση του σήματος όπως κάνουμε και με τα wavetables.
+Όταν εργαζόμαστε με wavetables για waveshaping αυτό μπορεί να προκληθεί όταν περνάμε απο το ένα wavetable στο άλλο (ασύμμετρα κύματα). Αυτά τα τυχαία κύματα μπορούν να περιέχουν μόνο θετικές ή μόνο αρνητικές τιμές (κάτω ή πάνω από το μηδέν).
+Σε αυτή την περίπτωση πρέπει να χρησιμοποιήσουμε ένα φίλτρο για να μειώσουμε το θόρυβο που θα προκληθεί.</p>
+
+<p>LeakDC is a class in SuperCollider that removes DC bias from a signal.</p>
+
 
     
     

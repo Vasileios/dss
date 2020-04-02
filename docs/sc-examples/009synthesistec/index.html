@@ -620,12 +620,22 @@ that is produced"<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></s
 nonlinear shaping function to modify the input signal (Tolonen et
 al. 1998)</p>
 
+<ul>
+<li>Input Signal = SinOsc,</li>
+<li>transfer function  = a curve on x, y axis,(-1, 1),</li>
+<li>output signal  = ?</li>
+</ul>
+
+<p>Using waveshaping it is possible to transform a sin wave to a square wave or saw wave.</p>
+
 <p><a href="../images/polynomials.png" title="../images/polynomials.png">../images/polynomials.png</a></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">/*
 </span><span style="color:#75715e">BA 182202
+</span><span style="color:#75715e">Multiple wavetable synthesis Examples
 </span><span style="color:#75715e">Waveshaping examples
 </span><span style="color:#75715e">Objective: create a wavetable and shape the waveform
 </span><span style="color:#75715e">*/</span>
+
 
 <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">boot</span>;
 <span style="color:#75715e">//Fill this buffer with a series of Chebyshev polynomials, see more on Help-&gt;Buffer
@@ -762,7 +772,10 @@ al. 1998)</p>
 <span style="color:#a6e22e">s</span>.<span style="color:#a6e22e">freqscope</span>
 
 <span style="color:#a6e22e">x</span>.<span style="color:#a6e22e">free</span>;
-</code></pre></div>
+
+<span style="color:#75715e">//Interpolate between tables according to the index[0] (wavetable 1) and index[1] (wavetable 2)...index[n] (wavetable n)
+</span><span style="color:#75715e">//Using Line to move from 0 to 1 one wavetable getting into the other and this as a result creates another wavetable which contains  characteristics from both wavetables.With VOsc UGEN you can interpolate  between wavetables. You need to create 2 or more wavetables and a controller such as MousX.kr(0, n) to move from buffer 0 to buffer n.
+</span><span style="color:#75715e"></span></code></pre></div>
 <h4 id="sampling">Sampling</h4>
 
 <p>Sampling synthesis is a method in which recordings of relatively short sounds are played back (Roads 1995). Digital sampling instruments, also called samplers, are typically used to perform pitch shifting, looping, or other modification of the original sound signal (Borin et al. 1997b) (Tolonen et al. 1998)</p>
