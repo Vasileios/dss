@@ -281,12 +281,12 @@ Octave
 It is used in making calculations as well as in developing and testing
 algorithms such as digital signal processing algorithms.
 </p>
-<h3 id="headline-3">
+<h5 id="headline-3">
 Installation Guide
-</h3>
-<h3 id="headline-4">
+</h5>
+<h5 id="headline-4">
 Mac OS Guide
-</h3>
+</h5>
 <p>
 You can install octave using <code class="verbatim">brew</code>
 </p>
@@ -299,9 +299,9 @@ After you&#39;ve installed brew open terminal and type the below command:
 <pre class="example">
 brew upgrade &amp;&amp; update
 </pre>
-<h3 id="headline-5">
+<h5 id="headline-5">
 Install Octave
-</h3>
+</h5>
 <p>
 Then you can easily install octave using the below command
 </p>
@@ -314,9 +314,9 @@ brew install octave
 <p>
 You can type now <code class="verbatim">octave</code> on your terminal to run octave.
 </p>
-<h3 id="headline-6">
+<h5 id="headline-6">
 Emacs org-mode octave
-</h3>
+</h5>
 <p>
 For emacs users you can run octave examples using org-mode code blocks.
 </p>
@@ -337,9 +337,9 @@ Then insert the below code in your init emacs file
 <p>
 Restart emacs and test octave
 </p>
-<h3 id="headline-7">
+<h5 id="headline-7">
 Simple Example 01
-</h3>
+</h5>
 <div class="src src-octave">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave"><span style="color:#75715e">#Example 01</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>G=<span style="color:#ae81ff">1</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
@@ -361,9 +361,9 @@ Results:
 <p>
 <strong>More Examples</strong>
 </p>
-<h3 id="headline-8">
+<h5 id="headline-8">
 Simple Example 02
-</h3>
+</h5>
 <div class="src src-octave">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave"><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>A=[<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>];<span style="color:#960050;background-color:#1e0010">
@@ -383,9 +383,9 @@ Results:
 </tr>
 </tbody>
 </table>
-<h3 id="headline-9">
+<h5 id="headline-9">
 Creating scripts for octave
-</h3>
+</h5>
 <p>
 You can create script files with octave code and the extension .m
 Then you can  run them using their name.
@@ -397,9 +397,9 @@ example: testOctave.m
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#sh example</span>
 testOctave</code></pre></div>
 </div>
-<h3 id="headline-10">
+<h5 id="headline-10">
 Example of sine wave plot
-</h3>
+</h5>
 <div class="src src-octave">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave">hf = figure ();<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>axis ([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">20</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>]);<span style="color:#960050;background-color:#1e0010">
@@ -411,9 +411,9 @@ Example of sine wave plot
 </span><span style="color:#960050;background-color:#1e0010"></span>print (hf, <span style="color:#e6db74">&#34;./plots/plotSineWave3.pdf&#34;</span>, <span style="color:#e6db74">&#34;-dpdflatexstandalone&#34;</span>);<span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>system (<span style="color:#e6db74">&#34;pdflatex ./plots/plotSineWave3&#34;</span>);</code></pre></div>
 </div>
-<h4 id="headline-11">
+<h5 id="headline-11">
 Εικόνα 1
-</h4>
+</h5>
 <ul>
 <li>
 <p>
@@ -422,8 +422,13 @@ Sine wave plot
 </li>
 </ul>
 <p>
-<img src="./plots/plotSineWave2.png" alt="./plots/plotSineWave2.png" title="./plots/plotSineWave2.png" />
+<img src="./images/plotSineWave2.png" alt="./images/plotSineWave2.png" title="./images/plotSineWave2.png" />
 </p>
+<figure>
+<img src="../images/plotSineWave2.png" alt="../images/plotSineWave2.png" title="../images/plotSineWave2.png" /><figcaption>
+Example Sine wave Octave Plot
+</figcaption>
+</figure>
 <p>
 Beginners tutorial <a href="http://www-mdp.eng.cam.ac.uk/web/CD/engapps/octave/octavetut.pdf">here</a>
 </p>
