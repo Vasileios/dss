@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.45.1" />
+<meta name="generator" content="Hugo 0.69.2" />
 <title>Delays :: Ψηφιακή Σύνθεση Ήχου</title>
 <link rel="shortcut icon" href="/dss/images/favicon.png" type="image/x-icon" />
 <link href="/dss/css/font-awesome.min.css" rel="stylesheet">
@@ -145,7 +145,7 @@
       <li data-nav-id="/dss/sc-examples/004filters/" class="dd-item">
         <div>
           <a href="/dss/sc-examples/004filters/">
-            Filters
+            Filters DSP
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -191,6 +191,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/dss/sc-examples/011octaveguide/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/011octaveguide/">
+            DSP Octave and Faust
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
 
@@ -226,13 +233,14 @@
       <option value="/dss/sc-examples/001supercollider/" >- SuperCollider</option>
       <option value="/dss/sc-examples/002oscillators/" >- Oscillators</option>
       <option value="/dss/sc-examples/003aperiodicsources/" >- Noise</option>
-      <option value="/dss/sc-examples/004filters/" >- Filters</option>
+      <option value="/dss/sc-examples/004filters/" >- Filters DSP</option>
       <option value="/dss/sc-examples/005distortion/" >- Distortion</option>
       <option value="/dss/sc-examples/006delays/"  selected>- Delays</option>
       <option value="/dss/sc-examples/007spectral/" >- Spectral</option>
       <option value="/dss/sc-examples/008granularsynthesis/" >- Granular Synthesis</option>
       <option value="/dss/sc-examples/009synthesistec/" >- Sound synthesis techniques</option>
       <option value="/dss/sc-examples/010events/" >- Sound/Musical Events</option>
+      <option value="/dss/sc-examples/011octaveguide/" >- DSP Octave and Faust</option>
   
 
 
@@ -260,9 +268,14 @@
     
     
     
-    <h3 id="chapter-2">chapter 2</h3>
-
-<h4 id="supercollider-delays">SuperCollider Delays</h4>
+    
+<h4 id="headline-1">
+chapter 2
+</h4>
+<h5 id="headline-2">
+SuperCollider Delays 
+</h5>
+<div class="src src-js">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//Delays and Buffer UGens
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">DelayN</span>, <span style="color:#a6e22e">DelayL</span>, <span style="color:#a6e22e">DelayC</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">simple</span> <span style="color:#a6e22e">delays</span>
 <span style="color:#a6e22e">N</span> <span style="color:#f92672">-</span> <span style="color:#a6e22e">no</span> <span style="color:#a6e22e">interpolation</span>
@@ -300,10 +313,10 @@
 
 { <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.02</span>), <span style="color:#ae81ff">0.01</span>, <span style="color:#a6e22e">XLine</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.0001</span>, <span style="color:#ae81ff">0.01</span>, <span style="color:#ae81ff">20</span>), <span style="color:#f92672">-</span><span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 
-{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/100, 1/100, 3) }.play;</span>
-{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/200, 1/200, 3) }.play;</span>
-{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/300, 1/300, 3) }.play;</span>
-{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/400, 1/400, 3) }.scope(1, zoom:4);</span>
+{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">3</span>) }.<span style="color:#a6e22e">play</span>;
+{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">3</span>) }.<span style="color:#a6e22e">play</span>;
+{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">300</span>, <span style="color:#ae81ff">3</span>) }.<span style="color:#a6e22e">play</span>;
+{ <span style="color:#a6e22e">CombC</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Decay</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0.1</span>), <span style="color:#ae81ff">0.2</span>, <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>), <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">400</span>, <span style="color:#ae81ff">3</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span><span style="color:#ae81ff">4</span>);
 
 <span style="color:#75715e">//etc
 </span><span style="color:#75715e"></span>
@@ -318,6 +331,8 @@
 <span style="color:#75715e">// loop is true
 </span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">PlayBuf</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">1</span>,<span style="color:#a6e22e">b</span>, <span style="color:#a6e22e">BufRateScale</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">b</span>), <span style="color:#a6e22e">loop</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 </code></pre></div>
+</div>
+
 
     
     

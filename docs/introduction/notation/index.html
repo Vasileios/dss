@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.45.1" />
+<meta name="generator" content="Hugo 0.69.2" />
 <title>Notation :: Ψηφιακή Σύνθεση Ήχου</title>
 <link rel="shortcut icon" href="/dss/images/favicon.png" type="image/x-icon" />
 <link href="/dss/css/font-awesome.min.css" rel="stylesheet">
@@ -145,7 +145,7 @@
       <li data-nav-id="/dss/sc-examples/004filters/" class="dd-item">
         <div>
           <a href="/dss/sc-examples/004filters/">
-            Filters
+            Filters DSP
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -188,6 +188,13 @@
         <div>
           <a href="/dss/sc-examples/010events/">
             Sound/Musical Events
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/011octaveguide/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/011octaveguide/">
+            DSP Octave and Faust
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -257,71 +264,101 @@
     
     
     
-    <h3 id="chapter-1">chapter 1</h3>
-
-<h4 id="notation">Notation</h4>
-
-<p><strong>MIDI</strong></p>
-
-<p>The lowest note musicians use is C-1, which has the MIDI number 0. The
+    
+<h4 id="headline-1">
+chapter 1
+</h4>
+<h5 id="headline-2">
+Notation
+</h5>
+<p>
+<strong>MIDI</strong>
+</p>
+<p>
+The lowest note musicians use is C-1, which has the MIDI number 0. The
 number 12 = C0, 24 = C1, 36 = C2, 48 = C3, 60 = C4 (which is middle C
 on the piano, remember this one), and so on. A 440 is above middle C
-so it is 69.</p>
-
-<p>60, 62, 63, 60, 66</p>
-
-<p><strong>Frequencies</strong></p>
-
-<p>It is the number of cycles (per second) of a periodic wave.</p>
-
-<p><strong>Stay inside this range: (20-20000Hz)</strong></p>
-
-<p>261.62, 293.66, 311.13, 261.62, 370;</p>
-
-<p><strong>Hexadecimal</strong></p>
-
-<p>16 symbols</p>
-
-<p>(0-9, A-F)</p>
-
-<p>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F</p>
-
-<p>0000003C, 0000003E, 0000003F, 0000003C, 00000042</p>
-
-<p><strong>Binary</strong></p>
-
-<p>00111100, 00111110, 00111111, 00111100 01000010</p>
-
-<p><strong>Pitch class method</strong></p>
-
-<p>C4, D4, Eb4, C4, F#4</p>
-
-<p>There are many software that can produce western style notation such
+so it is 69.
+</p>
+<p>
+60, 62, 63, 60, 66
+</p>
+<p>
+<strong>Frequencies</strong>
+</p>
+<p>
+It is the number of cycles (per second) of a periodic wave.
+</p>
+<p>
+<strong>Stay inside this range: (20-20000Hz)</strong>
+</p>
+<p>
+261.62, 293.66, 311.13, 261.62, 370;
+</p>
+<p>
+<strong>Hexadecimal</strong>
+</p>
+<p>
+16 symbols
+</p>
+<p>
+(0-9, A-F)
+</p>
+<p>
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+</p>
+<p>
+0000003C, 0000003E, 0000003F, 0000003C, 00000042
+</p>
+<p>
+<strong>Binary</strong>
+</p>
+<p>
+00111100, 00111110, 00111111, 00111100 01000010
+</p>
+<p>
+<strong>Pitch class method</strong>
+</p>
+<p>
+ C4, D4, Eb4, C4, F#4
+</p>
+<p>
+There are many software that can produce western style notation such
 as <em>Lilypond</em>, <em>Score</em>, <em>Finale</em> etc. There is also programms such as the <em>Common
-Music Notation</em> which use programming languages such as <code>lisp</code> to create
-notation.</p>
-
-<p><strong><a href="https://ccrma.stanford.edu/software/cmn/cmn/cmn.html" title="Common Music Notation">Common Music Notation</a></strong></p>
-
-<p>Except of western style notation there are other ways to express
+Music Notation</em> which use programming languages such as <code class="verbatim">lisp</code> to create
+notation.
+</p>
+<p>
+<strong><a href="https://ccrma.stanford.edu/software/cmn/cmn/cmn.html">Common Music Notation</a></strong>
+</p>
+<p>
+Except of western style notation there are other ways to express
 sounds and music. Below you can watch some examples of graphic
-notations such as Xenakis Metastaseis as well as Wehinger's notation
-for Ligeti's Artikulation.</p>
-
-<p><strong>Graphic notation</strong></p>
-
-<p><strong>Xenakis Metastaseis</strong></p>
-
-<p><p><iframe width="560" height="315" src="https://www.youtube.com/embed/SZazYFchLRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p>
-
-<p><strong>Rainer Wehinger</strong></p>
-
-<p><p><iframe width="560" height="315" src="https://www.youtube.com/embed/71hNl_skTZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p>
-
-<p>There are applications such as <a href="https://www.iannix.org/en/" title="IanniX">IanniX</a> in which people can create
-symbolic visualisations for sound composition and more.</p>
-
-<p><a href="https://www.iannix.org/en/research/" title="IanniX papers">IanniX papers</a></p>
+notations such as Xenakis Metastaseis as well as Wehinger&#39;s notation
+for Ligeti&#39;s Artikulation.
+</p>
+<p>
+<strong>Graphic notation</strong>
+</p>
+<p>
+<strong>Xenakis Metastaseis</strong>
+</p>
+<p>
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/SZazYFchLRI">https://www.youtube.com/embed/SZazYFchLRI</a>&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</p>
+<p>
+<strong>Rainer Wehinger</strong>
+</p>
+<p>
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/71hNl_skTZQ">https://www.youtube.com/embed/71hNl_skTZQ</a>&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</p>
+<p>
+There are applications such as <a href="https://www.iannix.org/en/">IanniX</a> in which people can create
+symbolic visualisations for sound composition and more. 
+</p>
+<p>
+<a href="https://www.iannix.org/en/research/">IanniX papers</a>
+</p>
 
 
     

@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.45.1" />
+<meta name="generator" content="Hugo 0.69.2" />
 <title>Κλίμακες και Χορδίσματα :: Ψηφιακή Σύνθεση Ήχου</title>
 <link rel="shortcut icon" href="/dss/images/favicon.png" type="image/x-icon" />
 <link href="/dss/css/font-awesome.min.css" rel="stylesheet">
@@ -145,7 +145,7 @@
       <li data-nav-id="/dss/sc-examples/004filters/" class="dd-item">
         <div>
           <a href="/dss/sc-examples/004filters/">
-            Filters
+            Filters DSP
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -188,6 +188,13 @@
         <div>
           <a href="/dss/sc-examples/010events/">
             Sound/Musical Events
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/011octaveguide/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/011octaveguide/">
+            DSP Octave and Faust
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -257,41 +264,60 @@
     
     
     
-    <h3 id="chapter-1">chapter 1</h3>
-
-<h1 id="scales">Scales</h1>
-
-<p><strong>Circle of fiths</strong> is the relationship among the 12 tones of the chromatic scale, their
+    
+<h4 id="headline-1">
+chapter 1
+</h4>
+<h2 id="headline-2">
+Scales
+</h2>
+<p>
+<strong>Circle of fiths</strong> is the relationship among the 12 tones of the chromatic scale, their
 corresponding key signatures, and the associated major and minor
-keys.</p>
-
-<p><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle_of_fifths_deluxe_4.svg/400px-Circle_of_fifths_deluxe_4.svg.png" title="Circles of Fifths">Circles of Fifths</a></p>
-
-<p><p><iframe width="900" height="720" src="https://i2.wp.com/joedubs.com/wp-content/uploads/2016/04/Major-Scales-on-Circle-of-Fifths.gif?fit=900%2C707&ssl=1" frameborder="1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p>
-
-<p><strong>Other Tunings and Scales</strong></p>
-
+keys.
+</p>
+<p>
+<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Circle_of_fifths_deluxe_4.svg/400px-Circle_of_fifths_deluxe_4.svg.png">Circles of Fifths</a>
+</p>
+<p>
+&lt;p&gt;&lt;iframe width=&#34;900&#34; height=&#34;720&#34; src=&#34;<a href="https://i2.wp.com/joedubs.com/wp-content/uploads/2016/04/Major-Scales-on-Circle-of-Fifths.gif?fit=900">https://i2.wp.com/joedubs.com/wp-content/uploads/2016/04/Major-Scales-on-Circle-of-Fifths.gif?fit=900</a>%2C707&amp;ssl=1&#34; frameborder=&#34;1&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</p>
+<p>
+<strong>Other Tunings and Scales</strong>
+</p>
 <ul>
-<li>Intervals (διαστήματα)</li>
+<li>
+<p>
+Intervals (διαστήματα)
+</p>
+</li>
 </ul>
-
-<p><strong>Pythagorian set</strong></p>
-
-<p><em>Τα σφυριά του Πυθαγόρα</em> περιέχουν μια σειρά απο τόνικότητες που σχετίζονται μεταξύ τους. Σε
+<p>
+<strong>Pythagorian set</strong>
+</p>
+<p>
+<em>Τα σφυριά του Πυθαγόρα</em> περιέχουν μια σειρά απο τόνικότητες που σχετίζονται μεταξύ τους. Σε
 αυτή τη σειρά κυριαρχούν οι οκτάβες (2/1), οι
 πέμπτες (3/2) και οι τέταρτες (4/3). Η πέμπτη και η τέταρτη αν
 πολλαπλασιαστούν μεταξύ τους θα φτιάξουν την οκτάβα (3/2*4/3=2/1), και αν
-διαιρεθούν ((3/2)/(4/3)=9/8) τον <em>τόνο</em> (9/8).</p>
-
-<p><strong>Visualisation of a signal</strong></p>
-
-<p>see more here:</p>
-
-<p><a href="https://www.vhplab.net/IMG/pdf/harmonograph_-_a_visual_guide_to_the_mathematics_of_music.pdf" title="Harmonograph-A Visual Guide to The Mathematics of Music">Harmonograph-A Visual Guide to The Mathematics of Music</a></p>
-
-<p>and here:</p>
-
-<p><a href="https://en.wikipedia.org/wiki/Lissajous_curve" title="Lissajous curve">Lissajous curve</a></p>
+διαιρεθούν ((3/2)/(4/3)=9/8) τον <em>τόνο</em> (9/8).
+</p>
+<p>
+<strong>Visualisation of a signal</strong>
+</p>
+<p>
+see more here:
+</p>
+<p>
+<a href="https://www.vhplab.net/IMG/pdf/harmonograph_-_a_visual_guide_to_the_mathematics_of_music.pdf">Harmonograph-A Visual Guide to The Mathematics of Music</a>
+</p>
+<p>
+and here:
+</p>
+<p>
+<a href="https://en.wikipedia.org/wiki/Lissajous_curve">Lissajous curve</a>
+</p>
+<div class="src src-js">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// =====================================================================
 </span><span style="color:#75715e">// SuperCollider Workspace
 </span><span style="color:#75715e">// =====================================================================
@@ -306,8 +332,8 @@ keys.</p>
 </span><span style="color:#75715e">*/</span>
 
 <span style="color:#75715e">//440 = A (La)
-</span><span style="color:#75715e"></span>{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">81</span><span style="color:#960050;background-color:#1e0010">/64, 440*3/2])}.scope // pythagorean tuning: see leimma halftone of 256/243 between its major third (81/64) and the perfect fourth (4/3) as well as between major seventh and the dominant.</span>
- <span style="color:#75715e">// C major scale halftones (E to F and B to C)
+</span><span style="color:#75715e"></span>{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">81</span><span style="color:#f92672">/</span><span style="color:#ae81ff">64</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">3</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>])}.<span style="color:#a6e22e">scope</span> <span style="color:#75715e">// pythagorean tuning: see leimma halftone of 256/243 between its major third (81/64) and the perfect fourth (4/3) as well as between major seventh and the dominant.
+</span><span style="color:#75715e"></span> <span style="color:#75715e">// C major scale halftones (E to F and B to C)
 </span><span style="color:#75715e">// C to Ab = 261.6 * 8/5 (8:5 minor sixth) = 418.56
 </span><span style="color:#75715e">// C to G# = 261.6 * 5/4 * 5/4 (2 major thirds) = 408.75
 </span><span style="color:#75715e">//The point is, A-flat and G-sharp are different pitches.
@@ -317,26 +343,30 @@ keys.</p>
 </span><span style="color:#75715e"></span>
 <span style="color:#75715e">// A chord with 3 voices in diatonic tuning (1, 3, 5)
 </span><span style="color:#75715e"></span>
-{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">5</span><span style="color:#960050;background-color:#1e0010">/4, 440*3/2])}.scope // (1,3M,5) Diatonic tuning</span>
+{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">5</span><span style="color:#f92672">/</span><span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">3</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>])}.<span style="color:#a6e22e">scope</span> <span style="color:#75715e">// (1,3M,5) Diatonic tuning
+</span><span style="color:#75715e"></span>
 
-
-{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">6</span><span style="color:#960050;background-color:#1e0010">/5, 440*3/2])}.play // (1,3m,5) Minor third diatoniic</span>
-
-{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">5</span><span style="color:#e6db74">/3])}.scope /</span><span style="color:#960050;background-color:#1e0010">/ magor sixth</span>
-
-<span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/1-&gt;unison</span>
-<span style="color:#ae81ff">2</span><span style="color:#960050;background-color:#1e0010">/1-&gt;octave</span>
-<span style="color:#ae81ff">3</span><span style="color:#960050;background-color:#1e0010">/2-&gt;perfect fifth</span>
-<span style="color:#ae81ff">4</span><span style="color:#960050;background-color:#1e0010">/3-&gt;perfect fourth</span>
-<span style="color:#ae81ff">5</span><span style="color:#960050;background-color:#1e0010">/4-&gt;major third diatonic</span>
-<span style="color:#ae81ff">5</span><span style="color:#960050;background-color:#1e0010">/3-&gt;major sixth diatonic</span>
-<span style="color:#ae81ff">6</span><span style="color:#960050;background-color:#1e0010">/5-&gt;minor third diatonic</span>
-<span style="color:#ae81ff">9</span><span style="color:#960050;background-color:#1e0010">/8-&gt;tone</span>
-<span style="color:#ae81ff">15</span><span style="color:#960050;background-color:#1e0010">/8-&gt;diatonic seventh</span>
-<span style="color:#ae81ff">16</span><span style="color:#960050;background-color:#1e0010">/15-&gt;semitone</span>
-<span style="color:#ae81ff">81</span><span style="color:#960050;background-color:#1e0010">/64-&gt;major third pythagorean</span>
+{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">6</span><span style="color:#f92672">/</span><span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">3</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>])}.<span style="color:#a6e22e">play</span> <span style="color:#75715e">// (1,3m,5) Minor third diatoniic
+</span><span style="color:#75715e"></span>
+{<span style="color:#a6e22e">SinOsc</span>.<span style="color:#a6e22e">ar</span>([<span style="color:#ae81ff">440</span>, <span style="color:#ae81ff">440</span><span style="color:#f92672">*</span><span style="color:#ae81ff">5</span><span style="color:#f92672">/</span><span style="color:#ae81ff">3</span>])}.<span style="color:#a6e22e">scope</span> <span style="color:#75715e">// magor sixth
+</span><span style="color:#75715e"></span>
+<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">unison</span>
+<span style="color:#ae81ff">2</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">octave</span>
+<span style="color:#ae81ff">3</span><span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">perfect</span> <span style="color:#a6e22e">fifth</span>
+<span style="color:#ae81ff">4</span><span style="color:#f92672">/</span><span style="color:#ae81ff">3</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">perfect</span> <span style="color:#a6e22e">fourth</span>
+<span style="color:#ae81ff">5</span><span style="color:#f92672">/</span><span style="color:#ae81ff">4</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">major</span> <span style="color:#a6e22e">third</span> <span style="color:#a6e22e">diatonic</span>
+<span style="color:#ae81ff">5</span><span style="color:#f92672">/</span><span style="color:#ae81ff">3</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">major</span> <span style="color:#a6e22e">sixth</span> <span style="color:#a6e22e">diatonic</span>
+<span style="color:#ae81ff">6</span><span style="color:#f92672">/</span><span style="color:#ae81ff">5</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">minor</span> <span style="color:#a6e22e">third</span> <span style="color:#a6e22e">diatonic</span>
+<span style="color:#ae81ff">9</span><span style="color:#f92672">/</span><span style="color:#ae81ff">8</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">tone</span>
+<span style="color:#ae81ff">15</span><span style="color:#f92672">/</span><span style="color:#ae81ff">8</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">diatonic</span> <span style="color:#a6e22e">seventh</span>
+<span style="color:#ae81ff">16</span><span style="color:#f92672">/</span><span style="color:#ae81ff">15</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">semitone</span>
+<span style="color:#ae81ff">81</span><span style="color:#f92672">/</span><span style="color:#ae81ff">64</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">major</span> <span style="color:#a6e22e">third</span> <span style="color:#a6e22e">pythagorean</span>
 </code></pre></div>
-<p><strong>Scales in SuperCollider</strong></p>
+</div>
+<p>
+<strong>Scales in SuperCollider</strong>
+</p>
+<div class="src src-js">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">(
 <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">aeolian</span>;
 <span style="color:#a6e22e">a</span>.<span style="color:#a6e22e">degrees</span>;              <span style="color:#75715e">// [ 0, 2, 4, 5, 7, 9, 11 ]
@@ -737,7 +767,11 @@ keys.</p>
 <span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>, <span style="color:#a6e22e">a</span>, <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 )
 </code></pre></div>
-<p><strong>Tunings</strong></p>
+</div>
+<p>
+<strong>Tunings</strong>
+</p>
+<div class="src src-js">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// =====================================================================
 </span><span style="color:#75715e">// SuperCollider Workspace
 </span><span style="color:#75715e">// =====================================================================
@@ -764,10 +798,12 @@ keys.</p>
 
 <span style="color:#75715e">//Create new Tuning
 </span><span style="color:#75715e"></span>
-<span style="color:#f92672">~</span><span style="color:#a6e22e">tuningGr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tuning</span>.<span style="color:#66d9ef">new</span>((<span style="color:#ae81ff">0..11</span>).<span style="color:#a6e22e">collect</span>(<span style="color:#a6e22e">_</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">2.61803398875</span> <span style="color:#f92672">**</span> (<span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">/12))), 2.061803398875, &#34;GlodenRatio ET12&#34;);</span>
+<span style="color:#f92672">~</span><span style="color:#a6e22e">tuningGr</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Tuning</span>.<span style="color:#66d9ef">new</span>((<span style="color:#ae81ff">0..11</span>).<span style="color:#a6e22e">collect</span>(<span style="color:#a6e22e">_</span> <span style="color:#f92672">*</span> (<span style="color:#ae81ff">2.61803398875</span> <span style="color:#f92672">**</span> (<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">12</span>))), <span style="color:#ae81ff">2.061803398875</span>, <span style="color:#e6db74">&#34;GlodenRatio ET12&#34;</span>);
 
 <span style="color:#a6e22e">Pbind</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">scale</span>,  <span style="color:#a6e22e">Scale</span>.<span style="color:#a6e22e">major</span>(<span style="color:#f92672">~</span><span style="color:#a6e22e">tuningGr</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">degree</span>, <span style="color:#a6e22e">Pseq</span>((<span style="color:#ae81ff">0..7</span>) <span style="color:#f92672">++</span> (<span style="color:#ae81ff">6..0</span>) <span style="color:#f92672">++</span> [<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">rest</span>], <span style="color:#ae81ff">1</span>), <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#a6e22e">dur</span>, <span style="color:#ae81ff">0.25</span>).<span style="color:#a6e22e">play</span>;
 </code></pre></div>
+</div>
+
 
     
     

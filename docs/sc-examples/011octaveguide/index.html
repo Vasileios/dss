@@ -6,7 +6,7 @@
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="generator" content="Hugo 0.69.2" />
-<title>Noise :: Ψηφιακή Σύνθεση Ήχου</title>
+<title>DSP Octave and Faust :: Ψηφιακή Σύνθεση Ήχου</title>
 <link rel="shortcut icon" href="/dss/images/favicon.png" type="image/x-icon" />
 <link href="/dss/css/font-awesome.min.css" rel="stylesheet">
 <link href="/dss/css/nucleus.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 </script>
     
   </head>
-  <body data-url="/dss/sc-examples/003aperiodicsources/">
+  <body data-url="/dss/sc-examples/011octaveguide/">
     
       <header>
   <div class="logo">
@@ -135,7 +135,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/dss/sc-examples/003aperiodicsources/" class="dd-item active">
+      <li data-nav-id="/dss/sc-examples/003aperiodicsources/" class="dd-item">
         <div>
           <a href="/dss/sc-examples/003aperiodicsources/">
             Noise
@@ -191,7 +191,7 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
-      <li data-nav-id="/dss/sc-examples/011octaveguide/" class="dd-item">
+      <li data-nav-id="/dss/sc-examples/011octaveguide/" class="dd-item active">
         <div>
           <a href="/dss/sc-examples/011octaveguide/">
             DSP Octave and Faust
@@ -232,7 +232,7 @@
    Εργαστήριο</option> 
       <option value="/dss/sc-examples/001supercollider/" >- SuperCollider</option>
       <option value="/dss/sc-examples/002oscillators/" >- Oscillators</option>
-      <option value="/dss/sc-examples/003aperiodicsources/"  selected>- Noise</option>
+      <option value="/dss/sc-examples/003aperiodicsources/" >- Noise</option>
       <option value="/dss/sc-examples/004filters/" >- Filters DSP</option>
       <option value="/dss/sc-examples/005distortion/" >- Distortion</option>
       <option value="/dss/sc-examples/006delays/" >- Delays</option>
@@ -240,7 +240,7 @@
       <option value="/dss/sc-examples/008granularsynthesis/" >- Granular Synthesis</option>
       <option value="/dss/sc-examples/009synthesistec/" >- Sound synthesis techniques</option>
       <option value="/dss/sc-examples/010events/" >- Sound/Musical Events</option>
-      <option value="/dss/sc-examples/011octaveguide/" >- DSP Octave and Faust</option>
+      <option value="/dss/sc-examples/011octaveguide/"  selected>- DSP Octave and Faust</option>
   
 
 
@@ -264,58 +264,186 @@
       </div>
     
 
-    <h1>Noise</h1>
+    <h1>DSP Octave and Faust</h1>
     
     
     
-    
-<h4 id="headline-1">
+    <h4 id="headline-1">
 chapter 2
 </h4>
 <h5 id="headline-2">
-SuperCollider Noise Generators
+Octave
 </h5>
 <p>
-<strong>Aperiodic Sources: Noise</strong>
+<strong>Octave</strong> is a math tool like matlab under GNU.
 </p>
-<div class="src src-js">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#960050;background-color:#1e0010">/Aperiodic Sources: Noise.</span>
-<span style="color:#75715e">//LF &#34;Low Frequency&#34; Noise Generators.
-</span><span style="color:#75715e">//arguments: frequency, mul, add
-</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">LFClipNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">MouseX</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">10000</span>, <span style="color:#ae81ff">1</span>), <span style="color:#ae81ff">0.125</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
-{ <span style="color:#a6e22e">LFPar</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">LFClipNoise</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#a6e22e">MouseX</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">0.5</span>, <span style="color:#ae81ff">64</span>, <span style="color:#ae81ff">1</span>), <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">400</span>), <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8</span>);
+<p>
+It is used in making calculations as well as in developing and testing
+algorithms such as digital signal processing algorithms.
+</p>
+<h3 id="headline-3">
+Installation Guide
+</h3>
+<h3 id="headline-4">
+Mac OS Guide
+</h3>
+<p>
+You can install octave using <code class="verbatim">brew</code>
+</p>
+<p>
+First Install brew from <a href="https://brew.sh/">here</a>
+</p>
+<p>
+After you&#39;ve installed brew open terminal and type the below command:
+</p>
+<pre class="example">
+brew upgrade &amp;&amp; update
+</pre>
+<h3 id="headline-5">
+Install Octave
+</h3>
+<p>
+Then you can easily install octave using the below command
+</p>
+<pre class="example">
+brew install octave
+</pre>
+<p>
+<strong>That&#39;s it!</strong>
+</p>
+<p>
+You can type now <code class="verbatim">octave</code> on your terminal to run octave.
+</p>
+<h3 id="headline-6">
+Emacs org-mode octave
+</h3>
+<p>
+For emacs users you can run octave examples using org-mode code blocks.
+</p>
+<p>
+First install <code class="verbatim">ac-octave</code> using MELPA
+</p>
+<p>
+Then insert the below code in your init emacs file
+</p>
+<pre class="example">
+;Octave e-lisp
 
-<span style="color:#75715e">//Broad Spectrum Noise Generators
-</span><span style="color:#75715e">//arguments: mul, add
-</span><span style="color:#75715e"></span>{ <span style="color:#a6e22e">ClipNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
-{ <span style="color:#a6e22e">WhiteNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
-{ <span style="color:#a6e22e">PinkNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.4</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
-{ <span style="color:#a6e22e">BrownNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
-{ <span style="color:#a6e22e">GrayNoise</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#ae81ff">0.2</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
+(require &#39;ac-octave)
 
-<span style="color:#75715e">// Impulse Noise Generators
-</span><span style="color:#75715e">//Dust, Dust2
-</span><span style="color:#75715e">//arguments: density, mul, add
-</span><span style="color:#75715e"></span>
-{ <span style="color:#a6e22e">Dust</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">MouseX</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">10000</span>,<span style="color:#ae81ff">1</span>), <span style="color:#ae81ff">0.4</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>, <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span><span style="color:#ae81ff">4</span>);
-
-<span style="color:#75715e">//etc
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">//Chaotic Noise Generators
-</span><span style="color:#75715e">//Crackle
-</span><span style="color:#75715e">//arguments: chaosParam, mul, add
-</span><span style="color:#75715e"></span>
-{ <span style="color:#a6e22e">Crackle</span>.<span style="color:#a6e22e">ar</span>(<span style="color:#a6e22e">MouseX</span>.<span style="color:#a6e22e">kr</span>(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>), <span style="color:#ae81ff">0.5</span>) }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
-</code></pre></div>
+(add-hook &#39;octave-mode-hook
+          &#39;(lambda () (ac-octave-setup)))
+</pre>
+<p>
+Restart emacs and test octave
+</p>
+<h3 id="headline-7">
+Simple Example 01
+</h3>
+<div class="src src-octave">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave"><span style="color:#75715e">#Example 01</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>G=<span style="color:#ae81ff">1</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>H=<span style="color:#ae81ff">5</span><span style="color:#f92672">*</span><span style="color:#ae81ff">2</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>G<span style="color:#f92672">*</span>H<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">#print the values</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>printf(<span style="color:#e6db74">&#34;The G value is %d\n&#34;</span>, G);<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>printf(<span style="color:#e6db74">&#34;The H value is %d\n&#34;</span>, H);<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">#another way to print</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">#disp([&#34;The A value is &#34;, num2str(A)]);</span></code></pre></div>
 </div>
+<p>
+Results:
+</p>
+<pre class="example">
+20
+</pre>
+<p>
+<strong>More Examples</strong>
+</p>
+<h3 id="headline-8">
+Simple Example 02
+</h3>
+<div class="src src-octave">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave"><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>A=[<span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span>];<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>B=[<span style="color:#ae81ff">5</span> <span style="color:#ae81ff">4</span> <span style="color:#ae81ff">3</span>];<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>A<span style="color:#f92672">+</span>B<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">%etc%</span></code></pre></div>
+</div>
+<p>
+Results:
+</p>
+<table>
+<tbody>
+<tr>
+<td class="align-right">6</td>
+<td class="align-right">6</td>
+<td class="align-right">6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="headline-9">
+Creating scripts for octave
+</h3>
+<p>
+You can create script files with octave code and the extension .m
+Then you can  run them using their name.
+</p>
+<p>
+example: testOctave.m
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#sh example</span>
+testOctave</code></pre></div>
+</div>
+<h3 id="headline-10">
+Example of sine wave plot
+</h3>
+<div class="src src-octave">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave">hf = figure ();<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>axis ([<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">20</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>]);<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>x = <span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">0.01</span>:<span style="color:#ae81ff">20</span>;<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>plot (x, sin (x));<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>xlabel (<span style="color:#e6db74">&#34;ts&#34;</span>);<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>ylabel (<span style="color:#e6db74">&#34;mag&#34;</span>);<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>title (<span style="color:#e6db74">&#34;sine wave&#34;</span>);<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>print (hf, <span style="color:#e6db74">&#34;./plots/plotSineWave3.pdf&#34;</span>, <span style="color:#e6db74">&#34;-dpdflatexstandalone&#34;</span>);<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>system (<span style="color:#e6db74">&#34;pdflatex ./plots/plotSineWave3&#34;</span>);</code></pre></div>
+</div>
+<h4 id="headline-11">
+Εικόνα 1
+</h4>
+<ul>
+<li>
+<p>
+Sine wave plot
+</p>
+</li>
+</ul>
+<p>
+<img src="./plots/plotSineWave2.png" alt="./plots/plotSineWave2.png" title="./plots/plotSineWave2.png" />
+</p>
+<p>
+Beginners tutorial <a href="http://www-mdp.eng.cam.ac.uk/web/CD/engapps/octave/octavetut.pdf">here</a>
+</p>
+<h5 id="headline-12">
+Faust
+</h5>
+<p>
+Faust is a functional programming language for sound synthesis and
+audio processing with a strong focus on the design of synthesizers,
+musical instruments, audio effects, etc(
+<a href="https://faust.grame.fr/">faust</a>)
+</p>
 
 
     
     
         <div class="chevrons">
     <div id="navigation">
-<a class="nav nav-prev" href="/dss/sc-examples/002oscillators/" title="Oscillators"> <i class="fa fa-chevron-left"></i><label>Oscillators</label></a>
-    <a class="nav nav-next" href="/dss/sc-examples/004filters/" title="Filters DSP" style="margin-right: 0px;"><label>Filters DSP</label><i class="fa fa-chevron-right"></i></a></div>
+<a class="nav nav-prev" href="/dss/sc-examples/010events/" title="Sound/Musical Events"> <i class="fa fa-chevron-left"></i><label>Sound/Musical Events</label></a>
+    <a class="nav nav-next" href="/dss/sc-examples/001supercollider/" title="SuperCollider" style="margin-right: 0px;"><label>SuperCollider</label><i class="fa fa-chevron-right"></i></a></div>
   </div>
 
   </section>
@@ -331,7 +459,7 @@ SuperCollider Noise Generators
   
 
     <div class="github-link">
-      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/SC-Examples/003AperiodicSources.el.org" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/SC-Examples/011OctaveGuide.el.org" target="blank"><i class="fa fa-code-fork"></i>
         </a>
     </div>
   </div>

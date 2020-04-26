@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.45.1" />
+<meta name="generator" content="Hugo 0.69.2" />
 <title>Spectral :: Ψηφιακή Σύνθεση Ήχου</title>
 <link rel="shortcut icon" href="/dss/images/favicon.png" type="image/x-icon" />
 <link href="/dss/css/font-awesome.min.css" rel="stylesheet">
@@ -145,7 +145,7 @@
       <li data-nav-id="/dss/sc-examples/004filters/" class="dd-item">
         <div>
           <a href="/dss/sc-examples/004filters/">
-            Filters
+            Filters DSP
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -191,6 +191,13 @@
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
+      <li data-nav-id="/dss/sc-examples/011octaveguide/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/011octaveguide/">
+            DSP Octave and Faust
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
         </ul>
     </li>
 
@@ -226,13 +233,14 @@
       <option value="/dss/sc-examples/001supercollider/" >- SuperCollider</option>
       <option value="/dss/sc-examples/002oscillators/" >- Oscillators</option>
       <option value="/dss/sc-examples/003aperiodicsources/" >- Noise</option>
-      <option value="/dss/sc-examples/004filters/" >- Filters</option>
+      <option value="/dss/sc-examples/004filters/" >- Filters DSP</option>
       <option value="/dss/sc-examples/005distortion/" >- Distortion</option>
       <option value="/dss/sc-examples/006delays/" >- Delays</option>
       <option value="/dss/sc-examples/007spectral/"  selected>- Spectral</option>
       <option value="/dss/sc-examples/008granularsynthesis/" >- Granular Synthesis</option>
       <option value="/dss/sc-examples/009synthesistec/" >- Sound synthesis techniques</option>
       <option value="/dss/sc-examples/010events/" >- Sound/Musical Events</option>
+      <option value="/dss/sc-examples/011octaveguide/" >- DSP Octave and Faust</option>
   
 
 
@@ -260,14 +268,21 @@
     
     
     
-    <h3 id="chapter-2">chapter 2</h3>
-
-<h4 id="supercollider-spectral">SuperCollider Spectral</h4>
-
-<p><strong>FFT-PV_Ugens</strong></p>
-
-<p>FFT, IFFT and the phase vocoder ugens.
-FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a trigger each time the buffer is ready to process. The PV UGens process the spectrum when they receive the trigger. IFFT converts the spectrum back into sound.</p>
+    
+<h4 id="headline-1">
+chapter 2
+</h4>
+<h5 id="headline-2">
+SuperCollider Spectral
+</h5>
+<p>
+<strong>FFT-PV_Ugens</strong>
+</p>
+<p>
+FFT, IFFT and the phase vocoder ugens.
+FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a trigger each time the buffer is ready to process. The PV UGens process the spectrum when they receive the trigger. IFFT converts the spectrum back into sound.
+</p>
+<div class="src src-js">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">// alloc a buffer for the FFT
 </span><span style="color:#75715e"></span><span style="color:#a6e22e">b</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">Buffer</span>.<span style="color:#a6e22e">alloc</span>(<span style="color:#a6e22e">s</span>,<span style="color:#ae81ff">2048</span>,<span style="color:#ae81ff">1</span>);
 <span style="color:#75715e">// read a sound
@@ -351,6 +366,8 @@ FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a tri
 }.<span style="color:#a6e22e">scope</span>(<span style="color:#ae81ff">1</span>);
 )
 </code></pre></div>
+</div>
+
 
     
     

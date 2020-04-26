@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.45.1" />
+<meta name="generator" content="Hugo 0.69.2" />
 <title>Ιστορία :: Ψηφιακή Σύνθεση Ήχου</title>
 <link rel="shortcut icon" href="/dss/images/favicon.png" type="image/x-icon" />
 <link href="/dss/css/font-awesome.min.css" rel="stylesheet">
@@ -145,7 +145,7 @@
       <li data-nav-id="/dss/sc-examples/004filters/" class="dd-item">
         <div>
           <a href="/dss/sc-examples/004filters/">
-            Filters
+            Filters DSP
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -188,6 +188,13 @@
         <div>
           <a href="/dss/sc-examples/010events/">
             Sound/Musical Events
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/011octaveguide/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/011octaveguide/">
+            DSP Octave and Faust
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -257,95 +264,121 @@
     
     
     
-    <h3 id="chapter-1">chapter 1</h3>
-
-<h1 id="ψηφιακή-σύνθεση-ήχου">Ψηφιακή σύνθεση Ήχου</h1>
-
-<h2 id="ιστορια">Ιστορια</h2>
-
-<p>Synthesis techniques and programming.</p>
-
-<p>Κατά τη διάρκεια του περασμένου αιώνα, η ηλεκτρική ενέργεια διαπέρασε
+    
+<h4 id="headline-1">
+chapter 1
+</h4>
+<h2 id="headline-2">
+Ψηφιακή σύνθεση Ήχου
+</h2>
+<h3 id="headline-3">
+Ιστορια
+</h3>
+<p>
+Synthesis techniques and programming.
+</p>
+<p>
+Κατά τη διάρκεια του περασμένου αιώνα, η ηλεκτρική ενέργεια διαπέρασε
 σταδιακά τον κόσμο του ήχου. Η μουσική πλέον
 ακούγεται τώρα μέσω των ηχείων. Αλλά, πέρα από την αναπαραγωγή, η ηλεκτρική τεχνολογία επίσης
-έφερε ριζικά νέους πόρους για την παραγωγή νέων ήχων και μουσικής.</p>
-
-<p>Χρειάστηκε αρκετός χρόνος για τον μουσικό κόσμο να συνειδητοποιήσει
+έφερε ριζικά νέους πόρους για την παραγωγή νέων ήχων και μουσικής.
+</p>
+<p>
+Χρειάστηκε αρκετός χρόνος για τον μουσικό κόσμο να συνειδητοποιήσει
 τις δυνατότητες αυτών των πόρων. Ακόμη, για πολλά χρόνια, ο Edgard
 Varese προσπάθησε να πείσει τους ερευνητές και τα ιδρύματα να δούν τα
 πλεονέκτημα που προσφέρει η επιστήμη και η τεχνολογία για την ανάπτυξη
 μηχανών παραγωγής ήχου - μόνο στο τέλος της ζωής του ήταν σε θέση να
 συνθέσει μουσική με τη χρήση μαγνητοταινίας (tape music and music
 concrete) και έτσι να κάνει τα πρώτα βήματα της
-μουσικής με υπολογιστή (Computer Music).</p>
-
-<p><em>Electronic Music - Music Concrete</em></p>
-
-<p><p><iframe width="560" height="315" src="https://www.youtube.com/embed/c4ea0sBrw6M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p>
-
-<p><em>Edgard Varese</em></p>
-
-<p><p><iframe width="560" height="315" src="https://www.youtube.com/embed/WQKyYmU2tPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p>
-
-<p>Ο <strong>Γιάννης Ξενάκης</strong> χρησιμοποίησε τις δυνατότητες του υπολογιστή για
+μουσικής με υπολογιστή (Computer Music).
+</p>
+<p>
+<em>Electronic Music - Music Concrete</em>
+</p>
+<p>
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/c4ea0sBrw6M">https://www.youtube.com/embed/c4ea0sBrw6M</a>&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</p>
+<p>
+<em>Edgard Varese</em>
+</p>
+<p>
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/WQKyYmU2tPg">https://www.youtube.com/embed/WQKyYmU2tPg</a>&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</p>
+<p>
+Ο <strong>Γιάννης Ξενάκης</strong> χρησιμοποίησε τις δυνατότητες του υπολογιστή για
 αρκετές από τις συνθέσεις του και ο <strong>Pierre Boulez</strong> ξεκίνησε το <em>IRCAM</em>,
 ένα ινστιτούτο αφιερωμένο στη μουσική έρευνα και τη δημιουργία και η
 οποία χρησιμοποιεί ως επί το πλείστον ψηφιακά εργαλεία. Η ποπ μουσική
 δεν θα μπορούσε ποτέ να εξελιχθεί χωρίς τον ηλεκτρονικό εξοπλισμό και
 τα διάφορα μουσικά σχήμάτα δε θα μπορούσαν να ανάπτυξουν το δικό του
-'ήχο'. Όλα αυτά περιλαμβάνονται στην έρευνα για τον ηχητικό
-σχεδιασμό.</p>
-
-<p><em><a href="http://brahms.ircam.fr/iannis-xenakis" title="Iannis Xenakis">Iannis Xenakis</a></em></p>
-
-<p>(French)</p>
-
-<p><p>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/0FI89alUpto" frameborder="0"
-allow="accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture" allowfullscreen></iframe>
-</p></p>
-
-<p>(English)</p>
-
-<p><p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j4nj2nklbts" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p></p>
-
-<p><em><a href="https://books.google.gr/books?id=4a4wDwAAQBAJ&amp;pg=PA88&amp;lpg=PA88&amp;dq=xenakis+ircam&amp;source=bl&amp;ots=eIj9V1WwHc&amp;sig=ACfU3U0nYCoT_xbip3J73c4KWrFPQ9Aw-Q&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwjbv4vfj6jhAhXJb5oKHWrnCSUQ6AEwEHoECAYQAQ#v=onepage&amp;q=xenakis%2520ircam&amp;f=false" title="Pierre Boulez">Pierre Boulez</a></em></p>
-
-<p><p><iframe width="560" height="315"
-src="https://www.youtube.com/embed/ie5Ore2rjhk" frameborder="0"
-allow="accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture" allowfullscreen></iframe></p></p>
-
-<p><em><a href="https://ccrma.stanford.edu/blogs/ruviaro/lork-digression-1-what-musical-instrument" title="Pierre Schaeffer">Pierre Schaeffer</a></em></p>
-
-<p><p><iframe width="560" height="315" src="https://www.youtube.com/embed/CTf0yE15zzI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p>
-
-<p>Έτσι οι νέες δυνατότητες έχουν ήδη μεγάλη επιρροή στη μουσική
-σύνθεση. Η εξερεύνηση αυτών των δυνατότητων συνεχίζονται και αυτή είναι η πιο συναρπαστική πρόκληση για τους μουσικούς σήμερα.</p>
-
-<p>Η προηγμένη ηλεκτρονική τεχνολογία για τον ήχο είναι από καιρό «αναλογική». Άνοιξε νέες
-δυνατότητες - για παράδειγμα, με τη συγκεκριμένη μουσική 'musique
-concrete', που αποτελείται από ηχογραφημένους ακουστικούς ήχους και
-'ηλεκτρονική μουσική », καταφεύγοντας σε ήχους που παράγονται
+&#39;ήχο&#39;. Όλα αυτά περιλαμβάνονται στην έρευνα για τον ηχητικό
+σχεδιασμό.
+</p>
+<p>
+<em><a href="http://brahms.ircam.fr/iannis-xenakis">Iannis Xenakis</a></em>
+</p>
+<p>
+(French)
+</p>
+<p>
+&lt;p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;<a href="https://www.youtube.com/embed/0FI89alUpto">https://www.youtube.com/embed/0FI89alUpto</a>&#34; frameborder=&#34;0&#34;
+allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+</p>
+<p>
+(English)
+</p>
+<p>
+&lt;p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/j4nj2nklbts">https://www.youtube.com/embed/j4nj2nklbts</a>&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+</p>
+<p>
+<em><a href="https://books.google.gr/books?id=4a4wDwAAQBAJ&amp;pg=PA88&amp;lpg=PA88&amp;dq=xenakis+ircam&amp;source=bl&amp;ots=eIj9V1WwHc&amp;sig=ACfU3U0nYCoT_xbip3J73c4KWrFPQ9Aw-Q&amp;hl=en&amp;sa=X&amp;ved=2ahUKEwjbv4vfj6jhAhXJb5oKHWrnCSUQ6AEwEHoECAYQAQ#v=onepage&amp;q=xenakis%2520ircam&amp;f=false">Pierre Boulez</a></em>
+</p>
+<p>
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;<a href="https://www.youtube.com/embed/ie5Ore2rjhk">https://www.youtube.com/embed/ie5Ore2rjhk</a>&#34; frameborder=&#34;0&#34;
+allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</p>
+<p>
+<em><a href="https://ccrma.stanford.edu/blogs/ruviaro/lork-digression-1-what-musical-instrument">Pierre Schaeffer</a></em>
+</p>
+<p>
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/CTf0yE15zzI">https://www.youtube.com/embed/CTf0yE15zzI</a>&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</p>
+<p>
+Έτσι οι νέες δυνατότητες έχουν ήδη μεγάλη επιρροή στη μουσική
+σύνθεση. Η εξερεύνηση αυτών των δυνατότητων συνεχίζονται και αυτή είναι η πιο συναρπαστική πρόκληση για τους μουσικούς σήμερα.
+</p>
+<p>
+Η προηγμένη ηλεκτρονική τεχνολογία για τον ήχο είναι από καιρό «αναλογική». Άνοιξε νέες
+δυνατότητες - για παράδειγμα, με τη συγκεκριμένη μουσική &#39;musique
+concrete&#39;, που αποτελείται από ηχογραφημένους ακουστικούς ήχους και
+&#39;ηλεκτρονική μουσική », καταφεύγοντας σε ήχους που παράγονται
 ηλεκτρονικά. Ωστόσο, το mastering στην αναλογική τεχνολογία
 απαιτούσαι αριστοτεχνική μαγεία, για αυτό το λόγο οι μουσικοί χρησιμοποίησαν
 γενικά έτοιμες δυνατότητες και δεν ανάπτυξαν τις δικές τους. Επιπλέον, ο εξοπλισμός είχε την τάση να είναι ασταθής και να αλλάζει και
-γρήγορα κατέστη άνευ αντικειμένου.</p>
-
-<p><em>The Art of Sounds</em></p>
-
-<p><p>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/Zsb1w-3iFa8" frameborder="0"
-allow="accelerometer; autoplay; encrypted-media; gyroscope;
-picture-in-picture" allowfullscreen></iframe>
-</p></p>
-
-<p>Από τα τέλη της δεκαετίας του 1950, η ψηφιακή τεχνολογία του ήχου, που
+γρήγορα κατέστη άνευ αντικειμένου.
+</p>
+<p>
+<em>The Art of Sounds</em>
+</p>
+<p>
+&lt;p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;<a href="https://www.youtube.com/embed/Zsb1w-3iFa8">https://www.youtube.com/embed/Zsb1w-3iFa8</a>&#34; frameborder=&#34;0&#34;
+allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+</p>
+<p>
+Από τα τέλη της δεκαετίας του 1950, η ψηφιακή τεχνολογία του ήχου, που
 εισήγαγε ο <strong>Max Mathews</strong>, σταδιακά αντικατέστησε την αναλογική
 τεχνολογία. Η ψηφιακή κωδικοποίηση φέρνει ακρίβεια, σταθερότητα και
 αναπαραγωγικότητα στην ηχητική σύνθεση και επεξεργασία και επιτρέπει
@@ -358,73 +391,93 @@ picture-in-picture" allowfullscreen></iframe>
 Αυτό που διακυβεύεται εδώ είναι πολύ σημαντικό - το ψηφιακό
 domain επιτρέπει την επέκταση του ελέγχου της σύνθεσης
 στο επίπεδο του ίδιου του ήχου, όχι μόνο συνθέτοντας με ήχους, αλλά
-συνθέτοντας τους ίδιους τους ήχους.</p>
-
-<p>Η δυνατότητες της δημιουργίας ήχων μέσω των υπολογιστών πρέπει να ερευνηθούν.</p>
-
-<p>Max Mathews and <em>Music-N</em>. The First digital synthesiser.</p>
-
-<p>"Though computer music is at the edge of the avant-garde today, its
+συνθέτοντας τους ίδιους τους ήχους.
+</p>
+<p>
+Η δυνατότητες της δημιουργίας ήχων μέσω των υπολογιστών πρέπει να ερευνηθούν.
+</p>
+<p>
+Max Mathews and <em>Music-N</em>. The First digital synthesiser.
+</p>
+<p>
+&#34;Though computer music is at the edge of the avant-garde today, its
 roots go back to 1957, when Mathews wrote the first version of
-"Music," a program that allowed an IBM 704 mainframe computer to play
-a 17-second composition.</p>
-
-<p><img src="/MaxMathews_Stanford.png" alt="Max Mathews" title="Max Mathews" /></p>
-
-<p><em><a href="https://news.stanford.edu/news/2011/may/max-mathews-obit-050211.html" title="Max Mathews">Max Mathews</a></em></p>
-
-<p><p><iframe width="560" height="315" src="https://www.youtube.com/embed/mT3U98cFqSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p>
-
-<p>Επίσης, ο <strong>John Chowning</strong> δεν ανέπτυξε μόνο μια ισχυρή νέα μέθοδο για τον ήχο
-(<a href="https://ccrma.stanford.edu/~jos/sasp/Frequency_Modulation_FM_Synthesis.html" title="FM">FM</a>), δημιούργησε και νέα και πειστικά μουσικά έργα και ενθάρρυνε το
-κοινό στην κατανόηση του μουσικού ήχου και της αντίληψής του.</p>
-
-<p><em><a href="https://ccrma.stanford.edu/people/john-chowning" title="John Chowning">John Chowning</a></em></p>
-
-<p><p><iframe width="560" height="315" src="https://www.youtube.com/embed/XW_cuaP7K0o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p>
-
-<p>Όσο συναρπαστική είναι αυτή η φάση διερεύνησης άλλο τόσο είναι και
+&#34;Music,&#34; a program that allowed an IBM 704 mainframe computer to play
+a 17-second composition.
+</p>
+<p>
+<a href="/MaxMathews_Stanford.png">Max Mathews</a>
+</p>
+<p>
+ <em><a href="https://news.stanford.edu/news/2011/may/max-mathews-obit-050211.html">Max Mathews</a></em>
+</p>
+<p>
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/mT3U98cFqSs">https://www.youtube.com/embed/mT3U98cFqSs</a>&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</p>
+<p>
+Επίσης, ο <strong>John Chowning</strong> δεν ανέπτυξε μόνο μια ισχυρή νέα μέθοδο για τον ήχο
+(<a href="https://ccrma.stanford.edu/~jos/sasp/Frequency_Modulation_FM_Synthesis.html">FM</a>), δημιούργησε και νέα και πειστικά μουσικά έργα και ενθάρρυνε το
+κοινό στην κατανόηση του μουσικού ήχου και της αντίληψής του.
+</p>
+<p>
+<em><a href="https://ccrma.stanford.edu/people/john-chowning">John Chowning</a></em>
+</p>
+<p>
+&lt;p&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;<a href="https://www.youtube.com/embed/XW_cuaP7K0o">https://www.youtube.com/embed/XW_cuaP7K0o</a>&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</p>
+<p>
+Όσο συναρπαστική είναι αυτή η φάση διερεύνησης άλλο τόσο είναι και
 απαιτητική και πολλοί μουσικοί δεν επιθυμούν να αφιερώσουν πολύ χρόνο
 για να εξερευνήσουν και να αναπτύξουν νέες δυνατότητες. Τα ισχυρά
 λογισμικά σύνθεσης είναι κάπως δύσκολο να χρησιμοποιηθούν απο τους
-μουσικούς γιατί πολλά απο αυτά δεν είναι πολύ φιλικά προς το χρήστη.</p>
-
-<p>Όταν τα ψηφιακά συστήματα ήχου για σύνθεση σε πραγματικό χρόνο εμφανίστηκαν πριν από
+μουσικούς γιατί πολλά απο αυτά δεν είναι πολύ φιλικά προς το χρήστη.
+</p>
+<p>
+Όταν τα ψηφιακά συστήματα ήχου για σύνθεση σε πραγματικό χρόνο εμφανίστηκαν πριν από
 περίπου 25 χρόνια, πολλοί μουσικοί νόμιζαν ότι μπορούσαν να
 χρησιμοποιήσουν χειριστήρια σε πραγματικό χρόνο, χρησιμοποιώντας το αυτί τους και τη
-διαίσθησή τους για να επιλέξουν μεταξύ των δυνατοτήτων που προσφέρονται για τον ήχο. Αυτό ήταν εν πολλοίς όμως αυταπάτη.</p>
-
-<p>Περιστρέφοντας τα κουμπιά, ή παίζοντας με τα χειριστήρια είναι δύσκολο
+διαίσθησή τους για να επιλέξουν μεταξύ των δυνατοτήτων που προσφέρονται για τον ήχο. Αυτό ήταν εν πολλοίς όμως αυταπάτη.
+</p>
+<p>
+Περιστρέφοντας τα κουμπιά, ή παίζοντας με τα χειριστήρια είναι δύσκολο
 να έχει κάποιος συνθέτης το αποτέλεσμα που θα ήθελε.
 Για παράδειγμα, όπως η χειραγώγηση του κύβου του Rubik χωρίς στρατηγικές μπορεί
-να μη λυθεί ποτέ.</p>
-
-<p><strong>Πρόβημα απαξίωσης</strong></p>
-
-<p>Οι δυνατότητες των  συστημάτων που λειτουργούσαν σε πραγματικό χρόνο,
+να μη λυθεί ποτέ.
+</p>
+<p>
+<strong>Πρόβημα απαξίωσης</strong>
+</p>
+<p>
+Οι δυνατότητες των  συστημάτων που λειτουργούσαν σε πραγματικό χρόνο,
 μπορούσαν να χρησιμοποιηθούν μόνο σε πραγματικό χρόνο απο τους μουσικούς
 και τις περισσότερες φορές οι σχεδιαστές που τα είχαν δημιουργήσει δεν
 είχαν συγκεκριμένες αισθητικές απαιτήσεις. Αύτο έκανε πολλούς να
-αποξιώσουν αυτά τα συστήματα και να μή τα εξελίξουν.</p>
-
-<p>Επίσης, πολλοί συνθέτες τείναν να χρησιμοποιούν έτοιμους ήχους και έτοιμα προγράμματα, αντί να δουλεύουν για την ποιότητα του ήχου.</p>
-
-<p>Κάποιος μπορεί να δει μια αισθητική παλινδρόμηση -
+αποξιώσουν αυτά τα συστήματα και να μή τα εξελίξουν.
+</p>
+<p>
+Επίσης, πολλοί συνθέτες τείναν να χρησιμοποιούν έτοιμους ήχους και έτοιμα προγράμματα, αντί να δουλεύουν για την ποιότητα του ήχου.
+</p>
+<p>
+Κάποιος μπορεί να δει μια αισθητική παλινδρόμηση -
 οι μουσικοί δεν μπορούσαν να αντισταθούν στον πειρασμό τις
 αναπαραγωγής και σύνθεσης σε πραγματικό χρόνο και κατέληγαν να
-καταφεύγουν σε παρόμοιες λύσεις οι οποίες σύντομα έγιναν στερεότυπα και κλισέ.</p>
-
-<p>Επιπλέον, η λειτουργία σε πραγματικό χρόνο χρειαζόταν επεξεργαστές
+καταφεύγουν σε παρόμοιες λύσεις οι οποίες σύντομα έγιναν στερεότυπα και κλισέ.
+</p>
+<p>
+Επιπλέον, η λειτουργία σε πραγματικό χρόνο χρειαζόταν επεξεργαστές
 ειδικού σκοπού χρησιμοποιώντας την πιο προηγμένη μικροηλεκτρονική
 τεχνολογία, αλλά αυτή η τεχνολογία εξελίχθηκε τόσο γρήγορα ώστε η
-διάρκεια ζωής αυτών των συστημάτων ήταν μόνο λίγα χρόνια, και τα μουσικά έργα θα έπρεπε να προσαρμοστούν στα νεότερα συστήματα.</p>
-
-<p>Τέτοιες προσαρμογές ήταν δαπανηρές και συχνά απαγορευτικές. Πολλά
-μουσικά έργα δεν μπορούν πλέον να παιχτουν λόγω αυτού του προβλήματος.</p>
-
-<p><strong>Η τεχνολογία σήμερα</strong></p>
-
-<p>Ευτυχώς, οι συνθήκες εργασίας για τη μουσική με υπολογιστές σήμερα
+διάρκεια ζωής αυτών των συστημάτων ήταν μόνο λίγα χρόνια, και τα μουσικά έργα θα έπρεπε να προσαρμοστούν στα νεότερα συστήματα.
+</p>
+<p>
+Τέτοιες προσαρμογές ήταν δαπανηρές και συχνά απαγορευτικές. Πολλά
+μουσικά έργα δεν μπορούν πλέον να παιχτουν λόγω αυτού του προβλήματος.
+</p>
+<p>
+<strong>Η τεχνολογία σήμερα</strong>
+</p>
+<p>
+Ευτυχώς, οι συνθήκες εργασίας για τη μουσική με υπολογιστές σήμερα
 είναι πολύ πιο ευνοϊκές.
 Οι προσωπικοί υπολογιστές έχουν γίνει τόσο ισχυροί που δεν χρειάζονται
 πλέον ειδικά κυκλώματα για να λειτουργήσουν σε πραγματικό χρόνο. Το ζήτημα αφορά μόνο το λογισμικό - είναι πολύ πιο εύκολο να χρησιμοποιηθεί
@@ -435,20 +488,25 @@ a 17-second composition.</p>
 προηγμένα εργαλεία προγραμματισμού και σύνθεσης καθώς και επεξεργασίας
 του ήχου μπορούν  να παραχθούν απο προσωπικούς υπολογίστες. Οι μουσικοί μπορούν - και πρέπει - να συμμετέχουν στην επιλογή και προσαρμογή
 των εργαλείων αυτων με βάση τα συγκεκριμένα γούστα και τους σκοπούς
-τους.</p>
-
-<p>Κάποιος μπορεί να επωφεληθεί από την τεχνογνωσία
+τους.
+</p>
+<p>
+Κάποιος μπορεί να επωφεληθεί από την τεχνογνωσία
 που αναπτύχθηκε, μια τεχνογνωσία που μπορεί να μεταδοθεί εύκολα
 σε ψηφιακή μορφή αλλά και σε μορφή κώδικα - για παράδειγμα όσον αφορά
 τις «συνταγές», δηλαδή τα δεδομένα που απαιτούνται για τη σύνθεση
 ορισμένων ήχων που είναι δύσκολο να επιτευχθούν - αυτό είναι ένα μεγάλο πλεονέκτημα.
-Snapshots from Miranda's. E (2002) <em>Computer Sound Design</em></p>
-
-<p>State of the art - Computer Music</p>
-
-<p><strong>Livecoding</strong></p>
-
-<p><p><iframe width="720" height="405" src="https://www.youtube.com/embed/BIMVpu5xhXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p></p>
+Snapshots from Miranda&#39;s. E (2002) <em>Computer Sound Design</em>
+</p>
+<p>
+State of the art - Computer Music 
+</p>
+<p>
+<strong>Livecoding</strong>
+</p>
+<p>
+&lt;p&gt;&lt;iframe width=&#34;720&#34; height=&#34;405&#34; src=&#34;<a href="https://www.youtube.com/embed/BIMVpu5xhXk">https://www.youtube.com/embed/BIMVpu5xhXk</a>&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</p>
 
 
     

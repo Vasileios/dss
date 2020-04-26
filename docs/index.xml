@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ψηφιακη Συνθεση Ηχου on Ψηφιακή Σύνθεση Ήχου</title>
@@ -16,9 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/introduction/history/</guid>
-      <description>chapter 1 Ψηφιακή σύνθεση Ήχου Ιστορια Synthesis techniques and programming.
-Κατά τη διάρκεια του περασμένου αιώνα, η ηλεκτρική ενέργεια διαπέρασε σταδιακά τον κόσμο του ήχου. Η μουσική πλέον ακούγεται τώρα μέσω των ηχείων. Αλλά, πέρα από την αναπαραγωγή, η ηλεκτρική τεχνολογία επίσης έφερε ριζικά νέους πόρους για την παραγωγή νέων ήχων και μουσικής.
-Χρειάστηκε αρκετός χρόνος για τον μουσικό κόσμο να συνειδητοποιήσει τις δυνατότητες αυτών των πόρων. Ακόμη, για πολλά χρόνια, ο Edgard Varese προσπάθησε να πείσει τους ερευνητές και τα ιδρύματα να δούν τα πλεονέκτημα που προσφέρει η επιστήμη και η τεχνολογία για την ανάπτυξη μηχανών παραγωγής ήχου - μόνο στο τέλος της ζωής του ήταν σε θέση να συνθέσει μουσική με τη χρήση μαγνητοταινίας (tape music and music concrete) και έτσι να κάνει τα πρώτα βήματα της μουσικής με υπολογιστή (Computer Music).</description>
+      <description>chapter 1  Ψηφιακή σύνθεση Ήχου  Ιστορια   Synthesis techniques and programming.  Κατά τη διάρκεια του περασμένου αιώνα, η ηλεκτρική ενέργεια διαπέρασε σταδιακά τον κόσμο του ήχου. Η μουσική πλέον ακούγεται τώρα μέσω των ηχείων. Αλλά, πέρα από την αναπαραγωγή, η ηλεκτρική τεχνολογία επίσης έφερε ριζικά νέους πόρους για την παραγωγή νέων ήχων και μουσικής.  Χρειάστηκε αρκετός χρόνος για τον μουσικό κόσμο να συνειδητοποιήσει τις δυνατότητες αυτών των πόρων.</description>
     </item>
     
     <item>
@@ -27,8 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/introduction/soundtheory/</guid>
-      <description>chapter 1 Η ψηφιακή σύνθεση του ήχου είναι το όνομα που δίνεται σε οποιαδήποτε μέθοδο που χρησιμοποιεί κυρίως ψηφιακές τεχνικές για τη δημιουργία, τον χειρισμό και την αναπαραγωγή του ήχου. Συχνά, το μόνο «αναλογικό» τμήμα ενός «ψηφιακού» οργάνου είναι το αναλογικό - ηχητικό σήμα που παράγεται από τον μετατροπέα ψηφιακού προς αναλογικό (DAC) και απο εκεί στα ηχεία.
- Οι περισσότερες τεχνικές ψηφιακής σύνθεσης βασίζονται πολύ έντονα στα μαθηματικά: ακόμη και μέθοδοι όπως τα ψηφιακά δείγματα και η σύνθεση, είναι μια προσπάθεια μίμησης με το λογισμικό, των αναλογικών φίλτρών που βρίσκονται σε αφαιρετικούς συνθετητές μεταξύ άλλων.</description>
+      <description>chapter 1   Η ψηφιακή σύνθεση του ήχου είναι το όνομα που δίνεται σε οποιαδήποτε μέθοδο που χρησιμοποιεί κυρίως ψηφιακές τεχνικές για τη δημιουργία, τον χειρισμό και την αναπαραγωγή του ήχου. Συχνά, το μόνο «αναλογικό» τμήμα ενός «ψηφιακού» οργάνου είναι το αναλογικό - ηχητικό σήμα που παράγεται από τον μετατροπέα ψηφιακού προς αναλογικό (DAC) και απο εκεί στα ηχεία.  Οι περισσότερες τεχνικές ψηφιακής σύνθεσης βασίζονται πολύ έντονα στα μαθηματικά: ακόμη και μέθοδοι όπως τα ψηφιακά δείγματα και η σύνθεση, είναι μια προσπάθεια μίμησης με το λογισμικό, των αναλογικών φίλτρών που βρίσκονται σε αφαιρετικούς συνθετητές μεταξύ άλλων.</description>
     </item>
     
     <item>
@@ -37,12 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/001supercollider/</guid>
-      <description>chapter 2 SuperCollider SuperCollider
-From: SuperCollider
-Basics
-SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for Windows, macOS, and Linux.
-SuperCollider features three major components
- scsynth, a real-time audio server, forms the core of the platform. It features 400+ unit generators (&#34;UGens&#34;) for analysis, synthesis, and processing. Its granularity allows the fluid combination of many known and unknown audio techniques, moving between additive and subtractive synthesis, FM, granular synthesis, FFT, and physical modelling.</description>
+      <description>chapter 2  SuperCollider   SuperCollider  From: SuperCollider  Basics  SuperCollider is a platform for audio synthesis and algorithmic composition, used by musicians, artists, and researchers working with sound. It is free and open source software available for Windows, macOS, and Linux.  SuperCollider features three major components    scsynth, a real-time audio server, forms the core of the platform. It features 400+ unit generators (&amp;#34;UGens&amp;#34;) for analysis, synthesis, and processing.</description>
     </item>
     
     <item>
@@ -51,8 +43,7 @@ SuperCollider features three major components
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/002oscillators/</guid>
-      <description>chapter 2 SuperCollider Oscillators SuperCollider Ugens From SC Help
-//Periodic Sources: Oscillators. //LF - &amp;#34;Low Frequency&amp;#34; Unit Generators. //arguments: frequency, phase, mul, add  // *Stethoscope*  s.boot a = Stethoscope(s,2); // 2 tracks //a = Stethoscope(s,2, 2); // change in i.e (Mic)  // parabolic approximation of sine { LFPar.ar(LFPar.kr(LFPar.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); // cubic approximation of sine { LFCub.ar(LFCub.kr(LFCub.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFTri.ar(LFTri.kr(LFTri.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFSaw.</description>
+      <description>chapter 2  SuperCollider Oscillators   SuperCollider Ugens From SC Help //Periodic Sources: Oscillators. //LF - &amp;#34;Low Frequency&amp;#34; Unit Generators. //arguments: frequency, phase, mul, add  // *Stethoscope*  s.boot a = Stethoscope(s,2); // 2 tracks //a = Stethoscope(s,2, 2); // change in i.e (Mic)  // parabolic approximation of sine { LFPar.ar(LFPar.kr(LFPar.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); // cubic approximation of sine { LFCub.ar(LFCub.kr(LFCub.kr(0.2,0,8,10),0, 400,800),0,0.1) }.scope(1, zoom: 4); { LFTri.</description>
     </item>
     
     <item>
@@ -61,12 +52,7 @@ SuperCollider features three major components
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/introduction/tuning_scales/</guid>
-      <description>chapter 1 Scales Circle of fiths is the relationship among the 12 tones of the chromatic scale, their corresponding key signatures, and the associated major and minor keys.
-Circles of Fifths
-
-Other Tunings and Scales
- Intervals (διαστήματα)  Pythagorian set
-Τα σφυριά του Πυθαγόρα περιέχουν μια σειρά απο τόνικότητες που σχετίζονται μεταξύ τους. Σε αυτή τη σειρά κυριαρχούν οι οκτάβες (2/1), οι πέμπτες (3/2) και οι τέταρτες (4/3). Η πέμπτη και η τέταρτη αν πολλαπλασιαστούν μεταξύ τους θα φτιάξουν την οκτάβα (3/2*4/3=2/1), και αν διαιρεθούν ((3/2)/(4/3)=9/8) τον τόνο (9/8).</description>
+      <description>chapter 1  Scales   Circle of fiths is the relationship among the 12 tones of the chromatic scale, their corresponding key signatures, and the associated major and minor keys.  Circles of Fifths  &amp;lt;p&amp;gt;&amp;lt;iframe width=&amp;#34;900&amp;#34; height=&amp;#34;720&amp;#34; src=&amp;#34;https://i2.wp.com/joedubs.com/wp-content/uploads/2016/04/Major-Scales-on-Circle-of-Fifths.gif?fit=900%2C707&amp;amp;ssl=1&amp;#34; frameborder=&amp;#34;1&amp;#34; allow=&amp;#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&amp;#34; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;/p&amp;gt;  Other Tunings and Scales    Intervals (διαστήματα)    Pythagorian set  Τα σφυριά του Πυθαγόρα περιέχουν μια σειρά απο τόνικότητες που σχετίζονται μεταξύ τους.</description>
     </item>
     
     <item>
@@ -75,18 +61,16 @@ Other Tunings and Scales
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/003aperiodicsources/</guid>
-      <description>chapter 2 SuperCollider Noise Generators Aperiodic Sources: Noise
-/Aperiodic Sources: Noise. //LF &amp;#34;Low Frequency&amp;#34; Noise Generators. //arguments: frequency, mul, add { LFClipNoise.ar(MouseX.kr(200, 10000, 1), 0.125) }.scope(1); { LFPar.ar(LFClipNoise.kr(MouseX.kr(0.5, 64, 1), 200, 400), 0, 0.2) }.scope(1, zoom:8); //Broad Spectrum Noise Generators //arguments: mul, add { ClipNoise.ar(0.2) }.scope(1); { WhiteNoise.ar(0.2) }.scope(1); { PinkNoise.ar(0.4) }.scope(1); { BrownNoise.ar(0.2) }.scope(1); { GrayNoise.ar(0.2) }.scope(1); // Impulse Noise Generators //Dust, Dust2 //arguments: density, mul, add  { Dust.</description>
+      <description>chapter 2  SuperCollider Noise Generators   Aperiodic Sources: Noise /Aperiodic Sources: Noise. //LF &amp;#34;Low Frequency&amp;#34; Noise Generators. //arguments: frequency, mul, add { LFClipNoise.ar(MouseX.kr(200, 10000, 1), 0.125) }.scope(1); { LFPar.ar(LFClipNoise.kr(MouseX.kr(0.5, 64, 1), 200, 400), 0, 0.2) }.scope(1, zoom:8); //Broad Spectrum Noise Generators //arguments: mul, add { ClipNoise.ar(0.2) }.scope(1); { WhiteNoise.ar(0.2) }.scope(1); { PinkNoise.ar(0.4) }.scope(1); { BrownNoise.ar(0.2) }.scope(1); { GrayNoise.ar(0.2) }.scope(1); // Impulse Noise Generators //Dust, Dust2 //arguments: density, mul, add  { Dust.</description>
     </item>
     
     <item>
-      <title>Filters</title>
+      <title>Filters DSP</title>
       <link>//vasileios.github.io/dss/sc-examples/004filters/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/004filters/</guid>
-      <description>chapter 2 SuperCollider Filters Filters in SuperCollider
-// Filters  //Low Pass, High Pass, Band Pass see more on Help //arguments: in, freq, mul, add  { LPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); { HPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); // Resonant Low Pass, High Pass, Band Pass //arguments: in, freq, rq, mul, add  { RLPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); { RHPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); // Resonz - resonant band pass filter with uniform amplitude //arguments: in, freq, rq, mul, add  // modulate frequency { Resonz.</description>
+      <description>chapter 2  SuperCollider Filters   Filters in SuperCollider // Filters  //Low Pass, High Pass, Band Pass see more on Help //arguments: in, freq, mul, add  { LPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); { HPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2) }.scope(1); // Resonant Low Pass, High Pass, Band Pass //arguments: in, freq, rq, mul, add  { RLPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); { RHPF.ar(WhiteNoise.ar, MouseX.kr(1e2,2e4,1), 0.2, 0.2) }.scope(1); // Resonz - resonant band pass filter with uniform amplitude //arguments: in, freq, rq, mul, add  // modulate frequency { Resonz.</description>
     </item>
     
     <item>
@@ -95,11 +79,7 @@ Other Tunings and Scales
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/introduction/notation/</guid>
-      <description>chapter 1 Notation MIDI
-The lowest note musicians use is C-1, which has the MIDI number 0. The number 12 = C0, 24 = C1, 36 = C2, 48 = C3, 60 = C4 (which is middle C on the piano, remember this one), and so on. A 440 is above middle C so it is 69.
-60, 62, 63, 60, 66
-Frequencies
-It is the number of cycles (per second) of a periodic wave.</description>
+      <description>chapter 1  Notation   MIDI  The lowest note musicians use is C-1, which has the MIDI number 0. The number 12 = C0, 24 = C1, 36 = C2, 48 = C3, 60 = C4 (which is middle C on the piano, remember this one), and so on. A 440 is above middle C so it is 69.  60, 62, 63, 60, 66  Frequencies  It is the number of cycles (per second) of a periodic wave.</description>
     </item>
     
     <item>
@@ -108,7 +88,7 @@ It is the number of cycles (per second) of a periodic wave.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/005distortion/</guid>
-      <description>chapter 2 SuperCollider Distorion // Distortion  { SinOsc.ar(300, 0, 0.2) }.scope(1); { SinOsc.ar(300, 0, 0.2).abs }.scope(1); { SinOsc.ar(300, 0, 0.2).max(0) }.scope(1); { SinOsc.ar(300, 0).squared * 0.2 }.scope(1); { SinOsc.ar(300, 0).cubed * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).distort * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).softclip * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).clip2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).fold2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).wrap2(1) * 0.2 }.scope(1); { SinOsc.</description>
+      <description>chapter 2  SuperCollider Distorion  // Distortion  { SinOsc.ar(300, 0, 0.2) }.scope(1); { SinOsc.ar(300, 0, 0.2).abs }.scope(1); { SinOsc.ar(300, 0, 0.2).max(0) }.scope(1); { SinOsc.ar(300, 0).squared * 0.2 }.scope(1); { SinOsc.ar(300, 0).cubed * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).distort * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).softclip * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).clip2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).fold2(1) * 0.2 }.scope(1); { SinOsc.ar(300, 0, MouseX.kr(0.1,80,1)).wrap2(1) * 0.</description>
     </item>
     
     <item>
@@ -117,8 +97,7 @@ It is the number of cycles (per second) of a periodic wave.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/introduction/logicalex/</guid>
-      <description>chapter 1 LE Logical Expressions in SuperCollider
-Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 // not equal to 10&amp;gt;5 // greater than 10&amp;lt;14 // less than 10 &amp;gt;= 10 // greater than or equal to 10 &amp;lt;= 10 // lees than or equal to 11.odd // it is odd 10.even // it is even 10.isInteger // it is integer 10.129.isFloat // it is float 1.odd.and(2.even) // both conditions 1.</description>
+      <description>chapter 1  LE   Logical Expressions in SuperCollider Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 // not equal to 10&amp;gt;5 // greater than 10&amp;lt;14 // less than 10 &amp;gt;= 10 // greater than or equal to 10 &amp;lt;= 10 // lees than or equal to 11.odd // it is odd 10.even // it is even 10.isInteger // it is integer 10.129.isFloat // it is float 1.</description>
     </item>
     
     <item>
@@ -127,7 +106,7 @@ Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/006delays/</guid>
-      <description>chapter 2 SuperCollider Delays //Delays and Buffer UGens DelayN, DelayL, DelayC - simple delays N - no interpolation L - linear interpolation C - cubic interpolation arguments: in, maximum delay time, current delay time, mul, add ( // Dust randomly triggers Decay to create an exponential // decay envelope for the WhiteNoise input source { z = Decay.ar(Dust.ar(1,0.5), 0.3, WhiteNoise.ar); DelayN.ar(z, 0.1, 0.1, 1, z); // input is mixed with delay via the add input }.</description>
+      <description>chapter 2  SuperCollider Delays  //Delays and Buffer UGens DelayN, DelayL, DelayC - simple delays N - no interpolation L - linear interpolation C - cubic interpolation arguments: in, maximum delay time, current delay time, mul, add ( // Dust randomly triggers Decay to create an exponential // decay envelope for the WhiteNoise input source { z = Decay.ar(Dust.ar(1,0.5), 0.3, WhiteNoise.ar); DelayN.ar(z, 0.1, 0.1, 1, z); // input is mixed with delay via the add input }.</description>
     </item>
     
     <item>
@@ -136,10 +115,7 @@ Logical expressions =true or false= 10==10 // equal to =&amp;gt;true... 10 !=15 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/introduction/glossary/</guid>
-      <description>chapter 1 Glossary General
-Ο αλγόριθμος είναι:
- &#34;- Ένα σύνολο μαθηματικών οδηγιών που πρέπει να ακολουθηθούν για τον υπολογισμό μιας απάντησης σε ένα μαθηματικό πρόβλημα. Μια συστηματική διαδικασία που παράγει - σε ένα πεπερασμένο αριθμό βημάτων την απάντηση σε μια ερώτηση ή τη λύση ενός προβλήματος. (κυρίως για υπολογιστές) ένα σύνολο κανόνων που πρέπει να ακολουθηθούν για να επιλυθεί ένα συγκεκριμένο πρόβλημα&#34;. (Nierhaus 2009 2)  Mathematics
-premise a statement that is assumed to be true.</description>
+      <description>chapter 1  Glossary   General  Ο αλγόριθμος είναι:  &amp;#34;- Ένα σύνολο μαθηματικών οδηγιών που πρέπει να ακολουθηθούν για τον υπολογισμό μιας απάντησης σε ένα μαθηματικό πρόβλημα.    Μια συστηματική διαδικασία που παράγει - σε ένα πεπερασμένο αριθμό βημάτων    την απάντηση σε μια ερώτηση ή τη λύση ενός προβλήματος.    (κυρίως για υπολογιστές) ένα σύνολο κανόνων που πρέπει να ακολουθηθούν    για να επιλυθεί ένα συγκεκριμένο πρόβλημα&amp;#34;.</description>
     </item>
     
     <item>
@@ -148,11 +124,7 @@ premise a statement that is assumed to be true.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/introduction/references/</guid>
-      <description>Chapter 1 References Collins, N. 2009. Handmade Electronic Music: The Art of Hardware Hacking (2 edition). New York: Routledge.
-Cope, David. 2000. The Algorithmic Composer. Madison, Wis: A-R Editions.
-Dean, Roger. and McLean, Alex (eds.) 2018. The Oxford Handbook of Algorithmic Music. Oxford University Press.
-Farnell, Andy. 2010. Designing Sound. Cambridge, Mass: The MIT Press.
-Holtzman, Steven. 1981. Generative Grammars for Music Composition. Computer Music Journal, Vol.5, No.1, pp. 51-64. The MIT Press.</description>
+      <description>Chapter 1  References   Collins, N. 2009. Handmade Electronic Music: The Art of Hardware Hacking (2 edition). New York: Routledge.  Cope, David. 2000. The Algorithmic Composer. Madison, Wis: A-R Editions.  Dean, Roger. and McLean, Alex (eds.) 2018. The Oxford Handbook of Algorithmic Music. Oxford University Press.  Farnell, Andy. 2010. Designing Sound. Cambridge, Mass: The MIT Press.  Holtzman, Steven. 1981. Generative Grammars for Music Composition.</description>
     </item>
     
     <item>
@@ -161,9 +133,7 @@ Holtzman, Steven. 1981. Generative Grammars for Music Composition. Computer Musi
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/007spectral/</guid>
-      <description>chapter 2 SuperCollider Spectral FFT-PV_Ugens
-FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a trigger each time the buffer is ready to process. The PV UGens process the spectrum when they receive the trigger. IFFT converts the spectrum back into sound.
-// alloc a buffer for the FFT b = Buffer.alloc(s,2048,1); // read a sound c = Buffer.</description>
+      <description>chapter 2  SuperCollider Spectral   FFT-PV_Ugens  FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, puts it into a buffer, and outputs a trigger each time the buffer is ready to process. The PV UGens process the spectrum when they receive the trigger. IFFT converts the spectrum back into sound. // alloc a buffer for the FFT b = Buffer.alloc(s,2048,1); // read a sound c = Buffer.</description>
     </item>
     
     <item>
@@ -172,7 +142,7 @@ FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/008granularsynthesis/</guid>
-      <description>chapter 2 SuperCollider Granular Synthesis //TGrains - granulation of a buffer //arguments: numChannels, trigger, buffer number, rate, center pos, dur, pan, amp, interpolation //see more about Granular synthesis on Help  // read sound b = Buffer.read(s, Platform.resourceDir +/+ &amp;#34;sounds/a11wlk01.wav&amp;#34;); ( { var trate, dur; trate = MouseY.kr(2,200,1); dur = 4 / trate; TGrains.ar(2, Impulse.ar(trate), b, 1, MouseX.kr(0,BufDur.kr(b)), dur, 0, 0.1, 2); }.scope(2, zoom: 4); ) ( { var trate, dur, clk, pos, pan; trate = MouseY.</description>
+      <description>chapter 2  SuperCollider Granular Synthesis  //TGrains - granulation of a buffer //arguments: numChannels, trigger, buffer number, rate, center pos, dur, pan, amp, interpolation //see more about Granular synthesis on Help  // read sound b = Buffer.read(s, Platform.resourceDir +/+ &amp;#34;sounds/a11wlk01.wav&amp;#34;); ( { var trate, dur; trate = MouseY.kr(2,200,1); dur = 4 / trate; TGrains.ar(2, Impulse.ar(trate), b, 1, MouseX.kr(0,BufDur.kr(b)), dur, 0, 0.1, 2); }.scope(2, zoom: 4); ) ( { var trate, dur, clk, pos, pan; trate = MouseY.</description>
     </item>
     
     <item>
@@ -181,11 +151,7 @@ FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/009synthesistec/</guid>
-      <description>chapter 2 Sound synthesis techniques-methods Spectral
- Additive Phase Vocoder FFT  Abstract
- FM Waveshaping  Sampling
- Sampling Granular  Physical
- Modal Waveguide  Additive synthesis Additive synthesis is a method in which a composite waveform is formed by summing sinusoidal components, for example, harmonics of a tone, to produce a sound (Moorer 1985). In additive synthesis, three control functions are needed for every sinusoidal oscillator: the amplitude, frequency and phase of each component.</description>
+      <description>chapter 2  Sound synthesis techniques-methods   Spectral    Additive    Phase Vocoder    FFT    Abstract    FM    Waveshaping    Sampling    Sampling    Granular    Physical    Modal    Waveguide   Additive synthesis   Additive synthesis is a method in which a composite waveform is formed by summing sinusoidal components, for example, harmonics of a tone, to produce a sound (Moorer 1985).</description>
     </item>
     
     <item>
@@ -194,7 +160,16 @@ FFT, IFFT and the phase vocoder ugens. FFT calculates the spectrum of a sound, p
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/010events/</guid>
-      <description>chapter 2 Sound Design Examples //:BA 202903 // FM technique //lag pitch	{ SinOsc.ar( // sine wave 	//siren example 	Lag.kr( // lag the modulator  LFSaw.kr(20, 225, 900, 200), // frequency modulator  2//Line.kr(1, 0, 1) // modulate lag time  ), 0, // phase  0.4 // sine amplitude ) }.play Using FM to create sound events //siren example { SinOsc.ar( // sine wave  Lag.kr( // lag the modulator LFSaw.</description>
+      <description>chapter 2  Sound Design Examples  //:BA 202903 // FM technique //lag pitch	{ SinOsc.ar( // sine wave 	//siren example 	Lag.kr( // lag the modulator  LFSaw.kr(20, 225, 900, 200), // frequency modulator  2//Line.kr(1, 0, 1) // modulate lag time  ), 0, // phase  0.4 // sine amplitude ) }.play Using FM to create sound events //siren example { SinOsc.ar( // sine wave 	Lag.</description>
+    </item>
+    
+    <item>
+      <title>DSP Octave and Faust</title>
+      <link>//vasileios.github.io/dss/sc-examples/011octaveguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//vasileios.github.io/dss/sc-examples/011octaveguide/</guid>
+      <description>chapter 2  Octave   Octave is a math tool like matlab under GNU.  It is used in making calculations as well as in developing and testing algorithms such as digital signal processing algorithms. Installation Guide  Mac OS Guide   You can install octave using brew  First Install brew from here  After you&amp;#39;ve installed brew open terminal and type the below command: brew upgrade &amp;amp;&amp;amp; update  Install Octave   Then you can easily install octave using the below command brew install octave   That&amp;#39;s it!</description>
     </item>
     
   </channel>

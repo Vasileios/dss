@@ -5,7 +5,7 @@
     
       <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="generator" content="Hugo 0.45.1" />
+<meta name="generator" content="Hugo 0.69.2" />
 <title>Glossary :: Ψηφιακή Σύνθεση Ήχου</title>
 <link rel="shortcut icon" href="/dss/images/favicon.png" type="image/x-icon" />
 <link href="/dss/css/font-awesome.min.css" rel="stylesheet">
@@ -145,7 +145,7 @@
       <li data-nav-id="/dss/sc-examples/004filters/" class="dd-item">
         <div>
           <a href="/dss/sc-examples/004filters/">
-            Filters
+            Filters DSP
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -188,6 +188,13 @@
         <div>
           <a href="/dss/sc-examples/010events/">
             Sound/Musical Events
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/dss/sc-examples/011octaveguide/" class="dd-item">
+        <div>
+          <a href="/dss/sc-examples/011octaveguide/">
+            DSP Octave and Faust
           </a><i class="fa fa-circle-thin read-icon"></i>
         </div>
     </li>
@@ -257,63 +264,101 @@
     
     
     
-    <h3 id="chapter-1">chapter 1</h3>
-
-<h4 id="glossary">Glossary</h4>
-
-<p><strong>General</strong></p>
-
-<p><strong>Ο αλγόριθμος είναι:</strong></p>
-
-<ul>
-"- Ένα σύνολο μαθηματικών οδηγιών που πρέπει να ακολουθηθούν για τον υπολογισμό μιας απάντησης σε ένα μαθηματικό
+    
+<h4 id="headline-1">
+chapter 1
+</h4>
+<h5 id="headline-2">
+Glossary
+</h5>
+<p>
+<strong>General</strong>
+</p>
+<p>
+<strong>Ο αλγόριθμος είναι:</strong>
+</p>
+<p>
+&#34;- Ένα σύνολο μαθηματικών οδηγιών που πρέπει να ακολουθηθούν για τον υπολογισμό μιας απάντησης σε ένα μαθηματικό
 πρόβλημα.
-<li>Μια συστηματική διαδικασία που παράγει - σε ένα πεπερασμένο αριθμό βημάτων</li>
-   την απάντηση σε μια ερώτηση ή τη λύση ενός προβλήματος.
-<li>(κυρίως για υπολογιστές) ένα σύνολο κανόνων που πρέπει να ακολουθηθούν</li>
-   για να επιλυθεί ένα συγκεκριμένο πρόβλημα". (Nierhaus 2009 2)
+</p>
+<ul>
+<li>
+<p>
+Μια συστηματική διαδικασία που παράγει - σε ένα πεπερασμένο αριθμό βημάτων
+</p>
+</li>
 </ul>
-
-<p><strong>Mathematics</strong></p>
-
-<p><code>premise</code> a statement that is assumed to be true.</p>
-
-<p><code>polynomial function</code> is an expression consisting of variables (also
+<p>
+   την απάντηση σε μια ερώτηση ή τη λύση ενός προβλήματος.
+</p>
+<ul>
+<li>
+<p>
+(κυρίως για υπολογιστές) ένα σύνολο κανόνων που πρέπει να ακολουθηθούν
+</p>
+</li>
+</ul>
+<p>
+   για να επιλυθεί ένα συγκεκριμένο πρόβλημα&#34;. (Nierhaus 2009 2)
+</p>
+<p>
+<strong>Mathematics</strong>
+</p>
+<p>
+<code class="verbatim">premise</code> a statement that is assumed to be true.
+</p>
+<p>
+<code class="verbatim">polynomial function</code> is an expression consisting of variables (also
 called indeterminates) and coefficients, that involves only the
 operations of addition, subtraction, multiplication, and non-negative
-integer exponents of variables (Wiki, see more <a href="http://ebooks.edu.gr/modules/ebook/show.php/DSGL-B133/625/4028,18063/index4_1.html" title="here">here</a>)</p>
-
-<p><strong>Physics</strong></p>
-
-<p><code>frequency</code> the number of times that a wave, especially a light, sound,
+integer exponents of variables (Wiki, see more <a href="http://ebooks.edu.gr/modules/ebook/show.php/DSGL-B133/625/4028,18063/index4_1.html">here</a>)
+</p>
+<p>
+<strong>Physics</strong>
+</p>
+<p>
+<code class="verbatim">frequency</code> the number of times that a wave, especially a light, sound,
 or radio wave, is produced within a particular period, especially one
-second.</p>
-
-<p><code>amplitude</code> the distance between the top and the bottom of a wave.</p>
-
-<p><code>wave superposition</code> (systems theory) - <em>superposition principle</em>, see also Rolling motion,- is
+second.
+</p>
+<p>
+<code class="verbatim">amplitude</code> the distance between the top and the bottom of a wave.
+</p>
+<p>
+<code class="verbatim">wave superposition</code> (systems theory) - <em>superposition principle</em>, see also Rolling motion,- is
 when a wave traversing the same space with other waves. (the sum of
-the amplitudes of any individual wave)</p>
-
-<p><strong>Computing-SC-sound synthesis</strong></p>
-
-<p><code>function</code> lamda calculus</p>
-
-<p><code>SC Function</code> a = { [100, 200, 300].choose };</p>
-
-<p><code>SC Event</code> An Event is a <code>SC Environment</code> with a 'play' method. An Event specifies an action to be taken in response to a <code>-play</code> message.</p>
-
-<p><code>SC Pattern</code> creates a Stream that iterates an array.</p>
-
-<p><code>SC Stream</code> Streams represent sequences of values that are obtained one at a time.</p>
-
-<p><code>SC Pbind</code> The pattern Pbind connects specific patterns with specific names. Consult its help page for details.</p>
-
-<p><code>wavetable</code> is a table with the amplitude values of a signal</p>
-
-<p><strong>Music</strong></p>
-
-<p><code>motet</code> Form of polyphonic vocal music (12th century)</p>
+the amplitudes of any individual wave) 
+</p>
+<p>
+<strong>Computing-SC-sound synthesis</strong>
+</p>
+<p>
+<code class="verbatim">function</code> lamda calculus
+</p>
+<p>
+<code class="verbatim">SC Function</code> a = { [100, 200, 300].choose };  
+</p>
+<p>
+<code class="verbatim">SC Event</code> An Event is a <code class="verbatim">SC Environment</code> with a &#39;play&#39; method. An Event specifies an action to be taken in response to a <code class="verbatim">-play</code> message.
+</p>
+<p>
+<code class="verbatim">SC Pattern</code> creates a Stream that iterates an array.
+</p>
+<p>
+<code class="verbatim">SC Stream</code> Streams represent sequences of values that are obtained one at a time.
+</p>
+<p>
+<code class="verbatim">SC Pbind</code> The pattern Pbind connects specific patterns with specific names. Consult its help page for details.
+</p>
+<p>
+<code class="verbatim">wavetable</code> is a table with the amplitude values of a signal
+</p>
+<p>
+<strong>Music</strong>
+</p>
+<p>
+<code class="verbatim">motet</code> Form of polyphonic vocal music (12th century)
+</p>
 
 
     
