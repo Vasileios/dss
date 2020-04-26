@@ -160,7 +160,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/010events/</guid>
-      <description>Chapter 2  Sound Design Examples  //:BA 202903 // FM technique //lag pitch	{ SinOsc.ar( // sine wave 	//siren example 	Lag.kr( // lag the modulator  LFSaw.kr(20, 225, 900, 200), // frequency modulator  2//Line.kr(1, 0, 1) // modulate lag time  ), 0, // phase  0.4 // sine amplitude ) }.play Using FM to create sound events //siren example { SinOsc.ar( // sine wave 	Lag.</description>
+      <description>Chapter 2  Sound Design Examples  //:BA 202903 //Modal // FM technique //lag pitch { SinOsc.ar( // sine wave 	//siren example 	Lag.kr( // lag the modulator  LFSaw.kr(20, 225, 900, 200), // frequency modulator  2//Line.kr(1, 0, 1) // modulate lag time  ), 0, // phase  0.4 // sine amplitude ) }.play Using FM to create sound events //siren example { SinOsc.ar( // sine wave  Lag.</description>
     </item>
     
     <item>
