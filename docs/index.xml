@@ -155,21 +155,21 @@
     </item>
     
     <item>
-      <title>DSP Octave and Faust</title>
-      <link>//vasileios.github.io/dss/sc-examples/011octaveguide/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>//vasileios.github.io/dss/sc-examples/011octaveguide/</guid>
-      <description>chapter 2  Octave   Octave is a math tool like matlab under GNU.  It is used in making calculations as well as in developing and testing algorithms such as digital signal processing algorithms. Installation Guide  Mac OS Guide   You can install octave using brew  First Install brew from here  After you&amp;#39;ve installed brew open terminal and type the below command: brew upgrade &amp;amp;&amp;amp; update  Install Octave   Then you can easily install octave using the below command brew install octave   That&amp;#39;s it!</description>
-    </item>
-    
-    <item>
       <title>Sound/Musical Events</title>
       <link>//vasileios.github.io/dss/sc-examples/010events/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//vasileios.github.io/dss/sc-examples/010events/</guid>
       <description>chapter 2  Sound Design Examples  //:BA 202903 // FM technique //lag pitch	{ SinOsc.ar( // sine wave 	//siren example 	Lag.kr( // lag the modulator  LFSaw.kr(20, 225, 900, 200), // frequency modulator  2//Line.kr(1, 0, 1) // modulate lag time  ), 0, // phase  0.4 // sine amplitude ) }.play Using FM to create sound events //siren example { SinOsc.ar( // sine wave 	Lag.</description>
+    </item>
+    
+    <item>
+      <title>DSP Octave and Faust</title>
+      <link>//vasileios.github.io/dss/sc-examples/011octaveguide/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//vasileios.github.io/dss/sc-examples/011octaveguide/</guid>
+      <description>chapter 2  Octave   Octave is a math tool like matlab under GNU.  It is used in making calculations as well as in developing and testing algorithms such as digital signal processing algorithms. Installation Guide  Mac OS Guide   You can install octave using brew  First Install brew from here  After you&amp;#39;ve installed brew open terminal and type the below command: brew upgrade &amp;amp;&amp;amp; update  Install Octave   Then you can easily install octave using the below command brew install octave   That&amp;#39;s it!</description>
     </item>
     
   </channel>
