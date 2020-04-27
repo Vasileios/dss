@@ -435,6 +435,74 @@ audio processing with a strong focus on the design of synthesizers,
 musical instruments, audio effects, etc(
 <a href="https://faust.grame.fr/">faust</a>)
 </p>
+<h5 id="headline-12">
+Installation guide
+</h5>
+<p>
+First open terminal clone faust repo from <a href="https://github.com/grame-cncm/faust">here</a> and then type the following commands:
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; cd faust
+&gt; git pull
+&gt; make world
+&gt; sudo make install</code></pre></div>
+</div>
+<p>
+/use “make world” to include OSC and HTTP support (which require liblo and
+libmicrohttp respectively)
+</p>
+<p>
+In case you need <code class="verbatim">llvm</code> dependency do the following:
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew install llvm</code></pre></div>
+</div>
+<p>
+and write the above to include llvm in your path
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#39;export PATH=&#34;/usr/local/opt/llvm/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.zshrc</code></pre></div>
+</div>
+<h5 id="headline-13">
+install qt5
+</h5>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew instal qt5</code></pre></div>
+</div>
+<p>
+To run qmake you need to link qt for the compiler to find all the files.
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew link qt5 --force</code></pre></div>
+</div>
+<p>
+otherwise you can add faust in you .profile path
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$PATH<span style="color:#e6db74">:/Users/usrname/Applications/faust/tools&#34;</span></code></pre></div>
+</div>
+<h5 id="headline-14">
+Example Faust app
+</h5>
+<p>
+Now try to run an example.
+</p>
+<p>
+Go to examples/filtering/
+and run the below command:
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">faust2caqt graphicEqLab.dsp</code></pre></div>
+</div>
+<p>
+<strong>That&#39;s it!! Run your app now and enjoy!</strong>
+</p>
+<p>
+<strong>TIP:</strong> For those who work with the xcode editor you can create xcode project of your project using the below command:
+</p>
+<div class="src src-sh">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">qmake -spec macx-xcode myLab.pro</code></pre></div>
+</div>
 
 
     
