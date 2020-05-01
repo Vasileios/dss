@@ -427,6 +427,55 @@ Example Sine wave Octave Plot
 Beginners tutorial <a href="http://www-mdp.eng.cam.ac.uk/web/CD/engapps/octave/octavetut.pdf">here</a>
 </p>
 <h5 id="headline-11">
+Creating and using functions - Octave
+</h5>
+<p>
+Create functions and use them with their names inside your code.
+Open the editor using &#39;edit&#39; to create a file with .m extension. For example,
+sind.m (‘sine in degrees’)<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>.
+</p>
+<p>
+sind is a built-in funtion
+That means that you can use it without the script in yours project&#39;s
+directory
+</p>
+<p>
+<strong>Arguments of sind</strong>
+<em>x</em>
+a real vector or matrix.
+</p>
+<p>
+<em>t</em>
+a real vector or matrix with same dimensions as x.
+</p>
+<div class="src src-octave">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave"><span style="color:#66d9ef">function</span> s = <span style="color:#a6e22e">sind</span>(x)
+<span style="color:#75715e">%sined Calculates sine(x) in degrees</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>s = sin(x<span style="color:#f92672">*</span>pi<span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>);</code></pre></div>
+</div>
+<p>
+so you can call it when you need it in your code. For example,
+</p>
+<div class="src src-octave">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave">octave:<span style="color:#75715e">#&gt; x=sind([0,90 180 -270 360]);</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>octave:<span style="color:#75715e">#&gt; plot(x)</span></code></pre></div>
+</div>
+<p>
+<strong>Important: To use your functions other than the built-in you need to
+add them into your project&#39;s directory</strong>
+</p>
+<p>
+<strong>Plotting-drawing with sinusoidal functions</strong>
+</p>
+<div class="src src-octave">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave"><span style="color:#75715e">%BA_2020-sinusoidal drawing I </span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>octave:<span style="color:#75715e">#&gt; x = -10:0.1:10;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>octave:<span style="color:#75715e">#&gt; y = -10:0.1:10;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>octave:<span style="color:#75715e">#&gt; ps = [y,sin(x)+x,cos(y)];</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>octave:<span style="color:#75715e">#&gt; pl = [y,cos(y)+x,sin(x)];</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>octave:<span style="color:#75715e">#&gt; plot(ps,pl)</span></code></pre></div>
+</div>
+<h5 id="headline-12">
 Faust
 </h5>
 <p>
@@ -435,7 +484,7 @@ audio processing with a strong focus on the design of synthesizers,
 musical instruments, audio effects, etc(
 <a href="https://faust.grame.fr/">faust</a>)
 </p>
-<h5 id="headline-12">
+<h5 id="headline-13">
 Installation guide
 </h5>
 <p>
@@ -463,7 +512,7 @@ and write the above to include llvm in your path
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">echo <span style="color:#e6db74">&#39;export PATH=&#34;/usr/local/opt/llvm/bin:$PATH&#34;&#39;</span> &gt;&gt; ~/.zshrc</code></pre></div>
 </div>
-<h5 id="headline-13">
+<h5 id="headline-14">
 install qt5
 </h5>
 <div class="src src-sh">
@@ -481,7 +530,7 @@ To run faust on terminal you need to add it to your .bash or .profile
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">export PATH<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$PATH<span style="color:#e6db74">:/Users/usrname/Applications/faust/tools&#34;</span></code></pre></div>
 </div>
-<h5 id="headline-14">
+<h5 id="headline-15">
 Example Faust app
 </h5>
 <p>
@@ -502,6 +551,25 @@ and run the below command:
 </p>
 <div class="src src-sh">
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">qmake -spec macx-xcode myLab.pro</code></pre></div>
+</div>
+<h2 id="headline-16">
+Footnotes
+</h2>
+<div class="footnotes">
+<hr class="footnotes-separatator">
+<div class="footnote-definitions">
+<div class="footnote-definition">
+<sup id="footnote-1"><a href="#footnote-reference-1">1</a></sup>
+<div class="footnote-body">
+<p>
+Example code from the documents &#34;Introduction to Octave&#34;
+by Dr. P.J.G. Long Department of Engineering University of Cambridge
+Based on the Tutorial Guide to Matlab written by Dr. Paul Smith
+September 2005 
+</p>
+</div>
+</div>
+</div>
 </div>
 
 
