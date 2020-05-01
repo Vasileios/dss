@@ -432,7 +432,7 @@ Creating and using functions - Octave
 <p>
 Create functions and use them with their names inside your code.
 Open the editor using &#39;edit&#39; to create a file with .m extension. For example,
-sind.m (‘sine in degrees’)<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>.
+sind.m (‘sine in degrees’)
 </p>
 <p>
 sind is a built-in funtion
@@ -447,9 +447,11 @@ a real vector or matrix.
 <p>
 <em>t</em>
 a real vector or matrix with same dimensions as x.
+$Example code<sup class="footnote-reference"><a id="footnote-reference-1" href="#footnote-1">1</a></sup>
 </p>
 <div class="src src-octave">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave"><span style="color:#66d9ef">function</span> s = <span style="color:#a6e22e">sind</span>(x)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave"><span style="color:#66d9ef">
+</span><span style="color:#66d9ef">function</span> s = <span style="color:#a6e22e">sind</span>(x)
 <span style="color:#75715e">%sined Calculates sine(x) in degrees</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>s = sin(x<span style="color:#f92672">*</span>pi<span style="color:#f92672">/</span><span style="color:#ae81ff">180</span>);</code></pre></div>
 </div>
@@ -457,7 +459,8 @@ a real vector or matrix with same dimensions as x.
 so you can call it when you need it in your code. For example,
 </p>
 <div class="src src-octave">
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave">octave:<span style="color:#75715e">#&gt; x=sind([0,90 180 -270 360]);</span><span style="color:#960050;background-color:#1e0010">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-octave" data-lang="octave"><span style="color:#75715e">%BA_2020-create triangle wave</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>octave:<span style="color:#75715e">#&gt; x=sind([0,90 180 -270 360]);</span><span style="color:#960050;background-color:#1e0010">
 </span><span style="color:#960050;background-color:#1e0010"></span>octave:<span style="color:#75715e">#&gt; plot(x)</span></code></pre></div>
 </div>
 <p>
