@@ -5,10 +5,6 @@
     <link>//vasileios.github.io/dss/categories/</link>
     <description>Recent content in Categories on Ψηφιακή Σύνθεση Ήχου</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="//vasileios.github.io/dss/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="//vasileios.github.io/dss/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
